@@ -1,0 +1,1 @@
+All images and GIFs showing the appearance of the projects located in the `sources` directory are stored in the `assets` directory.
