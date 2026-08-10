@@ -1,5 +1,6 @@
 <Solution>
   <Project Path="sources/CalenderDesktopUI/CalenderDesktopUI.csproj" />
+  <Project Path="sources/SkillDashboardUI/SkillDashboardUI.csproj" />
   <Project Path="sources/TVSettingsUI/TVSettingsUI.csproj" />
   <Project Path="sources/WalletPaymentUI/WalletPaymentUI.csproj" />
 </Solution>
