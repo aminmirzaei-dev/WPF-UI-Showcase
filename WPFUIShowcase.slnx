@@ -4,6 +4,7 @@
   <Project Path="sources/InputFormUI/InputFormUI.csproj" />
   <Project Path="sources/InstagramDesktopUI/InstagramDesktopUI.csproj" />
   <Project Path="sources/MemberManagementUI/MemberManagementUI.csproj" />
+  <Project Path="sources/RegisterPageUI/RegisterPageUI.csproj" />
   <Project Path="sources/SalesDashboardUI/SalesDashboardUI.csproj" />
   <Project Path="sources/ShoppingCartUI/ShoppingCartUI.csproj" />
   <Project Path="sources/SignInUI/SignInUI.csproj" />
