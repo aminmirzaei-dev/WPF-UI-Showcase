@@ -9,6 +9,7 @@
   <Project Path="sources/ShoppingCartUI/ShoppingCartUI.csproj" />
   <Project Path="sources/SignInUI/SignInUI.csproj" />
   <Project Path="sources/SkillDashboardUI/SkillDashboardUI.csproj" />
+  <Project Path="sources/SmartHomeUI/SmartHomeUI.csproj" />
   <Project Path="sources/SocialMediaManagementUI/SocialMediaManagementUI.csproj" />
   <Project Path="sources/TVSettingsUI/TVSettingsUI.csproj" />
   <Project Path="sources/WalletPaymentUI/WalletPaymentUI.csproj" />
