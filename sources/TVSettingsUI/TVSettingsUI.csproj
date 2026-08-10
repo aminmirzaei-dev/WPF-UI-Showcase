@@ -11,7 +11,6 @@
   <ItemGroup>
     <Folder Include="Controls\" />
     <Folder Include="Pages\" />
-    <Folder Include="Windows\" />
   </ItemGroup>
 
 </Project>
