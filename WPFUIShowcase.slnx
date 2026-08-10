@@ -1,4 +1,5 @@
 <Solution>
+  <Project Path="sources/AdminPanelUI/AdminPanelUI.csproj" />
   <Project Path="sources/CalenderDesktopUI/CalenderDesktopUI.csproj" />
   <Project Path="sources/ChatAppUI/ChatAppUI.csproj" />
   <Project Path="sources/InputFormUI/InputFormUI.csproj" />
