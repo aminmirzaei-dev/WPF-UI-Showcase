@@ -1,5 +1,6 @@
 <Solution>
   <Project Path="sources/CalenderDesktopUI/CalenderDesktopUI.csproj" />
+  <Project Path="sources/ChatAppUI/ChatAppUI.csproj" />
   <Project Path="sources/InputFormUI/InputFormUI.csproj" />
   <Project Path="sources/InstagramDesktopUI/InstagramDesktopUI.csproj" />
   <Project Path="sources/MemberManagementUI/MemberManagementUI.csproj" />
