@@ -59,5 +59,77 @@ namespace TVSettingsUI.Languages {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to About Us.
+        /// </summary>
+        internal static string AboutUs {
+            get {
+                return ResourceManager.GetString("AboutUs", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Common.
+        /// </summary>
+        internal static string Common {
+            get {
+                return ResourceManager.GetString("Common", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enable Hotspot.
+        /// </summary>
+        internal static string EnableHotspot {
+            get {
+                return ResourceManager.GetString("EnableHotspot", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enable WiFi.
+        /// </summary>
+        internal static string EnableWiFi {
+            get {
+                return ResourceManager.GetString("EnableWiFi", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Mac Address.
+        /// </summary>
+        internal static string MacAddress {
+            get {
+                return ResourceManager.GetString("MacAddress", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Network Settings.
+        /// </summary>
+        internal static string NetworkSettings {
+            get {
+                return ResourceManager.GetString("NetworkSettings", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Settings.
+        /// </summary>
+        internal static string Settings {
+            get {
+                return ResourceManager.GetString("Settings", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Time Settings.
+        /// </summary>
+        internal static string TimeSettings {
+            get {
+                return ResourceManager.GetString("TimeSettings", resourceCulture);
+            }
+        }
     }
 }
