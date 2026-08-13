@@ -120,8 +120,29 @@
   <data name="AboutUs" xml:space="preserve">
     <value>درباره ما</value>
   </data>
+  <data name="Address" xml:space="preserve">
+    <value>آدرس</value>
+  </data>
+  <data name="Applications" xml:space="preserve">
+    <value>برنامه ها</value>
+  </data>
+  <data name="AutoAttach" xml:space="preserve">
+    <value>اتصال خودکار</value>
+  </data>
+  <data name="City" xml:space="preserve">
+    <value>شهر</value>
+  </data>
   <data name="Common" xml:space="preserve">
     <value>عمومی</value>
+  </data>
+  <data name="Country" xml:space="preserve">
+    <value>کشور</value>
+  </data>
+  <data name="DaylightSaving" xml:space="preserve">
+    <value>ساعت تابستانی</value>
+  </data>
+  <data name="Developer" xml:space="preserve">
+    <value>توسعه دهنده</value>
   </data>
   <data name="EnableHotspot" xml:space="preserve">
     <value>فعال سازی هات اسپات</value>
@@ -129,16 +150,61 @@
   <data name="EnableWiFi" xml:space="preserve">
     <value>فعال سازی وای فای</value>
   </data>
+  <data name="Hours" xml:space="preserve">
+    <value>ساعت</value>
+  </data>
+  <data name="Iran" xml:space="preserve">
+    <value>ایران</value>
+  </data>
   <data name="MacAddress" xml:space="preserve">
     <value>مک آدرس</value>
+  </data>
+  <data name="Manufacturer" xml:space="preserve">
+    <value>سازنده</value>
+  </data>
+  <data name="More" xml:space="preserve">
+    <value>بیشتر</value>
+  </data>
+  <data name="Musics" xml:space="preserve">
+    <value>موسیقی ها</value>
   </data>
   <data name="NetworkSettings" xml:space="preserve">
     <value>تنظیمات شبکه</value>
   </data>
+  <data name="OtherAvailableSize" xml:space="preserve">
+    <value>سایر فضای موجود</value>
+  </data>
+  <data name="Photos" xml:space="preserve">
+    <value>عکس ها</value>
+  </data>
   <data name="Settings" xml:space="preserve">
     <value>تنظیمات</value>
   </data>
+  <data name="Storage" xml:space="preserve">
+    <value>فضای ذخیره سازی</value>
+  </data>
+  <data name="System" xml:space="preserve">
+    <value>سیستم</value>
+  </data>
+  <data name="Tehran" xml:space="preserve">
+    <value>تهران</value>
+  </data>
   <data name="TimeSettings" xml:space="preserve">
     <value>تنظیمات زمان</value>
+  </data>
+  <data name="TimeZone" xml:space="preserve">
+    <value>منطقه زمانی</value>
+  </data>
+  <data name="TotalSize" xml:space="preserve">
+    <value>حجم کل</value>
+  </data>
+  <data name="Used" xml:space="preserve">
+    <value>استفاده شده</value>
+  </data>
+  <data name="Version" xml:space="preserve">
+    <value>نسخه</value>
+  </data>
+  <data name="Videos" xml:space="preserve">
+    <value>ویدیو ها</value>
   </data>
 </root>

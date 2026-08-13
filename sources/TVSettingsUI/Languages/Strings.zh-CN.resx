@@ -120,8 +120,29 @@
   <data name="AboutUs" xml:space="preserve">
     <value>关于我们</value>
   </data>
+  <data name="Address" xml:space="preserve">
+    <value>地址</value>
+  </data>
+  <data name="Applications" xml:space="preserve">
+    <value>应用</value>
+  </data>
+  <data name="AutoAttach" xml:space="preserve">
+    <value>自动连接</value>
+  </data>
+  <data name="City" xml:space="preserve">
+    <value>城市</value>
+  </data>
   <data name="Common" xml:space="preserve">
     <value>常规</value>
+  </data>
+  <data name="Country" xml:space="preserve">
+    <value>国家/地区</value>
+  </data>
+  <data name="DaylightSaving" xml:space="preserve">
+    <value>夏令时</value>
+  </data>
+  <data name="Developer" xml:space="preserve">
+    <value>开发者</value>
   </data>
   <data name="EnableHotspot" xml:space="preserve">
     <value>开启热点</value>
@@ -129,16 +150,61 @@
   <data name="EnableWiFi" xml:space="preserve">
     <value>启用 Wi-Fi</value>
   </data>
+  <data name="Hours" xml:space="preserve">
+    <value>小时</value>
+  </data>
+  <data name="Iran" xml:space="preserve">
+    <value>伊朗</value>
+  </data>
   <data name="MacAddress" xml:space="preserve">
     <value>MAC 地址</value>
+  </data>
+  <data name="Manufacturer" xml:space="preserve">
+    <value>制造商</value>
+  </data>
+  <data name="More" xml:space="preserve">
+    <value>更多</value>
+  </data>
+  <data name="Musics" xml:space="preserve">
+    <value>音乐</value>
   </data>
   <data name="NetworkSettings" xml:space="preserve">
     <value>网络设置</value>
   </data>
+  <data name="OtherAvailableSize" xml:space="preserve">
+    <value>其他可用空间</value>
+  </data>
+  <data name="Photos" xml:space="preserve">
+    <value>照片</value>
+  </data>
   <data name="Settings" xml:space="preserve">
     <value>设置</value>
   </data>
+  <data name="Storage" xml:space="preserve">
+    <value>存储空间</value>
+  </data>
+  <data name="System" xml:space="preserve">
+    <value>系统</value>
+  </data>
+  <data name="Tehran" xml:space="preserve">
+    <value>德黑兰</value>
+  </data>
   <data name="TimeSettings" xml:space="preserve">
     <value>时间设置</value>
+  </data>
+  <data name="TimeZone" xml:space="preserve">
+    <value>时区</value>
+  </data>
+  <data name="TotalSize" xml:space="preserve">
+    <value>总容量</value>
+  </data>
+  <data name="Used" xml:space="preserve">
+    <value>已使用</value>
+  </data>
+  <data name="Version" xml:space="preserve">
+    <value>版本</value>
+  </data>
+  <data name="Videos" xml:space="preserve">
+    <value>视频</value>
   </data>
 </root>

@@ -70,11 +70,74 @@ namespace TVSettingsUI.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Address.
+        /// </summary>
+        internal static string Address {
+            get {
+                return ResourceManager.GetString("Address", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Applications.
+        /// </summary>
+        internal static string Applications {
+            get {
+                return ResourceManager.GetString("Applications", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Auto Attach.
+        /// </summary>
+        internal static string AutoAttach {
+            get {
+                return ResourceManager.GetString("AutoAttach", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to City.
+        /// </summary>
+        internal static string City {
+            get {
+                return ResourceManager.GetString("City", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Common.
         /// </summary>
         internal static string Common {
             get {
                 return ResourceManager.GetString("Common", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Country.
+        /// </summary>
+        internal static string Country {
+            get {
+                return ResourceManager.GetString("Country", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Daylight Saving.
+        /// </summary>
+        internal static string DaylightSaving {
+            get {
+                return ResourceManager.GetString("DaylightSaving", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Developer.
+        /// </summary>
+        internal static string Developer {
+            get {
+                return ResourceManager.GetString("Developer", resourceCulture);
             }
         }
         
@@ -97,11 +160,56 @@ namespace TVSettingsUI.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Hours.
+        /// </summary>
+        internal static string Hours {
+            get {
+                return ResourceManager.GetString("Hours", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Iran.
+        /// </summary>
+        internal static string Iran {
+            get {
+                return ResourceManager.GetString("Iran", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Mac Address.
         /// </summary>
         internal static string MacAddress {
             get {
                 return ResourceManager.GetString("MacAddress", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Manufacturer.
+        /// </summary>
+        internal static string Manufacturer {
+            get {
+                return ResourceManager.GetString("Manufacturer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to More.
+        /// </summary>
+        internal static string More {
+            get {
+                return ResourceManager.GetString("More", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Musics.
+        /// </summary>
+        internal static string Musics {
+            get {
+                return ResourceManager.GetString("Musics", resourceCulture);
             }
         }
         
@@ -115,6 +223,24 @@ namespace TVSettingsUI.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Other Available Size.
+        /// </summary>
+        internal static string OtherAvailableSize {
+            get {
+                return ResourceManager.GetString("OtherAvailableSize", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Photos.
+        /// </summary>
+        internal static string Photos {
+            get {
+                return ResourceManager.GetString("Photos", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Settings.
         /// </summary>
         internal static string Settings {
@@ -124,11 +250,83 @@ namespace TVSettingsUI.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Storage.
+        /// </summary>
+        internal static string Storage {
+            get {
+                return ResourceManager.GetString("Storage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to System.
+        /// </summary>
+        internal static string System {
+            get {
+                return ResourceManager.GetString("System", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tehran.
+        /// </summary>
+        internal static string Tehran {
+            get {
+                return ResourceManager.GetString("Tehran", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Time Settings.
         /// </summary>
         internal static string TimeSettings {
             get {
                 return ResourceManager.GetString("TimeSettings", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Time Zone.
+        /// </summary>
+        internal static string TimeZone {
+            get {
+                return ResourceManager.GetString("TimeZone", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Total Size.
+        /// </summary>
+        internal static string TotalSize {
+            get {
+                return ResourceManager.GetString("TotalSize", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Used.
+        /// </summary>
+        internal static string Used {
+            get {
+                return ResourceManager.GetString("Used", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Version.
+        /// </summary>
+        internal static string Version {
+            get {
+                return ResourceManager.GetString("Version", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Videos.
+        /// </summary>
+        internal static string Videos {
+            get {
+                return ResourceManager.GetString("Videos", resourceCulture);
             }
         }
     }

@@ -120,8 +120,29 @@
   <data name="AboutUs" xml:space="preserve">
     <value>Sobre nosotros</value>
   </data>
+  <data name="Address" xml:space="preserve">
+    <value>Dirección</value>
+  </data>
+  <data name="Applications" xml:space="preserve">
+    <value>Aplicaciones</value>
+  </data>
+  <data name="AutoAttach" xml:space="preserve">
+    <value>Conexión automática</value>
+  </data>
+  <data name="City" xml:space="preserve">
+    <value>Ciudad</value>
+  </data>
   <data name="Common" xml:space="preserve">
     <value>General</value>
+  </data>
+  <data name="Country" xml:space="preserve">
+    <value>País</value>
+  </data>
+  <data name="DaylightSaving" xml:space="preserve">
+    <value>Horario de verano</value>
+  </data>
+  <data name="Developer" xml:space="preserve">
+    <value>Desarrollador</value>
   </data>
   <data name="EnableHotspot" xml:space="preserve">
     <value>Activar punto de acceso</value>
@@ -129,16 +150,61 @@
   <data name="EnableWiFi" xml:space="preserve">
     <value>Activar Wi-Fi</value>
   </data>
+  <data name="Hours" xml:space="preserve">
+    <value>Horas</value>
+  </data>
+  <data name="Iran" xml:space="preserve">
+    <value>Irán</value>
+  </data>
   <data name="MacAddress" xml:space="preserve">
     <value>Dirección MAC</value>
+  </data>
+  <data name="Manufacturer" xml:space="preserve">
+    <value>Fabricante</value>
+  </data>
+  <data name="More" xml:space="preserve">
+    <value>Más</value>
+  </data>
+  <data name="Musics" xml:space="preserve">
+    <value>Música</value>
   </data>
   <data name="NetworkSettings" xml:space="preserve">
     <value>Configuración de red</value>
   </data>
+  <data name="OtherAvailableSize" xml:space="preserve">
+    <value>Otro espacio disponible</value>
+  </data>
+  <data name="Photos" xml:space="preserve">
+    <value>Fotos</value>
+  </data>
   <data name="Settings" xml:space="preserve">
     <value>Configuración</value>
   </data>
+  <data name="Storage" xml:space="preserve">
+    <value>Almacenamiento</value>
+  </data>
+  <data name="System" xml:space="preserve">
+    <value>Sistema</value>
+  </data>
+  <data name="Tehran" xml:space="preserve">
+    <value>Teherán</value>
+  </data>
   <data name="TimeSettings" xml:space="preserve">
     <value>Configuración de hora</value>
+  </data>
+  <data name="TimeZone" xml:space="preserve">
+    <value>Zona horaria</value>
+  </data>
+  <data name="TotalSize" xml:space="preserve">
+    <value>Tamaño total</value>
+  </data>
+  <data name="Used" xml:space="preserve">
+    <value>Usado</value>
+  </data>
+  <data name="Version" xml:space="preserve">
+    <value>Versión</value>
+  </data>
+  <data name="Videos" xml:space="preserve">
+    <value>Videos</value>
   </data>
 </root>

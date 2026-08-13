@@ -119,34 +119,92 @@
   </resheader>
   <data name="AboutUs" xml:space="preserve">
     <value>About Us</value>
-    <comment>Text for about us lable</comment>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="Applications" xml:space="preserve">
+    <value>Applications</value>
+  </data>
+  <data name="AutoAttach" xml:space="preserve">
+    <value>Auto Attach</value>
+  </data>
+  <data name="City" xml:space="preserve">
+    <value>City</value>
   </data>
   <data name="Common" xml:space="preserve">
     <value>Common</value>
-    <comment>Text for common lable</comment>
+  </data>
+  <data name="Country" xml:space="preserve">
+    <value>Country</value>
+  </data>
+  <data name="DaylightSaving" xml:space="preserve">
+    <value>Daylight Saving</value>
+  </data>
+  <data name="Developer" xml:space="preserve">
+    <value>Developer</value>
   </data>
   <data name="EnableHotspot" xml:space="preserve">
     <value>Enable Hotspot</value>
-    <comment>Text for hotspot toggle button</comment>
   </data>
   <data name="EnableWiFi" xml:space="preserve">
     <value>Enable WiFi</value>
-    <comment>Text for enable wifi toggle button</comment>
+  </data>
+  <data name="Hours" xml:space="preserve">
+    <value>Hours</value>
+  </data>
+  <data name="Iran" xml:space="preserve">
+    <value>Iran</value>
   </data>
   <data name="MacAddress" xml:space="preserve">
     <value>Mac Address</value>
-    <comment>Text for mac address toggle button</comment>
+  </data>
+  <data name="Manufacturer" xml:space="preserve">
+    <value>Manufacturer</value>
+  </data>
+  <data name="More" xml:space="preserve">
+    <value>More</value>
+  </data>
+  <data name="Musics" xml:space="preserve">
+    <value>Musics</value>
   </data>
   <data name="NetworkSettings" xml:space="preserve">
     <value>Network Settings</value>
-    <comment>Text for network settings lable</comment>
+  </data>
+  <data name="OtherAvailableSize" xml:space="preserve">
+    <value>Other Available Size</value>
+  </data>
+  <data name="Photos" xml:space="preserve">
+    <value>Photos</value>
   </data>
   <data name="Settings" xml:space="preserve">
     <value>Settings</value>
-    <comment>Text for settings lable</comment>
+  </data>
+  <data name="Storage" xml:space="preserve">
+    <value>Storage</value>
+  </data>
+  <data name="System" xml:space="preserve">
+    <value>System</value>
+  </data>
+  <data name="Tehran" xml:space="preserve">
+    <value>Tehran</value>
   </data>
   <data name="TimeSettings" xml:space="preserve">
     <value>Time Settings</value>
-    <comment>Text for time settings lable</comment>
+  </data>
+  <data name="TimeZone" xml:space="preserve">
+    <value>Time Zone</value>
+  </data>
+  <data name="TotalSize" xml:space="preserve">
+    <value>Total Size</value>
+  </data>
+  <data name="Used" xml:space="preserve">
+    <value>Used</value>
+  </data>
+  <data name="Version" xml:space="preserve">
+    <value>Version</value>
+  </data>
+  <data name="Videos" xml:space="preserve">
+    <value>Videos</value>
   </data>
 </root>
