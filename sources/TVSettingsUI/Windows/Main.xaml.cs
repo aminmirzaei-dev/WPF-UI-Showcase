@@ -42,6 +42,7 @@ namespace TVSettingsUI.Windows
         public void ExecutePage(AppPages page)
         {
             backButton.Visibility = Visibility.Visible;
+            this.closeButton.Visibility = Visibility.Hidden;
 
             switch (page)
             {
@@ -56,6 +57,7 @@ namespace TVSettingsUI.Windows
                 case AppPages.Storage:
                     container.Content = storagePage;
                     titleText.Text = "Storage";
+                   
                     break;
                 case AppPages.Time:
                     container.Content = timePage;
@@ -72,7 +74,14 @@ namespace TVSettingsUI.Windows
         {
             container.Content = optionsPage;
             backButton.Visibility = Visibility.Collapsed;
+            this.closeButton.Visibility = Visibility.Visible;
+
             titleText.Text = "Options";
+        }
+
+        private void closeButton_Click(object sender, RoutedEventArgs e)
+        {
+            System.Windows.Application.Current.Shutdown();
         }
 
         private void Grid_MouseDown(object sender, MouseButtonEventArgs e)
