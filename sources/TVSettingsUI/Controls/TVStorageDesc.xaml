@@ -1,12 +1,17 @@
-﻿<UserControl x:Class="TVSettingsUI.Controls.StorageDesc"
+﻿<UserControl x:Class="TVSettingsUI.Controls.TVStorageDesc"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:TVSettingsUI.Controls"
              mc:Ignorable="d" 
+             Name="tvStorageDesc"
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
-            
-    </Grid>
+    <StackPanel Orientation="Horizontal" Margin="0 10">
+
+        <Border CornerRadius="5" Background="{Binding ElementName=tvStorageDesc,Path=Color}" Width="20" Height="20" Margin="0 0 10 0"/>
+
+        <TextBlock Text="{Binding ElementName=tvStorageDesc,Path=Title}" FontSize="18" Foreground="#ffffff"/>
+
+    </StackPanel>
 </UserControl>

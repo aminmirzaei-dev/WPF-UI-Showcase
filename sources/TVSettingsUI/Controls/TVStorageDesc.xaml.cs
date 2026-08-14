@@ -16,9 +16,9 @@ namespace TVSettingsUI.Controls
     /// <summary>
     /// Interaction logic for StorageDesc.xaml
     /// </summary>
-    public partial class StorageDesc : UserControl
+    public partial class TVStorageDesc : UserControl
     {
-        public StorageDesc()
+        public TVStorageDesc()
         {
             InitializeComponent();
         }
