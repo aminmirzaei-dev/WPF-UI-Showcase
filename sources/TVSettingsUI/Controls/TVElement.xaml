@@ -40,7 +40,7 @@
                         <Setter Property="Height" Value="330" />
                     </Trigger>
 
-                    <DataTrigger Binding="{Binding ElementName=element,Path=IsActive}" Value="True">
+                    <DataTrigger Binding="{Binding ElementName=tvElement,Path=IsActive}" Value="True">
                         <Setter Property="Background" Value="#5F76F6" />
                         <Setter Property="Foreground" Value="#ffffff" />
                         <Setter Property="Height" Value="330" />
@@ -50,10 +50,10 @@
         </Button.Style>
 
         <StackPanel VerticalAlignment="Center">
-            <icon:PackIconMaterial Kind="{Binding ElementName=element,Path=Icon}" Width="50" Height="50" 
+            <icon:PackIconMaterial Kind="{Binding ElementName=tvElement,Path=Icon}" Width="50" Height="50" 
                     VerticalAlignment="Center" HorizontalAlignment="Center"/>
 
-            <TextBlock Text="{Binding ElementName=element,Path=Title}" FontSize="18" FontWeight="SemiBold" 
+            <TextBlock Text="{Binding ElementName=tvElement,Path=Title}" FontSize="18" FontWeight="SemiBold" 
         TextAlignment="Center" Margin="0 30 0 0"/>
         </StackPanel>
 
