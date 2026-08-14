@@ -4,8 +4,10 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:TVSettingsUI.Controls"
+             xmlns:icon="http://metro.mahapps.com/winfx/xaml/iconpacks"
              mc:Ignorable="d" 
              Name="tvElement">
+    
     <Button Padding="20" Width="230" Margin="15 0" FocusVisualStyle="{x:Null}" Click="ParentButton_Click">
         <Button.Style>
             <Style TargetType="Button">
