@@ -46,6 +46,14 @@
                 </Style.Triggers>
             </Style>
         </Button.Style>
-        
+
+        <StackPanel VerticalAlignment="Center">
+            <icon:PackIconMaterial Kind="{Binding ElementName=element,Path=Icon}" Width="50" Height="50" 
+                    VerticalAlignment="Center" HorizontalAlignment="Center"/>
+
+            <TextBlock Text="{Binding ElementName=element,Path=Title}" FontSize="18" FontWeight="SemiBold" 
+        TextAlignment="Center" Margin="0 30 0 0"/>
+        </StackPanel>
+
     </Button>
 </UserControl>
