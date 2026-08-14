@@ -4,9 +4,60 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TVSettingsUI.Windows"
+        xmlns:pages="clr-namespace:TVSettingsUI.Pages"
+        xmlns:icons="http://metro.mahapps.com/winfx/xaml/iconpacks"
         mc:Ignorable="d"
-        Title="Main" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        Title="TV Settings"
+        Height="720" Width="1280" MinHeight="700" MinWidth="650" AllowsTransparency="True"
+        WindowStartupLocation="CenterScreen" WindowStyle="None" Background="Transparent">
+
+    <WindowChrome.WindowChrome>
+        <WindowChrome CaptionHeight="0" ResizeBorderThickness="5"/>
+    </WindowChrome.WindowChrome>
+
+    <Border  CornerRadius="5" MouseLeftButtonDown="Grid_MouseLeftButtonDown" MouseDown="Grid_MouseDown">
+
+        <Border.Background>
+            <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                <GradientStop Color="#2E3967"/>
+                <GradientStop Color="#192559" Offset="1.0"/>
+            </LinearGradientBrush>
+        </Border.Background>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <!--Status Bar-->
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0 15 15 0">
+                <TextBlock Text="05:34" Foreground="#FDF9F6" FontSize="28" VerticalAlignment="Center"/>
+                <StackPanel Margin="13 0" VerticalAlignment="Center">
+                    <TextBlock Text="Nov, 17" Foreground="#F8FEFA" FontSize="10"/>
+                    <TextBlock Text="Tuesday" Foreground="#F8FEFA" FontSize="10"/>
+                </StackPanel>
+                <icons:PackIconMaterial Kind="Wifi" Foreground="#FDF9F6" Width="25" Height="25" VerticalAlignment="Center"/>
+            </StackPanel>
+
+            <!--Back Button-->
+            <Button Name="backButton" Click="backButton_Click" Style="{StaticResource TVBackButton}">
+                <icons:PackIconMaterial Kind="ArrowLeft" Width="25" Height="25"/>
+            </Button>
+
+            <!--Page Title-->
+            <TextBlock x:Name="titleText" Text="Settings" Style="{StaticResource pageTitle}"/>
+
+            <!--Page Content-->
+            <ContentPresenter x:Name="container" Grid.Row="2">
+                <ContentPresenter.Content>
+                    <pages:Options/>
+                </ContentPresenter.Content>
+            </ContentPresenter>
+
+        </Grid>
+
+    </Border>
+    
 </Window>
