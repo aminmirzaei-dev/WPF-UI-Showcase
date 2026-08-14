@@ -1,7 +1,7 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
-    <Style x:Key="backButton" TargetType="Button">
+    <Style x:Key="TVBackButton" TargetType="Button">
         <Setter Property="Background" Value="Transparent" />
         <Setter Property="Foreground" Value="#ffffff" />
         <Setter Property="Margin" Value="40 0 0 0" />
@@ -28,7 +28,7 @@
         </Style.Triggers>
     </Style>
 
-    <Style x:Key="toggleButton" TargetType="ToggleButton">
+    <Style x:Key="TVToggleButton" TargetType="ToggleButton">
         <Setter Property="HorizontalAlignment" Value="Right" />
         <Setter Property="VerticalAlignment" Value="Center" />
         <Setter Property="Margin" Value="0 0 10 0" />
