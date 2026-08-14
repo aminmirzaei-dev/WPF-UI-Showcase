@@ -4,9 +4,15 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:TVSettingsUI.Pages"
-             mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
-            
-    </Grid>
+             xmlns:controls="clr-namespace:TVSettingsUI.Controls"
+             Name="timePage">
+    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Stretch" MaxWidth="800" Margin="50 0">
+
+        <controls:TVToggleButton Title="Auto Attach" HasToggle="True" IsChecked="True"/>
+        <controls:TVToggleButton Title="Time Zone" HasText="True" HasToggle="False" Text="GMT +02:00, Eastern Eu..."/>
+        <controls:TVToggleButton Title="Daylight Saving" HasToggle="True"/>
+        <controls:TVToggleButton Title="24 Hours" HasToggle="True"/>
+        <controls:TVToggleButton Title="More ..."/>
+
+    </StackPanel>
 </UserControl>
