@@ -4,9 +4,47 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:TVSettingsUI.Pages"
+             xmlns:controls="clr-namespace:TVSettingsUI.Controls"
+             xmlns:livechart="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
-            
-    </Grid>
+    <Border CornerRadius="5" Padding="20 30" VerticalAlignment="Center" HorizontalAlignment="Stretch" MaxWidth="800" Margin="50 0" MinHeight="400" Background="#374270">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <StackPanel>
+                <TextBlock Text="Total Size : 9.6 GB" FontSize="24" Foreground="#ffffff" Margin="20 20 0 40"/>
+
+                <!--Chart-->
+                <livechart:PieChart LegendLocation="None" InnerRadius="110" Height="200" >
+                    <livechart:PieChart.Series>
+                        <livechart:PieSeries Values="845" StrokeThickness="0" Fill="#86C56A"/>
+                        <livechart:PieSeries Values="205" StrokeThickness="0" Fill="#21C1D9"/>
+                        <livechart:PieSeries Values="309" StrokeThickness="0" Fill="#5788EE"/>
+                        <livechart:PieSeries Values="983" StrokeThickness="0" Fill="#F7E68A"/>
+                        <livechart:PieSeries Values="80" StrokeThickness="0" Fill="#FCAA2C"/>
+                        <livechart:PieSeries Values="300" StrokeThickness="0" Fill="#F95F15"/>
+                        <livechart:PieSeries Values="1200" StrokeThickness="0" Fill="#DBDEED"/>
+                    </livechart:PieChart.Series>
+                </livechart:PieChart>
+
+            </StackPanel>
+
+            <TextBlock Text="Used : 3.7 GB" FontSize="20" Margin="0 40 0 0" Foreground="#ffffff" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+
+            <StackPanel Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <controls:TVStorageDesc Title="System : 845 MB" Color="#86C56A"/>
+                <controls:TVStorageDesc Title="Photo : 205 MB" Color="#21C1D9"/>
+                <controls:TVStorageDesc Title="Music : 309 MB" Color="#5788EE"/>
+                <controls:TVStorageDesc Title="Application : 983 MB" Color="#F7E68A"/>
+                <controls:TVStorageDesc Title="Video : 80 MB" Color="#FCAA2C"/>
+                <controls:TVStorageDesc Title="Other : 300 MB" Color="#F95F15"/>
+                <controls:TVStorageDesc Title="Available Size : 250 MB" Color="#DBDEED"/>
+            </StackPanel>
+
+        </Grid>
+    </Border>
 </UserControl>
