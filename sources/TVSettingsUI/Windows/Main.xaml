@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:TVSettingsUI.Windows"
         xmlns:pages="clr-namespace:TVSettingsUI.Pages"
         xmlns:icons="http://metro.mahapps.com/winfx/xaml/iconpacks"
+        xmlns:controls="clr-namespace:TVSettingsUI.Controls"
         mc:Ignorable="d"
         Title="TV Settings"
         Height="720" Width="1280" MinHeight="700" MinWidth="650" AllowsTransparency="True"
@@ -32,14 +33,7 @@
             </Grid.RowDefinitions>
 
             <!--Status Bar-->
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0 15 15 0">
-                <TextBlock Text="05:34" Foreground="#FDF9F6" FontSize="28" VerticalAlignment="Center"/>
-                <StackPanel Margin="13 0" VerticalAlignment="Center">
-                    <TextBlock Text="Nov, 17" Foreground="#F8FEFA" FontSize="10"/>
-                    <TextBlock Text="Tuesday" Foreground="#F8FEFA" FontSize="10"/>
-                </StackPanel>
-                <icons:PackIconMaterial Kind="Wifi" Foreground="#FDF9F6" Width="25" Height="25" VerticalAlignment="Center"/>
-            </StackPanel>
+            <controls:TVStatusBar></controls:TVStatusBar>
 
             <!--Back Button-->
             <Button Name="backButton" Click="backButton_Click" Style="{StaticResource TVBackButton}">
