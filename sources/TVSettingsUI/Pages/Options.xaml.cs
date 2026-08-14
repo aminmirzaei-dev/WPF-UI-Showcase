@@ -1,15 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+using TVSettingsUI.Windows;
 
 namespace TVSettingsUI.Pages
 {
@@ -18,9 +9,44 @@ namespace TVSettingsUI.Pages
     /// </summary>
     public partial class Options : UserControl
     {
+
+
         public Options()
         {
             InitializeComponent();
+        }
+
+        private TVSettingsUI.Windows.Main window;
+
+        private void LoadWindow()
+        {
+            if (window == null)
+            {
+                window = Window.GetWindow(App.Current.MainWindow) as Main;
+            }
+        }
+        private void NetworkSetting_ElementClick(object sender, RoutedEventArgs e)
+        {
+            LoadWindow();
+            window.ExecutePage(AppPages.Network);
+        }
+
+        private void Time_ElementClick(object sender, RoutedEventArgs e)
+        {
+            LoadWindow();
+            window.ExecutePage(AppPages.Time);
+        }
+
+        private void Storage_ElementClick(object sender, RoutedEventArgs e)
+        {
+            LoadWindow();
+            window.ExecutePage(AppPages.Storage);
+        }
+
+        private void About_ElementClick(object sender, RoutedEventArgs e)
+        {
+            LoadWindow();
+            window.ExecutePage(AppPages.About);
         }
     }
 }
