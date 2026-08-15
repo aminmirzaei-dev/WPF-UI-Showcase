@@ -144,6 +144,18 @@
   <data name="Developer" xml:space="preserve">
     <value>Developer</value>
   </data>
+  <data name="DeveloperFullName" xml:space="preserve">
+    <value>Developer Full Name</value>
+  </data>
+  <data name="DeveloperGithub" xml:space="preserve">
+    <value>Developer Github</value>
+  </data>
+  <data name="DeveloperGmail" xml:space="preserve">
+    <value>Developer Gmail</value>
+  </data>
+  <data name="DeveloperInstagram" xml:space="preserve">
+    <value>Developer Instagram</value>
+  </data>
   <data name="EnableHotspot" xml:space="preserve">
     <value>Enable Hotspot</value>
   </data>
@@ -176,6 +188,9 @@
   </data>
   <data name="Photos" xml:space="preserve">
     <value>Photos</value>
+  </data>
+  <data name="ProduceYear" xml:space="preserve">
+    <value>Produce Year</value>
   </data>
   <data name="Settings" xml:space="preserve">
     <value>Settings</value>

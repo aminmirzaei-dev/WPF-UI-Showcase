@@ -142,6 +142,42 @@ namespace TVSettingsUI.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Developer Full Name.
+        /// </summary>
+        internal static string DeveloperFullName {
+            get {
+                return ResourceManager.GetString("DeveloperFullName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Developer Github.
+        /// </summary>
+        internal static string DeveloperGithub {
+            get {
+                return ResourceManager.GetString("DeveloperGithub", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Developer Gmail.
+        /// </summary>
+        internal static string DeveloperGmail {
+            get {
+                return ResourceManager.GetString("DeveloperGmail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Developer Instagram.
+        /// </summary>
+        internal static string DeveloperInstagram {
+            get {
+                return ResourceManager.GetString("DeveloperInstagram", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Enable Hotspot.
         /// </summary>
         internal static string EnableHotspot {
@@ -237,6 +273,15 @@ namespace TVSettingsUI.Languages {
         internal static string Photos {
             get {
                 return ResourceManager.GetString("Photos", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Produce Year.
+        /// </summary>
+        internal static string ProduceYear {
+            get {
+                return ResourceManager.GetString("ProduceYear", resourceCulture);
             }
         }
         

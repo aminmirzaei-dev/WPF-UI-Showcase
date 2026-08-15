@@ -144,6 +144,18 @@
   <data name="Developer" xml:space="preserve">
     <value>توسعه دهنده</value>
   </data>
+  <data name="DeveloperFullName" xml:space="preserve">
+    <value>نام کامل توسعه دهنده</value>
+  </data>
+  <data name="DeveloperGithub" xml:space="preserve">
+    <value>حساب گیت هاب توسعه دهنده</value>
+  </data>
+  <data name="DeveloperGmail" xml:space="preserve">
+    <value>حساب جیمیل توسعه دهنده</value>
+  </data>
+  <data name="DeveloperInstagram" xml:space="preserve">
+    <value>حساب اینستاگرام توسعه دهنده</value>
+  </data>
   <data name="EnableHotspot" xml:space="preserve">
     <value>فعال سازی هات اسپات</value>
   </data>
@@ -176,6 +188,9 @@
   </data>
   <data name="Photos" xml:space="preserve">
     <value>عکس ها</value>
+  </data>
+  <data name="ProduceYear" xml:space="preserve">
+    <value>سال تولید</value>
   </data>
   <data name="Settings" xml:space="preserve">
     <value>تنظیمات</value>

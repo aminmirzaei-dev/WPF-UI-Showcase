@@ -144,6 +144,18 @@
   <data name="Developer" xml:space="preserve">
     <value>开发者</value>
   </data>
+  <data name="DeveloperFullName" xml:space="preserve">
+    <value>开发者全名</value>
+  </data>
+  <data name="DeveloperGithub" xml:space="preserve">
+    <value>开发者 GitHub 账户</value>
+  </data>
+  <data name="DeveloperGmail" xml:space="preserve">
+    <value>开发者 Gmail 账号</value>
+  </data>
+  <data name="DeveloperInstagram" xml:space="preserve">
+    <value>开发者 Instagram 账号</value>
+  </data>
   <data name="EnableHotspot" xml:space="preserve">
     <value>开启热点</value>
   </data>
@@ -176,6 +188,9 @@
   </data>
   <data name="Photos" xml:space="preserve">
     <value>照片</value>
+  </data>
+  <data name="ProduceYear" xml:space="preserve">
+    <value>生产年份</value>
   </data>
   <data name="Settings" xml:space="preserve">
     <value>设置</value>

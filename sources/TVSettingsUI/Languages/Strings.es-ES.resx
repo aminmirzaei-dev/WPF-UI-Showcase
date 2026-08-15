@@ -144,6 +144,18 @@
   <data name="Developer" xml:space="preserve">
     <value>Desarrollador</value>
   </data>
+  <data name="DeveloperFullName" xml:space="preserve">
+    <value>Nombre del desarrollador</value>
+  </data>
+  <data name="DeveloperGithub" xml:space="preserve">
+    <value>Cuenta de GitHub de desarrollador</value>
+  </data>
+  <data name="DeveloperGmail" xml:space="preserve">
+    <value>Cuenta de Gmail de desarrollador</value>
+  </data>
+  <data name="DeveloperInstagram" xml:space="preserve">
+    <value>Cuenta de Instagram para desarrolladores</value>
+  </data>
   <data name="EnableHotspot" xml:space="preserve">
     <value>Activar punto de acceso</value>
   </data>
@@ -176,6 +188,9 @@
   </data>
   <data name="Photos" xml:space="preserve">
     <value>Fotos</value>
+  </data>
+  <data name="ProduceYear" xml:space="preserve">
+    <value>Año de fabricación</value>
   </data>
   <data name="Settings" xml:space="preserve">
     <value>Configuración</value>
