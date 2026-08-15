@@ -30,7 +30,7 @@ VerticalAlignment="Center"/>
                 </TextBlock>
 
                 <!--Chart-->
-                <livechart:PieChart LegendLocation="None" InnerRadius="110" Height="200" >
+                <livechart:PieChart Margin="0,0,100,0" LegendLocation="None" InnerRadius="110" Height="200" >
                     <livechart:PieChart.Series>
                         <livechart:PieSeries Values="845" StrokeThickness="0" Fill="#86C56A"/>
                         <livechart:PieSeries Values="205" StrokeThickness="0" Fill="#21C1D9"/>
@@ -44,7 +44,7 @@ VerticalAlignment="Center"/>
 
             </StackPanel>
 
-            <TextBlock Text="Used : 3.7 GB" FontSize="20" Margin="0 40 0 0" Foreground="#ffffff" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            <TextBlock Text="Used : 3.7 GB" FontSize="20" Margin="0,40,100,0" Foreground="#ffffff" VerticalAlignment="Center" HorizontalAlignment="Center"/>
 
             <StackPanel Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">
                 <controls:TVStorageDesc Title="System : 845 MB" Icon="Chip" Color="#86C56A"/>
