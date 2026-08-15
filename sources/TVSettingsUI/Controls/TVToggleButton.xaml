@@ -4,6 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:TVSettingsUI.Controls"
+             xmlns:icon="http://metro.mahapps.com/winfx/xaml/iconpacks"
              mc:Ignorable="d"
              Name="tvToggleButton"
              MinWidth="300">
@@ -26,8 +27,12 @@
         </Border.Style>
 
         <Grid>
+            <icon:PackIconMaterial Kind="{Binding ElementName=tvToggleButton,Path=Icon}" Foreground="White" Width="30" Height="30" 
+        VerticalAlignment="Center" HorizontalAlignment="Left"/>
+            
+            
             <TextBlock Text="{Binding ElementName=tvToggleButton,Path=Title}" Foreground="#FCF9F4" FontSize="24" 
-           FontWeight="Light" VerticalAlignment="Center" Margin="10 0 0 2"/>
+           FontWeight="Light" VerticalAlignment="Center" Margin="50 0 0 2"/>
 
             <CheckBox Style="{StaticResource TVToggleButton}" IsChecked="{Binding ElementName=tvToggleButton,Path=IsChecked}"
           Visibility="{Binding ElementName=tvToggleButton,Path=HasToggle,Converter={StaticResource BoolToVis}}"/>

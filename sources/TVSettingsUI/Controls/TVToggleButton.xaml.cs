@@ -1,15 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using MahApps.Metro.IconPacks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace TVSettingsUI.Controls
 {
@@ -23,6 +14,7 @@ namespace TVSettingsUI.Controls
         public static readonly DependencyProperty IsCheckedProperty = DependencyProperty.Register("IsChecked", typeof(bool), typeof(TVToggleButton));
         public static readonly DependencyProperty HasTextProperty = DependencyProperty.Register("HasText", typeof(bool), typeof(TVToggleButton));
         public static readonly DependencyProperty TextProperty = DependencyProperty.Register("Text", typeof(string), typeof(TVToggleButton));
+        public static readonly DependencyProperty IconProperty = DependencyProperty.Register("Icon", typeof(PackIconMaterialKind), typeof(TVToggleButton));
 
         public string Title
         {
@@ -34,6 +26,12 @@ namespace TVSettingsUI.Controls
         {
             get { return (bool)GetValue(HasToggleProperty); }
             set { SetValue(HasToggleProperty, value); }
+        }
+
+        public PackIconMaterialKind Icon
+        {
+            get { return (PackIconMaterialKind)GetValue(IconProperty); }
+            set { SetValue(IconProperty, value); }
         }
 
         public bool IsChecked

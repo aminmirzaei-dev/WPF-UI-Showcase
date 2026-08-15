@@ -8,11 +8,11 @@
 
     <StackPanel VerticalAlignment="Center" HorizontalAlignment="Stretch" MaxWidth="800" Margin="50 0">
 
-        <controls:TVToggleButton Title="Enable Wifi" HasToggle="True" IsChecked="True"/>
+        <controls:TVToggleButton Icon="Wifi" Title="Enable Wifi" HasToggle="True" IsChecked="True"/>
         <controls:TVToggleButton Title="         Network SDN-1" HasText="True" HasToggle="False" Text="...  "/>
         <controls:TVToggleButton Title="         Network SDN-2" HasText="True" HasToggle="False" Text="...  "/>
         <controls:TVToggleButton Title="         Network SDN-3" HasText="True" HasToggle="False" Text="...  "/>
-        <controls:TVToggleButton Title="Enable Hotspot" HasToggle="True"/>
-        <controls:TVToggleButton Title="Mac Address"/>
+        <controls:TVToggleButton Icon="WifiPlus" Title="Enable Hotspot" HasToggle="True"/>
+        <controls:TVToggleButton Icon="Lan" Title="Mac Address"/>
     </StackPanel>
 </UserControl>
