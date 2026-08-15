@@ -25,7 +25,10 @@
         Margin="0,0,8,0"
         VerticalAlignment="Center"/>
                     
-                                        <Run Text="Manufacturer : "/>
+                                       <Run
+    Text="{Binding [AboutUs],
+           Source={StaticResource LanguageService},
+           Mode=OneWay}" />
 
                 </TextBlock>
                 <TextBlock Style="{StaticResource aboutText}">

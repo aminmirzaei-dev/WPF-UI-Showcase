@@ -8,7 +8,7 @@ using System.Text;
 
 namespace TVSettingsUI.Services
 {
-    public class LanguageService
+    public class LanguageService : INotifyPropertyChanged
     {
         private readonly ResourceManager _resourceManager;
 
