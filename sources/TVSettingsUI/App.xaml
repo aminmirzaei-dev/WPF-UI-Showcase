@@ -8,6 +8,7 @@
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Styles/TVButtons.xaml"/>
                 <ResourceDictionary Source="Styles/TVTextBlocks.xaml"/>
+                <ResourceDictionary Source="/Themes/Blue.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>
