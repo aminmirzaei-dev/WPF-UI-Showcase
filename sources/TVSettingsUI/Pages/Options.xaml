@@ -18,7 +18,12 @@
            Mode=OneWay}" IsActive="True" Icon="Timelapse" ElementClick="Time_ElementClick"/>
                 <controls:TVElement Title="{Binding [StorageAnalysis],
            Source={StaticResource LanguageService},
-           Mode=OneWay}" Icon="Layers" ElementClick="Storage_ElementClick"/>
+           Mode=OneWay}" Icon="Harddisk" ElementClick="Storage_ElementClick"/>
+                <controls:TVElement Title="{Binding [Common],
+Source={StaticResource LanguageService},
+Mode=OneWay}"
+                                    Icon="Layers"
+                                    ElementClick="Common_ElementClick" />
                 <controls:TVElement Title="{Binding [AboutUs],
            Source={StaticResource LanguageService},
            Mode=OneWay}" Icon="Information" ElementClick="About_ElementClick"/>

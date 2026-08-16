@@ -19,7 +19,7 @@ namespace TVSettingsUI.Windows
     /// 
     public enum AppPages
     {
-        About, Options, Storage, Time, Network
+        About, Options, Storage, Time, Network , Common
     }
 
 
@@ -33,6 +33,7 @@ namespace TVSettingsUI.Windows
         private Pages.Storage storagePage = new Pages.Storage();
         private Pages.Time timePage = new Pages.Time();
         private Pages.Network networkPage = new Pages.Network();
+        private Pages.Common commonPage = new Pages.Common();
         private bool IsMaximize = false;
 
         public Main()
@@ -57,7 +58,7 @@ namespace TVSettingsUI.Windows
                     break;
                 case AppPages.Storage:
                     container.Content = storagePage;
-                    titleText.Text = "Storage";
+                    titleText.Text = "Storage Analysis";
                    
                     break;
                 case AppPages.Time:
@@ -67,6 +68,11 @@ namespace TVSettingsUI.Windows
                 case AppPages.Network:
                     container.Content = networkPage;
                     titleText.Text = "Network Settings";
+                    break;
+
+                case AppPages.Common:
+                    container.Content = commonPage;
+                    titleText.Text = "Common Settings";
                     break;
             }
         }

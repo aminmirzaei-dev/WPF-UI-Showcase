@@ -9,7 +9,7 @@
         xmlns:controls="clr-namespace:TVSettingsUI.Controls"
         mc:Ignorable="d"
         Title="TV Settings"
-        Height="720" Width="1280" MinHeight="700" MinWidth="650" AllowsTransparency="True"
+        Height="720" Width="1350" MinHeight="700" MinWidth="650" AllowsTransparency="True"
         WindowStartupLocation="CenterScreen" WindowStyle="None" Background="Transparent">
 
     <WindowChrome.WindowChrome>
