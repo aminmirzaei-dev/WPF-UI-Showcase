@@ -1,18 +1,43 @@
 ﻿<UserControl x:Class="TVSettingsUI.Pages.Time"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:local="clr-namespace:TVSettingsUI.Pages"
              xmlns:controls="clr-namespace:TVSettingsUI.Controls"
              Name="timePage">
-    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Stretch" MaxWidth="800" Margin="50 0">
+    <StackPanel VerticalAlignment="Center"
+                HorizontalAlignment="Stretch"
+                MaxWidth="800"
+                Margin="50 0">
 
-        <controls:TVToggleButton Icon="AutoMode" Title="Auto Attach" HasToggle="True" IsChecked="True"/>
-        <controls:TVToggleButton Icon="Map" Title="Time Zone" HasText="True" HasToggle="False" Text="GMT +02:00, Eastern Eu..."/>
-        <controls:TVToggleButton Icon="WeatherSunny" Title="Daylight Saving" HasToggle="True"/>
-        <controls:TVToggleButton Icon="Clock" Title="24 Hours" HasToggle="True"/>
-        <controls:TVToggleButton Icon="More" Title="More ..."/>
+        <controls:TVToggleButton Icon="AutoMode"
+                                 Title="{Binding [AutoAttach],
+           Source={StaticResource LanguageService},
+           Mode=OneWay}"
+                                 HasToggle="True"
+                                 IsChecked="True" />
+        <controls:TVToggleButton Icon="Map"
+                                 Title="{Binding [TimeZone],
+           Source={StaticResource LanguageService},
+           Mode=OneWay}"
+                                 HasText="True"
+                                 HasToggle="False"
+                                 Text="GMT +02:00, Eastern Eu..." />
+        <controls:TVToggleButton Icon="WeatherSunny"
+                                 Title="{Binding [DaylightSaving],
+           Source={StaticResource LanguageService},
+           Mode=OneWay}"
+                                 HasToggle="True" />
+        <controls:TVToggleButton Icon="Clock"
+                                 Title="{Binding [TimeFormat],
+           Source={StaticResource LanguageService},
+           Mode=OneWay}"
+                                 HasToggle="True" />
+        <controls:TVToggleButton Icon="More"
+                                 Title="{Binding [More],
+           Source={StaticResource LanguageService},
+           Mode=OneWay}" />
 
     </StackPanel>
 </UserControl>

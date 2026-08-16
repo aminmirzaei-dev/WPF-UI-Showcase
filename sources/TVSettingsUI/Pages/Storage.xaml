@@ -15,6 +15,8 @@
             Padding="20 30"
             VerticalAlignment="Center"
             HorizontalAlignment="Stretch"
+            FlowDirection="{Binding FlowDirection,
+                Source={StaticResource LanguageService}}"
             MaxWidth="800"
             Margin="50 0"
             MinHeight="400"
