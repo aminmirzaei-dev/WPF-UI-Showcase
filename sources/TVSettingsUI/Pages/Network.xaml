@@ -8,11 +8,20 @@
 
     <StackPanel VerticalAlignment="Center" HorizontalAlignment="Stretch" MaxWidth="800" Margin="50 0">
 
-        <controls:TVToggleButton Icon="Wifi" Title="Enable Wifi" HasToggle="True" IsChecked="True"/>
+        <controls:TVToggleButton Icon="Wifi"
+                                 Title="{Binding [EnableWifi],
+           Source={StaticResource LanguageService},
+           Mode=OneWay}" HasToggle="True" IsChecked="True"/>
         <controls:TVToggleButton Title="         Network SDN-1" HasText="True" HasToggle="False" Text="...  "/>
         <controls:TVToggleButton Title="         Network SDN-2" HasText="True" HasToggle="False" Text="...  "/>
         <controls:TVToggleButton Title="         Network SDN-3" HasText="True" HasToggle="False" Text="...  "/>
-        <controls:TVToggleButton Icon="WifiPlus" Title="Enable Hotspot" HasToggle="True"/>
-        <controls:TVToggleButton Icon="Lan" Title="Mac Address"/>
+        <controls:TVToggleButton Icon="WifiPlus"
+                                 Title="{Binding [EnableHotspot],
+           Source={StaticResource LanguageService},
+           Mode=OneWay}" HasToggle="True"/>
+        <controls:TVToggleButton Icon="Lan"
+                                 Title="{Binding [MacAddress],
+           Source={StaticResource LanguageService},
+           Mode=OneWay}"/>
     </StackPanel>
 </UserControl>
