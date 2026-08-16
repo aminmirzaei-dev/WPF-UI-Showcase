@@ -5,6 +5,7 @@ using System.Globalization;
 using System.Resources;
 using System.Runtime.CompilerServices;
 using System.Text;
+using System.Windows;
 
 namespace TVSettingsUI.Services
 {
@@ -36,6 +37,11 @@ namespace TVSettingsUI.Services
 
             OnPropertyChanged(string.Empty);
         }
+
+        public FlowDirection FlowDirection =>
+    CultureInfo.CurrentUICulture.TextInfo.IsRightToLeft
+        ? FlowDirection.RightToLeft
+        : FlowDirection.LeftToRight;
 
         public event PropertyChangedEventHandler? PropertyChanged;
 

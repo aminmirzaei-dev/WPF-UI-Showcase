@@ -7,6 +7,8 @@
              xmlns:icon="http://metro.mahapps.com/winfx/xaml/iconpacks">
     <Border CornerRadius="5"
             Padding="20 40"
+            FlowDirection="{Binding FlowDirection,
+                            Source={StaticResource LanguageService}}"
             VerticalAlignment="Center"
             HorizontalAlignment="Stretch"
             MaxWidth="800"
