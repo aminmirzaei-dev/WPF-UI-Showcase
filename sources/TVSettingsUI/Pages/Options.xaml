@@ -10,10 +10,18 @@
         <ScrollViewer VerticalScrollBarVisibility="Hidden" HorizontalScrollBarVisibility="Auto" Padding="0 20" VerticalAlignment="Center" Width="{Binding ElementName=grid,Path=ActualWidth}">
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
 
-                <controls:TVElement Title="Network Setting" Icon="Wifi" ElementClick="NetworkSetting_ElementClick"/>
-                <controls:TVElement Title="Time Setting" IsActive="True" Icon="Timelapse" ElementClick="Time_ElementClick"/>
-                <controls:TVElement Title="Common" Icon="Layers" ElementClick="Storage_ElementClick"/>
-                <controls:TVElement Title="About Us" Icon="Information" ElementClick="About_ElementClick"/>
+                <controls:TVElement Title="{Binding [NetworkSettings],
+           Source={StaticResource LanguageService},
+           Mode=OneWay}" Icon="Wifi" ElementClick="NetworkSetting_ElementClick"/>
+                <controls:TVElement Title="{Binding [TimeSettings],
+           Source={StaticResource LanguageService},
+           Mode=OneWay}" IsActive="True" Icon="Timelapse" ElementClick="Time_ElementClick"/>
+                <controls:TVElement Title="{Binding [Common],
+           Source={StaticResource LanguageService},
+           Mode=OneWay}" Icon="Layers" ElementClick="Storage_ElementClick"/>
+                <controls:TVElement Title="{Binding [AboutUs],
+           Source={StaticResource LanguageService},
+           Mode=OneWay}" Icon="Information" ElementClick="About_ElementClick"/>
 
             </StackPanel>
         </ScrollViewer>
