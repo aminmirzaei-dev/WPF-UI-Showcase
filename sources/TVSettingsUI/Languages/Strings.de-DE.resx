@@ -129,6 +129,9 @@
   <data name="AutoAttach" xml:space="preserve">
     <value>Automatisch verbinden</value>
   </data>
+  <data name="AvailableSize" xml:space="preserve">
+    <value>Verfügbare Größe</value>
+  </data>
   <data name="City" xml:space="preserve">
     <value>Stadt</value>
   </data>
@@ -183,8 +186,8 @@
   <data name="NetworkSettings" xml:space="preserve">
     <value>Netzwerkeinstellungen</value>
   </data>
-  <data name="OtherAvailableSize" xml:space="preserve">
-    <value>Sonstiger verfügbarer Speicher</value>
+  <data name="Other" xml:space="preserve">
+    <value>Andere</value>
   </data>
   <data name="Photos" xml:space="preserve">
     <value>Fotos</value>

@@ -129,6 +129,9 @@
   <data name="AutoAttach" xml:space="preserve">
     <value>自动连接</value>
   </data>
+  <data name="AvailableSize" xml:space="preserve">
+    <value>可选尺寸</value>
+  </data>
   <data name="City" xml:space="preserve">
     <value>城市</value>
   </data>
@@ -183,8 +186,8 @@
   <data name="NetworkSettings" xml:space="preserve">
     <value>网络设置</value>
   </data>
-  <data name="OtherAvailableSize" xml:space="preserve">
-    <value>其他可用空间</value>
+  <data name="Other" xml:space="preserve">
+    <value>其他</value>
   </data>
   <data name="Photos" xml:space="preserve">
     <value>照片</value>

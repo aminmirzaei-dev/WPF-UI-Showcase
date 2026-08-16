@@ -97,6 +97,15 @@ namespace TVSettingsUI.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Available Size.
+        /// </summary>
+        internal static string AvailableSize {
+            get {
+                return ResourceManager.GetString("AvailableSize", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to City.
         /// </summary>
         internal static string City {
@@ -259,11 +268,11 @@ namespace TVSettingsUI.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Other Available Size.
+        ///   Looks up a localized string similar to Other.
         /// </summary>
-        internal static string OtherAvailableSize {
+        internal static string Other {
             get {
-                return ResourceManager.GetString("OtherAvailableSize", resourceCulture);
+                return ResourceManager.GetString("Other", resourceCulture);
             }
         }
         
