@@ -313,6 +313,15 @@ namespace TVSettingsUI.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Storage Analysis.
+        /// </summary>
+        internal static string StorageAnalysis {
+            get {
+                return ResourceManager.GetString("StorageAnalysis", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to System.
         /// </summary>
         internal static string System {

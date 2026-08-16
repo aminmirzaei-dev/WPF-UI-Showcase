@@ -201,6 +201,9 @@
   <data name="Storage" xml:space="preserve">
     <value>Speicher</value>
   </data>
+  <data name="StorageAnalysis" xml:space="preserve">
+    <value>Speicheranalyse</value>
+  </data>
   <data name="System" xml:space="preserve">
     <value>System</value>
   </data>

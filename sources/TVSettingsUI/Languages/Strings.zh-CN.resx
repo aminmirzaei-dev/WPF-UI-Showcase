@@ -201,6 +201,9 @@
   <data name="Storage" xml:space="preserve">
     <value>存储空间</value>
   </data>
+  <data name="StorageAnalysis" xml:space="preserve">
+    <value>存储分析</value>
+  </data>
   <data name="System" xml:space="preserve">
     <value>系统</value>
   </data>
