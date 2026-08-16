@@ -46,7 +46,94 @@
             </Button>
 
             <!--Page Title-->
-            <TextBlock x:Name="titleText" Text="Settings" Style="{StaticResource pageTitle}"/>
+            <TextBlock x:Name="titleText">
+
+                <TextBlock.Style>
+                    <Style TargetType="TextBlock"
+                           BasedOn="{StaticResource pageTitle}">
+
+                        <Setter Property="Text"
+                                Value="" />
+
+                        <Style.Triggers>
+
+                            <DataTrigger Binding="{Binding CurrentPage,
+                              RelativeSource={RelativeSource AncestorType=Window}}"
+                                         Value="{x:Static local:AppPages.About}">
+
+                                <Setter Property="Text"
+                                        Value="{Binding [AboutUs],
+                                Source={StaticResource LanguageService},
+                                Mode=OneWay}" />
+
+                            </DataTrigger>
+
+
+                            <DataTrigger Binding="{Binding CurrentPage,
+                              RelativeSource={RelativeSource AncestorType=Window}}"
+                                         Value="{x:Static local:AppPages.Options}">
+
+                                <Setter Property="Text"
+                                        Value="{Binding [Options],
+                                Source={StaticResource LanguageService},
+                                Mode=OneWay}" />
+
+                            </DataTrigger>
+
+
+                            <DataTrigger Binding="{Binding CurrentPage,
+                              RelativeSource={RelativeSource AncestorType=Window}}"
+                                         Value="{x:Static local:AppPages.Storage}">
+
+                                <Setter Property="Text"
+                                        Value="{Binding [StorageAnalysis],
+                                Source={StaticResource LanguageService},
+                                Mode=OneWay}" />
+
+                            </DataTrigger>
+
+
+                            <DataTrigger Binding="{Binding CurrentPage,
+                              RelativeSource={RelativeSource AncestorType=Window}}"
+                                         Value="{x:Static local:AppPages.Time}">
+
+                                <Setter Property="Text"
+                                        Value="{Binding [TimeSettings],
+                                Source={StaticResource LanguageService},
+                                Mode=OneWay}" />
+
+                            </DataTrigger>
+
+
+                            <DataTrigger Binding="{Binding CurrentPage,
+                              RelativeSource={RelativeSource AncestorType=Window}}"
+                                         Value="{x:Static local:AppPages.Network}">
+
+                                <Setter Property="Text"
+                                        Value="{Binding [NetworkSettings],
+                                Source={StaticResource LanguageService},
+                                Mode=OneWay}" />
+
+                            </DataTrigger>
+
+
+                            <DataTrigger Binding="{Binding CurrentPage,
+                              RelativeSource={RelativeSource AncestorType=Window}}"
+                                         Value="{x:Static local:AppPages.Common}">
+
+                                <Setter Property="Text"
+                                        Value="{Binding [Common],
+                                Source={StaticResource LanguageService},
+                                Mode=OneWay}" />
+
+                            </DataTrigger>
+
+                        </Style.Triggers>
+
+                    </Style>
+                </TextBlock.Style>
+
+            </TextBlock>
 
             <!--Page Content-->
             <ContentPresenter x:Name="container" Grid.Row="2">

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -23,7 +24,7 @@ namespace TVSettingsUI.Windows
     }
 
 
-    public partial class Main : Window
+    public partial class Main : Window, INotifyPropertyChanged
     {
         /// <summary>
         /// init all pages just one time 
@@ -39,6 +40,31 @@ namespace TVSettingsUI.Windows
         public Main()
         {
             InitializeComponent();
+            this.CurrentPage = AppPages.Options;
+        }
+
+        private AppPages _currentPage;
+
+        public AppPages CurrentPage
+        {
+            get => _currentPage;
+            set
+            {
+                if (_currentPage == value)
+                    return;
+
+                _currentPage = value;
+                OnPropertyChanged(nameof(CurrentPage));
+            }
+        }
+
+        public event PropertyChangedEventHandler? PropertyChanged;
+
+        private void OnPropertyChanged(string propertyName)
+        {
+            PropertyChanged?.Invoke(
+                this,
+                new PropertyChangedEventArgs(propertyName));
         }
 
         public void ExecutePage(AppPages page)
@@ -46,33 +72,28 @@ namespace TVSettingsUI.Windows
             backButton.Visibility = Visibility.Visible;
             this.closeButton.Visibility = Visibility.Hidden;
 
+            this.CurrentPage = page;
+
             switch (page)
             {
                 case AppPages.About:
                     container.Content = aboutPage;
-                    titleText.Text = "About Us";
                     break;
                 case AppPages.Options:
                     container.Content = optionsPage;
-                    titleText.Text = "Options";
                     break;
                 case AppPages.Storage:
-                    container.Content = storagePage;
-                    titleText.Text = "Storage Analysis";
-                   
+                    container.Content = storagePage;                   
                     break;
                 case AppPages.Time:
                     container.Content = timePage;
-                    titleText.Text = "Time Settings";
                     break;
                 case AppPages.Network:
                     container.Content = networkPage;
-                    titleText.Text = "Network Settings";
                     break;
 
                 case AppPages.Common:
                     container.Content = commonPage;
-                    titleText.Text = "Common Settings";
                     break;
             }
         }
@@ -83,7 +104,7 @@ namespace TVSettingsUI.Windows
             backButton.Visibility = Visibility.Collapsed;
             this.closeButton.Visibility = Visibility.Visible;
 
-            titleText.Text = "Options";
+            this.CurrentPage = AppPages.Options;
         }
 
         private void closeButton_Click(object sender, RoutedEventArgs e)
