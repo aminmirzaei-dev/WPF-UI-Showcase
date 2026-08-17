@@ -186,6 +186,9 @@
   <data name="NetworkSettings" xml:space="preserve">
     <value>网络设置</value>
   </data>
+  <data name="Options" xml:space="preserve">
+    <value>选项</value>
+  </data>
   <data name="Other" xml:space="preserve">
     <value>其他</value>
   </data>

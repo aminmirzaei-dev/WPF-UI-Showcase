@@ -186,6 +186,9 @@
   <data name="NetworkSettings" xml:space="preserve">
     <value>Network Settings</value>
   </data>
+  <data name="Options" xml:space="preserve">
+    <value>Options</value>
+  </data>
   <data name="Other" xml:space="preserve">
     <value>Other</value>
   </data>

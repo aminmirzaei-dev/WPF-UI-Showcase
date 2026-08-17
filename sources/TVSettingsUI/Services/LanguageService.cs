@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Globalization;
+using System.Reflection;
 using System.Resources;
 using System.Runtime.CompilerServices;
 using System.Text;
@@ -9,9 +10,35 @@ using System.Windows;
 
 namespace TVSettingsUI.Services
 {
+    public static class LanguageOptionsExtension
+    {
+        public static string GetDescription(this Enum value)
+        {
+            FieldInfo ?field = value.GetType().GetField(value.ToString());
+            if (field == null) return value.ToString();
+
+            var attribute = field.GetCustomAttribute<DescriptionAttribute>();
+            return attribute?.Description ?? value.ToString();
+        }
+    }
+
     public class LanguageService : INotifyPropertyChanged
     {
         private readonly ResourceManager _resourceManager;
+
+        public enum LanguageOptions
+        {
+            [Description("en-US")]
+            English,
+            [Description("fa-IR")]
+            Persian,
+            [Description("de-DE")]
+            German,
+            [Description("es-ES")]
+            Spanish,
+            [Description("zh-CN")]
+            Chinese
+        }
 
         public LanguageService()
         {
@@ -28,9 +55,9 @@ namespace TVSettingsUI.Services
             }
         }
 
-        public void ChangeLanguage(string cultureName)
+        public void ChangeLanguage(TVSettingsUI.Services.LanguageService.LanguageOptions languageName)
         {
-            var culture = new CultureInfo(cultureName);
+            var culture = new CultureInfo(languageName.GetDescription());
 
             CultureInfo.CurrentCulture = culture;
             CultureInfo.CurrentUICulture = culture;

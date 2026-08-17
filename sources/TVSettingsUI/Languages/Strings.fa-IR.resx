@@ -186,6 +186,9 @@
   <data name="NetworkSettings" xml:space="preserve">
     <value>تنظیمات شبکه</value>
   </data>
+  <data name="Options" xml:space="preserve">
+    <value>گزینه ها</value>
+  </data>
   <data name="Other" xml:space="preserve">
     <value>سایر</value>
   </data>

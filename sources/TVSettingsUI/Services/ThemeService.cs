@@ -5,7 +5,11 @@ namespace TVSettingsUI.Services
 {
     public class ThemeService
     {
-        public void ApplyTheme(string themeName)
+        public enum ThemeOptions
+        {
+            Blue, Red, Green, Magenta,
+        }
+        public void ApplyTheme(TVSettingsUI.Services.ThemeService.ThemeOptions themeName)
         {
             var theme = new ResourceDictionary
             {
