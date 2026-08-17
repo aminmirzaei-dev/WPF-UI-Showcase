@@ -16,14 +16,10 @@
         <WindowChrome CaptionHeight="0" ResizeBorderThickness="5"/>
     </WindowChrome.WindowChrome>
 
-    <Border  CornerRadius="15" MouseLeftButtonDown="Grid_MouseLeftButtonDown" MouseDown="Grid_MouseDown">
-
-        <Border.Background>
-            <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
-                <GradientStop Color="#2E3967"/>
-                <GradientStop Color="#192559" Offset="1.0"/>
-            </LinearGradientBrush>
-        </Border.Background>
+    <Border Background="{DynamicResource WindowBackColor}"
+            CornerRadius="15"
+            MouseLeftButtonDown="Grid_MouseLeftButtonDown"
+            MouseDown="Grid_MouseDown">
 
         <Grid>
             <Grid.RowDefinitions>
