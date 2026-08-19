@@ -31,7 +31,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Icons\Countries\" />
     <Folder Include="Icons\Application\" />
   </ItemGroup>
 
