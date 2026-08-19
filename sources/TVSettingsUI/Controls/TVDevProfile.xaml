@@ -5,16 +5,16 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:TVSettingsUI.Controls"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             d:DesignHeight="150" d:DesignWidth="500">
     <StackPanel Orientation="Horizontal">
-        <Ellipse Width="150"
-                 Height="150">
+        <Ellipse Width="100"
+                 Height="100">
             <Ellipse.Fill>
                 <ImageBrush ImageSource="/Images/Developer/DevBlue.png"
                             Stretch="UniformToFill" />
             </Ellipse.Fill>
         </Ellipse>
 
-        <TextBlock Text="Created by Amin Mirzaei" />
+        <TextBlock Margin="20,0,0,0" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center" Text="Created by Amin Mirzaei" Foreground="{DynamicResource PrimaryForegroundColor}" />
     </StackPanel>
 </UserControl>
