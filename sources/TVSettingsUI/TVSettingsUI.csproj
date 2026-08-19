@@ -31,7 +31,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Icons\" />
+    <Folder Include="Icons\Countries\" />
+    <Folder Include="Icons\Application\" />
   </ItemGroup>
 
 </Project>
