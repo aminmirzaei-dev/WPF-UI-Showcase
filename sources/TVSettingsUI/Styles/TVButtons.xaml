@@ -3,7 +3,8 @@
 
     <Style x:Key="TVBackButton" TargetType="Button">
         <Setter Property="Background" Value="Transparent" />
-        <Setter Property="Foreground" Value="{DynamicResource TVWindowControlButtonsForeColor}" />
+        <Setter Property="Foreground"
+                Value="{DynamicResource WindowControlButtonForegroundColor}" />
         <Setter Property="Margin" Value="40 0 0 0" />
         <Setter Property="HorizontalAlignment" Value="Left" />
         <Setter Property="VerticalAlignment" Value="Center" />
@@ -23,14 +24,16 @@
 
         <Style.Triggers>
             <Trigger Property="IsMouseOver" Value="True">
-                <Setter Property="Foreground" Value="{DynamicResource TVWindowControlButtonsHoverForeColor}" />
+                <Setter Property="Foreground"
+                        Value="{DynamicResource WindowControlButtonHoverForegroundColor}" />
             </Trigger>
         </Style.Triggers>
     </Style>
 
     <Style x:Key="TVCloseButton" TargetType="Button">
         <Setter Property="Background" Value="Transparent" />
-        <Setter Property="Foreground" Value="{DynamicResource TVWindowControlButtonsForeColor}" />
+        <Setter Property="Foreground"
+                Value="{DynamicResource WindowControlButtonForegroundColor}" />
         <Setter Property="Margin" Value="40 0 0 0" />
         <Setter Property="HorizontalAlignment" Value="Left" />
         <Setter Property="VerticalAlignment" Value="Center" />
@@ -50,7 +53,8 @@
 
         <Style.Triggers>
             <Trigger Property="IsMouseOver" Value="True">
-                <Setter Property="Foreground" Value="{DynamicResource TVWindowControlButtonsHoverForeColor}" />
+                <Setter Property="Foreground"
+                        Value="{DynamicResource WindowControlButtonHoverForegroundColor}" />
             </Trigger>
         </Style.Triggers>
     </Style>
@@ -69,17 +73,17 @@
                 <ControlTemplate TargetType="ToggleButton">
                     <Grid>
                         <Border x:Name="Border"
-                                Background="{DynamicResource TVToggleButtonOffBackColor}"
+                                Background="{DynamicResource ToggleButtonOffBackColor}"
                                 CornerRadius="13"
                                 Width="50"
                                 Height="26"
                                 VerticalAlignment="Center"
                                 HorizontalAlignment="Center"
                                 BorderThickness="1"
-                                BorderBrush="{DynamicResource TVToggleButtonBorderColor}" />
+                                BorderBrush="{DynamicResource ToggleButtonBorderColor}" />
 
                         <Ellipse x:Name="Ellipse"
-                                 Fill="{DynamicResource TVToggleButtonCircleColor}"
+                                 Fill="{DynamicResource ToggleButtonCircleColor}"
                                  Height="24"
                                  Width="24"
                                  Margin="1 0 0 0"
@@ -92,7 +96,7 @@
                                  Value="True">
                             <Setter TargetName="Border"
                                     Property="Background"
-                                    Value="{DynamicResource TVToggleButtonOnBackColor}" />
+                                    Value="{DynamicResource ToggleButtonOnBackColor}" />
 
                             <Trigger.EnterActions>
                                 <BeginStoryboard>
@@ -125,18 +129,10 @@
         <Setter Property="Height"
                 Value="300" />
         <Setter Property="Foreground"
-                Value="#E2E2E4" />
+                Value="{DynamicResource ElementButtonForegroundColor}" />
 
-        <Setter Property="Background">
-            <Setter.Value>
-                <LinearGradientBrush StartPoint="0.5,0"
-                                     EndPoint="0.5,1">
-                    <GradientStop Color="#464F78" />
-                    <GradientStop Color="#323F6C"
-                                  Offset="0.9" />
-                </LinearGradientBrush>
-            </Setter.Value>
-        </Setter>
+        <Setter Property="Background"
+                Value="{DynamicResource ElementButtonBackgroundBrush}" />
 
         <Setter Property="Template">
             <Setter.Value>
@@ -154,9 +150,9 @@
             <Trigger Property="IsMouseOver"
                      Value="True">
                 <Setter Property="Background"
-                        Value="#5F76F6" />
+                        Value="{DynamicResource ElementButtonHoverBackColor}" />
                 <Setter Property="Foreground"
-                        Value="#ffffff" />
+                        Value="{DynamicResource ElementButtonHoverForegroundColor}" />
                 <Setter Property="Height"
                         Value="330" />
             </Trigger>
@@ -164,9 +160,9 @@
             <DataTrigger Binding="{Binding ElementName=tvElement,Path=IsActive}"
                          Value="True">
                 <Setter Property="Background"
-                        Value="#5F76F6" />
+                        Value="{DynamicResource ElementButtonActiveBackColor}" />
                 <Setter Property="Foreground"
-                        Value="#ffffff" />
+                        Value="{DynamicResource ElementButtonActiveForegroundColor}" />
                 <Setter Property="Height"
                         Value="330" />
             </DataTrigger>

@@ -10,11 +10,11 @@
     <StackPanel Orientation="Horizontal" Margin="0 10">
 
         <Border CornerRadius="5" Background="{Binding ElementName=tvStorageDesc,Path=Color}" Width="30" Height="30" Margin="0 0 10 0">
-            <icon:PackIconMaterial Kind="{Binding ElementName=tvStorageDesc,Path=Icon}" Foreground="Black" Width="20" Height="20" 
+            <icon:PackIconMaterial Kind="{Binding ElementName=tvStorageDesc,Path=Icon}" Foreground="{DynamicResource StorageDescriptionIconColor}" Width="20" Height="20" 
         VerticalAlignment="Center" HorizontalAlignment="Center"/>
         </Border>
 
-        <TextBlock Text="{Binding ElementName=tvStorageDesc,Path=Title}" FontSize="18" Foreground="#ffffff"/>
+        <TextBlock Text="{Binding ElementName=tvStorageDesc,Path=Title}" FontSize="18" Foreground="{DynamicResource StorageDescriptionTitleColor}"/>
 
     </StackPanel>
 </UserControl>

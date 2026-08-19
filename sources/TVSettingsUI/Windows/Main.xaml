@@ -16,7 +16,7 @@
         <WindowChrome CaptionHeight="0" ResizeBorderThickness="5"/>
     </WindowChrome.WindowChrome>
 
-    <Border Background="{DynamicResource WindowBackColor}"
+    <Border Background="{DynamicResource WindowBackgroundBrush}"
             CornerRadius="15"
             MouseLeftButtonDown="Grid_MouseLeftButtonDown"
             MouseDown="Grid_MouseDown">

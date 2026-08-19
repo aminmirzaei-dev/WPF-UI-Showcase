@@ -1,29 +1,30 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
     <!-- ============================================================
          Primary Colors
          ============================================================ -->
 
-    <SolidColorBrush x:Key="PrimaryColor">#EF4444</SolidColorBrush>
-    <SolidColorBrush x:Key="PrimaryHoverColor">#F87171</SolidColorBrush>
-    <SolidColorBrush x:Key="PrimaryActiveColor">#DC2626</SolidColorBrush>
+    <SolidColorBrush x:Key="PrimaryColor">#F97316</SolidColorBrush>
+    <SolidColorBrush x:Key="PrimaryHoverColor">#FB923C</SolidColorBrush>
+    <SolidColorBrush x:Key="PrimaryActiveColor">#EA580C</SolidColorBrush>
 
-    <SolidColorBrush x:Key="PrimaryBackColor">#5A2630</SolidColorBrush>
-    <SolidColorBrush x:Key="PrimaryHoverBackColor">#76313B</SolidColorBrush>
-    <SolidColorBrush x:Key="PrimaryActiveBackColor">#EF4444</SolidColorBrush>
+    <SolidColorBrush x:Key="PrimaryBackColor">#63351F</SolidColorBrush>
+    <SolidColorBrush x:Key="PrimaryHoverBackColor">#7D4225</SolidColorBrush>
+    <SolidColorBrush x:Key="PrimaryActiveBackColor">#F97316</SolidColorBrush>
 
-    <SolidColorBrush x:Key="PrimaryBorderColor">#EF4444</SolidColorBrush>
+    <SolidColorBrush x:Key="PrimaryBorderColor">#F97316</SolidColorBrush>
 
 
     <!-- ============================================================
          Background Colors
          ============================================================ -->
 
-    <SolidColorBrush x:Key="WindowBackColor">#241A20</SolidColorBrush>
-    <SolidColorBrush x:Key="PanelBackColor">#38242B</SolidColorBrush>
+    <SolidColorBrush x:Key="WindowBackColor">#281D18</SolidColorBrush>
+    <SolidColorBrush x:Key="PanelBackColor">#3D2A21</SolidColorBrush>
 
-    <SolidColorBrush x:Key="ControlBackColor">#472B34</SolidColorBrush>
-    <SolidColorBrush x:Key="ControlHoverBackColor">#5A333E</SolidColorBrush>
+    <SolidColorBrush x:Key="ControlBackColor">#4A3024</SolidColorBrush>
+    <SolidColorBrush x:Key="ControlHoverBackColor">#60402E</SolidColorBrush>
 
 
     <!-- ============================================================
@@ -48,7 +49,7 @@
     </SolidColorBrush>
 
     <SolidColorBrush x:Key="WindowControlButtonHoverForegroundColor">
-        #FECACA
+        #FED7AA
     </SolidColorBrush>
 
 
@@ -57,15 +58,15 @@
          ============================================================ -->
 
     <SolidColorBrush x:Key="ToggleButtonBorderColor">
-        #EF4444
+        #F97316
     </SolidColorBrush>
 
     <SolidColorBrush x:Key="ToggleButtonOnBackColor">
-        #EF4444
+        #F97316
     </SolidColorBrush>
 
     <SolidColorBrush x:Key="ToggleButtonOffBackColor">
-        #3B252C
+        #38271F
     </SolidColorBrush>
 
     <SolidColorBrush x:Key="ToggleButtonCircleColor">
@@ -73,11 +74,11 @@
     </SolidColorBrush>
 
     <SolidColorBrush x:Key="ToggleButtonContainerBackColor">
-        #472B34
+        #4A3024
     </SolidColorBrush>
 
     <SolidColorBrush x:Key="ToggleButtonContainerHoverBackColor">
-        #713640
+        #71472E
     </SolidColorBrush>
 
 
@@ -94,7 +95,7 @@
     </SolidColorBrush>
 
     <SolidColorBrush x:Key="ElementButtonHoverBackColor">
-        #713640
+        #71472E
     </SolidColorBrush>
 
     <SolidColorBrush x:Key="ElementButtonActiveForegroundColor">
@@ -102,7 +103,7 @@
     </SolidColorBrush>
 
     <SolidColorBrush x:Key="ElementButtonActiveBackColor">
-        #EF4444
+        #F97316
     </SolidColorBrush>
 
 
@@ -162,10 +163,10 @@
                          StartPoint="0.5,0"
                          EndPoint="0.5,1">
 
-        <GradientStop Color="#38242B"
+        <GradientStop Color="#3D2A21"
                       Offset="0" />
 
-        <GradientStop Color="#241A20"
+        <GradientStop Color="#281D18"
                       Offset="1" />
 
     </LinearGradientBrush>
@@ -176,11 +177,12 @@
                          StartPoint="0.5,0"
                          EndPoint="0.5,1">
 
-        <GradientStop Color="#4D3038"
+        <GradientStop Color="#553A2B"
                       Offset="0" />
 
-        <GradientStop Color="#38252C"
+        <GradientStop Color="#3D2B22"
                       Offset="1" />
 
     </LinearGradientBrush>
+
 </ResourceDictionary>

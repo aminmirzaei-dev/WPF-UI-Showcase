@@ -8,12 +8,12 @@
              mc:Ignorable="d" >
     
     <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0 15 15 0">
-        <TextBlock Text="05:34" Foreground="#FDF9F6" FontSize="28" VerticalAlignment="Center"/>
+        <TextBlock Text="05:34" Foreground="{DynamicResource StatusBarTitleColor}" FontSize="28" VerticalAlignment="Center"/>
         <StackPanel Margin="13 0" VerticalAlignment="Center">
-            <TextBlock Text="Nov, 17" Foreground="#F8FEFA" FontSize="10"/>
-            <TextBlock Text="Tuesday" Foreground="#F8FEFA" FontSize="10"/>
+            <TextBlock Text="Nov, 17" Foreground="{DynamicResource StatusBarDateColor}" FontSize="10"/>
+            <TextBlock Text="Tuesday" Foreground="{DynamicResource StatusBarDateColor}" FontSize="10"/>
         </StackPanel>
-        <icons:PackIconMaterial Kind="Wifi" Foreground="#FDF9F6" Width="25" Height="25" VerticalAlignment="Center"/>
+        <icons:PackIconMaterial Kind="Wifi" Foreground="{DynamicResource StatusBarTitleColor}" Width="25" Height="25" VerticalAlignment="Center"/>
     </StackPanel>
     
 </UserControl>
