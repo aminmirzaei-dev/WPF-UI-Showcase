@@ -3,13 +3,15 @@ using System.Windows;
 
 namespace TVSettingsUI.Services
 {
+    public enum ThemeOptions
+    {
+        Blue, Red, Green, Magenta, Orange, Pink
+    }
+
     public class ThemeService
     {
-        public enum ThemeOptions
-        {
-            Blue, Red, Green, Magenta,
-        }
-        public void ApplyTheme(TVSettingsUI.Services.ThemeService.ThemeOptions themeName)
+        
+        public static void ApplyTheme(TVSettingsUI.Services.ThemeOptions themeName)
         {
             var theme = new ResourceDictionary
             {

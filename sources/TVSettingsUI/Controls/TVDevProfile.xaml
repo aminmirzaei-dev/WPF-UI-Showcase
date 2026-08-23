@@ -1,20 +1,122 @@
 ﻿<UserControl x:Class="TVSettingsUI.Controls.TVDevProfile"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:local="clr-namespace:TVSettingsUI.Controls"
-             mc:Ignorable="d" 
-             d:DesignHeight="150" d:DesignWidth="500">
-    <StackPanel Orientation="Horizontal">
-        <Ellipse Width="54"
-                 Height="54">
-            <Ellipse.Fill>
-                <ImageBrush ImageSource="/Images/Developer/DevBlue.png"
-                            Stretch="UniformToFill" />
-            </Ellipse.Fill>
-        </Ellipse>
+             xmlns:serives="clr-namespace:TVSettingsUI.Services"
+             mc:Ignorable="d"
+             d:DesignHeight="150"
+             d:DesignWidth="500">
 
-        <TextBlock Margin="15,0,0,0" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Center" Text="Created by Amin Mirzaei" Foreground="{DynamicResource PrimaryForegroundColor}" />
+    <StackPanel Orientation="Horizontal">
+
+        <!-- Profile Image -->
+        <Grid Width="54"
+              Height="54">
+
+            <!-- Circle Clip -->
+            <Grid.Clip>
+                <EllipseGeometry Center="27,27"
+                                 RadiusX="27"
+                                 RadiusY="27" />
+            </Grid.Clip>
+
+            <Image x:Name="ProfileImage"
+                   Width="54"
+                   Height="54"
+                   Stretch="UniformToFill"
+                   SnapsToDevicePixels="True"
+                   UseLayoutRounding="True"
+                   RenderOptions.BitmapScalingMode="Fant">
+
+                <Image.Style>
+                    <Style TargetType="Image">
+
+                        <!-- Default -->
+                        <Setter Property="Source"
+                                Value="/Images/Developer/DevBlue.png" />
+
+                        <Style.Triggers>
+
+                            <!-- Blue -->
+                            <DataTrigger Binding="{Binding Theme,
+                                                           RelativeSource={RelativeSource AncestorType={x:Type local:TVDevProfile}}}"
+                                         Value="{x:Static serives:ThemeOptions.Blue}">
+
+                                <Setter Property="Source"
+                                        Value="/Images/Developer/DevBlue.png" />
+
+                            </DataTrigger>
+
+                            <!-- Green -->
+                            <DataTrigger Binding="{Binding Theme,
+                                                           RelativeSource={RelativeSource AncestorType={x:Type local:TVDevProfile}}}"
+                                         Value="{x:Static serives:ThemeOptions.Green}">
+
+                                <Setter Property="Source"
+                                        Value="/Images/Developer/DevGreen.png" />
+
+                            </DataTrigger>
+
+                            <!-- Red -->
+                            <DataTrigger Binding="{Binding Theme,
+                                                           RelativeSource={RelativeSource AncestorType={x:Type local:TVDevProfile}}}"
+                                         Value="{x:Static serives:ThemeOptions.Red}">
+
+                                <Setter Property="Source"
+                                        Value="/Images/Developer/DevRed.png" />
+
+                            </DataTrigger>
+
+                            <!-- Orange -->
+                            <DataTrigger Binding="{Binding Theme,
+                                                           RelativeSource={RelativeSource AncestorType={x:Type local:TVDevProfile}}}"
+                                         Value="{x:Static serives:ThemeOptions.Orange}">
+
+                                <Setter Property="Source"
+                                        Value="/Images/Developer/DevOrange.png" />
+
+                            </DataTrigger>
+
+                            <!-- Pink -->
+                            <DataTrigger Binding="{Binding Theme,
+                                                           RelativeSource={RelativeSource AncestorType={x:Type local:TVDevProfile}}}"
+                                         Value="{x:Static serives:ThemeOptions.Pink}">
+
+                                <Setter Property="Source"
+                                        Value="/Images/Developer/DevPink.png" />
+
+                            </DataTrigger>
+
+                            <!-- Magenta -->
+                            <DataTrigger Binding="{Binding Theme,
+                                                           RelativeSource={RelativeSource AncestorType={x:Type local:TVDevProfile}}}"
+                                         Value="{x:Static serives:ThemeOptions.Magenta}">
+
+                                <Setter Property="Source"
+                                        Value="/Images/Developer/DevMagenta.png" />
+
+                            </DataTrigger>
+
+                        </Style.Triggers>
+
+                    </Style>
+                </Image.Style>
+
+            </Image>
+
+        </Grid>
+
+
+        <!-- Text -->
+        <TextBlock Margin="15,0,0,0"
+                   FontSize="16"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   Text="Created by Amin Mirzaei"
+                   Foreground="{DynamicResource PrimaryForegroundColor}" />
+
     </StackPanel>
+
 </UserControl>

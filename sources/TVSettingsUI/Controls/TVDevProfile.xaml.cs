@@ -10,6 +10,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using TVSettingsUI.Services;
 
 namespace TVSettingsUI.Controls
 {
@@ -18,9 +19,17 @@ namespace TVSettingsUI.Controls
     /// </summary>
     public partial class TVDevProfile : UserControl
     {
+        public static readonly DependencyProperty ThemeProperty = DependencyProperty.Register("Theme", typeof(TVSettingsUI.Services.ThemeOptions), typeof(TVDevProfile));
+        public ThemeOptions Theme
+        {
+            get => (ThemeOptions)GetValue(ThemeProperty);
+            set => SetValue(ThemeProperty, value);
+        }
+
         public TVDevProfile()
         {
             InitializeComponent();
+            this.Theme = ThemeOptions.Red;
         }
     }
 }
