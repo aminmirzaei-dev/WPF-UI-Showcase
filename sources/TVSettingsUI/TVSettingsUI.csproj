@@ -58,4 +58,9 @@
     </EmbeddedResource>
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Controls\Custom\" />
+    <Folder Include="Controls\Composite\" />
+  </ItemGroup>
+
 </Project>
