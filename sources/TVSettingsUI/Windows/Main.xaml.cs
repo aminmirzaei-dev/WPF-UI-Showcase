@@ -37,10 +37,15 @@ namespace TVSettingsUI.Windows
         private Pages.Common commonPage = new Pages.Common();
         private bool IsMaximize = false;
 
+        public ThemeService ThemeService { get; } = new ThemeService();
+
         public Main()
         {
             InitializeComponent();
+
             this.CurrentPage = AppPages.Options;
+
+            ThemeService.ApplyTheme(ThemeOptions.Green);
         }
 
         private AppPages _currentPage;

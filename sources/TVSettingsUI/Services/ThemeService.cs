@@ -1,4 +1,6 @@
 ﻿using System;
+using System.ComponentModel;
+using System.Runtime.CompilerServices;
 using System.Windows;
 
 namespace TVSettingsUI.Services
@@ -8,18 +10,42 @@ namespace TVSettingsUI.Services
         Blue, Red, Green, Magenta, Orange, Pink
     }
 
-    public class ThemeService
+    public class ThemeService : INotifyPropertyChanged
     {
-        
-        public static void ApplyTheme(TVSettingsUI.Services.ThemeOptions themeName)
+        public static ThemeService Instance { get; } = new ThemeService();
+
+        private ThemeOptions _currentTheme = ThemeOptions.Blue;
+
+        public ThemeOptions CurrentTheme
+        {
+            get => _currentTheme;
+            private set
+            {
+                if (_currentTheme == value)
+                    return;
+
+                _currentTheme = value;
+                PropertyChanged?.Invoke(
+                    this,
+                    new PropertyChangedEventArgs(nameof(CurrentTheme)));
+            }
+        }
+
+        public void ApplyTheme(ThemeOptions themeName)
         {
             var theme = new ResourceDictionary
             {
-                Source = new Uri($"/TVSettingsUI;component/Themes/{themeName}.xaml", UriKind.Relative)
+                Source = new Uri(
+                    $"/TVSettingsUI;component/Themes/{themeName}.xaml",
+                    UriKind.Relative)
             };
 
             Application.Current.Resources.MergedDictionaries.Clear();
             Application.Current.Resources.MergedDictionaries.Add(theme);
+
+            CurrentTheme = themeName;
         }
+
+        public event PropertyChangedEventHandler? PropertyChanged;
     }
 }

@@ -29,7 +29,6 @@ namespace TVSettingsUI.Controls
         public TVDevProfile()
         {
             InitializeComponent();
-            this.Theme = ThemeOptions.Red;
         }
     }
 }
