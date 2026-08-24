@@ -10,13 +10,8 @@ namespace TVSettingsUI.Services
         Blue, Red, Green, Magenta, Orange, Pink
     }
 
-    public sealed class ThemeService : INotifyPropertyChanged
+    public class ThemeService : INotifyPropertyChanged
     {
-        private static readonly Lazy<ThemeService> _instance =
-            new(() => new ThemeService());
-
-        public static ThemeService Instance => _instance.Value;
-
         private ThemeOptions _currentTheme = ThemeOptions.Blue;
 
         public ThemeOptions CurrentTheme
@@ -33,10 +28,6 @@ namespace TVSettingsUI.Services
                     this,
                     new PropertyChangedEventArgs(nameof(CurrentTheme)));
             }
-        }
-
-        private ThemeService()
-        {
         }
 
         public void ApplyTheme(ThemeOptions themeName)

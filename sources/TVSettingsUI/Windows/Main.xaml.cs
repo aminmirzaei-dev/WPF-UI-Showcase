@@ -43,7 +43,6 @@ namespace TVSettingsUI.Windows
             InitializeComponent();
 
             this.CurrentPage = AppPages.Options;
-
         }
 
         private AppPages _currentPage;
