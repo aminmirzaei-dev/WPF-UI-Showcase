@@ -142,7 +142,10 @@
             <controls:TVDevProfile Grid.Row="2"
                                    HorizontalAlignment="Left"
                                    VerticalAlignment="Bottom"
-                                   Margin="10,0,0,15" />
+                                   Margin="10,0,0,15"
+                                   Theme="{Binding CurrentTheme,
+                    Source={StaticResource ThemeService},
+                    Mode=OneWay}" />
 
         </Grid>
 
