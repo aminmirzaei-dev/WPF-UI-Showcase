@@ -7,6 +7,7 @@
         xmlns:pages="clr-namespace:TVSettingsUI.Pages"
         xmlns:icons="http://metro.mahapps.com/winfx/xaml/iconpacks"
         xmlns:controls="clr-namespace:TVSettingsUI.Controls"
+        xmlns:services="clr-namespace:TVSettingsUI.Services"
         mc:Ignorable="d"
         Title="TV Settings"
         Height="720" Width="1350" MinHeight="700" MinWidth="650" AllowsTransparency="True"
@@ -142,8 +143,8 @@
                                    HorizontalAlignment="Left"
                                    VerticalAlignment="Bottom"
                                    Margin="10,0,0,15"
-                                   Theme="{Binding ThemeService.CurrentTheme,
-                    RelativeSource={RelativeSource AncestorType={x:Type Window}}}" />
+                                   Theme="{Binding CurrentTheme,
+                    Source={x:Static services:ThemeService.Instance}}" />
 
         </Grid>
 
