@@ -1,5 +1,6 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:TVSettingsUI.Controls">
 
     <Style x:Key="TVBackButton" TargetType="Button">
         <Setter Property="Background" Value="Transparent" />
@@ -167,6 +168,110 @@
                         Value="330" />
             </DataTrigger>
         </Style.Triggers>
+    </Style>
+
+    <Style TargetType="{x:Type controls:TVRadioButton}">
+
+        <Setter Property="Width"
+                Value="70" />
+        <Setter Property="Height"
+                Value="70" />
+        <Setter Property="Background"
+                Value="Transparent" />
+        <Setter Property="BorderThickness"
+                Value="0" />
+
+        <Setter Property="Template">
+
+            <Setter.Value>
+
+                <ControlTemplate TargetType="{x:Type controls:TVRadioButton}">
+
+                    <Grid>
+
+                        <!-- Circle -->
+                        <Border x:Name="Circle"
+                                Width="{TemplateBinding Width}"
+                                Height="{TemplateBinding Height}"
+                                Background="{TemplateBinding CircleBackground}"
+                                CornerRadius="1000"
+                                SnapsToDevicePixels="True">
+
+                            <Image Source="{TemplateBinding ImageSource}"
+                                   Stretch="UniformToFill"
+                                   RenderOptions.BitmapScalingMode="HighQuality" />
+                        </Border>
+
+
+                        <!-- Selected Overlay -->
+                        <Border x:Name="SelectedMask"
+                                Width="{TemplateBinding Width}"
+                                Height="{TemplateBinding Height}"
+                                Background="{TemplateBinding SelectionMask}"
+                                CornerRadius="1000"
+                                Visibility="Collapsed"
+                                IsHitTestVisible="False">
+
+                            <TextBlock Text="✓"
+                                       FontSize="30"
+                                       FontWeight="Bold"
+                                       Foreground="{TemplateBinding CheckBrush}"
+                                       HorizontalAlignment="Center"
+                                       VerticalAlignment="Center" />
+                        </Border>
+
+
+                        <!-- Selected Border -->
+                        <Border x:Name="SelectedBorder"
+                                Width="{TemplateBinding Width}"
+                                Height="{TemplateBinding Height}"
+                                Background="Transparent"
+                                BorderBrush="{TemplateBinding SelectionBorderBrush}"
+                                BorderThickness="3"
+                                CornerRadius="1000"
+                                Visibility="Collapsed"
+                                IsHitTestVisible="False" />
+
+
+                        <!-- Mouse / Keyboard -->
+                        <ContentPresenter Content="{TemplateBinding Content}"
+                                          Visibility="Collapsed" />
+
+                    </Grid>
+
+                    <ControlTemplate.Triggers>
+
+                        <!-- Selected -->
+                        <Trigger Property="IsChecked"
+                                 Value="True">
+
+                            <Setter TargetName="SelectedMask"
+                                    Property="Visibility"
+                                    Value="Visible" />
+
+                            <Setter TargetName="SelectedBorder"
+                                    Property="Visibility"
+                                    Value="Visible" />
+
+                        </Trigger>
+
+                        <!-- Disabled -->
+                        <Trigger Property="IsEnabled"
+                                 Value="False">
+
+                            <Setter Property="Opacity"
+                                    Value="0.5" />
+
+                        </Trigger>
+
+                    </ControlTemplate.Triggers>
+
+                </ControlTemplate>
+
+            </Setter.Value>
+
+        </Setter>
+
     </Style>
 
 </ResourceDictionary>

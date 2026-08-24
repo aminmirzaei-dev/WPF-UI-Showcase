@@ -5,16 +5,16 @@ using System.Windows.Controls;
 namespace TVSettingsUI.Controls
 {
     /// <summary>
-    /// Interaction logic for TVToggleButton.xaml
+    /// Interaction logic for TVToggleElement.xaml
     /// </summary>
-    public partial class TVToggleButton : UserControl
+    public partial class TVToggleElement : UserControl
     {
-        public static readonly DependencyProperty TitleProperty = DependencyProperty.Register("Title", typeof(string), typeof(TVToggleButton));
-        public static readonly DependencyProperty HasToggleProperty = DependencyProperty.Register("HasToggle", typeof(bool), typeof(TVToggleButton));
-        public static readonly DependencyProperty IsCheckedProperty = DependencyProperty.Register("IsChecked", typeof(bool), typeof(TVToggleButton));
-        public static readonly DependencyProperty HasTextProperty = DependencyProperty.Register("HasText", typeof(bool), typeof(TVToggleButton));
-        public static readonly DependencyProperty TextProperty = DependencyProperty.Register("Text", typeof(string), typeof(TVToggleButton));
-        public static readonly DependencyProperty IconProperty = DependencyProperty.Register("Icon", typeof(PackIconMaterialKind), typeof(TVToggleButton));
+        public static readonly DependencyProperty TitleProperty = DependencyProperty.Register("Title", typeof(string), typeof(TVToggleElement));
+        public static readonly DependencyProperty HasToggleProperty = DependencyProperty.Register("HasToggle", typeof(bool), typeof(TVToggleElement));
+        public static readonly DependencyProperty IsCheckedProperty = DependencyProperty.Register("IsChecked", typeof(bool), typeof(TVToggleElement));
+        public static readonly DependencyProperty HasTextProperty = DependencyProperty.Register("HasText", typeof(bool), typeof(TVToggleElement));
+        public static readonly DependencyProperty TextProperty = DependencyProperty.Register("Text", typeof(string), typeof(TVToggleElement));
+        public static readonly DependencyProperty IconProperty = DependencyProperty.Register("Icon", typeof(PackIconMaterialKind), typeof(TVToggleElement));
 
         public string Title
         {
@@ -53,7 +53,7 @@ namespace TVSettingsUI.Controls
         }
 
 
-        public TVToggleButton()
+        public TVToggleElement()
         {
             InitializeComponent();
         }
