@@ -1,57 +1,62 @@
 ﻿<UserControl x:Class="TVSettingsUI.Pages.Common"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:local="clr-namespace:TVSettingsUI.Pages"
              xmlns:controls="clr-namespace:TVSettingsUI.Controls"
-             Name="commonPage"
-             >
+             Name="commonPage">
     <StackPanel VerticalAlignment="Center"
                 HorizontalAlignment="Stretch"
                 MaxWidth="800"
                 Margin="50 0">
 
         <controls:TVOptionsElement Title="Themes"
-                                Icon="Palette">
+                                   Icon="Palette">
 
             <controls:TVOptionsElement.Options>
 
 
                 <controls:TVRadioButton Width="60"
-                                     Height="60"
-                                     Margin="5,0"
-                                     CircleBackground="DodgerBlue"
-                                     GroupName="Themes" />
+                                        Height="60"
+                                        Margin="5,0"
+                                        CircleBackground="DodgerBlue"
+                                        Checked="BlueTheme_Checked"
+                                        GroupName="Themes" />
 
                 <controls:TVRadioButton Width="60"
-                                     Height="60"
-                                     Margin="5,0"
-                                     CircleBackground="Green"
-                                     GroupName="Themes" />
+                                        Height="60"
+                                        Margin="5,0"
+                                        CircleBackground="Green"
+                                        Checked="GreenTheme_Checked"
+                                        GroupName="Themes" />
 
                 <controls:TVRadioButton Width="60"
-                                     Height="60"
-                                     Margin="5,0"
-                                     CircleBackground="#E91E63"
-                                     GroupName="Themes" />
+                                        Height="60"
+                                        Margin="5,0"
+                                        CircleBackground="Crimson"
+                                        Checked="RedTheme_Checked"
+                                        GroupName="Themes" />
 
                 <controls:TVRadioButton Width="60"
                                         Height="60"
                                         Margin="5,0"
                                         CircleBackground="SlateBlue"
+                                        Checked="MagentaTheme_Checked"
                                         GroupName="Themes" />
 
                 <controls:TVRadioButton Width="60"
                                         Height="60"
                                         Margin="5,0"
                                         CircleBackground="Orange"
+                                        Checked="OrangeTheme_Checked"
                                         GroupName="Themes" />
 
                 <controls:TVRadioButton Width="60"
                                         Height="60"
                                         Margin="5,0"
                                         CircleBackground="DeepPink"
+                                        Checked="PinkTheme_Checked"
                                         GroupName="Themes" />
 
             </controls:TVOptionsElement.Options>
@@ -67,6 +72,7 @@
                                         Height="60"
                                         Margin="5,0"
                                         ImageSource="/Images/Countries/USA.png"
+                                        Checked="EnglishLanguage_Checked"
                                         GroupName="Languages" />
 
 
@@ -74,24 +80,28 @@
                                         Height="55"
                                         Margin="5,0"
                                         ImageSource="/Images/Countries/Germany.png"
+                                        Checked="GermanLanguage_Checked"
                                         GroupName="Languages" />
 
                 <controls:TVRadioButton Width="60"
                                         Height="60"
                                         Margin="5,0"
                                         ImageSource="/Images/Countries/Spain.png"
+                                        Checked="SpanishLanguage_Checked"
                                         GroupName="Languages" />
 
                 <controls:TVRadioButton Width="60"
                                         Height="60"
                                         Margin="5,0"
                                         ImageSource="/Images/Countries/China.png"
+                                        Checked="ChineseLanguage_Checked"
                                         GroupName="Languages" />
 
                 <controls:TVRadioButton Width="60"
                                         Height="60"
                                         Margin="5,0"
                                         ImageSource="/Images/Countries/Iran.png"
+                                        Checked="PersianLanguage_Checked"
                                         GroupName="Languages" />
 
 
