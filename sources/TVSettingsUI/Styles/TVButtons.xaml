@@ -200,7 +200,8 @@
     </Style>
 
     <Style TargetType="{x:Type controls:TVRadioButton}">
-        <Setter Property="Cursor" Value="Hand" />
+        <Setter Property="Cursor"
+                Value="Hand" />
         <Setter Property="Width"
                 Value="70" />
         <Setter Property="Height"
@@ -211,7 +212,6 @@
                 Value="0" />
 
         <Setter Property="Template">
-
             <Setter.Value>
 
                 <ControlTemplate TargetType="{x:Type controls:TVRadioButton}">
@@ -232,13 +232,44 @@
                         </Border>
 
 
+                        <!-- Hover Glow -->
+                        <Border x:Name="HoverGlow"
+                                Width="{TemplateBinding Width}"
+                                Height="{TemplateBinding Height}"
+                                Background="Transparent"
+                                BorderBrush="{TemplateBinding HoverBrush}"
+                                BorderThickness="2"
+                                CornerRadius="1000"
+                                Opacity="0"
+                                IsHitTestVisible="False">
+
+                            <Border.Effect>
+                                <DropShadowEffect Color="White"
+                                                  BlurRadius="14"
+                                                  ShadowDepth="0"
+                                                  Opacity="0.8" />
+                            </Border.Effect>
+
+                        </Border>
+
+
+                        <!-- Hover Highlight -->
+                        <Border x:Name="HoverHighlight"
+                                Width="{TemplateBinding Width}"
+                                Height="{TemplateBinding Height}"
+                                CornerRadius="1000"
+                                Background="{TemplateBinding HoverBrush}"
+                                Opacity="0"
+                                IsHitTestVisible="False" />
+
+
                         <!-- Selected Overlay -->
                         <Border x:Name="SelectedMask"
                                 Width="{TemplateBinding Width}"
                                 Height="{TemplateBinding Height}"
                                 Background="{TemplateBinding SelectionMask}"
                                 CornerRadius="1000"
-                                Visibility="Collapsed"
+                                Opacity="0"
                                 IsHitTestVisible="False">
 
                             <TextBlock Text="✓"
@@ -258,33 +289,78 @@
                                 BorderBrush="{TemplateBinding SelectionBorderBrush}"
                                 BorderThickness="3"
                                 CornerRadius="1000"
-                                Visibility="Collapsed"
+                                Opacity="0"
                                 IsHitTestVisible="False" />
 
 
-                        <!-- Mouse / Keyboard -->
                         <ContentPresenter Content="{TemplateBinding Content}"
                                           Visibility="Collapsed" />
 
                     </Grid>
 
+
                     <ControlTemplate.Triggers>
 
-                        <!-- Selected -->
+
+                        <Trigger Property="IsMouseOver"
+                                 Value="True">
+
+                            <Trigger.EnterActions>
+                                <BeginStoryboard>
+                                    <Storyboard>
+
+                                        <!-- Glow -->
+                                        <DoubleAnimation Storyboard.TargetName="HoverGlow"
+                                                         Storyboard.TargetProperty="Opacity"
+                                                         To="1"
+                                                         Duration="0:0:0.2" />
+
+                                        <!-- Soft Highlight -->
+                                        <DoubleAnimation Storyboard.TargetName="HoverHighlight"
+                                                         Storyboard.TargetProperty="Opacity"
+                                                         To="0.08"
+                                                         Duration="0:0:0.2" />
+
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </Trigger.EnterActions>
+
+                            <Trigger.ExitActions>
+                                <BeginStoryboard>
+                                    <Storyboard>
+
+                                        <DoubleAnimation Storyboard.TargetName="HoverGlow"
+                                                         Storyboard.TargetProperty="Opacity"
+                                                         To="0"
+                                                         Duration="0:0:0.2" />
+
+                                        <DoubleAnimation Storyboard.TargetName="HoverHighlight"
+                                                         Storyboard.TargetProperty="Opacity"
+                                                         To="0"
+                                                         Duration="0:0:0.2" />
+
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </Trigger.ExitActions>
+
+                        </Trigger>
+
+
+
                         <Trigger Property="IsChecked"
                                  Value="True">
 
                             <Setter TargetName="SelectedMask"
-                                    Property="Visibility"
-                                    Value="Visible" />
+                                    Property="Opacity"
+                                    Value="1" />
 
                             <Setter TargetName="SelectedBorder"
-                                    Property="Visibility"
-                                    Value="Visible" />
+                                    Property="Opacity"
+                                    Value="1" />
 
                         </Trigger>
 
-                        <!-- Disabled -->
+
                         <Trigger Property="IsEnabled"
                                  Value="False">
 
@@ -298,9 +374,7 @@
                 </ControlTemplate>
 
             </Setter.Value>
-
         </Setter>
-
     </Style>
 
 </ResourceDictionary>

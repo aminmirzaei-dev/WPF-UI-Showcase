@@ -15,6 +15,20 @@ namespace TVSettingsUI.Controls
                 new FrameworkPropertyMetadata(typeof(TVRadioButton)));
         }
 
+        public Brush HoverBrush
+        {
+            get => (Brush)GetValue(HoverBrushProperty);
+            set => SetValue(HoverBrushProperty, value);
+        }
+
+        public static readonly DependencyProperty HoverBrushProperty =
+            DependencyProperty.Register(
+                nameof(HoverBrush),
+                typeof(Brush),
+                typeof(TVRadioButton),
+                new PropertyMetadata(
+                    new SolidColorBrush(Color.FromArgb(60, 255, 255, 255))));
+
         public static readonly DependencyProperty ImageSourceProperty =
             DependencyProperty.Register(
                 nameof(ImageSource),
