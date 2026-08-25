@@ -156,6 +156,8 @@
 
     <Style x:Key="TVElementButton"
            TargetType="Button">
+        <Setter Property="Cursor"
+                Value="Hand" />
         <Setter Property="Height"
                 Value="300" />
         <Setter Property="Foreground"

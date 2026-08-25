@@ -17,43 +17,44 @@
             <controls:TVOptionsElement.Options>
 
 
-                <controls:TVRadioButton Width="60"
-                                        Height="60"
+                <controls:TVRadioButton Width="50"
+                                        Height="50"
                                         Margin="5,0"
                                         CircleBackground="DodgerBlue"
+                                        IsChecked="False"
                                         Checked="BlueTheme_Checked"
                                         GroupName="Themes" />
 
-                <controls:TVRadioButton Width="60"
-                                        Height="60"
+                <controls:TVRadioButton Width="50"
+                                        Height="50"
                                         Margin="5,0"
                                         CircleBackground="Green"
                                         Checked="GreenTheme_Checked"
                                         GroupName="Themes" />
 
-                <controls:TVRadioButton Width="60"
-                                        Height="60"
+                <controls:TVRadioButton Width="50"
+                                        Height="50"
                                         Margin="5,0"
                                         CircleBackground="Crimson"
                                         Checked="RedTheme_Checked"
                                         GroupName="Themes" />
 
-                <controls:TVRadioButton Width="60"
-                                        Height="60"
+                <controls:TVRadioButton Width="50"
+                                        Height="50"
                                         Margin="5,0"
                                         CircleBackground="SlateBlue"
                                         Checked="MagentaTheme_Checked"
                                         GroupName="Themes" />
 
-                <controls:TVRadioButton Width="60"
-                                        Height="60"
+                <controls:TVRadioButton Width="50"
+                                        Height="50"
                                         Margin="5,0"
                                         CircleBackground="Orange"
                                         Checked="OrangeTheme_Checked"
                                         GroupName="Themes" />
 
-                <controls:TVRadioButton Width="60"
-                                        Height="60"
+                <controls:TVRadioButton Width="50"
+                                        Height="50"
                                         Margin="5,0"
                                         CircleBackground="DeepPink"
                                         Checked="PinkTheme_Checked"
@@ -73,6 +74,7 @@
                                         Margin="5,0"
                                         ImageSource="/Images/Countries/USA.png"
                                         Checked="EnglishLanguage_Checked"
+                                        IsChecked="True"
                                         GroupName="Languages" />
 
 
