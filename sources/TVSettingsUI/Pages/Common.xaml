@@ -78,8 +78,8 @@
                                         GroupName="Languages" />
 
 
-                <controls:TVRadioButton Width="55"
-                                        Height="55"
+                <controls:TVRadioButton Width="60"
+                                        Height="60"
                                         Margin="5,0"
                                         ImageSource="/Images/Countries/Germany.png"
                                         Checked="GermanLanguage_Checked"
@@ -99,8 +99,8 @@
                                         Checked="ChineseLanguage_Checked"
                                         GroupName="Languages" />
 
-                <controls:TVRadioButton Width="60"
-                                        Height="60"
+                <controls:TVRadioButton Width="55"
+                                        Height="55"
                                         Margin="5,0"
                                         ImageSource="/Images/Countries/Iran.png"
                                         Checked="PersianLanguage_Checked"
