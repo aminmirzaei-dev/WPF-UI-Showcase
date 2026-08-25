@@ -12,7 +12,94 @@
                 MaxWidth="800"
                 Margin="50 0">
 
-     
+        <controls:TVOptionsElement Title="Themes"
+                                Icon="Palette">
+
+            <controls:TVOptionsElement.Options>
+
+
+                <controls:TVRadioButton Width="60"
+                                     Height="60"
+                                     Margin="5,0"
+                                     CircleBackground="DodgerBlue"
+                                     GroupName="Themes" />
+
+                <controls:TVRadioButton Width="60"
+                                     Height="60"
+                                     Margin="5,0"
+                                     CircleBackground="Green"
+                                     GroupName="Themes" />
+
+                <controls:TVRadioButton Width="60"
+                                     Height="60"
+                                     Margin="5,0"
+                                     CircleBackground="#E91E63"
+                                     GroupName="Themes" />
+
+                <controls:TVRadioButton Width="60"
+                                        Height="60"
+                                        Margin="5,0"
+                                        CircleBackground="SlateBlue"
+                                        GroupName="Themes" />
+
+                <controls:TVRadioButton Width="60"
+                                        Height="60"
+                                        Margin="5,0"
+                                        CircleBackground="Orange"
+                                        GroupName="Themes" />
+
+                <controls:TVRadioButton Width="60"
+                                        Height="60"
+                                        Margin="5,0"
+                                        CircleBackground="DeepPink"
+                                        GroupName="Themes" />
+
+            </controls:TVOptionsElement.Options>
+
+        </controls:TVOptionsElement>
+
+        <controls:TVOptionsElement Title="Languages"
+                                   Icon="Earth">
+
+            <controls:TVOptionsElement.Options>
+
+                <controls:TVRadioButton Width="60"
+                                        Height="60"
+                                        Margin="5,0"
+                                        ImageSource="/Images/Countries/USA.png"
+                                        GroupName="Languages" />
+
+
+                <controls:TVRadioButton Width="55"
+                                        Height="55"
+                                        Margin="5,0"
+                                        ImageSource="/Images/Countries/Germany.png"
+                                        GroupName="Languages" />
+
+                <controls:TVRadioButton Width="60"
+                                        Height="60"
+                                        Margin="5,0"
+                                        ImageSource="/Images/Countries/Spain.png"
+                                        GroupName="Languages" />
+
+                <controls:TVRadioButton Width="60"
+                                        Height="60"
+                                        Margin="5,0"
+                                        ImageSource="/Images/Countries/China.png"
+                                        GroupName="Languages" />
+
+                <controls:TVRadioButton Width="60"
+                                        Height="60"
+                                        Margin="5,0"
+                                        ImageSource="/Images/Countries/Iran.png"
+                                        GroupName="Languages" />
+
+
+            </controls:TVOptionsElement.Options>
+
+        </controls:TVOptionsElement>
+
+
 
     </StackPanel>
 </UserControl>

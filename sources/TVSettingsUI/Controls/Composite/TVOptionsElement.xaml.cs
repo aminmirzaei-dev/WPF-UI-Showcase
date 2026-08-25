@@ -1,5 +1,7 @@
-﻿using System;
+﻿using MahApps.Metro.IconPacks;
+using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -22,5 +24,49 @@ namespace TVSettingsUI.Controls
         {
             InitializeComponent();
         }
+
+
+        // =========================================================
+        // Title
+        // =========================================================
+
+        public static readonly DependencyProperty TitleProperty =
+            DependencyProperty.Register(
+                nameof(Title),
+                typeof(string),
+                typeof(TVOptionsElement),
+                new PropertyMetadata(string.Empty));
+
+        public string Title
+        {
+            get => (string)GetValue(TitleProperty);
+            set => SetValue(TitleProperty, value);
+        }
+
+
+        // =========================================================
+        // Icon
+        // =========================================================
+
+        public static readonly DependencyProperty IconProperty =
+            DependencyProperty.Register(
+                nameof(Icon),
+                typeof(PackIconMaterialKind),
+                typeof(TVOptionsElement),
+                new PropertyMetadata(PackIconMaterialKind.Github));
+
+        public PackIconMaterialKind Icon
+        {
+            get => (PackIconMaterialKind)GetValue(IconProperty);
+            set => SetValue(IconProperty, value);
+        }
+
+
+        // =========================================================
+        // Options
+        // =========================================================
+
+        public ObservableCollection<TVRadioButton> Options { get; } =
+            new ObservableCollection<TVRadioButton>();
     }
 }
