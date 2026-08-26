@@ -12,7 +12,8 @@
     <Folder Include="Controls\" />
     <Folder Include="Resources\" />
     <Folder Include="Services\" />
-    <Folder Include="Views\" />
+    <Folder Include="Views\Pages\" />
+    <Folder Include="Views\Windows\" />
   </ItemGroup>
 
 </Project>
