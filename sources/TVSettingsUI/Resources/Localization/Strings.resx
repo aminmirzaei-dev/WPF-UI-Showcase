@@ -171,6 +171,9 @@
   <data name="Iran" xml:space="preserve">
     <value>Iran</value>
   </data>
+  <data name="Languages" xml:space="preserve">
+    <value>Languages</value>
+  </data>
   <data name="MacAddress" xml:space="preserve">
     <value>Mac Address</value>
   </data>
@@ -212,6 +215,9 @@
   </data>
   <data name="Tehran" xml:space="preserve">
     <value>Tehran</value>
+  </data>
+  <data name="Themes" xml:space="preserve">
+    <value>Themes</value>
   </data>
   <data name="TimeSettings" xml:space="preserve">
     <value>Time Settings</value>

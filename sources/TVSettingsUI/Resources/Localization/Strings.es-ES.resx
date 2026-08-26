@@ -171,6 +171,9 @@
   <data name="Iran" xml:space="preserve">
     <value>Irán</value>
   </data>
+  <data name="Languages" xml:space="preserve">
+    <value>Idiomas</value>
+  </data>
   <data name="MacAddress" xml:space="preserve">
     <value>Dirección MAC</value>
   </data>
@@ -205,13 +208,16 @@
     <value>Almacenamiento</value>
   </data>
   <data name="StorageAnalysis" xml:space="preserve">
-    <value>Análisis de almacenamiento</value>
+    <value>Análisis almacenamiento</value>
   </data>
   <data name="System" xml:space="preserve">
     <value>Sistema</value>
   </data>
   <data name="Tehran" xml:space="preserve">
     <value>Teherán</value>
+  </data>
+  <data name="Themes" xml:space="preserve">
+    <value>Temas</value>
   </data>
   <data name="TimeSettings" xml:space="preserve">
     <value>Configuración de hora</value>

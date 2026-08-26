@@ -223,6 +223,15 @@ namespace TVSettingsUI.Resources.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Languages.
+        /// </summary>
+        internal static string Languages {
+            get {
+                return ResourceManager.GetString("Languages", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Mac Address.
         /// </summary>
         internal static string MacAddress {
@@ -345,6 +354,15 @@ namespace TVSettingsUI.Resources.Localization {
         internal static string Tehran {
             get {
                 return ResourceManager.GetString("Tehran", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Themes.
+        /// </summary>
+        internal static string Themes {
+            get {
+                return ResourceManager.GetString("Themes", resourceCulture);
             }
         }
         
