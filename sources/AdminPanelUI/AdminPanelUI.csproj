@@ -10,7 +10,10 @@
 
   <ItemGroup>
     <Folder Include="Controls\" />
-    <Folder Include="Resources\" />
+    <Folder Include="Resources\Images\" />
+    <Folder Include="Resources\Localization\" />
+    <Folder Include="Resources\Themes\" />
+    <Folder Include="Resources\Styles\" />
     <Folder Include="Services\" />
     <Folder Include="Views\Pages\" />
     <Folder Include="Views\Windows\" />
