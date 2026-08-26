@@ -157,7 +157,7 @@
                            Style="{StaticResource aboutText}" />
                 <TextBlock Text="Amin Mirzaei"
                            Style="{StaticResource aboutText}" />
-                <TextBlock Text="aminmirzaei@gmail.com"
+                <TextBlock Text="aminmirzaeidev@gmail.com"
                            Style="{StaticResource aboutText}" />
                 <TextBlock Text="aminmirzaei-dev"
                            Style="{StaticResource aboutText}" />
