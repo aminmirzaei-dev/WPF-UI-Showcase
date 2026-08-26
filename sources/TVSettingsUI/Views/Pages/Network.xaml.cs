@@ -11,7 +11,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace TVSettingsUI.Pages
+namespace TVSettingsUI.Views.Pages
 {
     /// <summary>
     /// Interaction logic for Network.xaml

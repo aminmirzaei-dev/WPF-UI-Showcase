@@ -12,7 +12,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using TVSettingsUI.Services;
 
-namespace TVSettingsUI.Windows
+namespace TVSettingsUI.Views.Windows
 {
     /// <summary>
     /// Interaction logic for Main.xaml
@@ -29,12 +29,12 @@ namespace TVSettingsUI.Windows
         /// <summary>
         /// init all pages just one time 
         /// </summary>
-        private Pages.Options optionsPage = new Pages.Options();
-        private Pages.About aboutPage = new Pages.About();
-        private Pages.Storage storagePage = new Pages.Storage();
-        private Pages.Time timePage = new Pages.Time();
-        private Pages.Network networkPage = new Pages.Network();
-        private Pages.Common commonPage = new Pages.Common();
+        private Views.Pages.Options optionsPage = new Views.Pages.Options();
+        private Views.Pages.About aboutPage = new Views.Pages.About();
+        private Views.Pages.Storage storagePage = new Views.Pages.Storage();
+        private Views.Pages.Time timePage = new Views.Pages.Time();
+        private Views.Pages.Network networkPage = new Views.Pages.Network();
+        private Views.Pages.Common commonPage = new Views.Pages.Common();
         private bool IsMaximize = false;
 
 

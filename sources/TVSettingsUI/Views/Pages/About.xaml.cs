@@ -12,7 +12,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using TVSettingsUI.Services;
 
-namespace TVSettingsUI.Pages
+namespace TVSettingsUI.Views.Pages
 {
     /// <summary>
     /// Interaction logic for About.xaml

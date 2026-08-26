@@ -1,8 +1,8 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
-using TVSettingsUI.Windows;
+using TVSettingsUI.Views.Windows;
 
-namespace TVSettingsUI.Pages
+namespace TVSettingsUI.Views.Pages
 {
     /// <summary>
     /// Interaction logic for Options.xaml
@@ -16,7 +16,7 @@ namespace TVSettingsUI.Pages
             InitializeComponent();
         }
 
-        private TVSettingsUI.Windows.Main window;
+        private TVSettingsUI.Views.Windows.Main window;
 
         private void LoadWindow()
         {
