@@ -44,7 +44,7 @@ namespace TVSettingsUI.Services
 
         public LanguageService()
         {
-            _resourceManager = Languages.Strings.ResourceManager;
+            _resourceManager = TVSettingsUI.Resources.Localization.Strings.ResourceManager;
         }
 
         public string this[string key]

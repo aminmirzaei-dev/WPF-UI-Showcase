@@ -48,7 +48,7 @@ namespace TVSettingsUI.Services
             var newTheme = new ResourceDictionary
             {
                 Source = new Uri(
-                    $"/TVSettingsUI;component/Themes/{themeName}.xaml",
+                    $"/TVSettingsUI;component/Resources/Themes/{themeName}.xaml",
                     UriKind.Relative)
             };
 

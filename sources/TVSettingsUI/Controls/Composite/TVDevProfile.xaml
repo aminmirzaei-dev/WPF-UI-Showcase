@@ -35,7 +35,7 @@
 
                         <!-- Default -->
                         <Setter Property="Source"
-                                Value="/Images/Developer/DevBlue.png" />
+                                Value="/Resources/Images/Developer/DevBlue.png" />
 
                         <Style.Triggers>
 
@@ -45,7 +45,7 @@
                                          Value="{x:Static serives:ThemeOptions.Blue}">
 
                                 <Setter Property="Source"
-                                        Value="/Images/Developer/DevBlue.png" />
+                                        Value="/Resources/Images/Developer/DevBlue.png" />
 
                             </DataTrigger>
 
@@ -55,7 +55,7 @@
                                          Value="{x:Static serives:ThemeOptions.Green}">
 
                                 <Setter Property="Source"
-                                        Value="/Images/Developer/DevGreen.png" />
+                                        Value="/Resources/Images/Developer/DevGreen.png" />
 
                             </DataTrigger>
 
@@ -65,7 +65,7 @@
                                          Value="{x:Static serives:ThemeOptions.Red}">
 
                                 <Setter Property="Source"
-                                        Value="/Images/Developer/DevRed.png" />
+                                        Value="/Resources/Images/Developer/DevRed.png" />
 
                             </DataTrigger>
 
@@ -75,7 +75,7 @@
                                          Value="{x:Static serives:ThemeOptions.Orange}">
 
                                 <Setter Property="Source"
-                                        Value="/Images/Developer/DevOrange.png" />
+                                        Value="/Resources/Images/Developer/DevOrange.png" />
 
                             </DataTrigger>
 
@@ -85,7 +85,7 @@
                                          Value="{x:Static serives:ThemeOptions.Pink}">
 
                                 <Setter Property="Source"
-                                        Value="/Images/Developer/DevPink.png" />
+                                        Value="/Resources/Images/Developer/DevPink.png" />
 
                             </DataTrigger>
 
@@ -95,7 +95,7 @@
                                          Value="{x:Static serives:ThemeOptions.Magenta}">
 
                                 <Setter Property="Source"
-                                        Value="/Images/Developer/DevMagenta.png" />
+                                        Value="/Resources/Images/Developer/DevMagenta.png" />
 
                             </DataTrigger>
 

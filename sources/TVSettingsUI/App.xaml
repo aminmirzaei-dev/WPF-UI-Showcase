@@ -15,10 +15,10 @@
             
             
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="Styles/TVButtons.xaml"/>
-                <ResourceDictionary Source="Styles/TVTextBlocks.xaml" />
-                <ResourceDictionary Source="Styles/TVScrollBars.xaml" />
-                <ResourceDictionary Source="Themes/Blue.xaml"/>
+                <ResourceDictionary Source="Resources/Styles/TVButtons.xaml"/>
+                <ResourceDictionary Source="Resources/Styles/TVTextBlocks.xaml" />
+                <ResourceDictionary Source="Resources/Styles/TVScrollBars.xaml" />
+                <ResourceDictionary Source="Resources/Themes/Blue.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

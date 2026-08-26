@@ -72,7 +72,7 @@
                 <controls:TVRadioButton Width="60"
                                         Height="60"
                                         Margin="5,0"
-                                        ImageSource="/Images/Countries/USA.png"
+                                        ImageSource="/Resources/Images/Countries/USA.png"
                                         Checked="EnglishLanguage_Checked"
                                         IsChecked="True"
                                         GroupName="Languages" />
@@ -81,28 +81,28 @@
                 <controls:TVRadioButton Width="60"
                                         Height="60"
                                         Margin="5,0"
-                                        ImageSource="/Images/Countries/Germany.png"
+                                        ImageSource="/Resources/Images/Countries/Germany.png"
                                         Checked="GermanLanguage_Checked"
                                         GroupName="Languages" />
 
                 <controls:TVRadioButton Width="60"
                                         Height="60"
                                         Margin="5,0"
-                                        ImageSource="/Images/Countries/Spain.png"
+                                        ImageSource="/Resources/Images/Countries/Spain.png"
                                         Checked="SpanishLanguage_Checked"
                                         GroupName="Languages" />
 
                 <controls:TVRadioButton Width="60"
                                         Height="60"
                                         Margin="5,0"
-                                        ImageSource="/Images/Countries/China.png"
+                                        ImageSource="/Resources/Images/Countries/China.png"
                                         Checked="ChineseLanguage_Checked"
                                         GroupName="Languages" />
 
                 <controls:TVRadioButton Width="55"
                                         Height="55"
                                         Margin="5,0"
-                                        ImageSource="/Images/Countries/Iran.png"
+                                        ImageSource="/Resources/Images/Countries/Iran.png"
                                         Checked="PersianLanguage_Checked"
                                         GroupName="Languages" />
 

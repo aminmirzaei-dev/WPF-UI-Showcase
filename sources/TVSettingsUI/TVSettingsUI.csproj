@@ -10,17 +10,17 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Images\Countries\China.png" />
-    <None Remove="Images\Countries\Germany.png" />
-    <None Remove="Images\Countries\Iran.png" />
-    <None Remove="Images\Countries\Spain.png" />
-    <None Remove="Images\Countries\USA.png" />
-    <None Remove="Images\Developer\DevBlue.png" />
-    <None Remove="Images\Developer\DevGreen.png" />
-    <None Remove="Images\Developer\DevMagenta.png" />
-    <None Remove="Images\Developer\DevOrange.png" />
-    <None Remove="Images\Developer\DevPink.png" />
-    <None Remove="Images\Developer\DevRed.png" />
+    <None Remove="Resources\Images\Countries\China.png" />
+    <None Remove="Resources\Images\Countries\Germany.png" />
+    <None Remove="Resources\Images\Countries\Iran.png" />
+    <None Remove="Resources\Images\Countries\Spain.png" />
+    <None Remove="Resources\Images\Countries\USA.png" />
+    <None Remove="Resources\Images\Developer\DevBlue.png" />
+    <None Remove="Resources\Images\Developer\DevGreen.png" />
+    <None Remove="Resources\Images\Developer\DevMagenta.png" />
+    <None Remove="Resources\Images\Developer\DevOrange.png" />
+    <None Remove="Resources\Images\Developer\DevPink.png" />
+    <None Remove="Resources\Images\Developer\DevRed.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -35,21 +35,21 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Images\Countries\China.png" />
-    <Resource Include="Images\Countries\Germany.png" />
-    <Resource Include="Images\Countries\Iran.png" />
-    <Resource Include="Images\Countries\Spain.png" />
-    <Resource Include="Images\Countries\USA.png" />
-    <Resource Include="Images\Developer\DevBlue.png" />
-    <Resource Include="Images\Developer\DevGreen.png" />
-    <Resource Include="Images\Developer\DevMagenta.png" />
-    <Resource Include="Images\Developer\DevOrange.png" />
-    <Resource Include="Images\Developer\DevPink.png" />
-    <Resource Include="Images\Developer\DevRed.png" />
+    <Resource Include="Resources\Images\Countries\China.png" />
+    <Resource Include="Resources\Images\Countries\Germany.png" />
+    <Resource Include="Resources\Images\Countries\Iran.png" />
+    <Resource Include="Resources\Images\Countries\Spain.png" />
+    <Resource Include="Resources\Images\Countries\USA.png" />
+    <Resource Include="Resources\Images\Developer\DevBlue.png" />
+    <Resource Include="Resources\Images\Developer\DevGreen.png" />
+    <Resource Include="Resources\Images\Developer\DevMagenta.png" />
+    <Resource Include="Resources\Images\Developer\DevOrange.png" />
+    <Resource Include="Resources\Images\Developer\DevPink.png" />
+    <Resource Include="Resources\Images\Developer\DevRed.png" />
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Localization\Strings.Designer.cs">
+    <Compile Update="Resources\Localization\Strings.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>Strings.resx</DependentUpon>
@@ -57,14 +57,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="Localization\Strings.resx">
+    <EmbeddedResource Update="Resources\Localization\Strings.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Strings.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Resources\" />
   </ItemGroup>
 
 </Project>
