@@ -9,14 +9,16 @@ namespace TVSettingsUI.Services
     {
         Blue, Red, Green, Magenta, Orange, Pink
     }
-
     public class ThemeService : INotifyPropertyChanged
     {
         private ThemeOptions _currentTheme = ThemeOptions.Blue;
 
+        private ResourceDictionary? _currentThemeDictionary;
+
         public ThemeOptions CurrentTheme
         {
             get => _currentTheme;
+
             private set
             {
                 if (_currentTheme == value)
@@ -30,17 +32,37 @@ namespace TVSettingsUI.Services
             }
         }
 
+        public ThemeService()
+        {
+            _currentThemeDictionary =
+                Application.Current.Resources.MergedDictionaries
+                    .FirstOrDefault(d =>
+                        d.Source?.OriginalString.Contains("/Themes/") == true);
+        }
+
         public void ApplyTheme(ThemeOptions themeName)
         {
-            var theme = new ResourceDictionary
+            if (CurrentTheme == themeName)
+                return;
+
+            var newTheme = new ResourceDictionary
             {
                 Source = new Uri(
                     $"/TVSettingsUI;component/Themes/{themeName}.xaml",
                     UriKind.Relative)
             };
 
-            Application.Current.Resources.MergedDictionaries.Clear();
-            Application.Current.Resources.MergedDictionaries.Add(theme);
+            var dictionaries =
+                Application.Current.Resources.MergedDictionaries;
+
+            if (_currentThemeDictionary != null)
+            {
+                dictionaries.Remove(_currentThemeDictionary);
+            }
+
+            dictionaries.Add(newTheme);
+
+            _currentThemeDictionary = newTheme;
 
             CurrentTheme = themeName;
         }
