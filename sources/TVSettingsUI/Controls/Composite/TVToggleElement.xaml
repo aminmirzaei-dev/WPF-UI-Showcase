@@ -12,7 +12,11 @@
         <BooleanToVisibilityConverter x:Key="BoolToVis"/>
     </UserControl.Resources>
 
-    <Border  CornerRadius="5" Padding="20" Margin="0 5">
+    <Border  CornerRadius="5"
+             Padding="20"
+             Margin="0 5"
+             FlowDirection="{Binding FlowDirection,
+    Source={StaticResource LocalizationService}}">
 
         <Border.Style>
             <Style TargetType="Border">
