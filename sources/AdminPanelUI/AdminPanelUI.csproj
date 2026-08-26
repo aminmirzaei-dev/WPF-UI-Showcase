@@ -17,7 +17,6 @@
     <Folder Include="Resources\Styles\" />
     <Folder Include="Services\" />
     <Folder Include="Views\Pages\" />
-    <Folder Include="Views\Windows\" />
   </ItemGroup>
 
 </Project>
