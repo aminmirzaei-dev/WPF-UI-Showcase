@@ -15,7 +15,6 @@
     <Folder Include="Resources\Localization\" />
     <Folder Include="Resources\Themes\" />
     <Folder Include="Resources\Styles\" />
-    <Folder Include="Services\" />
   </ItemGroup>
 
 </Project>
