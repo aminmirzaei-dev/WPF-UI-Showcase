@@ -6,6 +6,7 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
+    <ApplicationIcon>TVSettingsIcon.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
@@ -20,6 +21,10 @@
     <None Remove="Images\Developer\DevOrange.png" />
     <None Remove="Images\Developer\DevPink.png" />
     <None Remove="Images\Developer\DevRed.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="TVSettingsIcon.ico" />
   </ItemGroup>
 
   <ItemGroup>
@@ -56,6 +61,10 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Strings.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Views\" />
   </ItemGroup>
 
 </Project>
