@@ -61,7 +61,7 @@
 
                                 <Setter Property="Text"
                                         Value="{Binding [AboutUs],
-                                Source={StaticResource LanguageService},
+                                Source={StaticResource LocalizationService},
                                 Mode=OneWay}" />
 
                             </DataTrigger>
@@ -73,7 +73,7 @@
 
                                 <Setter Property="Text"
                                         Value="{Binding [Options],
-                                Source={StaticResource LanguageService},
+                                Source={StaticResource LocalizationService},
                                 Mode=OneWay}" />
 
                             </DataTrigger>
@@ -85,7 +85,7 @@
 
                                 <Setter Property="Text"
                                         Value="{Binding [StorageAnalysis],
-                                Source={StaticResource LanguageService},
+                                Source={StaticResource LocalizationService},
                                 Mode=OneWay}" />
 
                             </DataTrigger>
@@ -97,7 +97,7 @@
 
                                 <Setter Property="Text"
                                         Value="{Binding [TimeSettings],
-                                Source={StaticResource LanguageService},
+                                Source={StaticResource LocalizationService},
                                 Mode=OneWay}" />
 
                             </DataTrigger>
@@ -109,7 +109,7 @@
 
                                 <Setter Property="Text"
                                         Value="{Binding [NetworkSettings],
-                                Source={StaticResource LanguageService},
+                                Source={StaticResource LocalizationService},
                                 Mode=OneWay}" />
 
                             </DataTrigger>
@@ -121,7 +121,7 @@
 
                                 <Setter Property="Text"
                                         Value="{Binding [Common],
-                                Source={StaticResource LanguageService},
+                                Source={StaticResource LocalizationService},
                                 Mode=OneWay}" />
 
                             </DataTrigger>

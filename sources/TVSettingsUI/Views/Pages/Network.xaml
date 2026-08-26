@@ -10,18 +10,18 @@
 
         <controls:TVToggleElement Icon="Wifi"
                                  Title="{Binding [EnableWiFi],
-           Source={StaticResource LanguageService},
+           Source={StaticResource LocalizationService},
            Mode=OneWay}" HasToggle="True" IsChecked="True"/>
         <controls:TVToggleElement Title="         Network SDN-1" HasText="True" HasToggle="False" Text="...  "/>
         <controls:TVToggleElement Title="         Network SDN-2" HasText="True" HasToggle="False" Text="...  "/>
         <controls:TVToggleElement Title="         Network SDN-3" HasText="True" HasToggle="False" Text="...  "/>
         <controls:TVToggleElement Icon="WifiPlus"
                                  Title="{Binding [EnableHotspot],
-           Source={StaticResource LanguageService},
+           Source={StaticResource LocalizationService},
            Mode=OneWay}" HasToggle="True"/>
         <controls:TVToggleElement Icon="Lan"
                                  Title="{Binding [MacAddress],
-           Source={StaticResource LanguageService},
+           Source={StaticResource LocalizationService},
            Mode=OneWay}"/>
     </StackPanel>
 </UserControl>

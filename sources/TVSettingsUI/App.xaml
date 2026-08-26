@@ -6,19 +6,17 @@
              StartupUri="Views/Windows/Main.xaml">
     <Application.Resources>
         <ResourceDictionary>
-            
-            <services:LanguageService
-                x:Key="LanguageService" />
 
-            <services:ThemeService
-                x:Key="ThemeService" />
-            
-            
+            <services:LocalizationService x:Key="LocalizationService" />
+
+            <services:ThemeService x:Key="ThemeService" />
+
+
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="Resources/Styles/TVButtons.xaml"/>
+                <ResourceDictionary Source="Resources/Styles/TVButtons.xaml" />
                 <ResourceDictionary Source="Resources/Styles/TVTextBlocks.xaml" />
                 <ResourceDictionary Source="Resources/Styles/TVScrollBars.xaml" />
-                <ResourceDictionary Source="Resources/Themes/Blue.xaml"/>
+                <ResourceDictionary Source="Resources/Themes/Blue.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

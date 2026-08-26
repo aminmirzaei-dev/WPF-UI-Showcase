@@ -13,30 +13,30 @@
 
         <controls:TVToggleElement Icon="AutoMode"
                                  Title="{Binding [AutoAttach],
-           Source={StaticResource LanguageService},
+           Source={StaticResource LocalizationService},
            Mode=OneWay}"
                                  HasToggle="True"
                                  IsChecked="True" />
         <controls:TVToggleElement Icon="Map"
                                  Title="{Binding [TimeZone],
-           Source={StaticResource LanguageService},
+           Source={StaticResource LocalizationService},
            Mode=OneWay}"
                                  HasText="True"
                                  HasToggle="False"
                                  Text="GMT +02:00, Eastern Eu..." />
         <controls:TVToggleElement Icon="WeatherSunny"
                                  Title="{Binding [DaylightSaving],
-           Source={StaticResource LanguageService},
+           Source={StaticResource LocalizationService},
            Mode=OneWay}"
                                  HasToggle="True" />
         <controls:TVToggleElement Icon="Clock"
                                  Title="{Binding [TimeFormat],
-           Source={StaticResource LanguageService},
+           Source={StaticResource LocalizationService},
            Mode=OneWay}"
                                  HasToggle="True" />
         <controls:TVToggleElement Icon="More"
                                  Title="{Binding [More],
-           Source={StaticResource LanguageService},
+           Source={StaticResource LocalizationService},
            Mode=OneWay}" />
 
     </StackPanel>

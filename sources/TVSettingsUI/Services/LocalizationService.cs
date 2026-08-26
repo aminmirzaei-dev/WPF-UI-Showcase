@@ -24,25 +24,27 @@ namespace TVSettingsUI.Services
         }
     }
 
-    public class LanguageService : INotifyPropertyChanged
+    public enum LanguageOptions
+    {
+        [Description("en-US")]
+        English,
+        [Description("fa-IR")]
+        Persian,
+        [Description("de-DE")]
+        German,
+        [Description("es-ES")]
+        Spanish,
+        [Description("zh-CN")]
+        Chinese
+    }
+
+    public class LocalizationService : INotifyPropertyChanged
     {
         private readonly ResourceManager _resourceManager;
 
-        public enum LanguageOptions
-        {
-            [Description("en-US")]
-            English,
-            [Description("fa-IR")]
-            Persian,
-            [Description("de-DE")]
-            German,
-            [Description("es-ES")]
-            Spanish,
-            [Description("zh-CN")]
-            Chinese
-        }
+        
 
-        public LanguageService()
+        public LocalizationService()
         {
             _resourceManager = TVSettingsUI.Resources.Localization.Strings.ResourceManager;
         }
@@ -57,7 +59,7 @@ namespace TVSettingsUI.Services
             }
         }
 
-        public void ChangeLanguage(TVSettingsUI.Services.LanguageService.LanguageOptions languageName)
+        public void ChangeLanguage(TVSettingsUI.Services.LanguageOptions languageName)
         {
             var culture = new CultureInfo(languageName.GetDescription());
 
