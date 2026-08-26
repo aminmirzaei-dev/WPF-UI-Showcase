@@ -219,6 +219,9 @@
   <data name="Themes" xml:space="preserve">
     <value>Themes</value>
   </data>
+  <data name="TimeFormat" xml:space="preserve">
+    <value>Time Format</value>
+  </data>
   <data name="TimeSettings" xml:space="preserve">
     <value>Time Settings</value>
   </data>

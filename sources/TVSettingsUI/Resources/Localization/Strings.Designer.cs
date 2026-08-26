@@ -367,6 +367,15 @@ namespace TVSettingsUI.Resources.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Time Format.
+        /// </summary>
+        internal static string TimeFormat {
+            get {
+                return ResourceManager.GetString("TimeFormat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Time Settings.
         /// </summary>
         internal static string TimeSettings {

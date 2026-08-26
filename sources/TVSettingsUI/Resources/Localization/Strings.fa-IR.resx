@@ -219,6 +219,9 @@
   <data name="Themes" xml:space="preserve">
     <value>پوسته ها</value>
   </data>
+  <data name="TimeFormat" xml:space="preserve">
+    <value>فرمت زمان</value>
+  </data>
   <data name="TimeSettings" xml:space="preserve">
     <value>تنظیمات زمان</value>
   </data>
