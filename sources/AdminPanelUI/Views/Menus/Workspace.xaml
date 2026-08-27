@@ -75,27 +75,18 @@
 
             <Button Style="{StaticResource menuButton}">
                 <StackPanel Orientation="Horizontal">
-                    <icons:IconImage Icon="Coins"
-                                  Style="{StaticResource menuButtonIcon}" />
-                    <TextBlock Text="Revenue"
-                               Style="{StaticResource menuButtonText}" />
-                </StackPanel>
-            </Button>
-
-            <Button Style="{StaticResource menuButton}">
-                <StackPanel Orientation="Horizontal">
-                    <icons:IconImage Icon="FlagCheckered"
-                                  Style="{StaticResource menuButtonIcon}" />
-                    <TextBlock Text="Promote"
-                               Style="{StaticResource menuButtonText}" />
-                </StackPanel>
-            </Button>
-
-            <Button Style="{StaticResource menuButton}">
-                <StackPanel Orientation="Horizontal">
                     <icons:IconImage Icon="Cog"
                                   Style="{StaticResource menuButtonIcon}" />
                     <TextBlock Text="Settings"
+                               Style="{StaticResource menuButtonText}" />
+                </StackPanel>
+            </Button>
+
+            <Button Style="{StaticResource menuButton}">
+                <StackPanel Orientation="Horizontal">
+                    <icons:IconImage Icon="User"
+                                     Style="{StaticResource menuButtonIcon}" />
+                    <TextBlock Text="About Us"
                                Style="{StaticResource menuButtonText}" />
                 </StackPanel>
             </Button>
