@@ -4,9 +4,113 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:AdminPanelUI.Views.Menus"
-             mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
-            
-    </Grid>
+             xmlns:controls="clr-namespace:AdminPanelUI.Controls.Composite"
+             xmlns:icons="http://schemas.awesome.incremented/wpf/xaml/fontawesome.sharp"
+             mc:Ignorable="d">
+    
+    <Border CornerRadius="10 0 0 10">
+        <Border.Background>
+            <LinearGradientBrush StartPoint="0.5,0"
+                                 EndPoint="0.5,1">
+                <GradientStop Color="#223266"
+                              Offset="0" />
+                <GradientStop Color="#27376B"
+                              Offset="1" />
+            </LinearGradientBrush>
+        </Border.Background>
+
+        <StackPanel>
+            <!--Username-->
+            <controls:UserProfile />
+
+            <Separator Height="0.8"
+                       Background="#46558a"
+                       Margin="20 30 20 30" />
+
+            <!--Menu Buttons-->
+            <Button Style="{StaticResource menuButtonActive}">
+                <StackPanel Orientation="Horizontal">
+                    <icons:IconImage Icon="Home"
+                                  Style="{StaticResource menuButtonIcon}" />
+                    <TextBlock Text="Dashboard"
+                               Style="{StaticResource menuButtonText}" />
+                </StackPanel>
+            </Button>
+
+            <Button Style="{StaticResource menuButton}">
+                <StackPanel Orientation="Horizontal">
+                    <icons:IconImage Icon="FileSignature"
+                                  Style="{StaticResource menuButtonIcon}" />
+                    <TextBlock Text="Listing"
+                               Style="{StaticResource menuButtonText}" />
+                </StackPanel>
+            </Button>
+
+            <Button Style="{StaticResource menuButton}">
+                <StackPanel Orientation="Horizontal">
+                    <icons:IconImage Icon="EnvelopeOpenText"
+                                  Style="{StaticResource menuButtonIcon}" />
+                    <TextBlock Text="Messages"
+                               Style="{StaticResource menuButtonText}" />
+                </StackPanel>
+            </Button>
+
+            <Button Style="{StaticResource menuButton}">
+                <StackPanel Orientation="Horizontal">
+                    <icons:IconImage Icon="ShoppingCart"
+                                  Style="{StaticResource menuButtonIcon}" />
+                    <TextBlock Text="Orders"
+                               Style="{StaticResource menuButtonText}" />
+                </StackPanel>
+            </Button>
+
+            <Button Style="{StaticResource menuButton}">
+                <StackPanel Orientation="Horizontal">
+                    <icons:IconImage Icon="ChartArea"
+                                  Style="{StaticResource menuButtonIcon}" />
+                    <TextBlock Text="Statistics"
+                               Style="{StaticResource menuButtonText}" />
+                </StackPanel>
+            </Button>
+
+            <Button Style="{StaticResource menuButton}">
+                <StackPanel Orientation="Horizontal">
+                    <icons:IconImage Icon="Coins"
+                                  Style="{StaticResource menuButtonIcon}" />
+                    <TextBlock Text="Revenue"
+                               Style="{StaticResource menuButtonText}" />
+                </StackPanel>
+            </Button>
+
+            <Button Style="{StaticResource menuButton}">
+                <StackPanel Orientation="Horizontal">
+                    <icons:IconImage Icon="FlagCheckered"
+                                  Style="{StaticResource menuButtonIcon}" />
+                    <TextBlock Text="Promote"
+                               Style="{StaticResource menuButtonText}" />
+                </StackPanel>
+            </Button>
+
+            <Button Style="{StaticResource menuButton}">
+                <StackPanel Orientation="Horizontal">
+                    <icons:IconImage Icon="Cog"
+                                  Style="{StaticResource menuButtonIcon}" />
+                    <TextBlock Text="Settings"
+                               Style="{StaticResource menuButtonText}" />
+                </StackPanel>
+            </Button>
+
+            <Button x:Name="btnExit"
+                    Style="{StaticResource menuButton}"
+                    Click="btnExit_Click">
+                <StackPanel Orientation="Horizontal">
+                    <icons:IconImage Icon="PowerOff"
+                                  Style="{StaticResource menuButtonIcon}" />
+                    <TextBlock Text="Logout"
+                               Style="{StaticResource menuButtonText}" />
+                </StackPanel>
+            </Button>
+
+        </StackPanel>
+    </Border>
 </UserControl>

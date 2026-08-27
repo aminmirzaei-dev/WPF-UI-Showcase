@@ -1,0 +1,45 @@
+﻿<UserControl x:Class="AdminPanelUI.Controls.Composite.UserProfile"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:AdminPanelUI.Controls.Composite"
+             mc:Ignorable="d" 
+            >
+    <StackPanel Orientation="Horizontal"
+                HorizontalAlignment="Center"
+                Margin="0 35 0 0">
+        <Border CornerRadius="10"
+                Width="40"
+                Height="40">
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0,0"
+                                     EndPoint="1,2">
+                    <GradientStop Color="#7F7CF1"
+                                  Offset="0" />
+                    <GradientStop Color="#D3B7FF"
+                                  Offset="1" />
+                </LinearGradientBrush>
+            </Border.Background>
+
+            <TextBlock Text="AM"
+                       Foreground="#ffffff"
+                       FontSize="22"
+                       FontWeight="SemiBold"
+                       TextAlignment="Center"
+                       VerticalAlignment="Center"
+                       Margin="3 0 0 2" />
+        </Border>
+
+        <StackPanel Margin="10 0 0 0"
+                    VerticalAlignment="Center">
+            <TextBlock Text="Amin Mirzaei"
+                       FontSize="15"
+                       Margin="0 0 0 5"
+                       Foreground="#C2CFFF" />
+            <TextBlock Text="Beta 1.3"
+                       Foreground="#7788bf"
+                       FontSize="11" />
+        </StackPanel>
+    </StackPanel>
+</UserControl>

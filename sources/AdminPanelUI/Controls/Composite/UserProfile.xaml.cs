@@ -11,21 +11,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace AdminPanelUI.Views.Menus
+namespace AdminPanelUI.Controls.Composite
 {
     /// <summary>
-    /// Interaction logic for Workspace.xaml
+    /// Interaction logic for UserProfile.xaml
     /// </summary>
-    public partial class Workspace : UserControl
+    public partial class UserProfile : UserControl
     {
-        public Workspace()
+        public UserProfile()
         {
             InitializeComponent();
-        }
-
-        private void btnExit_Click(object sender, RoutedEventArgs e)
-        {
-            Application.Current.Shutdown();
         }
     }
 }
