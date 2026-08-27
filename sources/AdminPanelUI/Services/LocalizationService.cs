@@ -36,8 +36,50 @@ namespace AdminPanelUI.Services
     }
 
 
-    internal class LocalizationService
+    public class LocalizationService : INotifyPropertyChanged
     {
+        private readonly ResourceManager _resourceManager;
 
+
+
+        public LocalizationService()
+        {
+            _resourceManager = AdminPanelUI.Resources.Localization.Strings.ResourceManager;
+        }
+
+        public string this[string key]
+        {
+            get
+            {
+                return _resourceManager.GetString(
+                    key,
+                    CultureInfo.CurrentUICulture) ?? key;
+            }
+        }
+
+        public void ChangeLanguage(AdminPanelUI.Services.LanguageOptions languageName)
+        {
+            var culture = new CultureInfo(languageName.GetDescription());
+
+            CultureInfo.CurrentCulture = culture;
+            CultureInfo.CurrentUICulture = culture;
+
+            OnPropertyChanged(string.Empty);
+        }
+
+        public FlowDirection FlowDirection =>
+    CultureInfo.CurrentUICulture.TextInfo.IsRightToLeft
+        ? FlowDirection.RightToLeft
+        : FlowDirection.LeftToRight;
+
+        public event PropertyChangedEventHandler? PropertyChanged;
+
+        private void OnPropertyChanged(
+            [CallerMemberName] string? propertyName = null)
+        {
+            PropertyChanged?.Invoke(
+                this,
+                new PropertyChangedEventArgs(propertyName));
+        }
     }
 }
