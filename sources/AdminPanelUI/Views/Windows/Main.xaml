@@ -7,6 +7,8 @@
         xmlns:icons="http://schemas.awesome.incremented/wpf/xaml/fontawesome.sharp"
         xmlns:livechart="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
         xmlns:controls="clr-namespace:AdminPanelUI.Controls.Composite"
+        xmlns:menus="clr-namespace:AdminPanelUI.Views.Menus"
+        xmlns:pages="clr-namespace:AdminPanelUI.Views.Pages"
         WindowStartupLocation="CenterScreen"
         WindowStyle="None"
         AllowsTransparency="True"
@@ -15,6 +17,18 @@
         Height="740"
         Width="1280">
     <Grid>
-        
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <!--Left Menu-->
+        <menus:Workspace />
+
+        <!--Main Section-->
+        <pages:Dashboard />
+
+
     </Grid>
 </Window>
