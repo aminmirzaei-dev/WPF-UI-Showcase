@@ -12,7 +12,13 @@
     <Folder Include="Controls\Custom\" />
     <Folder Include="Controls\Composite\" />
     <Folder Include="Resources\Images\" />
-    <Folder Include="Resources\Localization\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Resources\Localization\Strings.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Strings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
 
 </Project>
