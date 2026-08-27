@@ -6,5 +6,6 @@ namespace AdminPanelUI.Services
 {
     internal class ThemeService
     {
+
     }
 }
