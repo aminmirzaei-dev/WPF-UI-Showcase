@@ -13,7 +13,6 @@
     <Folder Include="Controls\Composite\" />
     <Folder Include="Resources\Images\" />
     <Folder Include="Resources\Localization\" />
-    <Folder Include="Resources\Themes\" />
   </ItemGroup>
 
 </Project>
