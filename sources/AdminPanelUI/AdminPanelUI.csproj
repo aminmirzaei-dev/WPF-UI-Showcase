@@ -11,6 +11,7 @@
   <ItemGroup>
     <Folder Include="Resources\Images\Countries\" />
     <Folder Include="Resources\Images\Developer\" />
+    <Folder Include="Views\Dialogs\" />
   </ItemGroup>
 
   <ItemGroup>
