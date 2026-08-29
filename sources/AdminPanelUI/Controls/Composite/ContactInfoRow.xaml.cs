@@ -12,7 +12,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace AdminPanelUI.Controls.Composite
+namespace AdminPanelUI.Controls
 {
     /// <summary>
     /// Interaction logic for ContactInfoRow.xaml

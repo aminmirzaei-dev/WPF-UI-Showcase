@@ -5,7 +5,7 @@ using System.Text;
 using System.Windows;
 using System.Windows.Media;
 
-namespace AdminPanelUI.Controls.Custom
+namespace AdminPanelUI.Controls
 {
     public class APButton : System.Windows.Controls.Button
     {

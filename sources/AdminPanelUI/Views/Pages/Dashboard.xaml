@@ -4,7 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:AdminPanelUI.Views.Pages"
-             xmlns:controls="clr-namespace:AdminPanelUI.Controls.Composite"
+             xmlns:controls="clr-namespace:AdminPanelUI.Controls"
              xmlns:menus="clr-namespace:AdminPanelUI.Views.Menus"
              xmlns:icons="http://schemas.awesome.incremented/wpf/xaml/fontawesome.sharp"
              xmlns:livechart="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
