@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AdminPanelUI.Views.Dialogs;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -18,14 +19,21 @@ namespace AdminPanelUI.Views.Menus
     /// </summary>
     public partial class Workspace : UserControl
     {
+        private ExitApp exitDialog;
+
+
         public Workspace()
         {
             InitializeComponent();
+            this.exitDialog = new ExitApp();
+            this.exitDialog.Owner = Window.GetWindow(this);
+
         }
+
 
         private void btnExit_Click(object sender, RoutedEventArgs e)
         {
-            Application.Current.Shutdown();
+            this.exitDialog.ShowDialog();
         }
     }
 }

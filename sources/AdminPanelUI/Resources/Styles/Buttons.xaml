@@ -3,6 +3,77 @@
                     xmlns:controls="clr-namespace:AdminPanelUI.Controls"
                     xmlns:icons="http://schemas.awesome.incremented/wpf/xaml/fontawesome.sharp">
 
+    <Style x:Key="CloseButtonStyle"
+           TargetType="{x:Type Button}">
+
+        <Setter Property="Background"
+                Value="#EF4444" />
+
+        <Setter Property="Content"
+                Value="×" />
+
+        <Setter Property="FontSize"
+                Value="20" />
+
+
+        <Setter Property="Foreground"
+                Value="White" />
+
+        <Setter Property="BorderThickness"
+                Value="0" />
+
+
+        <Setter Property="Template">
+
+            <Setter.Value>
+
+                <ControlTemplate TargetType="{x:Type Button}">
+
+                    <Border x:Name="CloseBorder"
+                            Background="{TemplateBinding Background}"
+                            CornerRadius="16">
+
+                        <ContentPresenter HorizontalAlignment="Center"
+                                          VerticalAlignment="Center" />
+
+                    </Border>
+
+
+                    <ControlTemplate.Triggers>
+
+                        <!-- Hover -->
+
+                        <Trigger Property="IsMouseOver"
+                                 Value="True">
+
+                            <Setter TargetName="CloseBorder"
+                                    Property="Background"
+                                    Value="#DC2626" />
+
+                        </Trigger>
+
+
+                        <!-- Press -->
+
+                        <Trigger Property="IsPressed"
+                                 Value="True">
+
+                            <Setter TargetName="CloseBorder"
+                                    Property="Background"
+                                    Value="#B91C1C" />
+
+                        </Trigger>
+
+                    </ControlTemplate.Triggers>
+
+                </ControlTemplate>
+
+            </Setter.Value>
+
+        </Setter>
+
+    </Style>
+
 
     <Style TargetType="{x:Type controls:APButton}">
 
