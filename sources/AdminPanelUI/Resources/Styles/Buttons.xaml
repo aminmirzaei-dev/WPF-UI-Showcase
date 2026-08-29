@@ -265,106 +265,502 @@
 
     </Style>
 
-    <Style x:Key="menuButton"
-           TargetType="Button">
+    <!--<Style
+           TargetType="{x:Type controls:APMenuItem}">
+
         <Setter Property="Cursor"
                 Value="Hand" />
+
         <Setter Property="Background"
                 Value="Transparent" />
+
         <Setter Property="Foreground"
                 Value="#707DB2" />
+
         <Setter Property="Tag"
                 Value="#6673B7" />
+
         <Setter Property="Margin"
-                Value="0 0 0 5" />
+                Value="0,0,0,5" />
+
         <Setter Property="Height"
                 Value="45" />
+
         <Setter Property="FocusVisualStyle"
                 Value="{x:Null}" />
+
         <Setter Property="Template">
             <Setter.Value>
-                <ControlTemplate TargetType="{x:Type Button}">
-                    <Border Background="{TemplateBinding Background}"
-                            BorderThickness="4 0 0 0"
+
+                <ControlTemplate TargetType="{x:Type controls:APMenuItem}">
+
+                    <Border x:Name="Border"
+                            Background="{TemplateBinding Background}"
+                            BorderThickness="4,0,0,0"
                             BorderBrush="Transparent">
-                        <ContentPresenter HorizontalAlignment="Stretch"
-                                          VerticalAlignment="Center" />
+
+                        <StackPanel Orientation="Horizontal">
+
+
+                            <icons:IconBlock Icon="{TemplateBinding Icon}"
+                                          Foreground="{TemplateBinding Foreground}"
+                                          Width="25"
+                                          VerticalAlignment="Center"
+                                          Margin="15,0,0,0" />
+
+                            <TextBlock Text="{TemplateBinding Content}"
+                                       FontSize="13"
+                                       VerticalAlignment="Center"
+                                       Foreground="{TemplateBinding Foreground}"
+                                       Margin="15,0,0,0" />
+                        </StackPanel>
+
+
                     </Border>
+
+                    <ControlTemplate.Triggers>
+
+                        --><!-- Hover --><!--
+                        <Trigger Property="IsMouseOver"
+                                 Value="True">
+
+                            <Setter Property="Foreground"
+                                    Value="#BCCAF1" />
+
+                            <Setter Property="Tag"
+                                    Value="#7071F0" />
+
+                            <Setter Property="Background">
+                                <Setter.Value>
+                                    <LinearGradientBrush StartPoint="0,0.5"
+                                                         EndPoint="1,0.5">
+
+                                        <GradientStop Color="#31407B"
+                                                      Offset="0" />
+
+                                        <GradientStop Color="#495385"
+                                                      Offset="1" />
+
+                                    </LinearGradientBrush>
+                                </Setter.Value>
+                            </Setter>
+
+                            <Setter TargetName="Border"
+                                    Property="BorderBrush"
+                                    Value="#A5A1F5" />
+
+                        </Trigger>
+
+
+                        --><!-- Active / Checked --><!--
+                        <Trigger Property="IsChecked"
+                                 Value="True">
+
+                            <Setter Property="Foreground"
+                                    Value="#BCCAF1" />
+
+                            <Setter Property="Tag"
+                                    Value="#7071F0" />
+
+                            <Setter Property="Background">
+                                <Setter.Value>
+                                    <LinearGradientBrush StartPoint="0,0.5"
+                                                         EndPoint="1,0.5">
+
+                                        <GradientStop Color="#31407B"
+                                                      Offset="0" />
+
+                                        <GradientStop Color="#495385"
+                                                      Offset="1" />
+
+                                    </LinearGradientBrush>
+                                </Setter.Value>
+                            </Setter>
+
+                            <Setter TargetName="Border"
+                                    Property="BorderBrush"
+                                    Value="#A5A1F5" />
+
+                        </Trigger>
+
+                    </ControlTemplate.Triggers>
+
                 </ControlTemplate>
+
             </Setter.Value>
         </Setter>
 
-        <Style.Triggers>
-            <Trigger Property="IsMouseOver"
-                     Value="True">
-                <Setter Property="Foreground"
-                        Value="#BCCAF1" />
-                <Setter Property="Tag"
-                        Value="#7071F0" />
-                <Setter Property="Background">
-                    <Setter.Value>
-                        <LinearGradientBrush StartPoint="0,0.5"
-                                             EndPoint="1,0.5">
-                            <GradientStop Color="#31407B"
-                                          Offset="0" />
-                            <GradientStop Color="#495385"
-                                          Offset="3" />
-                        </LinearGradientBrush>
-                    </Setter.Value>
-                </Setter>
+    </Style>-->
 
-                <Setter Property="Template">
-                    <Setter.Value>
-                        <ControlTemplate TargetType="{x:Type Button}">
-                            <Border Background="{TemplateBinding Background}"
-                                    BorderThickness="4 0 0 0"
-                                    BorderBrush="#A5A1F5">
-                                <ContentPresenter HorizontalAlignment="Stretch"
-                                                  VerticalAlignment="Center" />
-                            </Border>
-                        </ControlTemplate>
-                    </Setter.Value>
-                </Setter>
-            </Trigger>
-        </Style.Triggers>
-    </Style>
+    <Style TargetType="{x:Type controls:APMenuItem}">
 
+        <Setter Property="Cursor"
+                Value="Hand" />
 
-    <Style x:Key="menuButtonActive"
-           TargetType="Button">
-        <Setter Property="Background">
-            <Setter.Value>
-                <LinearGradientBrush StartPoint="0,0.5"
-                                     EndPoint="1,0.5">
-                    <GradientStop Color="#31407B"
-                                  Offset="0" />
-                    <GradientStop Color="#495385"
-                                  Offset="3" />
-                </LinearGradientBrush>
-            </Setter.Value>
-        </Setter>
+        <Setter Property="Background"
+                Value="Transparent" />
+
         <Setter Property="Foreground"
-                Value="#BCCAF1" />
+                Value="#707DB2" />
+
         <Setter Property="Tag"
-                Value="#7071F0" />
+                Value="#6673B7" />
+
         <Setter Property="Margin"
-                Value="0 0 0 5" />
+                Value="0,0,0,5" />
+
         <Setter Property="Height"
                 Value="45" />
+
         <Setter Property="FocusVisualStyle"
                 Value="{x:Null}" />
+
+        <Setter Property="HorizontalContentAlignment"
+                Value="Stretch" />
+
+        <Setter Property="VerticalContentAlignment"
+                Value="Center" />
+
+
         <Setter Property="Template">
             <Setter.Value>
-                <ControlTemplate TargetType="{x:Type Button}">
-                    <Border Background="{TemplateBinding Background}"
-                            BorderThickness="4 0 0 0"
-                            BorderBrush="#A5A1F5">
-                        <ContentPresenter HorizontalAlignment="Stretch"
-                                          VerticalAlignment="Center" />
-                    </Border>
+
+                <ControlTemplate TargetType="{x:Type controls:APMenuItem}">
+
+                    <Grid>
+
+                         <!--Hover Background-->
+
+                        <Border x:Name="HoverBackground"
+                                Background="#344277"
+                                CornerRadius="7"
+                                Opacity="0" />
+
+
+                        <!-- Active Background-->
+
+                        <Border x:Name="ActiveBackground"
+                                CornerRadius="7"
+                                Opacity="0">
+
+                            <Border.Background>
+                                <LinearGradientBrush StartPoint="0,0.5"
+                                                     EndPoint="1,0.5">
+
+                                    <GradientStop Color="#31407B"
+                                                  Offset="0" />
+
+                                    <GradientStop Color="#495385"
+                                                  Offset="1" />
+
+                                </LinearGradientBrush>
+                            </Border.Background>
+
+                        </Border>
+
+
+                        <!--Active SideBar-->
+
+                        <Border x:Name="ActiveBar"
+                                Width="4"
+                                Height="0"
+                                VerticalAlignment="Center"
+                                HorizontalAlignment="Left"
+                                Background="#A5A1F5"
+                                CornerRadius="0,4,4,0"
+                                Opacity="0">
+
+                            <Border.Effect>
+                                <DropShadowEffect Color="#9A94FF"
+                                                  BlurRadius="14"
+                                                  ShadowDepth="0"
+                                                  Opacity="0.9" />
+                            </Border.Effect>
+
+                        </Border>
+
+
+                        <!--Content-->
+
+                        <Grid x:Name="ContentGrid"
+                              RenderTransformOrigin="0.5,0.5">
+
+                            <Grid.RenderTransform>
+                                <ScaleTransform ScaleX="1"
+                                                ScaleY="1" />
+                            </Grid.RenderTransform>
+
+
+                            <StackPanel Orientation="Horizontal">
+
+                                <!--Icon-->
+
+                                <Grid Width="25"
+                                      Height="25"
+                                      Margin="15,0,0,0">
+
+                                    <icons:IconBlock x:Name="MenuIcon"
+                                                     Icon="{TemplateBinding Icon}"
+                                                     Foreground="{TemplateBinding Foreground}"
+                                                     FontSize="16"
+                                                     HorizontalAlignment="Center"
+                                                     VerticalAlignment="Center"
+                                                     RenderTransformOrigin="0.5,0.5">
+
+                                        <icons:IconBlock.RenderTransform>
+                                            <ScaleTransform ScaleX="1"
+                                                            ScaleY="1" />
+                                        </icons:IconBlock.RenderTransform>
+
+                                    </icons:IconBlock>
+
+                                </Grid>
+
+
+                                <!-- Text -->
+
+                                <TextBlock Text="{TemplateBinding Content}"
+                                           FontSize="13"
+                                           FontWeight="Medium"
+                                           Foreground="{TemplateBinding Foreground}"
+                                           VerticalAlignment="Center"
+                                           Margin="15,0,0,0" />
+
+                            </StackPanel>
+
+                        </Grid>
+
+                    </Grid>
+
+
+                    <!--Animations-->
+
+                    <ControlTemplate.Resources>
+
+                        <!-- Hover IN -->
+
+                        <Storyboard x:Key="HoverIn">
+
+                            <DoubleAnimation Storyboard.TargetName="HoverBackground"
+                                             Storyboard.TargetProperty="Opacity"
+                                             To="1"
+                                             Duration="0:0:0.18" />
+
+                            <DoubleAnimation Storyboard.TargetName="MenuIcon"
+                                             Storyboard.TargetProperty="RenderTransform.ScaleX"
+                                             To="1.08"
+                                             Duration="0:0:0.18" />
+
+                            <DoubleAnimation Storyboard.TargetName="MenuIcon"
+                                             Storyboard.TargetProperty="RenderTransform.ScaleY"
+                                             To="1.08"
+                                             Duration="0:0:0.18" />
+
+                        </Storyboard>
+
+
+                        <!-- Hover OUT -->
+
+                        <Storyboard x:Key="HoverOut">
+
+                            <DoubleAnimation Storyboard.TargetName="HoverBackground"
+                                             Storyboard.TargetProperty="Opacity"
+                                             To="0"
+                                             Duration="0:0:0.22" />
+
+                            <DoubleAnimation Storyboard.TargetName="MenuIcon"
+                                             Storyboard.TargetProperty="RenderTransform.ScaleX"
+                                             To="1"
+                                             Duration="0:0:0.22" />
+
+                            <DoubleAnimation Storyboard.TargetName="MenuIcon"
+                                             Storyboard.TargetProperty="RenderTransform.ScaleY"
+                                             To="1"
+                                             Duration="0:0:0.22" />
+
+                        </Storyboard>
+
+
+                        <!--Active IN-->
+
+                        <Storyboard x:Key="ActiveIn">
+
+                            <!-- Background -->
+
+                            <DoubleAnimation Storyboard.TargetName="ActiveBackground"
+                                             Storyboard.TargetProperty="Opacity"
+                                             To="1"
+                                             Duration="0:0:0.28" />
+
+
+                            <!-- Side Bar -->
+
+                            <DoubleAnimation Storyboard.TargetName="ActiveBar"
+                                             Storyboard.TargetProperty="Height"
+                                             From="0"
+                                             To="35"
+                                             Duration="0:0:0.30" />
+
+                            <DoubleAnimation Storyboard.TargetName="ActiveBar"
+                                             Storyboard.TargetProperty="Opacity"
+                                             From="0"
+                                             To="1"
+                                             Duration="0:0:0.20" />
+
+
+                            <!-- Icon -->
+
+                            <DoubleAnimation Storyboard.TargetName="MenuIcon"
+                                             Storyboard.TargetProperty="RenderTransform.ScaleX"
+                                             To="1.14"
+                                             Duration="0:0:0.25" />
+
+                            <DoubleAnimation Storyboard.TargetName="MenuIcon"
+                                             Storyboard.TargetProperty="RenderTransform.ScaleY"
+                                             To="1.14"
+                                             Duration="0:0:0.25" />
+
+                        </Storyboard>
+
+
+                        <!--Active OUT-->
+
+                        <Storyboard x:Key="ActiveOut">
+
+                            <DoubleAnimation Storyboard.TargetName="ActiveBackground"
+                                             Storyboard.TargetProperty="Opacity"
+                                             To="0"
+                                             Duration="0:0:0.20" />
+
+                            <DoubleAnimation Storyboard.TargetName="ActiveBar"
+                                             Storyboard.TargetProperty="Height"
+                                             To="0"
+                                             Duration="0:0:0.20" />
+
+                            <DoubleAnimation Storyboard.TargetName="ActiveBar"
+                                             Storyboard.TargetProperty="Opacity"
+                                             To="0"
+                                             Duration="0:0:0.15" />
+
+                            <DoubleAnimation Storyboard.TargetName="MenuIcon"
+                                             Storyboard.TargetProperty="RenderTransform.ScaleX"
+                                             To="1"
+                                             Duration="0:0:0.20" />
+
+                            <DoubleAnimation Storyboard.TargetName="MenuIcon"
+                                             Storyboard.TargetProperty="RenderTransform.ScaleY"
+                                             To="1"
+                                             Duration="0:0:0.20" />
+
+                        </Storyboard>
+
+
+                        <!-- PRESS -->
+
+                        <Storyboard x:Key="Press">
+
+                            <DoubleAnimation Storyboard.TargetName="ContentGrid"
+                                             Storyboard.TargetProperty="RenderTransform.ScaleX"
+                                             To="0.96"
+                                             Duration="0:0:0.06" />
+
+                            <DoubleAnimation Storyboard.TargetName="ContentGrid"
+                                             Storyboard.TargetProperty="RenderTransform.ScaleY"
+                                             To="0.96"
+                                             Duration="0:0:0.06" />
+
+                        </Storyboard>
+
+
+                        <!-- RELEASE -->
+
+                        <Storyboard x:Key="Release">
+
+                            <DoubleAnimation Storyboard.TargetName="ContentGrid"
+                                             Storyboard.TargetProperty="RenderTransform.ScaleX"
+                                             To="1"
+                                             Duration="0:0:0.12" />
+
+                            <DoubleAnimation Storyboard.TargetName="ContentGrid"
+                                             Storyboard.TargetProperty="RenderTransform.ScaleY"
+                                             To="1"
+                                             Duration="0:0:0.12" />
+
+                        </Storyboard>
+
+                    </ControlTemplate.Resources>
+
+
+                    <!--Triggers -->
+
+                    <ControlTemplate.Triggers>
+
+
+                        <!-- Hover -->
+
+                        <EventTrigger RoutedEvent="Mouse.MouseEnter">
+
+                            <BeginStoryboard Storyboard="{StaticResource HoverIn}" />
+
+                        </EventTrigger>
+
+
+                        <EventTrigger RoutedEvent="Mouse.MouseLeave">
+
+                            <BeginStoryboard Storyboard="{StaticResource HoverOut}" />
+
+                        </EventTrigger>
+
+
+                        <!-- Selected -->
+
+                        <Trigger Property="IsChecked"
+                                 Value="True">
+
+                            <Setter Property="Foreground"
+                                    Value="#D8DEFF" />
+
+                            <Setter Property="Tag"
+                                    Value="#7071F0" />
+
+                            <Trigger.EnterActions>
+
+                                <BeginStoryboard Storyboard="{StaticResource ActiveIn}" />
+
+                            </Trigger.EnterActions>
+
+                            <Trigger.ExitActions>
+
+                                <BeginStoryboard Storyboard="{StaticResource ActiveOut}" />
+
+                            </Trigger.ExitActions>
+
+                        </Trigger>
+
+
+                        <!-- Press -->
+
+                        <EventTrigger RoutedEvent="Mouse.PreviewMouseDown">
+
+                            <BeginStoryboard Storyboard="{StaticResource Press}" />
+
+                        </EventTrigger>
+
+
+                        <EventTrigger RoutedEvent="Mouse.PreviewMouseUp">
+
+                            <BeginStoryboard Storyboard="{StaticResource Release}" />
+
+                        </EventTrigger>
+
+
+                    </ControlTemplate.Triggers>
+
                 </ControlTemplate>
+
             </Setter.Value>
         </Setter>
+
     </Style>
 
     <Style x:Key="topMenuButton"

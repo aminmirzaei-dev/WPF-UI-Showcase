@@ -28,79 +28,35 @@
                        Margin="20 30 20 30" />
 
             <!--Menu Buttons-->
-            <Button Style="{StaticResource menuButtonActive}">
-                <StackPanel Orientation="Horizontal">
-                    <icons:IconImage Icon="Home"
-                                     Style="{StaticResource menuButtonIcon}" />
-                    <TextBlock Text="Dashboard"
-                               Style="{StaticResource menuButtonText}" />
-                </StackPanel>
-            </Button>
+            <controls:APMenuItem Icon="Home"
+                                 
+                                 Content="Dashboard"
+                                 IsChecked="True" />
 
-            <Button Style="{StaticResource menuButton}">
-                <StackPanel Orientation="Horizontal">
-                    <icons:IconImage Icon="FileSignature"
-                                  Style="{StaticResource menuButtonIcon}" />
-                    <TextBlock Text="Listing"
-                               Style="{StaticResource menuButtonText}" />
-                </StackPanel>
-            </Button>
+            <controls:APMenuItem
+                                 Icon="FileSignature"
+                                 Content="Listing"/>
 
-            <Button Style="{StaticResource menuButton}">
-                <StackPanel Orientation="Horizontal">
-                    <icons:IconImage Icon="EnvelopeOpenText"
-                                  Style="{StaticResource menuButtonIcon}" />
-                    <TextBlock Text="Messages"
-                               Style="{StaticResource menuButtonText}" />
-                </StackPanel>
-            </Button>
+            <controls:APMenuItem
+                                 Icon="EnvelopeOpenText"
+                                 Content="Messages" />
 
-            <Button Style="{StaticResource menuButton}">
-                <StackPanel Orientation="Horizontal">
-                    <icons:IconImage Icon="ShoppingCart"
-                                  Style="{StaticResource menuButtonIcon}" />
-                    <TextBlock Text="Orders"
-                               Style="{StaticResource menuButtonText}" />
-                </StackPanel>
-            </Button>
+            <controls:APMenuItem
+                                 Icon="ShoppingCart"
+                                 Content="Orders"/>
 
-            <Button Style="{StaticResource menuButton}">
-                <StackPanel Orientation="Horizontal">
-                    <icons:IconImage Icon="ChartArea"
-                                  Style="{StaticResource menuButtonIcon}" />
-                    <TextBlock Text="Statistics"
-                               Style="{StaticResource menuButtonText}" />
-                </StackPanel>
-            </Button>
+            <controls:APMenuItem Icon="ChartArea"
+                                 Content="Statistics" />
 
-            <Button Style="{StaticResource menuButton}">
-                <StackPanel Orientation="Horizontal">
-                    <icons:IconImage Icon="Cog"
-                                  Style="{StaticResource menuButtonIcon}" />
-                    <TextBlock Text="Settings"
-                               Style="{StaticResource menuButtonText}" />
-                </StackPanel>
-            </Button>
+            <controls:APMenuItem Icon="Cog"
+                                 Content="Settings" />
 
-            <Button Style="{StaticResource menuButton}">
-                <StackPanel Orientation="Horizontal">
-                    <icons:IconImage Icon="User"
-                                     Style="{StaticResource menuButtonIcon}" />
-                    <TextBlock Text="About Us"
-                               Style="{StaticResource menuButtonText}" />
-                </StackPanel>
-            </Button>
+            <controls:APMenuItem Icon="User"
+                                 Content="About Us" />
 
-            <Button x:Name="btnExit"
-                    Style="{StaticResource menuButton}"
-                    Click="btnExit_Click">
-                <StackPanel Orientation="Horizontal">
-                    <icons:IconImage Icon="PowerOff"
-                                  Style="{StaticResource menuButtonIcon}" />
-                    <TextBlock Text="Logout"
-                               Style="{StaticResource menuButtonText}" />
-                </StackPanel>
-            </Button>
+            <controls:APMenuItem Icon="PowerOff"
+                                 Content="Logout"
+                                 Click="btnExit_Click" />
 
         </StackPanel>
     </Border>
