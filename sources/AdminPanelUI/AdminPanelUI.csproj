@@ -9,7 +9,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Controls\Custom\" />
     <Folder Include="Resources\Images\Countries\" />
     <Folder Include="Resources\Images\Developer\" />
   </ItemGroup>

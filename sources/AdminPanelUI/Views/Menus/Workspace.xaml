@@ -31,7 +31,7 @@
             <Button Style="{StaticResource menuButtonActive}">
                 <StackPanel Orientation="Horizontal">
                     <icons:IconImage Icon="Home"
-                                  Style="{StaticResource menuButtonIcon}" />
+                                     Style="{StaticResource menuButtonIcon}" />
                     <TextBlock Text="Dashboard"
                                Style="{StaticResource menuButtonText}" />
                 </StackPanel>
