@@ -19,21 +19,21 @@ namespace AdminPanelUI.Views.Menus
     /// </summary>
     public partial class Workspace : UserControl
     {
-        private ExitApp exitDialog;
-
 
         public Workspace()
         {
             InitializeComponent();
-            this.exitDialog = new ExitApp();
-            this.exitDialog.Owner = Window.GetWindow(this);
+            
 
         }
 
 
         private void btnExit_Click(object sender, RoutedEventArgs e)
         {
-            this.exitDialog.ShowDialog();
+            ExitApp exitDialog = new ExitApp();
+            exitDialog.Owner = Window.GetWindow(this);
+
+            exitDialog.ShowDialog();
         }
     }
 }

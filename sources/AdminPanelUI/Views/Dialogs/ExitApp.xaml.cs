@@ -99,7 +99,7 @@ namespace AdminPanelUI.Views.Dialogs
 
             fade.Completed += (s, e) =>
             {
-                DialogResult = result;
+                this.Close();
             };
 
             MainBorder.BeginAnimation(
