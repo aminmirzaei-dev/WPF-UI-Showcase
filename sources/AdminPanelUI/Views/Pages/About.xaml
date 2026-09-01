@@ -196,7 +196,7 @@ It helps you manage your business data, track performance and grow faster." />
                             <controls:FeatureCard Grid.Row="0"
                                                   Grid.Column="0"
                                                   Icon="PaintBrush"
-                                                  Title="Modern Design"
+                                                  Title="Modern UI"
                                                   Description="Clean, beautiful and user-friendly interface" />
 
 
@@ -205,7 +205,7 @@ It helps you manage your business data, track performance and grow faster." />
                             <controls:FeatureCard Grid.Row="0"
                                                   Grid.Column="1"
                                                   Icon="MobileScreenButton"
-                                                  Title="Fully Responsive"
+                                                  Title="Responsive"
                                                   Description="Optimized for desktop, tablet and mobile devices" />
 
 
@@ -214,7 +214,7 @@ It helps you manage your business data, track performance and grow faster." />
                             <controls:FeatureCard Grid.Row="0"
                                                   Grid.Column="2"
                                                   Icon="Sliders"
-                                                  Title="Easy to Customize"
+                                                  Title="Easy Customize"
                                                   Description="Well-structured and easy to adapt" />
 
 
@@ -223,7 +223,7 @@ It helps you manage your business data, track performance and grow faster." />
                             <controls:FeatureCard Grid.Row="1"
                                                   Grid.Column="0"
                                                   Icon="Bolt"
-                                                  Title="Performance Focused"
+                                                  Title="Performance"
                                                   Description="Lightweight, fast and optimized for speed" />
 
 
@@ -232,7 +232,7 @@ It helps you manage your business data, track performance and grow faster." />
                             <controls:FeatureCard Grid.Row="1"
                                                   Grid.Column="1"
                                                   Icon="PuzzlePiece"
-                                                  Title="Reusable Components"
+                                                  Title="Components"
                                                   Description="Built with reusable and scalable components" />
 
 
@@ -241,7 +241,7 @@ It helps you manage your business data, track performance and grow faster." />
                             <controls:FeatureCard Grid.Row="1"
                                                   Grid.Column="2"
                                                   Icon="ArrowsRotate"
-                                                  Title="Regular Updates"
+                                                  Title="Updates"
                                                   Description="Continuously improving with new features" />
 
                         </Grid>
