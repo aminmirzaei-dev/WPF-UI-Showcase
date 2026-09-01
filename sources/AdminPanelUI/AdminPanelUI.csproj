@@ -9,14 +9,45 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Resources\Icons\Contact\Github.png" />
+    <None Remove="Resources\Icons\Contact\Gmail.png" />
+    <None Remove="Resources\Icons\Contact\Instagram.png" />
+    <None Remove="Resources\Icons\Contact\X.png" />
+    <None Remove="Resources\Icons\Technologies\Csharp.png" />
+    <None Remove="Resources\Icons\Technologies\DotNet.png" />
+    <None Remove="Resources\Icons\Technologies\Figma.png" />
+    <None Remove="Resources\Icons\Technologies\FontAwesome.png" />
+    <None Remove="Resources\Icons\Technologies\WPF.png" />
+    <None Remove="Resources\Images\Developer\Official\Amin.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Resources\Images\Countries\" />
-    <Folder Include="Resources\Images\Developer\" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="FontAwesome.Sharp" Version="6.6.0" />
     <PackageReference Include="LiveCharts" Version="0.9.7" />
     <PackageReference Include="LiveCharts.Wpf" Version="0.9.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\Icons\Contact\Github.png" />
+    <Resource Include="Resources\Icons\Contact\Gmail.png" />
+    <Resource Include="Resources\Icons\Contact\Instagram.png" />
+    <Resource Include="Resources\Icons\Contact\X.png" />
+    <Resource Include="Resources\Icons\Technologies\Csharp.png" />
+    <Resource Include="Resources\Icons\Technologies\DotNet.png" />
+    <Resource Include="Resources\Icons\Technologies\Figma.png" />
+    <Resource Include="Resources\Icons\Technologies\FontAwesome.png" />
+    <Resource Include="Resources\Icons\Technologies\WPF.png" />
+    <Resource Include="Resources\Images\Developer\Fantasy\DevBlue.png" />
+    <Resource Include="Resources\Images\Developer\Fantasy\DevGreen.png" />
+    <Resource Include="Resources\Images\Developer\Fantasy\DevMagenta.png" />
+    <Resource Include="Resources\Images\Developer\Fantasy\DevOrange.png" />
+    <Resource Include="Resources\Images\Developer\Fantasy\DevPink.png" />
+    <Resource Include="Resources\Images\Developer\Fantasy\DevRed.png" />
+    <Resource Include="Resources\Images\Developer\Official\Amin.jpg" />
   </ItemGroup>
 
   <ItemGroup>

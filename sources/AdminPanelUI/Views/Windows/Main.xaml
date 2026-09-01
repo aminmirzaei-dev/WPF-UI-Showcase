@@ -27,7 +27,7 @@
         <menus:Workspace />
 
         <!--Main Section-->
-        <pages:Dashboard Grid.Column="1" />
+        <pages:About Grid.Column="1" />
         
         
 

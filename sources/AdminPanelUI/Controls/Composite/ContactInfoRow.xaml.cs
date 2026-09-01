@@ -53,18 +53,18 @@ namespace AdminPanelUI.Controls
                 new PropertyMetadata(string.Empty));
 
 
-        public IconChar Icon
+        public ImageSource Icon
         {
-            get => (IconChar)GetValue(IconProperty);
+            get => (ImageSource)GetValue(IconProperty);
             set => SetValue(IconProperty, value);
         }
 
         public static readonly DependencyProperty IconProperty =
             DependencyProperty.Register(
                 nameof(Icon),
-                typeof(IconChar),
+                typeof(ImageSource),
                 typeof(ContactInfoRow),
-                new PropertyMetadata(IconChar.InfoCircle));
+                new PropertyMetadata(null));
 
 
         public IconChar ActionIcon

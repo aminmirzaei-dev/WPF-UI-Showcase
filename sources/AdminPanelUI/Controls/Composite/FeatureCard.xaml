@@ -4,7 +4,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:icons="http://schemas.awesome.incremented/wpf/xaml/fontawesome.sharp">
 
-    <Border Background="#182653"
+    <Border Background="Transparent"
             CornerRadius="8"
             Padding="10">
 
@@ -17,15 +17,15 @@
 
             <!-- Icon -->
             <Border Grid.Column="0"
-                    Width="32"
-                    Height="32"
+                    Width="42"
+                    Height="42"
                     CornerRadius="7"
                     Background="#2B3975"
                     HorizontalAlignment="Left"
-                    VerticalAlignment="Top">
+                    VerticalAlignment="Center">
 
                 <icons:IconBlock Icon="{Binding Icon, ElementName=root}"
-                              FontSize="17"
+                              FontSize="20"
                               Foreground="#8C82FF"
                               HorizontalAlignment="Center"
                               VerticalAlignment="Center" />
@@ -33,18 +33,18 @@
 
             <!-- Text -->
             <StackPanel Grid.Column="1"
-                        Margin="5,0,0,0"
+                        Margin="10,0,0,0"
                         VerticalAlignment="Center">
 
                 <TextBlock Text="{Binding Title, ElementName=root}"
                            FontSize="11"
                            FontWeight="SemiBold"
-                           Foreground="#FFFFFF"
+                           Foreground="White"
                            Margin="0,0,0,4" />
 
                 <TextBlock Text="{Binding Description, ElementName=root}"
                            FontSize="9"
-                           Foreground="#8D99C5"
+                           Foreground="WhiteSmoke"
                            TextWrapping="Wrap"
                            LineHeight="13" />
 

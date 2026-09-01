@@ -14,16 +14,18 @@
                     VerticalAlignment="Center">
 
             <!-- Icon -->
-            <icons:IconBlock Icon="{Binding Icon, ElementName=root}"
-                          FontSize="24"
-                          Foreground="{Binding IconColor, ElementName=root}"
-                          HorizontalAlignment="Center"
-                          VerticalAlignment="Center" />
+            <Image Grid.Column="0"
+                   Source="{Binding Icon, ElementName=root}"
+                   Width="34"
+                   Height="34"
+                   Stretch="UniformToFill"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center" />
 
             <!-- Technology Name -->
             <TextBlock Text="{Binding TechnologyName, ElementName=root}"
-                       FontSize="9"
-                       Foreground="#D8DCF2"
+                       FontSize="12"
+                       Foreground="White"
                        HorizontalAlignment="Center"
                        VerticalAlignment="Center"
                        Margin="0,6,0,0" />

@@ -1,12 +1,676 @@
 ﻿<UserControl x:Class="AdminPanelUI.Views.Pages.About"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:AdminPanelUI.Views.Pages"
-             mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
-            
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:controls="clr-namespace:AdminPanelUI.Controls"
+             xmlns:icons="http://schemas.awesome.incremented/wpf/xaml/fontawesome.sharp"
+             mc:Ignorable="d"
+             d:DesignWidth="867"
+             d:DesignHeight="604">
+
+    <UserControl.Resources>
+
+        <!-- ============================= -->
+        <!-- Colors -->
+        <!-- ============================= -->
+
+        <SolidColorBrush x:Key="PageBackground"
+                         Color="#1D2C5B" />
+
+        <SolidColorBrush x:Key="CardBackground"
+                         Color="#182654" />
+
+        <SolidColorBrush x:Key="CardBorder"
+                         Color="#2B3B6B" />
+
+        <SolidColorBrush x:Key="Primary"
+                         Color="#7563E7" />
+
+        <SolidColorBrush x:Key="PrimaryLight"
+                         Color="#8A7BF0" />
+
+        <SolidColorBrush x:Key="TextPrimary"
+                         Color="#F4F5FF" />
+
+        <SolidColorBrush x:Key="TextSecondary"
+                         Color="#A9B4D6" />
+
+        <SolidColorBrush x:Key="TextMuted"
+                         Color="#7886B1" />
+
+        <Style x:Key="CardStyle"
+               TargetType="Border">
+
+            <Setter Property="Background"
+                    Value="{StaticResource CardBackground}" />
+
+            <Setter Property="BorderBrush"
+                    Value="{StaticResource CardBorder}" />
+
+            <Setter Property="BorderThickness"
+                    Value="1" />
+
+            <Setter Property="CornerRadius"
+                    Value="7" />
+
+            <Setter Property="Padding"
+                    Value="16" />
+
+        </Style>
+
+
+    </UserControl.Resources>
+
+
+    <Grid Background="{StaticResource PageBackground}">
+
+        <Grid.RowDefinitions>
+
+            <RowDefinition Height="Auto" />
+
+            <RowDefinition Height="*" />
+
+            <RowDefinition Height="Auto" />
+
+        </Grid.RowDefinitions>
+
+
+        <!-- Header -->
+
+        <StackPanel Grid.Row="0"
+                    Margin="13,14,13,12">
+
+            <TextBlock Text="About"
+                       FontFamily="Segoe UI"
+                       FontSize="24"
+                       FontWeight="SemiBold"
+                       Foreground="White" />
+
+            <TextBlock Text="Learn more about this project and the developer behind it."
+                       FontFamily="Segoe UI"
+                       FontSize="9"
+                       Foreground="WhiteSmoke"
+                       Margin="0,4,0,0" />
+
+        </StackPanel>
+
+
+        <!-- Content -->
+
+        <Grid Grid.Row="1"
+              Margin="13,0,13,12">
+
+            <Grid.RowDefinitions>
+
+                <RowDefinition Height="1.55*" />
+
+                <RowDefinition Height="1*" />
+
+            </Grid.RowDefinitions>
+
+
+            <!-- Top Row -->
+
+            <Grid Grid.Row="0">
+
+                <Grid.ColumnDefinitions>
+
+                    <ColumnDefinition Width="1*" />
+
+                    <ColumnDefinition Width="1.1*" />
+
+                </Grid.ColumnDefinitions>
+
+
+                <!-- Dashboard Overview -->
+
+                <Border Grid.Column="0"
+                        Style="{StaticResource CardStyle}"
+                        Margin="0,0,7,0">
+
+                    <Grid>
+
+                        <Grid.RowDefinitions>
+
+                            <RowDefinition Height="Auto" />
+
+                            <RowDefinition Height="Auto" />
+
+                            <RowDefinition Height="*" />
+
+                        </Grid.RowDefinitions>
+
+
+                        <!-- Title -->
+
+                        <StackPanel Grid.Row="0"
+                                    Orientation="Horizontal">
+
+                            <icons:IconBlock Icon="SolarPanel"
+                                        FontSize="16"
+                                        Foreground="{StaticResource PrimaryLight}"
+                                        Margin="0,0,7,0" />
+
+                            <TextBlock Text="Dashboard Overview"
+                                       Style="{StaticResource SectionTitle}" />
+
+                        </StackPanel>
+
+
+                        <!-- Description -->
+
+                        <TextBlock Grid.Row="1"
+                                   Style="{StaticResource Description}"
+                                   Margin="0,13,0,13"
+                                   Text="This dashboard is a modern, responsive admin template built with a focus on simplicity, performance and user experience.
+It helps you manage your business data, track performance and grow faster." />
+
+
+
+                        <!-- FEATURES -->
+
+                        <Grid Grid.Row="2">
+
+                            <Grid.RowDefinitions>
+
+                                <RowDefinition Height="1*" />
+
+                                <RowDefinition Height="1*" />
+
+                            </Grid.RowDefinitions>
+
+                            <Grid.ColumnDefinitions>
+
+                                <ColumnDefinition Width="1*" />
+
+                                <ColumnDefinition Width="1*" />
+
+                                <ColumnDefinition Width="1*" />
+
+                            </Grid.ColumnDefinitions>
+
+
+                            <!-- Modern Design -->
+                            
+                            <controls:FeatureCard Grid.Row="0"
+                                                  Grid.Column="0"
+                                                  Icon="PaintBrush"
+                                                  Title="Modern Design"
+                                                  Description="Clean, beautiful and user-friendly interface" />
+
+
+                            <!-- Fully Responsive -->
+                            
+                            <controls:FeatureCard Grid.Row="0"
+                                                  Grid.Column="1"
+                                                  Icon="MobileScreenButton"
+                                                  Title="Fully Responsive"
+                                                  Description="Optimized for desktop, tablet and mobile devices" />
+
+
+                            <!-- Easy To Customize -->
+                            
+                            <controls:FeatureCard Grid.Row="0"
+                                                  Grid.Column="2"
+                                                  Icon="Sliders"
+                                                  Title="Easy to Customize"
+                                                  Description="Well-structured and easy to adapt" />
+
+
+                            <!-- Performance -->
+                            
+                            <controls:FeatureCard Grid.Row="1"
+                                                  Grid.Column="0"
+                                                  Icon="Bolt"
+                                                  Title="Performance Focused"
+                                                  Description="Lightweight, fast and optimized for speed" />
+
+
+                            <!-- Reusable Components -->
+                            
+                            <controls:FeatureCard Grid.Row="1"
+                                                  Grid.Column="1"
+                                                  Icon="PuzzlePiece"
+                                                  Title="Reusable Components"
+                                                  Description="Built with reusable and scalable components" />
+
+
+                            <!-- Regular Updates -->
+                            
+                            <controls:FeatureCard Grid.Row="1"
+                                                  Grid.Column="2"
+                                                  Icon="ArrowsRotate"
+                                                  Title="Regular Updates"
+                                                  Description="Continuously improving with new features" />
+
+                        </Grid>
+
+                    </Grid>
+
+                </Border>
+
+
+                <!-- Developer -->
+
+                <Border Grid.Column="1"
+                        Style="{StaticResource CardStyle}"
+                        Margin="7,0,0,0">
+
+                    <Grid>
+
+                        <Grid.RowDefinitions>
+
+                            <RowDefinition Height="Auto" />
+
+                            <RowDefinition Height="*" />
+
+                        </Grid.RowDefinitions>
+
+
+                        <!-- Developer title -->
+
+                        <StackPanel Grid.Row="0"
+                                    Orientation="Horizontal">
+
+                            <icons:IconBlock Icon="Code"
+                                        FontSize="16"
+                                        Foreground="{StaticResource PrimaryLight}"
+                                        Margin="0,0,7,0" />
+
+                            <TextBlock Text="Developer"
+                                       Style="{StaticResource SectionTitle}" />
+
+                        </StackPanel>
+
+
+                        <Grid Grid.Row="1"
+                              Margin="0,12,0,0">
+
+                            <Grid.ColumnDefinitions>
+
+                                <ColumnDefinition Width="135" />
+
+                                <ColumnDefinition Width="*" />
+
+                            </Grid.ColumnDefinitions>
+
+
+                            <!-- Avatar -->
+
+                            <Grid Grid.Column="0"
+                                  Width="130"
+                                  Height="130"
+                                  HorizontalAlignment="Center"
+                                  VerticalAlignment="Center">
+
+                                <Ellipse Fill="#162044" />
+
+                                <Ellipse Margin="5"
+                                         Stroke="#5362C4"
+                                         StrokeThickness="1" />
+
+                                <Image Source="/Resources/Images/Developer/Official/Amin.jpg"
+
+                                       Margin="13"
+                                       Width="105"
+                                       Height="105"
+                                       Stretch="UniformToFill">
+
+                                    <Image.Clip>
+                                        <EllipseGeometry Center="47,47"
+                                                         RadiusX="47"
+                                                         RadiusY="47" />
+                                    </Image.Clip>
+
+                                </Image>
+
+                            </Grid>
+
+
+                            <!-- Developer Info -->
+
+                            <Grid Grid.Column="1"
+                                  Margin="12,0,0,0">
+
+                                <Grid.RowDefinitions>
+
+                                    <RowDefinition Height="Auto" />
+
+                                    <RowDefinition Height="*" />
+
+                                </Grid.RowDefinitions>
+
+
+                                <StackPanel Grid.Row="0">
+
+                                    <TextBlock Text="Amin Mirzaei"
+                                               FontSize="13"
+                                               FontWeight="SemiBold"
+                                               Foreground="{StaticResource TextPrimary}" />
+
+                                    <TextBlock Text="I'm a passionate dekstop developer who loves building modern, beautiful and user-friendly web applications. This dashboard is one of my works."
+                                               Style="{StaticResource Description}"
+                                               Margin="0,9,0,7" />
+
+                                </StackPanel>
+
+
+                                <!-- Contact rows -->
+
+                                <StackPanel Grid.Row="1"
+                                            VerticalAlignment="Top">
+
+                                    <controls:ContactInfoRow Height="60" Margin="0,2" Title="X" Value="https://x.com" Icon="/Resources/Icons/Contact/X.png" />
+
+                                    <controls:ContactInfoRow Height="60" Margin="0,2" Title="Gmail" Value="https://gmail.com" Icon="/Resources/Icons/Contact/Gmail.png" />
+
+                                    <controls:ContactInfoRow Height="60" Margin="0,2" Title="Github" Value="https://github.com" Icon="/Resources/Icons/Contact/Github.png" />
+
+                                    <controls:ContactInfoRow Height="60" Margin="0,2" Title="Instagram" Value="https://instagram.com" Icon="/Resources/Icons/Contact/Instagram.png" />
+
+                                </StackPanel>
+
+                            </Grid>
+
+                        </Grid>
+
+                    </Grid>
+
+                </Border>
+
+            </Grid>
+
+
+            <!-- Bottom Row -->
+
+            <Grid Grid.Row="1"
+                  Margin="0,18,0,0">
+
+                <Grid.ColumnDefinitions>
+
+                    <ColumnDefinition Width="1*" />
+
+                    <ColumnDefinition Width="1*" />
+
+                    <ColumnDefinition Width="1*" />
+
+                </Grid.ColumnDefinitions>
+
+
+                <!-- Technologies -->
+
+                <Border Grid.Column="0"
+                        Style="{StaticResource CardStyle}"
+                        Margin="0,0,7,0">
+
+                    <Grid>
+
+                        <Grid.RowDefinitions>
+
+                            <RowDefinition Height="Auto" />
+
+                            <RowDefinition Height="Auto" />
+
+                            <RowDefinition Height="*" />
+
+                        </Grid.RowDefinitions>
+
+
+                        <StackPanel Grid.Row="0"
+                                    Orientation="Horizontal">
+
+                            <icons:IconBlock Icon="Computer"
+                                        FontSize="16"
+                                        Foreground="{StaticResource PrimaryLight}"
+                                        Margin="0,0,7,0" />
+
+                            <TextBlock Text="Technologies Used"
+                                       Style="{StaticResource SectionTitle}" />
+
+                        </StackPanel>
+
+
+                        <TextBlock Grid.Row="1"
+                                   Text="Built with modern and reliable technologies."
+                                   Style="{StaticResource Description}"
+                                   Margin="0,5,0,10" />
+
+
+                        <!-- Technology Badges -->
+
+                        <Grid Grid.Row="2">
+
+                            <Grid.RowDefinitions>
+
+                                <RowDefinition Height="1*" />
+
+                                <RowDefinition Height="1*" />
+
+                            </Grid.RowDefinitions>
+
+                            <Grid.ColumnDefinitions>
+
+                                <ColumnDefinition Width="1*" />
+
+                                <ColumnDefinition Width="1*" />
+
+                                <ColumnDefinition Width="1*" />
+
+                                <ColumnDefinition Width="1*" />
+
+                            </Grid.ColumnDefinitions>
+
+
+                            <controls:TechnologyBadge Grid.Row="0"
+                                                      Grid.Column="0"
+                                                      Icon="/Resources/Icons/Technologies/Csharp.png"
+                                                      TechnologyName="Csharp"
+                                                      Margin="0,0,4,5" />
+
+
+                            <controls:TechnologyBadge Grid.Row="0"
+                                                      Grid.Column="1"
+                                                      Icon="/Resources/Icons/Technologies/WPF.png"
+                                                      TechnologyName="XAML"
+                                                      Margin="4,0,4,5" />
+
+
+                            <controls:TechnologyBadge Grid.Row="0"
+                                                      Grid.Column="2"
+                                                      Icon="/Resources/Icons/Technologies/DotNet.png"
+                                                      TechnologyName=".NET"
+                                                      Margin="4,0,4,5" />
+
+
+                            <controls:TechnologyBadge Grid.Row="0"
+                                                      Grid.Column="3"
+                                                      Icon="/Resources/Icons/Technologies/Figma.png"
+                                                      TechnologyName="Figma"
+                                                      Margin="4,0,0,5" />
+
+
+                            <controls:TechnologyBadge Grid.Row="1"
+                                                      Grid.Column="0"
+                                                      Icon="/Resources/Icons/Technologies/FontAwesome.png"
+                                                      TechnologyName="Font Awesome"
+                                                      Grid.ColumnSpan="4"
+                                                      Margin="0,5,0,0" />
+
+                        </Grid>
+
+                    </Grid>
+
+                </Border>
+
+
+                <!-- Version -->
+
+                <Border Grid.Column="1"
+                        Style="{StaticResource CardStyle}"
+                        Margin="7,0">
+
+                    <StackPanel>
+
+                        <StackPanel Orientation="Horizontal">
+
+                            <icons:IconBlock Icon="CodeBranch"
+                                        FontSize="16"
+                                        Foreground="{StaticResource PrimaryLight}"
+                                        Margin="0,0,7,0" />
+
+                            <TextBlock Text="Version"
+                                       Style="{StaticResource SectionTitle}" />
+
+                        </StackPanel>
+
+
+                        <TextBlock Text="Current dashboard version and updates."
+                                   Style="{StaticResource Description}"
+                                   Margin="0,5,0,9" />
+
+
+                        <Border Width="52"
+                                Height="51"
+                                Margin="0,10,0,0"
+                                CornerRadius="7"
+                                Background="{StaticResource Primary}"
+                                HorizontalAlignment="Center">
+
+                            <StackPanel VerticalAlignment="Center">
+
+                                <TextBlock Text="Beta"
+                                           Foreground="WhiteSmoke"
+                                           FontSize="7"
+                                           HorizontalAlignment="Center" />
+
+                                <TextBlock Text="1.3"
+                                           Foreground="White"
+                                           FontSize="20"
+                                           FontWeight="SemiBold"
+                                           HorizontalAlignment="Center" />
+
+                            </StackPanel>
+
+                        </Border>
+
+
+                        <Border Background="#268D74"
+                                CornerRadius="10"
+                                Padding="9,3"
+                                Height="20"
+                                HorizontalAlignment="Center"
+                                Margin="0,6,0,0">
+
+                            <TextBlock Text="Latest Version"
+                                       Foreground="White"
+                                       FontSize="7"
+                                       VerticalAlignment="Center"
+                                       HorizontalAlignment="Center"
+                                       FontWeight="SemiBold" />
+
+                        </Border>
+
+
+                        <TextBlock Text="Released on May 21, 2026"
+                                   Foreground="WhiteSmoke"
+                                   FontSize="7"
+                                   HorizontalAlignment="Center"
+                                   Margin="0,6,0,0" />
+
+
+                        <TextBlock Text="Check for updates regularly to get the latest features and improvements."
+                                   Foreground="{StaticResource TextSecondary}"
+                                   FontSize="7"
+                                   TextWrapping="Wrap"
+                                   TextAlignment="Center"
+                                   Margin="15,7,15,0" />
+
+                    </StackPanel>
+
+                </Border>
+
+
+                <!-- Thank You -->
+
+                <Border Grid.Column="2"
+                        Style="{StaticResource CardStyle}"
+                        Margin="7,0,0,0">
+
+                    <Grid>
+
+                        <Grid.RowDefinitions>
+
+                            <RowDefinition Height="Auto" />
+
+                            <RowDefinition Height="*" />
+
+                            <RowDefinition Height="Auto" />
+
+                        </Grid.RowDefinitions>
+
+
+                        <!-- Title -->
+
+                        <StackPanel Grid.Row="0"
+                                    Orientation="Horizontal">
+
+                            <icons:IconBlock Icon="Heart"
+                                        FontSize="16"
+                                        Foreground="{StaticResource PrimaryLight}"
+                                        Margin="0,0,7,0" />
+
+                            <TextBlock Text="Thank You!"
+                                       Style="{StaticResource SectionTitle}" />
+
+                        </StackPanel>
+
+
+                        <!-- Text -->
+
+                        <StackPanel Grid.Row="1"
+                                    Margin="0,7,0,10">
+
+                            <TextBlock Text="Thank you for using this dashboard."
+                                       Style="{StaticResource Description}" />
+
+                            <TextBlock Text="I hope it helps you manage your business better and save valuable time."
+                                       Style="{StaticResource Description}"
+                                       Margin="0,5,0,0" />
+
+                            <TextBlock Text="If you like this project, don't forget to give it a star ⭐ on GitHub and follow me on Instagram."
+                                       Style="{StaticResource Description}"
+                                       Margin="0,10,0,0" />
+
+                        </StackPanel>
+
+
+                        <!-- APButton -->
+
+                        <controls:APButton Grid.Row="2"
+                                           Height="45"
+                                           Icon="Donate"
+                                           Content="Support the Developer"
+                                           HorizontalAlignment="Stretch" />
+
+                    </Grid>
+
+                </Border>
+
+            </Grid>
+
+        </Grid>
+
+
+        <!-- Footer -->
+
+        <TextBlock Grid.Row="2"
+                   Text="© 2026 Amin Mirzaei. All rights reserved."
+                   Foreground="White"
+                   FontSize="10"
+                   HorizontalAlignment="Center"
+                   Margin="0,0,0,9" />
+
     </Grid>
+
 </UserControl>

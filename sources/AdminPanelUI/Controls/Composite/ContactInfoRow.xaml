@@ -12,32 +12,35 @@
         <Grid>
 
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="28" />
-                <ColumnDefinition Width="55" />
+                <ColumnDefinition Width="40" />
+                <ColumnDefinition Width="70" />
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="22" />
             </Grid.ColumnDefinitions>
 
             <!-- Main Icon -->
-            <icons:IconBlock Grid.Column="0"
-                          Icon="{Binding Icon, ElementName=root}"
-                          FontSize="14"
-                          Foreground="#8C82FF"
-                          VerticalAlignment="Center"
-                          HorizontalAlignment="Left" />
+            <Image Grid.Column="0"
+                   Source="{Binding Icon, ElementName=root}"
+                   Width="34"
+                   Height="34"
+                   Stretch="UniformToFill"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Left" />
 
             <!-- Title -->
             <TextBlock Grid.Column="1"
                        Text="{Binding Title, ElementName=root}"
-                       FontSize="9"
-                       Foreground="#8D99C5"
+                       FontSize="11"
+                       Margin="10,0,0,0"
+                       Foreground="WhiteSmoke"
                        VerticalAlignment="Center" />
 
             <!-- Value -->
             <TextBlock Grid.Column="2"
                        Text="{Binding Value, ElementName=root}"
-                       FontSize="9"
-                       Foreground="#D5D9EF"
+                       FontSize="12"
+                       Margin="30,0,0,0"
+                       Foreground="White"
                        VerticalAlignment="Center"
                        TextTrimming="CharacterEllipsis" />
 
