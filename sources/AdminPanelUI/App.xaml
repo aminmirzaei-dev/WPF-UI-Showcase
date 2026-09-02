@@ -16,6 +16,7 @@
                 <ResourceDictionary Source="Resources/Styles/Buttons.xaml" />
                 <ResourceDictionary Source="Resources/Styles/TextBlocks.xaml" />
                 <ResourceDictionary Source="Resources/Styles/TextBoxs.xaml" />
+                <ResourceDictionary Source="Resources/Styles/ComboBoxs.xaml" />
                 <ResourceDictionary Source="Resources/Styles/IconImages.xaml" />
                 <ResourceDictionary Source="Resources/Themes/Purple.xaml" />
             </ResourceDictionary.MergedDictionaries>
