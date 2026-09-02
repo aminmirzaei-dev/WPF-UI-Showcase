@@ -25,7 +25,7 @@
                 Value="Segoe UI" />
 
         <Setter Property="FontSize"
-                Value="13" />
+                Value="14" />
 
         <Setter Property="FontWeight"
                 Value="SemiBold" />
@@ -42,7 +42,7 @@
                 Value="Segoe UI" />
 
         <Setter Property="FontSize"
-                Value="9" />
+                Value="12" />
 
         <Setter Property="TextWrapping"
                 Value="Wrap" />
