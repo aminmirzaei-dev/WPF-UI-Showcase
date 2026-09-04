@@ -4,9 +4,95 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:AdminPanelUI.Views.Pages"
+             xmlns:controls="clr-namespace:AdminPanelUI.Controls"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
-            
+    
+    <UserControl.Resources>
+
+        <!-- Main page background -->
+        <LinearGradientBrush x:Key="PageBackground"
+                             StartPoint="0,0"
+                             EndPoint="1,1">
+
+            <GradientStop Color="#303F78"
+                          Offset="0" />
+
+            <GradientStop Color="#253565"
+                          Offset="1" />
+
+        </LinearGradientBrush>
+
+    </UserControl.Resources>
+
+
+    <!-- ============================= -->
+    <!-- Main Page -->
+    <!-- ============================= -->
+
+    <Grid Background="{StaticResource PageBackground}">
+
+        <Grid Margin="20">
+
+            <Grid.RowDefinitions>
+
+                <!-- Page title -->
+                <RowDefinition Height="Auto" />
+
+                <!-- Main content -->
+                <RowDefinition Height="*" />
+
+            </Grid.RowDefinitions>
+
+
+            <!-- ============================= -->
+            <!-- Page Header -->
+            <!-- ============================= -->
+
+            <TextBlock Grid.Row="0"
+                       Text="Messages"
+                       FontSize="21"
+                       FontWeight="SemiBold"
+                       Foreground="White"
+                       Margin="0,0,0,16" />
+
+
+            <!-- ============================= -->
+            <!-- Main Content -->
+            <!-- ============================= -->
+
+            <Grid Grid.Row="1">
+
+                <Grid.ColumnDefinitions>
+
+                    <!-- Conversations -->
+                    <ColumnDefinition Width="300" />
+
+                    <!-- Space between panels -->
+                    <ColumnDefinition Width="12" />
+
+                    <!-- Chat -->
+                    <ColumnDefinition Width="*" />
+
+                </Grid.ColumnDefinitions>
+
+
+                <!-- ============================= -->
+                <!-- Left Panel -->
+                <!-- ============================= -->
+
+                <controls:ConversationList Grid.Column="0" />
+
+
+                <!-- ============================= -->
+                <!-- Right Panel -->
+                <!-- ============================= -->
+
+                <controls:ChatLayout Grid.Column="2" />
+
+            </Grid>
+
+        </Grid>
+
     </Grid>
 </UserControl>

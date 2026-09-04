@@ -177,10 +177,11 @@
 
                                     <icons:IconBlock x:Name="IconElement"
                                                   Icon="{TemplateBinding Icon}"
-                                                  FontSize="20"
+                                                  FontSize="{TemplateBinding IconSize}"
                                                   Foreground="{TemplateBinding Foreground}"
                                                   VerticalAlignment="Center"
-                                                  Margin="0,0,10,0" />
+                                                  HorizontalAlignment="{TemplateBinding IconAlignment}"
+                                                  Margin="{TemplateBinding IconMargin}" />
 
                                     <!-- Text -->
 

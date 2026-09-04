@@ -19,6 +19,15 @@
     <None Remove="Resources\Icons\Technologies\FontAwesome.png" />
     <None Remove="Resources\Icons\Technologies\WPF.png" />
     <None Remove="Resources\Images\Developer\Official\Amin.jpg" />
+    <None Remove="Resources\Images\People\henry.png" />
+    <None Remove="Resources\Images\People\jadi.png" />
+    <None Remove="Resources\Images\People\linus.png" />
+    <None Remove="Resources\Images\People\maryam.png" />
+    <None Remove="Resources\Images\People\morgan.png" />
+    <None Remove="Resources\Images\People\parisa.png" />
+    <None Remove="Resources\Images\People\paul.png" />
+    <None Remove="Resources\Images\People\satya.png" />
+    <None Remove="Resources\Images\People\sydeny.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -48,6 +57,15 @@
     <Resource Include="Resources\Images\Developer\Fantasy\DevPink.png" />
     <Resource Include="Resources\Images\Developer\Fantasy\DevRed.png" />
     <Resource Include="Resources\Images\Developer\Official\Amin.jpg" />
+    <Resource Include="Resources\Images\People\henry.png" />
+    <Resource Include="Resources\Images\People\jadi.png" />
+    <Resource Include="Resources\Images\People\linus.png" />
+    <Resource Include="Resources\Images\People\maryam.png" />
+    <Resource Include="Resources\Images\People\morgan.png" />
+    <Resource Include="Resources\Images\People\parisa.png" />
+    <Resource Include="Resources\Images\People\paul.png" />
+    <Resource Include="Resources\Images\People\satya.png" />
+    <Resource Include="Resources\Images\People\sydeny.png" />
   </ItemGroup>
 
   <ItemGroup>

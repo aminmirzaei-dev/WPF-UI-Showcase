@@ -1,6 +1,8 @@
 ﻿using FontAwesome.Sharp;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Drawing.Printing;
 using System.Text;
 using System.Windows;
 using System.Windows.Media;
@@ -59,6 +61,48 @@ namespace AdminPanelUI.Controls
             get => (IconChar)GetValue(IconProperty);
             set => SetValue(IconProperty, value);
         }
+
+        public static readonly DependencyProperty IconAlignmentProperty =
+           DependencyProperty.Register(
+               nameof(IconAlignment),
+               typeof(HorizontalAlignment),
+               typeof(APButton),
+               new FrameworkPropertyMetadata(HorizontalAlignment.Left));
+
+        public HorizontalAlignment IconAlignment
+        {
+            get => (HorizontalAlignment)GetValue(IconAlignmentProperty);
+            set => SetValue(IconAlignmentProperty, value);
+        }
+
+        public static readonly DependencyProperty IconMarginProperty =
+          DependencyProperty.Register(
+              nameof(IconMargin),
+              typeof(Margins),
+              typeof(APButton),
+              new FrameworkPropertyMetadata(new Margins(0,0,0,0)));
+
+        public Margins IconMargin
+        {
+            get => (Margins)GetValue(IconMarginProperty);
+            set => SetValue(IconMarginProperty, value);
+        }
+
+        public static readonly DependencyProperty IconSizeProperty =
+            DependencyProperty.Register(
+                nameof(IconSize),
+                typeof(float),
+                typeof(APButton),
+                new FrameworkPropertyMetadata(20.0f));
+
+        public float IconSize
+        {
+            get => (float)GetValue(IconSizeProperty);
+            set => SetValue(IconSizeProperty, value);
+        }
+
+
+
 
         #endregion
 
