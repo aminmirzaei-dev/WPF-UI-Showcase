@@ -27,7 +27,7 @@
         <menus:Workspace />
 
         <!--Main Section-->
-        <pages:Messages Grid.Column="1" />
+        <pages:Listing Grid.Column="1" />
         
         
 

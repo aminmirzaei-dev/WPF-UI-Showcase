@@ -14,5 +14,18 @@ namespace AdminPanelUI.Controls
                 typeof(APComboBox),
                 new FrameworkPropertyMetadata(typeof(APComboBox)));
         }
+
+        public string PlaceholderText
+        {
+            get => (string)GetValue(PlaceholderTextProperty);
+            set => SetValue(PlaceholderTextProperty, value);
+        }
+
+        public static readonly DependencyProperty PlaceholderTextProperty =
+            DependencyProperty.Register(
+                nameof(PlaceholderText),
+                typeof(string),
+                typeof(APComboBox),
+                new PropertyMetadata("Select..."));
     }
 }

@@ -3,11 +3,15 @@
                     xmlns:controls="clr-namespace:AdminPanelUI.Controls">
 
 
-    <Style
-           TargetType="{x:Type controls:APComboBox}">
+    <!-- ========================================================= -->
+    <!-- APComboBox                                                  -->
+    <!-- ========================================================= -->
+
+    <Style TargetType="{x:Type controls:APComboBox}">
 
         <Setter Property="Width"
                 Value="260" />
+
         <Setter Property="Height"
                 Value="48" />
 
@@ -16,11 +20,13 @@
 
         <Setter Property="Foreground"
                 Value="#F3F4F8" />
+
         <Setter Property="Background"
                 Value="#20232D" />
 
         <Setter Property="BorderBrush"
                 Value="#414758" />
+
         <Setter Property="BorderThickness"
                 Value="1" />
 
@@ -33,6 +39,108 @@
         <Setter Property="VerticalContentAlignment"
                 Value="Center" />
 
+        <Setter Property="ItemContainerStyle">
+            <Setter.Value>
+                <Style TargetType="{x:Type ComboBoxItem}">
+
+                    <Setter Property="Foreground"
+                            Value="#E8EBF5" />
+
+                    <Setter Property="Background"
+                            Value="Transparent" />
+
+                    <Setter Property="Cursor"
+                            Value="Hand" />
+
+                    <Setter Property="FontSize"
+                            Value="14" />
+
+                    <Setter Property="Padding"
+                            Value="14,11" />
+
+                    <Setter Property="Margin"
+                            Value="2" />
+
+                    <Setter Property="HorizontalContentAlignment"
+                            Value="Left" />
+
+                    <Setter Property="VerticalContentAlignment"
+                            Value="Center" />
+
+                    <Setter Property="Template">
+
+                        <Setter.Value>
+
+                            <ControlTemplate TargetType="{x:Type ComboBoxItem}">
+
+                                <Border x:Name="ItemBorder"
+                                        Background="{TemplateBinding Background}"
+                                        CornerRadius="8"
+                                        Padding="{TemplateBinding Padding}">
+
+                                    <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                                      VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                                                      Content="{TemplateBinding Content}"
+                                                      ContentTemplate="{TemplateBinding ContentTemplate}"
+                                                      ContentStringFormat="{TemplateBinding ContentStringFormat}"
+                                                      TextElement.Foreground="{TemplateBinding Foreground}"
+                                                      TextElement.FontSize="{TemplateBinding FontSize}" />
+
+                                </Border>
+
+                                <ControlTemplate.Triggers>
+
+                                    <!-- Hover -->
+                                    <Trigger Property="IsMouseOver"
+                                             Value="True">
+
+                                        <Setter TargetName="ItemBorder"
+                                                Property="Background"
+                                                Value="#353B4D" />
+
+                                    </Trigger>
+
+                                    <!-- Selected -->
+                                    <Trigger Property="IsSelected"
+                                             Value="True">
+
+                                        <Setter TargetName="ItemBorder"
+                                                Property="Background"
+                                                Value="#5866E8" />
+
+                                        <Setter Property="Foreground"
+                                                Value="White" />
+
+                                    </Trigger>
+
+                                    <!-- Disabled -->
+                                    <Trigger Property="IsEnabled"
+                                             Value="False">
+
+                                        <Setter Property="Opacity"
+                                                Value="0.4" />
+
+                                        <Setter Property="Cursor"
+                                                Value="Arrow" />
+
+                                    </Trigger>
+
+                                </ControlTemplate.Triggers>
+
+                            </ControlTemplate>
+
+                        </Setter.Value>
+
+                    </Setter>
+
+                </Style>
+            </Setter.Value>
+        </Setter>
+
+
+        <!-- ========================================================= -->
+        <!-- Template                                                   -->
+        <!-- ========================================================= -->
 
         <Setter Property="Template">
 
@@ -42,37 +150,34 @@
 
                     <Grid>
 
-
                         <!-- Shadow -->
-
                         <Border Margin="0,4,0,0"
                                 Background="#40000000"
                                 CornerRadius="12" />
 
 
-                        <!-- Main Border -->
-
+                        <!-- Main -->
                         <Border x:Name="MainBorder"
                                 Background="{TemplateBinding Background}"
                                 BorderBrush="{TemplateBinding BorderBrush}"
                                 BorderThickness="{TemplateBinding BorderThickness}"
                                 CornerRadius="12">
 
-
                             <Grid>
 
-
-                                <!-- Important : ToggleButton-->
+                                <!-- ================================================= -->
+                                <!-- ToggleButton                                      -->
+                                <!-- ================================================= -->
 
                                 <ToggleButton x:Name="DropDownToggle"
                                               Focusable="False"
-                                              Foreground="White"
+                                              IsChecked="{Binding IsDropDownOpen,
+                                                              RelativeSource={RelativeSource TemplatedParent},
+                                                              Mode=TwoWay}"
                                               Background="Transparent"
                                               BorderThickness="0"
-                                              IsChecked="{Binding IsDropDownOpen,
-                                                        RelativeSource={RelativeSource TemplatedParent},
-                                                        Mode=TwoWay}">
-
+                                              HorizontalContentAlignment="Stretch"
+                                              VerticalContentAlignment="Stretch">
 
                                     <ToggleButton.Template>
 
@@ -80,16 +185,15 @@
 
                                             <Grid>
 
+                                                <!-- Selected value -->
+                                                <ContentPresenter Margin="10,0,0,0"
+                                                                  HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                                                  VerticalAlignment="Center"
+                                                                  Content="{TemplateBinding Content}"
+                                                                  TextElement.Foreground="{TemplateBinding Foreground}" />
 
-                                                <!-- Selected Conttent-->
 
-                                                <ContentPresenter Margin="5,0,0,0"
-                                                                  HorizontalAlignment="Left"
-                                                                  VerticalAlignment="Center" />
-
-
-                                                <!--Arrow-->
-
+                                                <!-- Arrow -->
                                                 <Border Width="48"
                                                         HorizontalAlignment="Right"
                                                         Background="Transparent"
@@ -106,11 +210,9 @@
                                                           Data="M 0,0 L 5.5,6 L 11,0 Z">
 
                                                         <Path.RenderTransform>
-
                                                             <RotateTransform Angle="0"
                                                                              CenterX="5.5"
                                                                              CenterY="3" />
-
                                                         </Path.RenderTransform>
 
                                                     </Path>
@@ -122,9 +224,7 @@
 
                                             <ControlTemplate.Triggers>
 
-
                                                 <!-- Hover -->
-
                                                 <Trigger Property="IsMouseOver"
                                                          Value="True">
 
@@ -135,8 +235,7 @@
                                                 </Trigger>
 
 
-                                                <!-- Checked / Open -->
-
+                                                <!-- Open -->
                                                 <Trigger Property="IsChecked"
                                                          Value="True">
 
@@ -159,6 +258,17 @@
 
                                                 </Trigger>
 
+
+                                                <!-- Disabled -->
+                                                <Trigger Property="IsEnabled"
+                                                         Value="False">
+
+                                                    <Setter TargetName="Arrow"
+                                                            Property="Opacity"
+                                                            Value="0.5" />
+
+                                                </Trigger>
+
                                             </ControlTemplate.Triggers>
 
                                         </ControlTemplate>
@@ -166,21 +276,58 @@
                                     </ToggleButton.Template>
 
 
-                                    <!-- Content of ToggleButton  -->
-
+                                    <!-- Selected item -->
                                     <ToggleButton.Content>
 
-                                        <ContentPresenter Content="{TemplateBinding SelectionBoxItem}"
-                                                          ContentTemplate="{TemplateBinding SelectionBoxItemTemplate}"
-                                                          ContentStringFormat="{TemplateBinding SelectionBoxItemStringFormat}" />
+                                        <Grid>
+
+                                            <ContentPresenter Content="{TemplateBinding SelectionBoxItem}"
+                                                              ContentTemplate="{TemplateBinding SelectionBoxItemTemplate}"
+                                                              ContentStringFormat="{TemplateBinding SelectionBoxItemStringFormat}"
+                                                              VerticalAlignment="Center"
+                                                              TextElement.Foreground="{TemplateBinding Foreground}"
+                                                              TextElement.FontSize="{TemplateBinding FontSize}" />
+
+                                            <TextBlock Text="{Binding PlaceholderText,
+                           RelativeSource={RelativeSource AncestorType={x:Type controls:APComboBox}}}"
+                                                       Foreground="Gray"
+                                                       VerticalAlignment="Center"
+                                                       IsHitTestVisible="False">
+
+                                                <TextBlock.Style>
+                                                    <Style TargetType="TextBlock">
+
+                                                        <Setter Property="Visibility"
+                                                                Value="Collapsed" />
+
+                                                        <Style.Triggers>
+
+                                                            <DataTrigger Binding="{Binding SelectedIndex,
+                                              RelativeSource={RelativeSource AncestorType={x:Type controls:APComboBox}}}"
+                                                                         Value="-1">
+
+                                                                <Setter Property="Visibility"
+                                                                        Value="Visible" />
+
+                                                            </DataTrigger>
+
+                                                        </Style.Triggers>
+
+                                                    </Style>
+                                                </TextBlock.Style>
+
+                                            </TextBlock>
+
+                                        </Grid>
 
                                     </ToggleButton.Content>
-
 
                                 </ToggleButton>
 
 
-                                <!-- Popup -->
+                                <!-- ================================================= -->
+                                <!-- Popup                                             -->
+                                <!-- ================================================= -->
 
                                 <Popup x:Name="PART_Popup"
                                        AllowsTransparency="True"
@@ -190,12 +337,9 @@
                                        PlacementTarget="{Binding RelativeSource={RelativeSource TemplatedParent}}"
                                        PopupAnimation="Fade">
 
-
                                     <Border x:Name="PopupBorder"
-                                            MinWidth="{Binding ActualWidth,
-                                                   RelativeSource={
-                                                       RelativeSource TemplatedParent
-                                                   }}"
+                                            Width="{Binding ActualWidth,
+                                                        RelativeSource={RelativeSource TemplatedParent}}"
                                             Background="#20232D"
                                             BorderBrush="#414758"
                                             BorderThickness="1"
@@ -203,11 +347,9 @@
                                             Padding="5"
                                             Margin="0,5,0,0">
 
-
                                         <ScrollViewer CanContentScroll="True"
                                                       HorizontalScrollBarVisibility="Disabled"
                                                       VerticalScrollBarVisibility="Auto">
-
 
                                             <ItemsPresenter KeyboardNavigation.DirectionalNavigation="Contained"
                                                             KeyboardNavigation.TabNavigation="Once" />
@@ -218,22 +360,20 @@
 
                                 </Popup>
 
-
                             </Grid>
 
                         </Border>
 
-
                     </Grid>
 
 
-                    <!-- ComboBox States -->
+                    <!-- ========================================================= -->
+                    <!-- ComboBox Triggers                                         -->
+                    <!-- ========================================================= -->
 
                     <ControlTemplate.Triggers>
 
-
                         <!-- Hover -->
-
                         <Trigger Property="IsMouseOver"
                                  Value="True">
 
@@ -245,7 +385,6 @@
 
 
                         <!-- Focus -->
-
                         <Trigger Property="IsKeyboardFocusWithin"
                                  Value="True">
 
@@ -257,7 +396,6 @@
 
 
                         <!-- Open -->
-
                         <Trigger Property="IsDropDownOpen"
                                  Value="True">
 
@@ -273,7 +411,6 @@
 
 
                         <!-- Disabled -->
-
                         <Trigger Property="IsEnabled"
                                  Value="False">
 
@@ -283,7 +420,6 @@
 
                         </Trigger>
 
-
                     </ControlTemplate.Triggers>
 
                 </ControlTemplate>
@@ -291,126 +427,6 @@
             </Setter.Value>
 
         </Setter>
-
-    </Style>
-
-
-    <!-- ComboBoxItem -->
-
-    <Style TargetType="{x:Type ComboBoxItem}">
-
-
-        <Setter Property="Foreground"
-                Value="#E8EBF5" />
-
-        <Setter Property="Cursor"
-                Value="Hand" />
-
-        <Setter Property="Background"
-                Value="Transparent" />
-
-
-        <Setter Property="FontSize"
-                Value="14" />
-
-
-        <Setter Property="Padding"
-                Value="14,11" />
-
-
-        <Setter Property="Margin"
-                Value="2" />
-
-
-        <Setter Property="HorizontalContentAlignment"
-                Value="Left" />
-
-
-        <Setter Property="VerticalContentAlignment"
-                Value="Center" />
-
-
-        <Setter Property="Template">
-
-
-            <Setter.Value>
-
-
-                <ControlTemplate TargetType="{x:Type ComboBoxItem}">
-
-
-                    <Border x:Name="ItemBorder"
-                            Background="{TemplateBinding Background}"
-                            CornerRadius="8"
-                            Padding="{TemplateBinding Padding}">
-
-
-                        <ContentPresenter VerticalAlignment="Center"
-                                          HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" />
-
-
-                    </Border>
-
-
-                    <ControlTemplate.Triggers>
-
-
-                        <!-- Hover -->
-
-                        <Trigger Property="IsMouseOver"
-                                 Value="True">
-
-
-                            <Setter TargetName="ItemBorder"
-                                    Property="Background"
-                                    Value="#353B4D" />
-
-
-                        </Trigger>
-
-
-                        <!-- Selected -->
-
-                        <Trigger Property="IsSelected"
-                                 Value="True">
-
-
-                            <Setter TargetName="ItemBorder"
-                                    Property="Background"
-                                    Value="#5866E8" />
-
-
-                            <Setter Property="Foreground"
-                                    Value="White" />
-
-
-                        </Trigger>
-
-
-                        <!-- Disabled -->
-
-                        <Trigger Property="IsEnabled"
-                                 Value="False">
-
-
-                            <Setter Property="Opacity"
-                                    Value="0.4" />
-
-
-                        </Trigger>
-
-
-                    </ControlTemplate.Triggers>
-
-
-                </ControlTemplate>
-
-
-            </Setter.Value>
-
-
-        </Setter>
-
 
     </Style>
 
