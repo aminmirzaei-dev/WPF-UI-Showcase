@@ -659,6 +659,321 @@
 
                 </ListBoxItem>
 
+                <ListBoxItem>
+
+                    <Grid>
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="40" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+
+                        <Border Grid.Column="0"
+                                Width="40"
+                                Height="40"
+                                CornerRadius="20"
+                                Background="#43B8D5">
+
+                            <Image Source="/Resources/Images/People/Jamie.png"></Image>
+
+
+                        </Border>
+
+                        <StackPanel Grid.Column="1"
+                                    Margin="8,0,4,0">
+
+                            <TextBlock Text="Jamie Fox"
+                                       Foreground="White"
+                                       FontSize="16"
+                                       FontWeight="SemiBold" />
+
+                            <TextBlock Text="Can you please provide..."
+                                       Foreground="#8F9CC2"
+                                       FontSize="12"
+                                       Margin="0,3,0,0" />
+
+                        </StackPanel>
+
+                        <TextBlock Grid.Column="2"
+                                   Text="12:00 PM"
+                                   Foreground="#8794B9"
+                                   FontSize="10" />
+
+                    </Grid>
+
+                </ListBoxItem>
+
+                <ListBoxItem>
+
+                    <Grid>
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="40" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+
+                        <Border Grid.Column="0"
+                                Width="40"
+                                Height="40"
+                                CornerRadius="20"
+                                Background="#43B8D5">
+
+                            <Image Source="/Resources/Images/People/Ana.png"></Image>
+
+
+                        </Border>
+
+                        <StackPanel Grid.Column="1"
+                                    Margin="8,0,4,0">
+
+                            <TextBlock Text="Ana de Armas"
+                                       Foreground="White"
+                                       FontSize="16"
+                                       FontWeight="SemiBold" />
+
+                            <TextBlock Text="Can you please provide..."
+                                       Foreground="#8F9CC2"
+                                       FontSize="12"
+                                       Margin="0,3,0,0" />
+
+                        </StackPanel>
+
+                        <TextBlock Grid.Column="2"
+                                   Text="12:00 PM"
+                                   Foreground="#8794B9"
+                                   FontSize="10" />
+
+                    </Grid>
+
+                </ListBoxItem>
+
+                <ListBoxItem>
+
+                    <Grid>
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="40" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+
+                        <Border Grid.Column="0"
+                                Width="40"
+                                Height="40"
+                                CornerRadius="20"
+                                Background="#43B8D5">
+
+                            <Image Source="/Resources/Images/People/daei.png"></Image>
+
+
+                        </Border>
+
+                        <StackPanel Grid.Column="1"
+                                    Margin="8,0,4,0">
+
+                            <TextBlock Text="Ali Daei"
+                                       Foreground="White"
+                                       FontSize="16"
+                                       FontWeight="SemiBold" />
+
+                            <TextBlock Text="Can you please provide..."
+                                       Foreground="#8F9CC2"
+                                       FontSize="12"
+                                       Margin="0,3,0,0" />
+
+                        </StackPanel>
+
+                        <TextBlock Grid.Column="2"
+                                   Text="12:00 PM"
+                                   Foreground="#8794B9"
+                                   FontSize="10" />
+
+                    </Grid>
+
+                </ListBoxItem>
+
+                <ListBoxItem>
+
+                    <Grid>
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="40" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+
+                        <Border Grid.Column="0"
+                                Width="40"
+                                Height="40"
+                                CornerRadius="20"
+                                Background="#43B8D5">
+
+                            <Image Source="/Resources/Images/People/pezeshkian.png"></Image>
+
+
+                        </Border>
+
+                        <StackPanel Grid.Column="1"
+                                    Margin="8,0,4,0">
+
+                            <TextBlock Text="Masoud Pezeshkian"
+                                       Foreground="White"
+                                       FontSize="16"
+                                       FontWeight="SemiBold" />
+
+                            <TextBlock Text="Can you please provide..."
+                                       Foreground="#8F9CC2"
+                                       FontSize="12"
+                                       Margin="0,3,0,0" />
+
+                        </StackPanel>
+
+                        <TextBlock Grid.Column="2"
+                                   Text="12:00 PM"
+                                   Foreground="#8794B9"
+                                   FontSize="10" />
+
+                    </Grid>
+
+                </ListBoxItem>
+
+                <ListBoxItem>
+
+                    <Grid>
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="40" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+
+                        <Border Grid.Column="0"
+                                Width="40"
+                                Height="40"
+                                CornerRadius="20"
+                                Background="#43B8D5">
+
+                            <Image Source="/Resources/Images/People/barack.png"></Image>
+
+
+                        </Border>
+
+                        <StackPanel Grid.Column="1"
+                                    Margin="8,0,4,0">
+
+                            <TextBlock Text="Barack Obama"
+                                       Foreground="White"
+                                       FontSize="16"
+                                       FontWeight="SemiBold" />
+
+                            <TextBlock Text="Can you please provide..."
+                                       Foreground="#8F9CC2"
+                                       FontSize="12"
+                                       Margin="0,3,0,0" />
+
+                        </StackPanel>
+
+                        <TextBlock Grid.Column="2"
+                                   Text="12:00 PM"
+                                   Foreground="#8794B9"
+                                   FontSize="10" />
+
+                    </Grid>
+
+                </ListBoxItem>
+
+                <ListBoxItem>
+
+                    <Grid>
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="40" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+
+                        <Border Grid.Column="0"
+                                Width="40"
+                                Height="40"
+                                CornerRadius="20"
+                                Background="#43B8D5">
+
+                            <Image Source="/Resources/Images/People/christian.png"></Image>
+
+
+                        </Border>
+
+                        <StackPanel Grid.Column="1"
+                                    Margin="8,0,4,0">
+
+                            <TextBlock Text="Christian Bale"
+                                       Foreground="White"
+                                       FontSize="16"
+                                       FontWeight="SemiBold" />
+
+                            <TextBlock Text="Can you please provide..."
+                                       Foreground="#8F9CC2"
+                                       FontSize="12"
+                                       Margin="0,3,0,0" />
+
+                        </StackPanel>
+
+                        <TextBlock Grid.Column="2"
+                                   Text="12:00 PM"
+                                   Foreground="#8794B9"
+                                   FontSize="10" />
+
+                    </Grid>
+
+                </ListBoxItem>
+
+                <ListBoxItem>
+
+                    <Grid>
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="40" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+
+                        <Border Grid.Column="0"
+                                Width="40"
+                                Height="40"
+                                CornerRadius="20"
+                                Background="#43B8D5">
+
+                            <Image Source="/Resources/Images/People/asha.png"></Image>
+
+
+                        </Border>
+
+                        <StackPanel Grid.Column="1"
+                                    Margin="8,0,4,0">
+
+                            <TextBlock Text="Asha Sharma"
+                                       Foreground="White"
+                                       FontSize="16"
+                                       FontWeight="SemiBold" />
+
+                            <TextBlock Text="Can you please provide..."
+                                       Foreground="#8F9CC2"
+                                       FontSize="12"
+                                       Margin="0,3,0,0" />
+
+                        </StackPanel>
+
+                        <TextBlock Grid.Column="2"
+                                   Text="12:00 PM"
+                                   Foreground="#8794B9"
+                                   FontSize="10" />
+
+                    </Grid>
+
+                </ListBoxItem>
+
             </ListBox>
 
         </Grid>
