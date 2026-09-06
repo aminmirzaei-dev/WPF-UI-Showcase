@@ -24,14 +24,19 @@
         </Grid.ColumnDefinitions>
 
         <!--Left Menu-->
-        <menus:Workspace />
+        <menus:Workspace ContentPage="{x:Reference container}"/>
 
         <!--Main Section-->
-        <pages:Dashboard Grid.Column="1" />
-        
-        
+        <ContentPresenter x:Name="container"
+                          Grid.Column="1">
+            <ContentPresenter.Content>
+                <pages:Dashboard />
+            </ContentPresenter.Content>
+        </ContentPresenter>
 
-       
+
+
+
 
 
     </Grid>

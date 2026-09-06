@@ -29,17 +29,19 @@
 
             <!--Menu Buttons-->
             <controls:APMenuItem Icon="Home"
-                                 
+                                 Checked="DashboardMenuItem_Checked"
                                  Content="Dashboard"
                                  IsChecked="True" />
 
             <controls:APMenuItem
                                  Icon="FileSignature"
-                                 Content="Listing"/>
+                                 Content="Listing"
+                Checked="ListingMenuItem_Checked"/>
 
             <controls:APMenuItem
                                  Icon="EnvelopeOpenText"
-                                 Content="Messages" />
+                                 Content="Messages"
+                                 Checked="MessagesMenuItem_Checked" />
 
             <controls:APMenuItem
                                  Icon="ShoppingCart"
@@ -63,6 +65,7 @@
                        Margin="20 30 20 30" />
 
             <controls:APMenuItem Icon="User"
+                                 Checked="AboutUsMenuItem_Checked"
                                  Content="About Us"/>
 
             <controls:APMenuItem Icon="PowerOff"
