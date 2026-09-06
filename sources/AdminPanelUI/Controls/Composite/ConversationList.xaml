@@ -1,8 +1,8 @@
 ﻿<UserControl x:Class="AdminPanelUI.Controls.ConversationList"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:local="clr-namespace:AdminPanelUI.Controls">
 
     <UserControl.Resources>
@@ -244,737 +244,753 @@
                              Placeholder="Search messages"
                              Margin="0,0,0,10" />
 
+                <!-- Conversations -->
+            <ListBox 
+                      ItemContainerStyle="{StaticResource ConversationItemStyle}"
+                      x:Name="listbox"
+                      Grid.Row="2"
+                      Background="Transparent"
+                      BorderBrush="Transparent"
+                      BorderThickness="0"
+                      Padding="0"
+                      FocusVisualStyle="{x:Null}"
+                      ScrollViewer.VerticalScrollBarVisibility="Auto"
+                      ScrollViewer.HorizontalScrollBarVisibility="Disabled">
 
-            <!-- Conversations -->
-            <ListBox Grid.Row="2"
-                     Background="Transparent"
-                     BorderThickness="0"
-                     ItemContainerStyle="{StaticResource ConversationItemStyle}">
+                <ListBox.Resources>
+                    <Style TargetType="{x:Type ScrollBar}"
+                           BasedOn="{StaticResource APVerticalScrollBar}" />
+                </ListBox.Resources>
+
+
 
                 <ListBoxItem IsSelected="True">
 
-                    <Grid>
+                        <Grid>
 
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="40" />
-                            <ColumnDefinition Width="*" />
-                            <ColumnDefinition Width="Auto" />
-                        </Grid.ColumnDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="40" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
 
-                        <!-- Avatar -->
-                        <Border Grid.Column="0"
-                                Width="40"
-                                Height="40"
-                                CornerRadius="20"
-                                Background="#8E7BE8">
-                            <Image Source="/Resources/Images/People/satya.png"></Image>
-                        </Border>
+                            <!-- Avatar -->
+                            <Border Grid.Column="0"
+                                    Width="40"
+                                    Height="40"
+                                    CornerRadius="20"
+                                    Background="#8E7BE8">
+                                <Image Source="/Resources/Images/People/satya.png"></Image>
+                            </Border>
 
-                        <!-- Name + message -->
-                        <StackPanel Grid.Column="1"
-                                    Margin="8,0,4,0">
+                            <!-- Name + message -->
+                            <StackPanel Grid.Column="1"
+                                        Margin="8,0,4,0">
 
-                            <TextBlock Text="Satya Nadella"
-                                       Foreground="White"
-                                       FontSize="16"
-                                       FontWeight="SemiBold" />
+                                <TextBlock Text="Satya Nadella"
+                                           Foreground="White"
+                                           FontSize="16"
+                                           FontWeight="SemiBold" />
 
-                            <TextBlock Text="Hi, is the item still available?"
-                                       Foreground="#8F9CC2"
-                                       FontSize="12"
-                                       Margin="0,3,0,0"
-                                       TextTrimming="CharacterEllipsis" />
+                                <TextBlock Text="Hi, is the item still available?"
+                                           Foreground="#8F9CC2"
+                                           FontSize="12"
+                                           Margin="0,3,0,0"
+                                           TextTrimming="CharacterEllipsis" />
 
-                        </StackPanel>
+                            </StackPanel>
 
-                        <!-- Time -->
-                        <TextBlock Grid.Column="2"
-                                   Text="12:30 PM"
-                                   Foreground="#8794B9"
-                                   FontSize="10"
-                                   VerticalAlignment="Top" />
+                            <!-- Time -->
+                            <TextBlock Grid.Column="2"
+                                       Text="12:30 PM"
+                                       Foreground="#8794B9"
+                                       FontSize="10"
+                                       VerticalAlignment="Top" />
 
-                    </Grid>
+                        </Grid>
 
-                </ListBoxItem>
+                    </ListBoxItem>
 
 
-                <ListBoxItem>
+                    <ListBoxItem>
 
-                    <Grid>
+                        <Grid>
 
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="40" />
-                            <ColumnDefinition Width="*" />
-                            <ColumnDefinition Width="Auto" />
-                        </Grid.ColumnDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="40" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
 
-                        <Border Grid.Column="0"
-                                Width="40"
-                                Height="40"
-                                CornerRadius="20"
-                                Background="#43B8D5">
+                            <Border Grid.Column="0"
+                                    Width="40"
+                                    Height="40"
+                                    CornerRadius="20"
+                                    Background="#43B8D5">
 
-                            <Image Source="/Resources/Images/People/maryam.png"></Image>
+                                <Image Source="/Resources/Images/People/maryam.png"></Image>
 
 
-                        </Border>
+                            </Border>
 
-                        <StackPanel Grid.Column="1"
-                                    Margin="8,0,4,0">
+                            <StackPanel Grid.Column="1"
+                                        Margin="8,0,4,0">
 
-                            <TextBlock Text="Maryam Mirzakhani"
-                                       Foreground="White"
-                                       FontSize="16"
-                                       FontWeight="SemiBold" />
+                                <TextBlock Text="Maryam Mirzakhani"
+                                           Foreground="White"
+                                           FontSize="16"
+                                           FontWeight="SemiBold" />
 
-                            <TextBlock Text="Can you please provide..."
-                                       Foreground="#8F9CC2"
-                                       FontSize="12"
-                                       Margin="0,3,0,0" />
+                                <TextBlock Text="Can you please provide..."
+                                           Foreground="#8F9CC2"
+                                           FontSize="12"
+                                           Margin="0,3,0,0" />
 
-                        </StackPanel>
+                            </StackPanel>
 
-                        <TextBlock Grid.Column="2"
-                                   Text="12:00 PM"
-                                   Foreground="#8794B9"
-                                   FontSize="10" />
+                            <TextBlock Grid.Column="2"
+                                       Text="12:00 PM"
+                                       Foreground="#8794B9"
+                                       FontSize="10" />
 
-                    </Grid>
+                        </Grid>
 
-                </ListBoxItem>
+                    </ListBoxItem>
 
 
-                <ListBoxItem>
+                    <ListBoxItem>
 
-                    <Grid>
+                        <Grid>
 
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="40" />
-                            <ColumnDefinition Width="*" />
-                            <ColumnDefinition Width="Auto" />
-                        </Grid.ColumnDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="40" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
 
-                        <Border Grid.Column="0"
-                                Width="40"
-                                Height="40"
-                                CornerRadius="20"
-                                Background="#8C7AE5">
-                            <Image Source="/Resources/Images/People/sydeny.png"></Image>
-                        </Border>
+                            <Border Grid.Column="0"
+                                    Width="40"
+                                    Height="40"
+                                    CornerRadius="20"
+                                    Background="#8C7AE5">
+                                <Image Source="/Resources/Images/People/sydeny.png"></Image>
+                            </Border>
 
-                        <StackPanel Grid.Column="1"
-                                    Margin="8,0,4,0">
+                            <StackPanel Grid.Column="1"
+                                        Margin="8,0,4,0">
 
-                            <TextBlock Text="Sydney Sweeney"
-                                       Foreground="White"
-                                       FontSize="16"
-                                       FontWeight="SemiBold" />
+                                <TextBlock Text="Sydney Sweeney"
+                                           Foreground="White"
+                                           FontSize="16"
+                                           FontWeight="SemiBold" />
 
-                            <TextBlock Text="Thanks! I'll check it."
-                                       Foreground="#8F9CC2"
-                                       FontSize="12"
-                                       Margin="0,3,0,0" />
+                                <TextBlock Text="Thanks! I'll check it."
+                                           Foreground="#8F9CC2"
+                                           FontSize="12"
+                                           Margin="0,3,0,0" />
 
-                        </StackPanel>
+                            </StackPanel>
 
-                        <TextBlock Grid.Column="2"
-                                   Text="01:45 PM"
-                                   Foreground="#8794B9"
-                                   FontSize="10" />
+                            <TextBlock Grid.Column="2"
+                                       Text="01:45 PM"
+                                       Foreground="#8794B9"
+                                       FontSize="10" />
 
-                    </Grid>
+                        </Grid>
 
-                </ListBoxItem>
+                    </ListBoxItem>
 
 
-                <ListBoxItem>
+                    <ListBoxItem>
 
-                    <Grid>
+                        <Grid>
 
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="40" />
-                            <ColumnDefinition Width="*" />
-                            <ColumnDefinition Width="Auto" />
-                        </Grid.ColumnDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="40" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
 
-                        <Border Grid.Column="0"
-                                Width="40"
-                                Height="40"
-                                CornerRadius="20"
-                                Background="#8585E8">
+                            <Border Grid.Column="0"
+                                    Width="40"
+                                    Height="40"
+                                    CornerRadius="20"
+                                    Background="#8585E8">
 
-                            <Image Source="/Resources/Images/People/paul.png"></Image>
+                                <Image Source="/Resources/Images/People/paul.png"></Image>
 
 
-                        </Border>
+                            </Border>
 
-                        <StackPanel Grid.Column="1"
-                                    Margin="8,0,4,0">
+                            <StackPanel Grid.Column="1"
+                                        Margin="8,0,4,0">
 
-                            <TextBlock Text="Pavel Durov"
-                                       Foreground="White"
-                                       FontSize="16"
-                                       FontWeight="SemiBold" />
+                                <TextBlock Text="Pavel Durov"
+                                           Foreground="White"
+                                           FontSize="16"
+                                           FontWeight="SemiBold" />
 
-                            <TextBlock Text="Perfect, I'll buy it."
-                                       Foreground="#8F9CC2"
-                                       FontSize="12"
-                                       Margin="0,3,0,0" />
+                                <TextBlock Text="Perfect, I'll buy it."
+                                           Foreground="#8F9CC2"
+                                           FontSize="12"
+                                           Margin="0,3,0,0" />
 
-                        </StackPanel>
+                            </StackPanel>
 
-                        <TextBlock Grid.Column="2"
-                                   Text="09:30 AM"
-                                   Foreground="#8794B9"
-                                   FontSize="10" />
+                            <TextBlock Grid.Column="2"
+                                       Text="09:30 AM"
+                                       Foreground="#8794B9"
+                                       FontSize="10" />
 
-                    </Grid>
+                        </Grid>
 
-                </ListBoxItem>
+                    </ListBoxItem>
 
 
-                <ListBoxItem>
+                    <ListBoxItem>
 
-                    <Grid>
+                        <Grid>
 
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="40" />
-                            <ColumnDefinition Width="*" />
-                            <ColumnDefinition Width="Auto" />
-                        </Grid.ColumnDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="40" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
 
-                        <Border Grid.Column="0"
-                                Width="40"
-                                Height="40"
-                                CornerRadius="20"
-                                Background="#6979D8">
+                            <Border Grid.Column="0"
+                                    Width="40"
+                                    Height="40"
+                                    CornerRadius="20"
+                                    Background="#6979D8">
 
-                            <Image Source="/Resources/Images/People/jadi.png"></Image>
+                                <Image Source="/Resources/Images/People/jadi.png"></Image>
 
 
-                        </Border>
+                            </Border>
 
-                        <StackPanel Grid.Column="1"
-                                    Margin="8,0,4,0">
+                            <StackPanel Grid.Column="1"
+                                        Margin="8,0,4,0">
 
-                            <TextBlock Text="Emad Mirmirani"
-                                       Foreground="White"
-                                       FontSize="16"
-                                       FontWeight="SemiBold" />
+                                <TextBlock Text="Emad Mirmirani"
+                                           Foreground="White"
+                                           FontSize="16"
+                                           FontWeight="SemiBold" />
 
-                            <TextBlock Text="Do you offer shipping?"
-                                       Foreground="#8F9CC2"
-                                       FontSize="12"
-                                       Margin="0,3,0,0" />
+                                <TextBlock Text="Do you offer shipping?"
+                                           Foreground="#8F9CC2"
+                                           FontSize="12"
+                                           Margin="0,3,0,0" />
 
-                        </StackPanel>
+                            </StackPanel>
 
-                        <TextBlock Grid.Column="2"
-                                   Text="02:25 PM"
-                                   Foreground="#8794B9"
-                                   FontSize="10" />
+                            <TextBlock Grid.Column="2"
+                                       Text="02:25 PM"
+                                       Foreground="#8794B9"
+                                       FontSize="10" />
 
-                    </Grid>
+                        </Grid>
 
-                </ListBoxItem>
+                    </ListBoxItem>
 
-                <ListBoxItem>
+                    <ListBoxItem>
 
-                    <Grid>
+                        <Grid>
 
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="40" />
-                            <ColumnDefinition Width="*" />
-                            <ColumnDefinition Width="Auto" />
-                        </Grid.ColumnDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="40" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
 
-                        <Border Grid.Column="0"
-                                Width="40"
-                                Height="40"
-                                CornerRadius="20"
-                                Background="#6979D8">
+                            <Border Grid.Column="0"
+                                    Width="40"
+                                    Height="40"
+                                    CornerRadius="20"
+                                    Background="#6979D8">
 
-                            <Image Source="/Resources/Images/People/linus.png"></Image>
+                                <Image Source="/Resources/Images/People/linus.png"></Image>
 
 
-                        </Border>
+                            </Border>
 
-                        <StackPanel Grid.Column="1"
-                                    Margin="8,0,4,0">
+                            <StackPanel Grid.Column="1"
+                                        Margin="8,0,4,0">
 
-                            <TextBlock Text="Linus Torvalds"
-                                       Foreground="White"
-                                       FontSize="16"
-                                       FontWeight="SemiBold" />
+                                <TextBlock Text="Linus Torvalds"
+                                           Foreground="White"
+                                           FontSize="16"
+                                           FontWeight="SemiBold" />
 
-                            <TextBlock Text="Do you offer shipping?"
-                                       Foreground="#8F9CC2"
-                                       FontSize="12"
-                                       Margin="0,3,0,0" />
+                                <TextBlock Text="Do you offer shipping?"
+                                           Foreground="#8F9CC2"
+                                           FontSize="12"
+                                           Margin="0,3,0,0" />
 
-                        </StackPanel>
+                            </StackPanel>
 
-                        <TextBlock Grid.Column="2"
-                                   Text="08:10 AM"
-                                   Foreground="#8794B9"
-                                   FontSize="10" />
+                            <TextBlock Grid.Column="2"
+                                       Text="08:10 AM"
+                                       Foreground="#8794B9"
+                                       FontSize="10" />
 
-                    </Grid>
+                        </Grid>
 
-                </ListBoxItem>
+                    </ListBoxItem>
 
-                <ListBoxItem>
+                    <ListBoxItem>
 
-                    <Grid>
+                        <Grid>
 
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="40" />
-                            <ColumnDefinition Width="*" />
-                            <ColumnDefinition Width="Auto" />
-                        </Grid.ColumnDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="40" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
 
-                        <Border Grid.Column="0"
-                                Width="40"
-                                Height="40"
-                                CornerRadius="20"
-                                Background="#6979D8">
+                            <Border Grid.Column="0"
+                                    Width="40"
+                                    Height="40"
+                                    CornerRadius="20"
+                                    Background="#6979D8">
 
-                            <Image Source="/Resources/Images/People/morgan.png"></Image>
+                                <Image Source="/Resources/Images/People/morgan.png"></Image>
 
 
-                        </Border>
+                            </Border>
 
-                        <StackPanel Grid.Column="1"
-                                    Margin="8,0,4,0">
+                            <StackPanel Grid.Column="1"
+                                        Margin="8,0,4,0">
 
-                            <TextBlock Text="Morgan Freeman"
-                                       Foreground="White"
-                                       FontSize="16"
-                                       FontWeight="SemiBold" />
+                                <TextBlock Text="Morgan Freeman"
+                                           Foreground="White"
+                                           FontSize="16"
+                                           FontWeight="SemiBold" />
 
-                            <TextBlock Text="Do you offer shipping?"
-                                       Foreground="#8F9CC2"
-                                       FontSize="12"
-                                       Margin="0,3,0,0" />
+                                <TextBlock Text="Do you offer shipping?"
+                                           Foreground="#8F9CC2"
+                                           FontSize="12"
+                                           Margin="0,3,0,0" />
 
-                        </StackPanel>
+                            </StackPanel>
 
-                        <TextBlock Grid.Column="2"
-                                   Text="11:20 AM"
-                                   Foreground="#8794B9"
-                                   FontSize="10" />
+                            <TextBlock Grid.Column="2"
+                                       Text="11:20 AM"
+                                       Foreground="#8794B9"
+                                       FontSize="10" />
 
-                    </Grid>
+                        </Grid>
 
-                </ListBoxItem>
+                    </ListBoxItem>
 
-                <ListBoxItem>
+                    <ListBoxItem>
 
-                    <Grid>
+                        <Grid>
 
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="40" />
-                            <ColumnDefinition Width="*" />
-                            <ColumnDefinition Width="Auto" />
-                        </Grid.ColumnDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="40" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
 
-                        <Border Grid.Column="0"
-                                Width="40"
-                                Height="40"
-                                CornerRadius="20"
-                                Background="#6979D8">
+                            <Border Grid.Column="0"
+                                    Width="40"
+                                    Height="40"
+                                    CornerRadius="20"
+                                    Background="#6979D8">
 
-                            <Image Source="/Resources/Images/People/parisa.png"></Image>
+                                <Image Source="/Resources/Images/People/parisa.png"></Image>
 
 
-                        </Border>
+                            </Border>
 
-                        <StackPanel Grid.Column="1"
-                                    Margin="8,0,4,0">
+                            <StackPanel Grid.Column="1"
+                                        Margin="8,0,4,0">
 
-                            <TextBlock Text="Parisa Tabriz"
-                                       Foreground="White"
-                                       FontSize="16"
-                                       FontWeight="SemiBold" />
+                                <TextBlock Text="Parisa Tabriz"
+                                           Foreground="White"
+                                           FontSize="16"
+                                           FontWeight="SemiBold" />
 
-                            <TextBlock Text="Do you offer shipping?"
-                                       Foreground="#8F9CC2"
-                                       FontSize="12"
-                                       Margin="0,3,0,0" />
+                                <TextBlock Text="Do you offer shipping?"
+                                           Foreground="#8F9CC2"
+                                           FontSize="12"
+                                           Margin="0,3,0,0" />
 
-                        </StackPanel>
+                            </StackPanel>
 
-                        <TextBlock Grid.Column="2"
-                                   Text="01:50 PM"
-                                   Foreground="#8794B9"
-                                   FontSize="10" />
+                            <TextBlock Grid.Column="2"
+                                       Text="01:50 PM"
+                                       Foreground="#8794B9"
+                                       FontSize="10" />
 
-                    </Grid>
+                        </Grid>
 
-                </ListBoxItem>
+                    </ListBoxItem>
 
-                <ListBoxItem>
+                    <ListBoxItem>
 
-                    <Grid>
+                        <Grid>
 
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="40" />
-                            <ColumnDefinition Width="*" />
-                            <ColumnDefinition Width="Auto" />
-                        </Grid.ColumnDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="40" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
 
-                        <Border Grid.Column="0"
-                                Width="40"
-                                Height="40"
-                                CornerRadius="20"
-                                Background="#6979D8">
+                            <Border Grid.Column="0"
+                                    Width="40"
+                                    Height="40"
+                                    CornerRadius="20"
+                                    Background="#6979D8">
 
-                            <Image Source="/Resources/Images/People/henry.png"></Image>
+                                <Image Source="/Resources/Images/People/henry.png"></Image>
 
 
-                        </Border>
+                            </Border>
 
-                        <StackPanel Grid.Column="1"
-                                    Margin="8,0,4,0">
+                            <StackPanel Grid.Column="1"
+                                        Margin="8,0,4,0">
 
-                            <TextBlock Text="Henry Cavil"
-                                       Foreground="White"
-                                       FontSize="16"
-                                       FontWeight="SemiBold" />
+                                <TextBlock Text="Henry Cavil"
+                                           Foreground="White"
+                                           FontSize="16"
+                                           FontWeight="SemiBold" />
 
-                            <TextBlock Text="Do you offer shipping?"
-                                       Foreground="#8F9CC2"
-                                       FontSize="12"
-                                       Margin="0,3,0,0" />
+                                <TextBlock Text="Do you offer shipping?"
+                                           Foreground="#8F9CC2"
+                                           FontSize="12"
+                                           Margin="0,3,0,0" />
 
-                        </StackPanel>
+                            </StackPanel>
 
-                        <TextBlock Grid.Column="2"
-                                   Text="09:25 PM"
-                                   Foreground="#8794B9"
-                                   FontSize="10" />
+                            <TextBlock Grid.Column="2"
+                                       Text="09:25 PM"
+                                       Foreground="#8794B9"
+                                       FontSize="10" />
 
-                    </Grid>
+                        </Grid>
 
-                </ListBoxItem>
+                    </ListBoxItem>
 
-                <ListBoxItem>
+                    <ListBoxItem>
 
-                    <Grid>
+                        <Grid>
 
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="40" />
-                            <ColumnDefinition Width="*" />
-                            <ColumnDefinition Width="Auto" />
-                        </Grid.ColumnDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="40" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
 
-                        <Border Grid.Column="0"
-                                Width="40"
-                                Height="40"
-                                CornerRadius="20"
-                                Background="#43B8D5">
+                            <Border Grid.Column="0"
+                                    Width="40"
+                                    Height="40"
+                                    CornerRadius="20"
+                                    Background="#43B8D5">
 
-                            <Image Source="/Resources/Images/People/Jamie.png"></Image>
+                                <Image Source="/Resources/Images/People/Jamie.png"></Image>
 
 
-                        </Border>
+                            </Border>
 
-                        <StackPanel Grid.Column="1"
-                                    Margin="8,0,4,0">
+                            <StackPanel Grid.Column="1"
+                                        Margin="8,0,4,0">
 
-                            <TextBlock Text="Jamie Fox"
-                                       Foreground="White"
-                                       FontSize="16"
-                                       FontWeight="SemiBold" />
+                                <TextBlock Text="Jamie Fox"
+                                           Foreground="White"
+                                           FontSize="16"
+                                           FontWeight="SemiBold" />
 
-                            <TextBlock Text="Can you please provide..."
-                                       Foreground="#8F9CC2"
-                                       FontSize="12"
-                                       Margin="0,3,0,0" />
+                                <TextBlock Text="Can you please provide..."
+                                           Foreground="#8F9CC2"
+                                           FontSize="12"
+                                           Margin="0,3,0,0" />
 
-                        </StackPanel>
+                            </StackPanel>
 
-                        <TextBlock Grid.Column="2"
-                                   Text="12:00 PM"
-                                   Foreground="#8794B9"
-                                   FontSize="10" />
+                            <TextBlock Grid.Column="2"
+                                       Text="12:00 PM"
+                                       Foreground="#8794B9"
+                                       FontSize="10" />
 
-                    </Grid>
+                        </Grid>
 
-                </ListBoxItem>
+                    </ListBoxItem>
 
-                <ListBoxItem>
+                    <ListBoxItem>
 
-                    <Grid>
+                        <Grid>
 
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="40" />
-                            <ColumnDefinition Width="*" />
-                            <ColumnDefinition Width="Auto" />
-                        </Grid.ColumnDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="40" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
 
-                        <Border Grid.Column="0"
-                                Width="40"
-                                Height="40"
-                                CornerRadius="20"
-                                Background="#43B8D5">
+                            <Border Grid.Column="0"
+                                    Width="40"
+                                    Height="40"
+                                    CornerRadius="20"
+                                    Background="#43B8D5">
 
-                            <Image Source="/Resources/Images/People/Ana.png"></Image>
+                                <Image Source="/Resources/Images/People/Ana.png"></Image>
 
 
-                        </Border>
+                            </Border>
 
-                        <StackPanel Grid.Column="1"
-                                    Margin="8,0,4,0">
+                            <StackPanel Grid.Column="1"
+                                        Margin="8,0,4,0">
 
-                            <TextBlock Text="Ana de Armas"
-                                       Foreground="White"
-                                       FontSize="16"
-                                       FontWeight="SemiBold" />
+                                <TextBlock Text="Ana de Armas"
+                                           Foreground="White"
+                                           FontSize="16"
+                                           FontWeight="SemiBold" />
 
-                            <TextBlock Text="Can you please provide..."
-                                       Foreground="#8F9CC2"
-                                       FontSize="12"
-                                       Margin="0,3,0,0" />
+                                <TextBlock Text="Can you please provide..."
+                                           Foreground="#8F9CC2"
+                                           FontSize="12"
+                                           Margin="0,3,0,0" />
 
-                        </StackPanel>
+                            </StackPanel>
 
-                        <TextBlock Grid.Column="2"
-                                   Text="12:00 PM"
-                                   Foreground="#8794B9"
-                                   FontSize="10" />
+                            <TextBlock Grid.Column="2"
+                                       Text="12:00 PM"
+                                       Foreground="#8794B9"
+                                       FontSize="10" />
 
-                    </Grid>
+                        </Grid>
 
-                </ListBoxItem>
+                    </ListBoxItem>
 
-                <ListBoxItem>
+                    <ListBoxItem>
 
-                    <Grid>
+                        <Grid>
 
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="40" />
-                            <ColumnDefinition Width="*" />
-                            <ColumnDefinition Width="Auto" />
-                        </Grid.ColumnDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="40" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
 
-                        <Border Grid.Column="0"
-                                Width="40"
-                                Height="40"
-                                CornerRadius="20"
-                                Background="#43B8D5">
+                            <Border Grid.Column="0"
+                                    Width="40"
+                                    Height="40"
+                                    CornerRadius="20"
+                                    Background="#43B8D5">
 
-                            <Image Source="/Resources/Images/People/daei.png"></Image>
+                                <Image Source="/Resources/Images/People/daei.png"></Image>
 
 
-                        </Border>
+                            </Border>
 
-                        <StackPanel Grid.Column="1"
-                                    Margin="8,0,4,0">
+                            <StackPanel Grid.Column="1"
+                                        Margin="8,0,4,0">
 
-                            <TextBlock Text="Ali Daei"
-                                       Foreground="White"
-                                       FontSize="16"
-                                       FontWeight="SemiBold" />
+                                <TextBlock Text="Ali Daei"
+                                           Foreground="White"
+                                           FontSize="16"
+                                           FontWeight="SemiBold" />
 
-                            <TextBlock Text="Can you please provide..."
-                                       Foreground="#8F9CC2"
-                                       FontSize="12"
-                                       Margin="0,3,0,0" />
+                                <TextBlock Text="Can you please provide..."
+                                           Foreground="#8F9CC2"
+                                           FontSize="12"
+                                           Margin="0,3,0,0" />
 
-                        </StackPanel>
+                            </StackPanel>
 
-                        <TextBlock Grid.Column="2"
-                                   Text="12:00 PM"
-                                   Foreground="#8794B9"
-                                   FontSize="10" />
+                            <TextBlock Grid.Column="2"
+                                       Text="12:00 PM"
+                                       Foreground="#8794B9"
+                                       FontSize="10" />
 
-                    </Grid>
+                        </Grid>
 
-                </ListBoxItem>
+                    </ListBoxItem>
 
-                <ListBoxItem>
+                    <ListBoxItem>
 
-                    <Grid>
+                        <Grid>
 
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="40" />
-                            <ColumnDefinition Width="*" />
-                            <ColumnDefinition Width="Auto" />
-                        </Grid.ColumnDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="40" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
 
-                        <Border Grid.Column="0"
-                                Width="40"
-                                Height="40"
-                                CornerRadius="20"
-                                Background="#43B8D5">
+                            <Border Grid.Column="0"
+                                    Width="40"
+                                    Height="40"
+                                    CornerRadius="20"
+                                    Background="#43B8D5">
 
-                            <Image Source="/Resources/Images/People/pezeshkian.png"></Image>
+                                <Image Source="/Resources/Images/People/pezeshkian.png"></Image>
 
 
-                        </Border>
+                            </Border>
 
-                        <StackPanel Grid.Column="1"
-                                    Margin="8,0,4,0">
+                            <StackPanel Grid.Column="1"
+                                        Margin="8,0,4,0">
 
-                            <TextBlock Text="Masoud Pezeshkian"
-                                       Foreground="White"
-                                       FontSize="16"
-                                       FontWeight="SemiBold" />
+                                <TextBlock Text="Masoud Pezeshkian"
+                                           Foreground="White"
+                                           FontSize="16"
+                                           FontWeight="SemiBold" />
 
-                            <TextBlock Text="Can you please provide..."
-                                       Foreground="#8F9CC2"
-                                       FontSize="12"
-                                       Margin="0,3,0,0" />
+                                <TextBlock Text="Can you please provide..."
+                                           Foreground="#8F9CC2"
+                                           FontSize="12"
+                                           Margin="0,3,0,0" />
 
-                        </StackPanel>
+                            </StackPanel>
 
-                        <TextBlock Grid.Column="2"
-                                   Text="12:00 PM"
-                                   Foreground="#8794B9"
-                                   FontSize="10" />
+                            <TextBlock Grid.Column="2"
+                                       Text="12:00 PM"
+                                       Foreground="#8794B9"
+                                       FontSize="10" />
 
-                    </Grid>
+                        </Grid>
 
-                </ListBoxItem>
+                    </ListBoxItem>
 
-                <ListBoxItem>
+                    <ListBoxItem>
 
-                    <Grid>
+                        <Grid>
 
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="40" />
-                            <ColumnDefinition Width="*" />
-                            <ColumnDefinition Width="Auto" />
-                        </Grid.ColumnDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="40" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
 
-                        <Border Grid.Column="0"
-                                Width="40"
-                                Height="40"
-                                CornerRadius="20"
-                                Background="#43B8D5">
+                            <Border Grid.Column="0"
+                                    Width="40"
+                                    Height="40"
+                                    CornerRadius="20"
+                                    Background="#43B8D5">
 
-                            <Image Source="/Resources/Images/People/barack.png"></Image>
+                                <Image Source="/Resources/Images/People/barack.png"></Image>
 
 
-                        </Border>
+                            </Border>
 
-                        <StackPanel Grid.Column="1"
-                                    Margin="8,0,4,0">
+                            <StackPanel Grid.Column="1"
+                                        Margin="8,0,4,0">
 
-                            <TextBlock Text="Barack Obama"
-                                       Foreground="White"
-                                       FontSize="16"
-                                       FontWeight="SemiBold" />
+                                <TextBlock Text="Barack Obama"
+                                           Foreground="White"
+                                           FontSize="16"
+                                           FontWeight="SemiBold" />
 
-                            <TextBlock Text="Can you please provide..."
-                                       Foreground="#8F9CC2"
-                                       FontSize="12"
-                                       Margin="0,3,0,0" />
+                                <TextBlock Text="Can you please provide..."
+                                           Foreground="#8F9CC2"
+                                           FontSize="12"
+                                           Margin="0,3,0,0" />
 
-                        </StackPanel>
+                            </StackPanel>
 
-                        <TextBlock Grid.Column="2"
-                                   Text="12:00 PM"
-                                   Foreground="#8794B9"
-                                   FontSize="10" />
+                            <TextBlock Grid.Column="2"
+                                       Text="12:00 PM"
+                                       Foreground="#8794B9"
+                                       FontSize="10" />
 
-                    </Grid>
+                        </Grid>
 
-                </ListBoxItem>
+                    </ListBoxItem>
 
-                <ListBoxItem>
+                    <ListBoxItem>
 
-                    <Grid>
+                        <Grid>
 
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="40" />
-                            <ColumnDefinition Width="*" />
-                            <ColumnDefinition Width="Auto" />
-                        </Grid.ColumnDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="40" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
 
-                        <Border Grid.Column="0"
-                                Width="40"
-                                Height="40"
-                                CornerRadius="20"
-                                Background="#43B8D5">
+                            <Border Grid.Column="0"
+                                    Width="40"
+                                    Height="40"
+                                    CornerRadius="20"
+                                    Background="#43B8D5">
 
-                            <Image Source="/Resources/Images/People/christian.png"></Image>
+                                <Image Source="/Resources/Images/People/christian.png"></Image>
 
 
-                        </Border>
+                            </Border>
 
-                        <StackPanel Grid.Column="1"
-                                    Margin="8,0,4,0">
+                            <StackPanel Grid.Column="1"
+                                        Margin="8,0,4,0">
 
-                            <TextBlock Text="Christian Bale"
-                                       Foreground="White"
-                                       FontSize="16"
-                                       FontWeight="SemiBold" />
+                                <TextBlock Text="Christian Bale"
+                                           Foreground="White"
+                                           FontSize="16"
+                                           FontWeight="SemiBold" />
 
-                            <TextBlock Text="Can you please provide..."
-                                       Foreground="#8F9CC2"
-                                       FontSize="12"
-                                       Margin="0,3,0,0" />
+                                <TextBlock Text="Can you please provide..."
+                                           Foreground="#8F9CC2"
+                                           FontSize="12"
+                                           Margin="0,3,0,0" />
 
-                        </StackPanel>
+                            </StackPanel>
 
-                        <TextBlock Grid.Column="2"
-                                   Text="12:00 PM"
-                                   Foreground="#8794B9"
-                                   FontSize="10" />
+                            <TextBlock Grid.Column="2"
+                                       Text="12:00 PM"
+                                       Foreground="#8794B9"
+                                       FontSize="10" />
 
-                    </Grid>
+                        </Grid>
 
-                </ListBoxItem>
+                    </ListBoxItem>
 
-                <ListBoxItem>
+                    <ListBoxItem>
 
-                    <Grid>
+                        <Grid>
 
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="40" />
-                            <ColumnDefinition Width="*" />
-                            <ColumnDefinition Width="Auto" />
-                        </Grid.ColumnDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="40" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
 
-                        <Border Grid.Column="0"
-                                Width="40"
-                                Height="40"
-                                CornerRadius="20"
-                                Background="#43B8D5">
+                            <Border Grid.Column="0"
+                                    Width="40"
+                                    Height="40"
+                                    CornerRadius="20"
+                                    Background="#43B8D5">
 
-                            <Image Source="/Resources/Images/People/asha.png"></Image>
+                                <Image Source="/Resources/Images/People/asha.png"></Image>
 
 
-                        </Border>
+                            </Border>
 
-                        <StackPanel Grid.Column="1"
-                                    Margin="8,0,4,0">
+                            <StackPanel Grid.Column="1"
+                                        Margin="8,0,4,0">
 
-                            <TextBlock Text="Asha Sharma"
-                                       Foreground="White"
-                                       FontSize="16"
-                                       FontWeight="SemiBold" />
+                                <TextBlock Text="Asha Sharma"
+                                           Foreground="White"
+                                           FontSize="16"
+                                           FontWeight="SemiBold" />
 
-                            <TextBlock Text="Can you please provide..."
-                                       Foreground="#8F9CC2"
-                                       FontSize="12"
-                                       Margin="0,3,0,0" />
+                                <TextBlock Text="Can you please provide..."
+                                           Foreground="#8F9CC2"
+                                           FontSize="12"
+                                           Margin="0,3,0,0" />
 
-                        </StackPanel>
+                            </StackPanel>
 
-                        <TextBlock Grid.Column="2"
-                                   Text="12:00 PM"
-                                   Foreground="#8794B9"
-                                   FontSize="10" />
+                            <TextBlock Grid.Column="2"
+                                       Text="12:00 PM"
+                                       Foreground="#8794B9"
+                                       FontSize="10" />
 
-                    </Grid>
+                        </Grid>
 
-                </ListBoxItem>
+                    </ListBoxItem>
+
+
 
             </ListBox>
+
 
         </Grid>
 

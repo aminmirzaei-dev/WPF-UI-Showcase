@@ -20,6 +20,7 @@
                 <ResourceDictionary Source="Resources/Styles/IconImages.xaml" />
                 <ResourceDictionary Source="Resources/Themes/Purple.xaml" />
                 <ResourceDictionary Source="/Resources/Styles/DataGrids.xaml" />
+                <ResourceDictionary Source="/Resources/Styles/ScrollBars.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>
