@@ -21,7 +21,7 @@
 
         <StackPanel>
             <!--Username-->
-            <controls:UserProfile />
+            <controls:APDevProfile Theme="Magenta" />
 
             <Separator Height="0.8"
                        Background="#46558a"
@@ -48,14 +48,26 @@
             <controls:APMenuItem Icon="ChartArea"
                                  Content="Statistics" />
 
+            <controls:APMenuItem Icon="SackDollar"
+                                 Content="Revenue" />
+
+            <controls:APMenuItem Icon="Flag"
+                                 Content="Promote" />
+
+
             <controls:APMenuItem Icon="Cog"
                                  Content="Settings" />
 
+            <Separator Height="0.8"
+                       Background="#46558a"
+                       Margin="20 30 20 30" />
+
             <controls:APMenuItem Icon="User"
-                                 Content="About Us" />
+                                 Content="About Us"/>
 
             <controls:APMenuItem Icon="PowerOff"
                                  Content="Logout"
+                                 Background="Crimson"
                                  Click="btnExit_Click" />
 
         </StackPanel>

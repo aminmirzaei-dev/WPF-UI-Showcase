@@ -176,12 +176,12 @@
                                     <!--Icon-->
 
                                     <icons:IconBlock x:Name="IconElement"
-                                                  Icon="{TemplateBinding Icon}"
-                                                  FontSize="{TemplateBinding IconSize}"
-                                                  Foreground="{TemplateBinding Foreground}"
-                                                  VerticalAlignment="Center"
-                                                  HorizontalAlignment="{TemplateBinding IconAlignment}"
-                                                  Margin="{TemplateBinding IconMargin}" />
+                                                     Icon="{TemplateBinding Icon}"
+                                                     FontSize="{TemplateBinding IconSize}"
+                                                     Foreground="{TemplateBinding Foreground}"
+                                                     VerticalAlignment="Center"
+                                                     HorizontalAlignment="{TemplateBinding IconAlignment}"
+                                                     Margin="{TemplateBinding IconMargin}" />
 
                                     <!-- Text -->
 
@@ -336,133 +336,6 @@
         </Setter>
 
     </Style>
-
-    <!--<Style
-           TargetType="{x:Type controls:APMenuItem}">
-
-        <Setter Property="Cursor"
-                Value="Hand" />
-
-        <Setter Property="Background"
-                Value="Transparent" />
-
-        <Setter Property="Foreground"
-                Value="#707DB2" />
-
-        <Setter Property="Tag"
-                Value="#6673B7" />
-
-        <Setter Property="Margin"
-                Value="0,0,0,5" />
-
-        <Setter Property="Height"
-                Value="45" />
-
-        <Setter Property="FocusVisualStyle"
-                Value="{x:Null}" />
-
-        <Setter Property="Template">
-            <Setter.Value>
-
-                <ControlTemplate TargetType="{x:Type controls:APMenuItem}">
-
-                    <Border x:Name="Border"
-                            Background="{TemplateBinding Background}"
-                            BorderThickness="4,0,0,0"
-                            BorderBrush="Transparent">
-
-                        <StackPanel Orientation="Horizontal">
-
-
-                            <icons:IconBlock Icon="{TemplateBinding Icon}"
-                                          Foreground="{TemplateBinding Foreground}"
-                                          Width="25"
-                                          VerticalAlignment="Center"
-                                          Margin="15,0,0,0" />
-
-                            <TextBlock Text="{TemplateBinding Content}"
-                                       FontSize="13"
-                                       VerticalAlignment="Center"
-                                       Foreground="{TemplateBinding Foreground}"
-                                       Margin="15,0,0,0" />
-                        </StackPanel>
-
-
-                    </Border>
-
-                    <ControlTemplate.Triggers>
-
-                        --><!-- Hover --><!--
-                        <Trigger Property="IsMouseOver"
-                                 Value="True">
-
-                            <Setter Property="Foreground"
-                                    Value="#BCCAF1" />
-
-                            <Setter Property="Tag"
-                                    Value="#7071F0" />
-
-                            <Setter Property="Background">
-                                <Setter.Value>
-                                    <LinearGradientBrush StartPoint="0,0.5"
-                                                         EndPoint="1,0.5">
-
-                                        <GradientStop Color="#31407B"
-                                                      Offset="0" />
-
-                                        <GradientStop Color="#495385"
-                                                      Offset="1" />
-
-                                    </LinearGradientBrush>
-                                </Setter.Value>
-                            </Setter>
-
-                            <Setter TargetName="Border"
-                                    Property="BorderBrush"
-                                    Value="#A5A1F5" />
-
-                        </Trigger>
-
-
-                        --><!-- Active / Checked --><!--
-                        <Trigger Property="IsChecked"
-                                 Value="True">
-
-                            <Setter Property="Foreground"
-                                    Value="#BCCAF1" />
-
-                            <Setter Property="Tag"
-                                    Value="#7071F0" />
-
-                            <Setter Property="Background">
-                                <Setter.Value>
-                                    <LinearGradientBrush StartPoint="0,0.5"
-                                                         EndPoint="1,0.5">
-
-                                        <GradientStop Color="#31407B"
-                                                      Offset="0" />
-
-                                        <GradientStop Color="#495385"
-                                                      Offset="1" />
-
-                                    </LinearGradientBrush>
-                                </Setter.Value>
-                            </Setter>
-
-                            <Setter TargetName="Border"
-                                    Property="BorderBrush"
-                                    Value="#A5A1F5" />
-
-                        </Trigger>
-
-                    </ControlTemplate.Triggers>
-
-                </ControlTemplate>
-
-            </Setter.Value>
-        </Setter>
-
-    </Style>-->
 
     <Style TargetType="{x:Type controls:APMenuItem}">
 
