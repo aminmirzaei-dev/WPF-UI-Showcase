@@ -5,238 +5,214 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:AdminPanelUI.Views.Pages"
              xmlns:controls="clr-namespace:AdminPanelUI.Controls"
-             xmlns:icons="http://schemas.awesome.incremented/wpf/xaml/fontawesome.sharp"
-             Background="#26345F">
+             xmlns:icons="http://schemas.awesome.incremented/wpf/xaml/fontawesome.sharp">
 
-    <Grid Background="#26345F">
+    <Border Grid.Column="1"
+            CornerRadius="0 10 10 0">
+        <Border.Background>
+            <LinearGradientBrush StartPoint="1,0"
+                                 EndPoint="0,1">
+                <GradientStop Color="#41518F"
+                              Offset="0" />
+                <GradientStop Color="#2C386C"
+                              Offset="1" />
+            </LinearGradientBrush>
+        </Border.Background>
 
+        <Grid>
 
-        <!-- Rows -->
 
-        <Grid.RowDefinitions>
+            <!-- Rows -->
 
-            <RowDefinition Height="Auto" />
+            <Grid.RowDefinitions>
 
-            <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
 
-            <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
 
-            <RowDefinition Height="80" />
+                <RowDefinition Height="*" />
 
-        </Grid.RowDefinitions>
+                <RowDefinition Height="80" />
 
+            </Grid.RowDefinitions>
 
-        <!-- Title -->
 
-        <TextBlock Grid.Row="0"
-                   Text="Listing"
-                   Margin="30,28,30,24"
-                   FontSize="28"
-                   FontWeight="SemiBold"
-                   Foreground="#F4F6FF" />
+            <!-- Title -->
 
+            <TextBlock Grid.Row="0"
+                       Text="Listing"
+                       Margin="30,28,30,24"
+                       FontSize="28"
+                       FontWeight="SemiBold"
+                       Foreground="#F4F6FF" />
 
-        <!-- Filter Bar -->
 
-        <Grid Grid.Row="1"
-              Margin="24,0,24,20">
+            <!-- Filter Bar -->
 
+            <Grid Grid.Row="1"
+                  Margin="24,0,24,20">
 
-            <Grid.ColumnDefinitions>
 
-                <ColumnDefinition Width="*" />
+                <Grid.ColumnDefinitions>
 
-                <ColumnDefinition Width="150" />
+                    <ColumnDefinition Width="*" />
 
-                <ColumnDefinition Width="130" />
+                    <ColumnDefinition Width="150" />
 
-                <ColumnDefinition Width="130" />
+                    <ColumnDefinition Width="130" />
 
-            </Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="130" />
 
+                </Grid.ColumnDefinitions>
 
-            <!-- Search -->
 
-            <controls:APTextBox Grid.Column="0"
-                                Height="44"
-                                Margin="0,0,10,0"
-                                Background="#202C55"
-                                Icon="Search"
-                                Placeholder="Search listings..." />
+                <!-- Search -->
 
+                <controls:APTextBox Grid.Column="0"
+                                    Height="44"
+                                    Margin="0,0,10,0"
+                                    Background="#202C55"
+                                    Icon="Search"
+                                    Placeholder="Search listings..." />
 
-            <!-- Category -->
 
-            <controls:APComboBox Grid.Column="1"
-                                 Height="44"
-                                 Width="140"
-                                 Background="#202C55"
-                                 PlaceholderText="Categories">
+                <!-- Category -->
 
-                <ComboBoxItem Content="Clothing" />
-                <ComboBoxItem Content="Footwear" />
-                <ComboBoxItem Content="Accessories" />
-                <ComboBoxItem Content="Electronics" />
+                <controls:APComboBox Grid.Column="1"
+                                     Height="44"
+                                     Width="140"
+                                     Background="#202C55"
+                                     PlaceholderText="Categories">
 
-            </controls:APComboBox>
+                    <ComboBoxItem Content="Clothing" />
+                    <ComboBoxItem Content="Footwear" />
+                    <ComboBoxItem Content="Accessories" />
+                    <ComboBoxItem Content="Electronics" />
 
+                </controls:APComboBox>
 
-            <!-- Status -->
 
-            <controls:APComboBox Grid.Column="2"
-                                 Height="44"
-                                 Margin="0,0,10,0"
-                                 Background="#202C55"
-                                 Width="110"
-                                 PlaceholderText="Status">
+                <!-- Status -->
 
-                <ComboBoxItem Content="Active" />
-                <ComboBoxItem Content="Inactive" />
-                <ComboBoxItem Content="Pending" />
-                <ComboBoxItem Content="Rejected" />
+                <controls:APComboBox Grid.Column="2"
+                                     Height="44"
+                                     Margin="0,0,10,0"
+                                     Background="#202C55"
+                                     Width="110"
+                                     PlaceholderText="Status">
 
-            </controls:APComboBox>
+                    <ComboBoxItem Content="Active" />
+                    <ComboBoxItem Content="Inactive" />
+                    <ComboBoxItem Content="Pending" />
+                    <ComboBoxItem Content="Rejected" />
 
+                </controls:APComboBox>
 
-            <!-- Add -->
 
-            <controls:APButton Grid.Column="3"
-                               Width="130"
-                               Height="44"
-                               Icon="Plus"
-                               Content="Add New" />
+                <!-- Add -->
 
-        </Grid>
+                <controls:APButton Grid.Column="3"
+                                   Width="130"
+                                   Height="44"
+                                   Icon="Plus"
+                                   Content="Add New" />
 
+            </Grid>
 
-        <!-- Data Grid -->
 
-        <controls:APDataGrid Grid.Row="2"
-                             Margin="24,0,24,0"
-                             ItemsSource="{Binding Items}"
-                             AutoGenerateColumns="False"
-                             IsReadOnly="True"
-                             APRowHeight="58"
-                             APHeaderHeight="48">
+            <!-- Data Grid -->
 
+            <controls:APDataGrid Grid.Row="2"
+                                 Margin="24,0,24,0"
+                                 ItemsSource="{Binding Items}"
+                                 AutoGenerateColumns="False"
+                                 IsReadOnly="True"
+                                 APRowHeight="58"
+                                 APHeaderHeight="48">
 
-            <DataGrid.Columns>
 
+                <DataGrid.Columns>
 
-                <!-- Item -->
 
-                <DataGridTemplateColumn Header="Item"
-                                        Width="2.4*">
+                    <!-- Item -->
 
-                    <DataGridTemplateColumn.CellTemplate>
+                    <DataGridTemplateColumn Header="Item"
+                                            Width="2.4*">
 
-                        <DataTemplate>
+                        <DataGridTemplateColumn.CellTemplate>
 
-                            <StackPanel Orientation="Horizontal"
-                                        Margin="10,0,0,0"
-                                        VerticalAlignment="Center">
+                            <DataTemplate>
 
+                                <StackPanel Orientation="Horizontal"
+                                            Margin="10,0,0,0"
+                                            VerticalAlignment="Center">
 
-                                <Border Width="40"
-                                        Height="40"
-                                        Margin="0,0,14,0"
-                                        CornerRadius="8"
-                                        Background="#354574">
 
+                                    <Border Width="40"
+                                            Height="40"
+                                            Margin="0,0,14,0"
+                                            CornerRadius="8"
+                                            Background="#354574">
 
-                                    <icons:IconBlock Icon="{Binding Icon}"
-                                                     FontSize="16"
-                                                     Foreground="#F4F6FF" />
 
-                                </Border>
+                                        <icons:IconBlock Icon="{Binding Icon}"
+                                                         FontSize="16"
+                                                         Foreground="#F4F6FF" />
 
+                                    </Border>
 
-                                <TextBlock Text="{Binding ItemName}"
-                                           VerticalAlignment="Center"
-                                           FontSize="14"
-                                           Foreground="#F4F6FF" />
 
-                            </StackPanel>
+                                    <TextBlock Text="{Binding ItemName}"
+                                               VerticalAlignment="Center"
+                                               FontSize="14"
+                                               Foreground="#F4F6FF" />
 
-                        </DataTemplate>
+                                </StackPanel>
 
-                    </DataGridTemplateColumn.CellTemplate>
+                            </DataTemplate>
 
-                </DataGridTemplateColumn>
+                        </DataGridTemplateColumn.CellTemplate>
 
+                    </DataGridTemplateColumn>
 
-                <!-- Cateogryd -->
 
-                <DataGridTextColumn Header="Category"
-                                    Binding="{Binding Category}"
-                                    Width="1.4*" />
+                    <!-- Cateogryd -->
 
+                    <DataGridTextColumn Header="Category"
+                                        Binding="{Binding Category}"
+                                        Width="1.4*" />
 
-                <!-- Price -->
 
-                <DataGridTextColumn Header="Price"
-                                    Binding="{Binding Price}"
-                                    Width="1*" />
+                    <!-- Price -->
 
+                    <DataGridTextColumn Header="Price"
+                                        Binding="{Binding Price}"
+                                        Width="1*" />
 
-                <!--Status-->
 
-                <DataGridTemplateColumn Header="Status"
-                                        Width="1*">
+                    <!--Status-->
 
+                    <DataGridTemplateColumn Header="Status"
+                                            Width="1*">
 
-                    <DataGridTemplateColumn.CellTemplate>
 
-                        <DataTemplate>
+                        <DataGridTemplateColumn.CellTemplate>
 
+                            <DataTemplate>
 
-                            <Border Padding="10,5"
-                                    CornerRadius="5"
-                                    HorizontalAlignment="Left">
 
+                                <Border Padding="10,5"
+                                        CornerRadius="5"
+                                        HorizontalAlignment="Left">
 
-                                <Border.Style>
 
-                                    <Style TargetType="Border">
+                                    <Border.Style>
 
+                                        <Style TargetType="Border">
 
-                                        <Setter Property="Background"
-                                                Value="#16404B" />
 
-
-                                        <Style.Triggers>
-
-
-                                            <DataTrigger Binding="{Binding Status}"
-                                                         Value="Inactive">
-
-
-                                                <Setter Property="Background"
-                                                        Value="#472E42" />
-
-
-                                            </DataTrigger>
-
-
-                                        </Style.Triggers>
-
-                                    </Style>
-
-                                </Border.Style>
-
-
-                                <TextBlock Text="{Binding Status}"
-                                           FontSize="14"
-                                           FontWeight="SemiBold">
-
-
-                                    <TextBlock.Style>
-
-                                        <Style TargetType="TextBlock">
-
-
-                                            <Setter Property="Foreground"
-                                                    Value="#4CD8C4" />
+                                            <Setter Property="Background"
+                                                    Value="#16404B" />
 
 
                                             <Style.Triggers>
@@ -246,8 +222,8 @@
                                                              Value="Inactive">
 
 
-                                                    <Setter Property="Foreground"
-                                                            Value="#FF667D" />
+                                                    <Setter Property="Background"
+                                                            Value="#472E42" />
 
 
                                                 </DataTrigger>
@@ -257,69 +233,106 @@
 
                                         </Style>
 
-                                    </TextBlock.Style>
-
-                                </TextBlock>
-
-                            </Border>
-
-                        </DataTemplate>
-
-                    </DataGridTemplateColumn.CellTemplate>
-
-                </DataGridTemplateColumn>
+                                    </Border.Style>
 
 
-                <!-- Viewss-->
-
-                <DataGridTextColumn Header="Views"
-                                    Binding="{Binding Views}"
-                                    Width="1*" />
+                                    <TextBlock Text="{Binding Status}"
+                                               FontSize="14"
+                                               FontWeight="SemiBold">
 
 
-                <!-- Date -->
+                                        <TextBlock.Style>
 
-                <DataGridTextColumn Header="Date"
-                                    Binding="{Binding Date}"
-                                    Width="1.45*" />
+                                            <Style TargetType="TextBlock">
 
 
-                <!-- Actions -->
-
-                <DataGridTemplateColumn Header="Actions"
-                                        Width="80">
+                                                <Setter Property="Foreground"
+                                                        Value="#4CD8C4" />
 
 
-                    <DataGridTemplateColumn.CellTemplate>
-
-                        <DataTemplate>
+                                                <Style.Triggers>
 
 
-                            <controls:APButton Width="34"
-                                               Height="34"
-                                               Background="#26345F"
-                                               Icon="EllipsisH">
-
-                            </controls:APButton>
-
-                        </DataTemplate>
-
-                    </DataGridTemplateColumn.CellTemplate>
-
-                </DataGridTemplateColumn>
+                                                    <DataTrigger Binding="{Binding Status}"
+                                                                 Value="Inactive">
 
 
-            </DataGrid.Columns>
-
-        </controls:APDataGrid>
-
-
-        <!-- Pagiination -->
-
-        <controls:PaginationButtons Grid.Row="3"
-                                    HorizontalAlignment="Center"
-                                    VerticalAlignment="Center" />
+                                                        <Setter Property="Foreground"
+                                                                Value="#FF667D" />
 
 
-    </Grid>
+                                                    </DataTrigger>
+
+
+                                                </Style.Triggers>
+
+                                            </Style>
+
+                                        </TextBlock.Style>
+
+                                    </TextBlock>
+
+                                </Border>
+
+                            </DataTemplate>
+
+                        </DataGridTemplateColumn.CellTemplate>
+
+                    </DataGridTemplateColumn>
+
+
+                    <!-- Viewss-->
+
+                    <DataGridTextColumn Header="Views"
+                                        Binding="{Binding Views}"
+                                        Width="1*" />
+
+
+                    <!-- Date -->
+
+                    <DataGridTextColumn Header="Date"
+                                        Binding="{Binding Date}"
+                                        Width="1.45*" />
+
+
+                    <!-- Actions -->
+
+                    <DataGridTemplateColumn Header="Actions"
+                                            Width="80">
+
+
+                        <DataGridTemplateColumn.CellTemplate>
+
+                            <DataTemplate>
+
+
+                                <controls:APButton Width="34"
+                                                   Height="34"
+                                                   Background="#26345F"
+                                                   Icon="EllipsisH">
+
+                                </controls:APButton>
+
+                            </DataTemplate>
+
+                        </DataGridTemplateColumn.CellTemplate>
+
+                    </DataGridTemplateColumn>
+
+
+                </DataGrid.Columns>
+
+            </controls:APDataGrid>
+
+
+            <!-- Pagiination -->
+
+            <controls:PaginationButtons Grid.Row="3"
+                                        HorizontalAlignment="Center"
+                                        VerticalAlignment="Center" />
+
+
+        </Grid>
+
+    </Border>
 </UserControl>
