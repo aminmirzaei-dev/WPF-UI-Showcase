@@ -111,6 +111,11 @@ namespace AdminPanelUI.Views.Menus
             this.ExecutePage(AppPages.Dashboard);
         }
 
+        private void SettingsMenuItem_Checked(object sender, RoutedEventArgs e)
+        {
+            this.ExecutePage(AppPages.Settings);
+        }
+
         private void ListingMenuItem_Checked(object sender, RoutedEventArgs e)
         {
             this.ExecutePage(AppPages.Listing);

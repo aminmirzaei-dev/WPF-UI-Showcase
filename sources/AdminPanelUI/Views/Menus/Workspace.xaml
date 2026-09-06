@@ -58,7 +58,8 @@
 
 
             <controls:APMenuItem Icon="Cog"
-                                 Content="Settings" />
+                                 Content="Settings"
+                                 Checked="SettingsMenuItem_Checked"/>
 
             <Separator Height="0.8"
                        Background="#46558a"
