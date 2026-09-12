@@ -53,14 +53,6 @@
             <controls:APMenuItem Icon="SackDollar"
                                  Content="Revenue" />
 
-            <controls:APMenuItem Icon="Flag"
-                                 Content="Promote" />
-
-
-            <controls:APMenuItem Icon="Cog"
-                                 Content="Settings"
-                                 Checked="SettingsMenuItem_Checked"/>
-
             <Separator Height="0.8"
                        Background="#46558a"
                        Margin="20 30 20 30" />

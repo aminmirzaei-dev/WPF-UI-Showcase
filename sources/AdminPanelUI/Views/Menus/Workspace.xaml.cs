@@ -1,24 +1,13 @@
 ﻿using AdminPanelUI.Views.Dialogs;
-using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Security.AccessControl;
-using System.Text;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace AdminPanelUI.Views.Menus
 {
     public enum AppPages
     {
-        Dashboard, Listing, Messages, Settings, About
+        Dashboard, Listing, Messages, About
     }
 
 
@@ -31,7 +20,6 @@ namespace AdminPanelUI.Views.Menus
         private Views.Pages.Dashboard dashboardPage = new Views.Pages.Dashboard();
         private Views.Pages.Listing listingPage = new Views.Pages.Listing();
         private Views.Pages.Messages messagesPage = new Views.Pages.Messages();
-        private Views.Pages.Settings settingsPage = new Views.Pages.Settings();
         private Views.Pages.About aboutPage = new Views.Pages.About();
 
         
@@ -88,9 +76,6 @@ namespace AdminPanelUI.Views.Menus
                 case AppPages.Messages:
                     this.ContentPage.Content = messagesPage;
                     break;
-                case AppPages.Settings:
-                    this.ContentPage.Content = settingsPage;
-                    break;
                 case AppPages.About:
                     this.ContentPage.Content = aboutPage;
                     break;
@@ -109,11 +94,6 @@ namespace AdminPanelUI.Views.Menus
         private void DashboardMenuItem_Checked(object sender, RoutedEventArgs e)
         {
             this.ExecutePage(AppPages.Dashboard);
-        }
-
-        private void SettingsMenuItem_Checked(object sender, RoutedEventArgs e)
-        {
-            this.ExecutePage(AppPages.Settings);
         }
 
         private void ListingMenuItem_Checked(object sender, RoutedEventArgs e)

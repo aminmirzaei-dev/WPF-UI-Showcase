@@ -42,9 +42,7 @@
             </LinearGradientBrush>
         </Border.Background>
 
-        <Grid>
-
-            <Grid Margin="20">
+        <Grid Margin="20">
 
                 <Grid.RowDefinitions>
 
@@ -105,7 +103,5 @@
                 </Grid>
 
             </Grid>
-
-        </Grid>
     </Border>
 </UserControl>
