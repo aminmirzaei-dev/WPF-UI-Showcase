@@ -19,7 +19,7 @@
         <controls:APButton Width="40"
                            Height="40"
                            Icon="ChevronLeft"
-                           Background="#303d73"
+                           Background="#182654"
                            Margin="0,0,10,0" />
 
 
@@ -39,7 +39,7 @@
         <controls:APButton Width="40"
                            Height="40"
                            Content="2"
-                           Background="#303d73"
+                           Background="#182654"
                            Margin="0,0,10,0" />
 
 
@@ -50,7 +50,7 @@
         <controls:APButton Width="40"
                            Height="40"
                            Content="3"
-                           Background="#303d73"
+                           Background="#182654"
                            Margin="0,0,10,0" />
 
 
@@ -61,7 +61,7 @@
         <controls:APButton Width="40"
                            Height="40"
                            Content="..."
-                           Background="#303d73"
+                           Background="#182654"
                            Margin="0,0,10,0" />
 
 
@@ -72,7 +72,7 @@
         <controls:APButton Width="40"
                            Height="40"
                            Content="10"
-                           Background="#303d73"
+                           Background="#182654"
                            Margin="0,0,10,0" />
 
 
@@ -83,7 +83,7 @@
         <controls:APButton Width="40"
                            Height="40"
                            Icon="ChevronRight"
-                           Background="#303d73"
+                           Background="#182654"
                            Margin="0,0,10,0" />
 
 

@@ -30,7 +30,7 @@
         <ContentPresenter x:Name="container"
                           Grid.Column="1">
             <ContentPresenter.Content>
-                <pages:Dashboard />
+                <pages:Listing />
             </ContentPresenter.Content>
         </ContentPresenter>
 

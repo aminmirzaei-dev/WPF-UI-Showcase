@@ -352,7 +352,7 @@ It helps you manage your business data, track performance and grow faster." />
                                                    FontWeight="SemiBold"
                                                    Foreground="{StaticResource TextPrimary}" />
 
-                                        <TextBlock Text="I'm a passionate dekstop developer who loves building modern, beautiful and user-friendly web applications. This dashboard is one of my works."
+                                        <TextBlock Text="Software Engineer and Developer (.NET and Desktop Apps)"
                                                    Style="{StaticResource Description}"
                                                    Margin="0,9,0,7" />
 
@@ -367,25 +367,25 @@ It helps you manage your business data, track performance and grow faster." />
                                         <controls:ContactInfoRow Height="60"
                                                                  Margin="0,2"
                                                                  Title="X"
-                                                                 Value="https://x.com"
+                                                                 Value="@aminmirzaeidev"
                                                                  Icon="/Resources/Icons/Contact/X.png" />
 
                                         <controls:ContactInfoRow Height="60"
                                                                  Margin="0,2"
                                                                  Title="Gmail"
-                                                                 Value="https://gmail.com"
+                                                                 Value="aminmirzaeidev"
                                                                  Icon="/Resources/Icons/Contact/Gmail.png" />
 
                                         <controls:ContactInfoRow Height="60"
                                                                  Margin="0,2"
                                                                  Title="Github"
-                                                                 Value="https://github.com"
+                                                                 Value="aminmirzaei-dev"
                                                                  Icon="/Resources/Icons/Contact/Github.png" />
 
                                         <controls:ContactInfoRow Height="60"
                                                                  Margin="0,2"
                                                                  Title="Instagram"
-                                                                 Value="https://instagram.com"
+                                                                 Value="aminmirzaei.dev"
                                                                  Icon="/Resources/Icons/Contact/Instagram.png" />
 
                                     </StackPanel>

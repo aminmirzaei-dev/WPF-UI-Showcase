@@ -53,6 +53,12 @@
             <controls:APMenuItem Icon="SackDollar"
                                  Content="Revenue" />
 
+            <controls:APMenuItem Icon="PeopleGroup"
+                                 Content="Customers" />
+
+            <controls:APMenuItem Icon="Calculator"
+                                 Content="Accounting" />
+
             <Separator Height="0.8"
                        Background="#46558a"
                        Margin="20 30 20 30" />
