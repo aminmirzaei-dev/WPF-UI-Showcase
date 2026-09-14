@@ -318,7 +318,7 @@ It helps you manage your business data, track performance and grow faster." />
 
                                     <Ellipse Margin="6">
                                         <Ellipse.Fill>
-                                            <ImageBrush ImageSource="/Resources/Images/Developer/Official/Amin.jpg"
+                                            <ImageBrush ImageSource="/Resources/Images/Developer/AminDevProfile.jpg"
                                                         Stretch="UniformToFill" />
                                         </Ellipse.Fill>
                                     </Ellipse>

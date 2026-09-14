@@ -21,7 +21,7 @@
 
         <StackPanel>
             <!--Username-->
-            <controls:APDevProfile Theme="Magenta" />
+            <controls:APDevProfile />
 
             <Separator Height="0.8"
                        Background="#46558a"
@@ -63,7 +63,6 @@
 
             <controls:APMenuItem Icon="PowerOff"
                                  Content="Logout"
-                                 Background="Crimson"
                                  Click="btnExit_Click" />
 
         </StackPanel>

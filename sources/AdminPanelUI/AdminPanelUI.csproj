@@ -18,7 +18,7 @@
     <None Remove="Resources\Icons\Technologies\Figma.png" />
     <None Remove="Resources\Icons\Technologies\FontAwesome.png" />
     <None Remove="Resources\Icons\Technologies\WPF.png" />
-    <None Remove="Resources\Images\Developer\Official\Amin.jpg" />
+    <None Remove="Resources\Images\Developer\AminDevProfile.jpg" />
     <None Remove="Resources\Images\People\Ana.png" />
     <None Remove="Resources\Images\People\asha.png" />
     <None Remove="Resources\Images\People\barack.png" />
@@ -38,10 +38,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Resources\Images\Countries\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="FontAwesome.Sharp" Version="6.6.0" />
     <PackageReference Include="LiveCharts" Version="0.9.7" />
     <PackageReference Include="LiveCharts.Wpf" Version="0.9.7" />
@@ -57,13 +53,7 @@
     <Resource Include="Resources\Icons\Technologies\Figma.png" />
     <Resource Include="Resources\Icons\Technologies\FontAwesome.png" />
     <Resource Include="Resources\Icons\Technologies\WPF.png" />
-    <Resource Include="Resources\Images\Developer\Fantasy\DevBlue.png" />
-    <Resource Include="Resources\Images\Developer\Fantasy\DevGreen.png" />
-    <Resource Include="Resources\Images\Developer\Fantasy\DevMagenta.png" />
-    <Resource Include="Resources\Images\Developer\Fantasy\DevOrange.png" />
-    <Resource Include="Resources\Images\Developer\Fantasy\DevPink.png" />
-    <Resource Include="Resources\Images\Developer\Fantasy\DevRed.png" />
-    <Resource Include="Resources\Images\Developer\Official\Amin.jpg" />
+    <Resource Include="Resources\Images\Developer\AminDevProfile.jpg" />
     <Resource Include="Resources\Images\People\Ana.png" />
     <Resource Include="Resources\Images\People\asha.png" />
     <Resource Include="Resources\Images\People\barack.png" />
@@ -80,21 +70,6 @@
     <Resource Include="Resources\Images\People\pezeshkian.png" />
     <Resource Include="Resources\Images\People\satya.png" />
     <Resource Include="Resources\Images\People\sydeny.png" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Update="Resources\Localization\Strings.Designer.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Strings.resx</DependentUpon>
-    </Compile>
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Update="Resources\Localization\Strings.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Strings.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
   </ItemGroup>
 
 </Project>

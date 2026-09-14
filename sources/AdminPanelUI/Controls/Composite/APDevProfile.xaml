@@ -4,7 +4,6 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:controls="clr-namespace:AdminPanelUI.Controls"
-             xmlns:serives="clr-namespace:AdminPanelUI.Services"
              mc:Ignorable="d"
              d:DesignHeight="150"
              d:DesignWidth="500">
@@ -35,73 +34,9 @@
                 <Image.Style>
                     <Style TargetType="Image">
 
-                        <!-- Default -->
+                        <!-- Image -->
                         <Setter Property="Source"
-                                Value="/Resources/Images/Developer/Fantasy/DevBlue.png" />
-
-                        <Style.Triggers>
-
-                            <!-- Blue -->
-                            <DataTrigger Binding="{Binding Theme,
-                                                       RelativeSource={RelativeSource AncestorType={x:Type controls:APDevProfile}}}"
-                                         Value="{x:Static serives:ThemeOptions.Blue}">
-
-                                <Setter Property="Source"
-                                        Value="/Resources/Images/Developer/Fantasy/DevBlue.png" />
-
-                            </DataTrigger>
-
-                            <!-- Green -->
-                            <DataTrigger Binding="{Binding Theme,
-                                                       RelativeSource={RelativeSource AncestorType={x:Type controls:APDevProfile}}}"
-                                         Value="{x:Static serives:ThemeOptions.Green}">
-
-                                <Setter Property="Source"
-                                        Value="/Resources/Images/Developer/Fantasy/DevGreen.png" />
-
-                            </DataTrigger>
-
-                            <!-- Red -->
-                            <DataTrigger Binding="{Binding Theme,
-                                                       RelativeSource={RelativeSource AncestorType={x:Type controls:APDevProfile}}}"
-                                         Value="{x:Static serives:ThemeOptions.Red}">
-
-                                <Setter Property="Source"
-                                        Value="/Resources/Images/Developer/Fantasy/DevRed.png" />
-
-                            </DataTrigger>
-
-                            <!-- Orange -->
-                            <DataTrigger Binding="{Binding Theme,
-                                                       RelativeSource={RelativeSource AncestorType={x:Type controls:APDevProfile}}}"
-                                         Value="{x:Static serives:ThemeOptions.Orange}">
-
-                                <Setter Property="Source"
-                                        Value="/Resources/Images/Developer/Fantasy/DevOrange.png" />
-
-                            </DataTrigger>
-
-                            <!-- Pink -->
-                            <DataTrigger Binding="{Binding Theme,
-                                                       RelativeSource={RelativeSource AncestorType={x:Type controls:APDevProfile}}}"
-                                         Value="{x:Static serives:ThemeOptions.Pink}">
-
-                                <Setter Property="Source"
-                                        Value="/Resources/Images/Developer/Fantasy/DevPink.png" />
-
-                            </DataTrigger>
-
-                            <!-- Magenta -->
-                            <DataTrigger Binding="{Binding Theme,
-                                                       RelativeSource={RelativeSource AncestorType={x:Type controls:APDevProfile}}}"
-                                         Value="{x:Static serives:ThemeOptions.Magenta}">
-
-                                <Setter Property="Source"
-                                        Value="/Resources/Images/Developer/Fantasy/DevMagenta.png" />
-
-                            </DataTrigger>
-
-                        </Style.Triggers>
+                                Value="/Resources/Images/Developer/AminDevProfile.jpg" />
 
                     </Style>
                 </Image.Style>
