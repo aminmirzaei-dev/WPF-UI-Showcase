@@ -7,7 +7,7 @@ namespace AdminPanelUI.Views.Menus
 {
     public enum AppPages
     {
-        Dashboard, Listing, Messages, About
+        Dashboard, Messages, About
     }
 
 
@@ -18,7 +18,6 @@ namespace AdminPanelUI.Views.Menus
     {
 
         private Views.Pages.Dashboard dashboardPage = new Views.Pages.Dashboard();
-        private Views.Pages.Listing listingPage = new Views.Pages.Listing();
         private Views.Pages.Messages messagesPage = new Views.Pages.Messages();
         private Views.Pages.About aboutPage = new Views.Pages.About();
 
@@ -70,9 +69,6 @@ namespace AdminPanelUI.Views.Menus
                 case AppPages.Dashboard:
                     this.ContentPage.Content = dashboardPage;
                     break;
-                case AppPages.Listing:
-                    this.ContentPage.Content = listingPage;
-                    break;
                 case AppPages.Messages:
                     this.ContentPage.Content = messagesPage;
                     break;
@@ -95,12 +91,6 @@ namespace AdminPanelUI.Views.Menus
         {
             this.ExecutePage(AppPages.Dashboard);
         }
-
-        private void ListingMenuItem_Checked(object sender, RoutedEventArgs e)
-        {
-            this.ExecutePage(AppPages.Listing);
-        }
-
         private void MessagesMenuItem_Checked(object sender, RoutedEventArgs e)
         {
             this.ExecutePage(AppPages.Messages);

@@ -33,15 +33,15 @@
                                  Content="Dashboard"
                                  IsChecked="True" />
 
-            <controls:APMenuItem
-                                 Icon="FileSignature"
-                                 Content="Listing"
-                Checked="ListingMenuItem_Checked"/>
-
-            <controls:APMenuItem
-                                 Icon="EnvelopeOpenText"
+            <controls:APMenuItem Icon="EnvelopeOpenText"
                                  Content="Messages"
                                  Checked="MessagesMenuItem_Checked" />
+
+            <controls:APMenuItem
+                                 Icon="FileSignature"
+                                 Content="Listing"/>
+
+            
 
             <controls:APMenuItem
                                  Icon="ShoppingCart"
