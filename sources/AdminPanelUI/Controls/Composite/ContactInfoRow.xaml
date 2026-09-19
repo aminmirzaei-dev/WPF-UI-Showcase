@@ -14,7 +14,7 @@
 
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="40" />
-                <ColumnDefinition Width="70" />
+                <ColumnDefinition Width="auto" />
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="40" />
             </Grid.ColumnDefinitions>
@@ -28,19 +28,13 @@
                    VerticalAlignment="Center"
                    HorizontalAlignment="Left" />
 
-            <!-- Title -->
-            <TextBlock Grid.Column="1"
-                       Text="{Binding Title, ElementName=root}"
-                       FontSize="13"
-                       Margin="10,0,0,0"
-                       Foreground="WhiteSmoke"
-                       VerticalAlignment="Center" />
+
 
             <!-- Value -->
-            <TextBlock Grid.Column="2"
+            <TextBlock Grid.Column="1"
                        Text="{Binding Value, ElementName=root}"
                        FontSize="15"
-                       Margin="30,0,0,0"
+                       Margin="20,0,0,0"
                        Foreground="White"
                        VerticalAlignment="Center"
                        TextTrimming="CharacterEllipsis" />
