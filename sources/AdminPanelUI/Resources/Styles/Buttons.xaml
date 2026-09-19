@@ -9,12 +9,18 @@
 
         <Setter Property="Background"
                 Value="#EF4444" />
+        
+        <Setter Property="Cursor"
+                Value="Hand" />
+        
+        <Setter Property="FontFamily"
+                Value="Segoe Fluent Icons" />
 
         <Setter Property="Content"
-                Value="×" />
+                Value="" />
 
         <Setter Property="FontSize"
-                Value="20" />
+                Value="10" />
 
 
         <Setter Property="Foreground"
