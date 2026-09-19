@@ -560,7 +560,7 @@ It helps you manage your business data, track performance and grow faster." />
 
                                     <TextBlock Text="Beta"
                                                Foreground="WhiteSmoke"
-                                               FontSize="7"
+                                               FontSize="9"
                                                HorizontalAlignment="Center" />
 
                                     <TextBlock Text="1.3"
@@ -583,7 +583,7 @@ It helps you manage your business data, track performance and grow faster." />
 
                                 <TextBlock Text="Latest Version"
                                            Foreground="White"
-                                           FontSize="7"
+                                           FontSize="10"
                                            VerticalAlignment="Center"
                                            HorizontalAlignment="Center"
                                            FontWeight="SemiBold" />
@@ -593,14 +593,14 @@ It helps you manage your business data, track performance and grow faster." />
 
                             <TextBlock Text="Released on May 21, 2026"
                                        Foreground="WhiteSmoke"
-                                       FontSize="7"
+                                       FontSize="12"
                                        HorizontalAlignment="Center"
                                        Margin="0,6,0,0" />
 
 
                             <TextBlock Text="Check for updates regularly to get the latest features and improvements."
                                        Foreground="{StaticResource TextSecondary}"
-                                       FontSize="7"
+                                       FontSize="10"
                                        TextWrapping="Wrap"
                                        TextAlignment="Center"
                                        Margin="15,7,15,0" />
