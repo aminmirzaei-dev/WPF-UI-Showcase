@@ -257,7 +257,7 @@
                                 Width="80"
                                 Height="50"
                                 IconAlignment="Center"
-                                IconSize="50"
+                                FontSize="20"
                                 Icon="Telegram">
 
                 </local:APButton>

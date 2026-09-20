@@ -184,7 +184,7 @@
 
                                     <icons:IconBlock x:Name="IconElement"
                                                      Icon="{TemplateBinding Icon}"
-                                                     FontSize="{TemplateBinding IconSize}"
+                                                     FontSize="{TemplateBinding FontSize}"
                                                      Foreground="{TemplateBinding Foreground}"
                                                      VerticalAlignment="Center"
                                                      HorizontalAlignment="{TemplateBinding IconAlignment}"

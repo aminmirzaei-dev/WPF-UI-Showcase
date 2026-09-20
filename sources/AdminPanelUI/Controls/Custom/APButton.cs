@@ -88,22 +88,6 @@ namespace AdminPanelUI.Controls
             set => SetValue(IconMarginProperty, value);
         }
 
-        public static readonly DependencyProperty IconSizeProperty =
-            DependencyProperty.Register(
-                nameof(IconSize),
-                typeof(float),
-                typeof(APButton),
-                new FrameworkPropertyMetadata(20.0f));
-
-        public float IconSize
-        {
-            get => (float)GetValue(IconSizeProperty);
-            set => SetValue(IconSizeProperty, value);
-        }
-
-
-
-
         #endregion
 
         #region IconTextSpacing
