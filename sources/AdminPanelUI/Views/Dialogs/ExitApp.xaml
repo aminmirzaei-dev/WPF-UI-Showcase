@@ -17,8 +17,8 @@
         ShowInTaskbar="False">
 
     <Border x:Name="MainBorder"
-            Background="#21104a"
-            CornerRadius="18"
+            Background="#1D2C5B"
+            CornerRadius="20"
             Margin="10"
             Opacity="0"
             RenderTransformOrigin="0.5,0.5">
@@ -75,7 +75,7 @@
                 <Border Width="65"
                         Height="65"
                         CornerRadius="32.5"
-                        Background="#2D2142"
+                        Background="#2B3B6B"
                         HorizontalAlignment="Center"
                         Margin="0,0,0,12">
 
@@ -121,7 +121,7 @@
                                        Height="40"
                                        Icon="Cancel"
                                        Margin="0,0,8,0"
-                                       Background="#30283D"
+                                       Background="#182654"
                                        Foreground="#E9E3F2"
                                        Click="NoButton_Click" />
 

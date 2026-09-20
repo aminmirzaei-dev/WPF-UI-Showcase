@@ -8,7 +8,7 @@
            TargetType="{x:Type Button}">
 
         <Setter Property="Background"
-                Value="#EF4444" />
+                Value="#182654" />
         
         <Setter Property="Cursor"
                 Value="Hand" />
