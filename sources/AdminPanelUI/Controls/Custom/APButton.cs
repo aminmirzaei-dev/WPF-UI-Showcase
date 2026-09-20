@@ -61,51 +61,10 @@ namespace AdminPanelUI.Controls
             get => (IconChar)GetValue(IconProperty);
             set => SetValue(IconProperty, value);
         }
-
-        public static readonly DependencyProperty IconAlignmentProperty =
-           DependencyProperty.Register(
-               nameof(IconAlignment),
-               typeof(HorizontalAlignment),
-               typeof(APButton),
-               new FrameworkPropertyMetadata(HorizontalAlignment.Left));
-
-        public HorizontalAlignment IconAlignment
-        {
-            get => (HorizontalAlignment)GetValue(IconAlignmentProperty);
-            set => SetValue(IconAlignmentProperty, value);
-        }
-
-        public static readonly DependencyProperty IconMarginProperty =
-          DependencyProperty.Register(
-              nameof(IconMargin),
-              typeof(Margins),
-              typeof(APButton),
-              new FrameworkPropertyMetadata(new Margins(0,0,0,0)));
-
-        public Margins IconMargin
-        {
-            get => (Margins)GetValue(IconMarginProperty);
-            set => SetValue(IconMarginProperty, value);
-        }
-
+      
         #endregion
 
-        #region IconTextSpacing
-
-        public static readonly DependencyProperty IconTextSpacingProperty =
-            DependencyProperty.Register(
-                nameof(IconTextSpacing),
-                typeof(double),
-                typeof(APButton),
-                new FrameworkPropertyMetadata(10.0));
-
-        public double IconTextSpacing
-        {
-            get => (double)GetValue(IconTextSpacingProperty);
-            set => SetValue(IconTextSpacingProperty, value);
-        }
-
-        #endregion
+     
 
         private static void OnBackgroundChanged(
     DependencyObject d,

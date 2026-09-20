@@ -239,7 +239,7 @@
 
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="80" />
+                    <ColumnDefinition Width="65" />
                 </Grid.ColumnDefinitions>
 
 
@@ -254,11 +254,10 @@
 
                 <!-- APButton -->
                 <local:APButton Grid.Column="1"
-                                Width="80"
+                                Width="65"
                                 Height="50"
-                                IconAlignment="Center"
-                                FontSize="20"
-                                Icon="Telegram">
+                                FontSize="18"
+                                Icon="PaperPlane">
 
                 </local:APButton>
 

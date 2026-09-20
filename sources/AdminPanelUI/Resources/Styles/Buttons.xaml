@@ -187,8 +187,7 @@
                                                      FontSize="{TemplateBinding FontSize}"
                                                      Foreground="{TemplateBinding Foreground}"
                                                      VerticalAlignment="Center"
-                                                     HorizontalAlignment="{TemplateBinding IconAlignment}"
-                                                     Margin="{TemplateBinding IconMargin}" />
+                                                     Margin="5,0,10,0" />
 
                                     <!-- Text -->
 
