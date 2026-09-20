@@ -90,7 +90,7 @@
 
                             <icons:IconBlock x:Name="PART_Icon"
                                              Icon="{TemplateBinding Icon}"
-                                             FontSize="14"
+                                             FontSize="{TemplateBinding FontSize}"
                                              Foreground="{TemplateBinding IconBrush}"
                                              Margin="13,0,0,0"
                                              HorizontalAlignment="Left"
