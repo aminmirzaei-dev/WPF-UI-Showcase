@@ -1,6 +1,7 @@
 ﻿using FontAwesome.Sharp;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -34,6 +35,19 @@ namespace AdminPanelUI.Controls
         public static readonly DependencyProperty TitleProperty =
             DependencyProperty.Register(
                 nameof(Title),
+                typeof(string),
+                typeof(ContactInfoRow),
+                new PropertyMetadata(string.Empty));
+
+        public string ActionLink
+        {
+            get => (string)GetValue(ActionLinkProperty);
+            set => SetValue(ActionLinkProperty, value);
+        }
+
+        public static readonly DependencyProperty ActionLinkProperty =
+            DependencyProperty.Register(
+                nameof(ActionLink),
                 typeof(string),
                 typeof(ContactInfoRow),
                 new PropertyMetadata(string.Empty));
@@ -79,5 +93,17 @@ namespace AdminPanelUI.Controls
                 typeof(IconChar),
                 typeof(ContactInfoRow),
                 new PropertyMetadata(IconChar.ExternalLinkAlt));
+
+        private void ActionButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (this.ActionLink != string.Empty)
+            {
+                Process.Start(new ProcessStartInfo
+                {
+                    FileName = this.ActionLink,
+                    UseShellExecute = true
+                });
+            }
+        }
     }
 }

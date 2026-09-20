@@ -364,28 +364,32 @@ It helps you manage your business data, track performance and grow faster." />
                                     <StackPanel Grid.Row="1"
                                                 VerticalAlignment="Top">
 
-                                        <controls:ContactInfoRow Height="60"
+                                        <controls:ContactInfoRow Height="65"
                                                                  Margin="0,2"
                                                                  Title="X"
+                                                                 ActionLink="https://x.com/aminmirzaeidev"
                                                                  Value="@aminmirzaeidev"
                                                                  Icon="/Resources/Icons/Contact/X.png" />
 
-                                        <controls:ContactInfoRow Height="60"
+                                        <controls:ContactInfoRow Height="65"
                                                                  Margin="0,2"
                                                                  Title="Gmail"
                                                                  Value="aminmirzaeidev"
+                                                                 ActionLink="mailto:aminmirzaeidev@gmail.com"
                                                                  Icon="/Resources/Icons/Contact/Gmail.png" />
 
-                                        <controls:ContactInfoRow Height="60"
+                                        <controls:ContactInfoRow Height="65"
                                                                  Margin="0,2"
                                                                  Title="Github"
                                                                  Value="aminmirzaei-dev"
+                                                                 ActionLink="https://github.com/aminmirzaei-dev"
                                                                  Icon="/Resources/Icons/Contact/Github.png" />
 
-                                        <controls:ContactInfoRow Height="60"
+                                        <controls:ContactInfoRow Height="65"
                                                                  Margin="0,2"
                                                                  Title="Instagram"
                                                                  Value="aminmirzaei.dev"
+                                                                 ActionLink="https://instagram.com/aminmirzaei.dev"
                                                                  Icon="/Resources/Icons/Contact/Instagram.png" />
 
                                     </StackPanel>

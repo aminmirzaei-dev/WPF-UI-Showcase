@@ -47,6 +47,7 @@
                                Height="30"
                                Foreground="White"
                                Background="#182654"
+                               Click="ActionButton_Click"
                                VerticalAlignment="Center"
                                HorizontalAlignment="Right" />
 
