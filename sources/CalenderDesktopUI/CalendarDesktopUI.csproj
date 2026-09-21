@@ -15,7 +15,8 @@
     <Folder Include="Resources\Palettes\" />
     <Folder Include="Resources\Themes\" />
     <Folder Include="Resources\Styles\" />
-    <Folder Include="Views\" />
+    <Folder Include="Views\Dialogs\" />
+    <Folder Include="Views\Windows\" />
   </ItemGroup>
 
 </Project>
