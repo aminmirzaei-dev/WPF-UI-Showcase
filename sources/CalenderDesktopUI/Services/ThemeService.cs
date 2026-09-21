@@ -4,7 +4,7 @@ using System.ComponentModel;
 using System.Text;
 using System.Windows;
 
-namespace CalenderDesktopUI.Services
+namespace CalendarDesktopUI.Services
 {
     public enum ThemeOptions
     {
