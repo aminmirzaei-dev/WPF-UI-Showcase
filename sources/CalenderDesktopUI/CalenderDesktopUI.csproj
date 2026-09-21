@@ -11,7 +11,9 @@
   <ItemGroup>
     <Folder Include="Controls\Custom\" />
     <Folder Include="Controls\Composite\" />
-    <Folder Include="Resources\" />
+    <Folder Include="Resources\Images\" />
+    <Folder Include="Resources\Themes\" />
+    <Folder Include="Resources\Styles\" />
     <Folder Include="Views\" />
   </ItemGroup>
 
