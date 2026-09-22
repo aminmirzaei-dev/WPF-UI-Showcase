@@ -4,6 +4,10 @@
 
     <Style
            TargetType="{x:Type controls:CDCalendar}">
+        <Setter Property="CalendarItemStyle"
+                Value="{StaticResource CDCalendarItem}" />
+        <Setter Property="CalendarDayButtonStyle"
+                Value="{StaticResource CDCalendarDayButton}" />
         <Setter Property="Foreground"
                 Value="#FF333333" />
         <Setter Property="Background"
