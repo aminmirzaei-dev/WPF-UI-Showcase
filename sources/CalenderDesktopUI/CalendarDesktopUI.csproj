@@ -9,8 +9,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Controls\Custom\" />
     <Folder Include="Controls\Composite\" />
+    <Folder Include="Controls\Custom\" />
     <Folder Include="Resources\Images\" />
     <Folder Include="Resources\Palettes\" />
     <Folder Include="Resources\Themes\" />
