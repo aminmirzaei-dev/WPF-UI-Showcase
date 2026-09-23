@@ -82,14 +82,14 @@
                     Padding="0 4">
                 <StackPanel>
 
-                    <controls:MenuButton Icon="Check"
-                                      Caption="Check" />
-                    <controls:MenuButton Icon="BellSlash"
-                                      Caption="Mute" />
-                    <controls:MenuButton Icon="Pencil"
-                                      Caption="Edit" />
-                    <controls:MenuButton Icon="Trash"
-                                      Caption="Delete" />
+                    <local:MenuButtonItem Icon="Check"
+                                             Caption="Check" />
+                    <local:MenuButtonItem Icon="BellSlash"
+                                             Caption="Mute" />
+                    <local:MenuButtonItem Icon="Pencil"
+                                             Caption="Edit" />
+                    <local:MenuButtonItem Icon="Trash"
+                                             Caption="Delete" />
 
                 </StackPanel>
             </Border>
