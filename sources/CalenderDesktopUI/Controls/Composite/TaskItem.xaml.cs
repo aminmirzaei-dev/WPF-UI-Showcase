@@ -11,13 +11,51 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace CalendarDesktopUI.Controls.Composite
+namespace CalendarDesktopUI.Controls
 {
     /// <summary>
     /// Interaction logic for TaskItem.xaml
     /// </summary>
     public partial class TaskItem : UserControl
     {
+
+        public static readonly DependencyProperty TitleProperty = DependencyProperty.Register("Title", typeof(string), typeof(TaskItem));
+        public static readonly DependencyProperty TimeProperty = DependencyProperty.Register("Time", typeof(string), typeof(TaskItem));
+        public static readonly DependencyProperty ColorProperty = DependencyProperty.Register("Color", typeof(SolidColorBrush), typeof(TaskItem));
+        public static readonly DependencyProperty IconProperty = DependencyProperty.Register("Icon", typeof(FontAwesome.WPF.FontAwesomeIcon), typeof(TaskItem));
+        public static readonly DependencyProperty IconBellProperty = DependencyProperty.Register("IconBell", typeof(FontAwesome.WPF.FontAwesomeIcon), typeof(TaskItem));
+
+        public string Title
+        {
+            get { return (string)GetValue(TitleProperty); }
+            set { SetValue(TitleProperty, value); }
+        }
+
+        public string Time
+        {
+            get { return (string)GetValue(TimeProperty); }
+            set { SetValue(TimeProperty, value); }
+        }
+
+        public SolidColorBrush Color
+        {
+            get { return (SolidColorBrush)GetValue(ColorProperty); }
+            set { SetValue(ColorProperty, value); }
+        }
+
+        public FontAwesome.WPF.FontAwesomeIcon Icon
+        {
+            get { return (FontAwesome.WPF.FontAwesomeIcon)GetValue(IconProperty); }
+            set { SetValue(IconProperty, value); }
+        }
+
+        public FontAwesome.WPF.FontAwesomeIcon IconBell
+        {
+            get { return (FontAwesome.WPF.FontAwesomeIcon)GetValue(IconBellProperty); }
+            set { SetValue(IconBellProperty, value); }
+        }
+
+
         public TaskItem()
         {
             InitializeComponent();
