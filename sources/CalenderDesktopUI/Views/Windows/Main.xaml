@@ -15,6 +15,22 @@
         Height="590"
         Width="900">
     <Grid>
-        
+
+        <!--Grid Background-->
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1.2*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Border CornerRadius="20 0 0 20"
+                    Background="#1a1a1a" />
+
+            <Border CornerRadius="0 20 20 0"
+                    MouseDown="Border_MouseDown"
+                    Grid.Column="1"
+                    Background="Tomato" />
+        </Grid>
+
     </Grid>
 </Window>
