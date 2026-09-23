@@ -4,9 +4,80 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:CalendarDesktopUI.Views.Layouts"
-             mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
-            
-    </Grid>
+             xmlns:icons="http://schemas.fontawesome.io/icons/"
+             xmlns:controls="clr-namespace:CalendarDesktopUI.Controls"
+             mc:Ignorable="d" >
+    <StackPanel>
+        <!--Year Selection-->
+        <StackPanel Orientation="Horizontal"
+                    HorizontalAlignment="Center"
+                    Margin="0 50 0 30">
+            <Button Style="{StaticResource YearButton}">
+                <icons:ImageAwesome Icon="AngleLeft"
+                                 Style="{StaticResource Angle}" />
+            </Button>
+
+            <Button Content="2020"
+                    Style="{StaticResource YearButton}" />
+            <Button Content="2021"
+                    Style="{StaticResource YearButton}" />
+            <Button Content="2022"
+                    Style="{StaticResource YearButton}"
+                    Foreground="Tomato"
+                    FontSize="24" />
+            <Button Content="2023"
+                    Style="{StaticResource YearButton}" />
+            <Button Content="2024"
+                    Style="{StaticResource YearButton}" />
+
+            <Button Style="{StaticResource YearButton}">
+                <icons:ImageAwesome Icon="AngleRight"
+                                 Style="{StaticResource Angle}" />
+            </Button>
+        </StackPanel>
+
+        <!--Month Selection-->
+        <StackPanel Orientation="Horizontal"
+                    HorizontalAlignment="Center">
+            <Button Content="1"
+                    Style="{StaticResource MonthButton}" />
+            <Button Content="2"
+                    Style="{StaticResource MonthButton}" />
+            <Button Content="3"
+                    Style="{StaticResource MonthButton}" />
+            <Button Content="4"
+                    Style="{StaticResource MonthButton}" />
+            <Button Content="5"
+                    Style="{StaticResource MonthButton}" />
+            <Button Content="6"
+                    Style="{StaticResource MonthButton}" />
+            <Button Content="7"
+                    Style="{StaticResource MonthButton}" />
+            <Button Content="8"
+                    Style="{StaticResource MonthButton}" />
+            <Button Content="9"
+                    Style="{StaticResource MonthButton}" />
+            <Button Content="10"
+                    Style="{StaticResource MonthButton}" />
+            <Button Content="11"
+                    Style="{StaticResource MonthButton}"
+                    Foreground="Tomato"
+                    FontWeight="SemiBold" />
+            <Button Content="12"
+                    Style="{StaticResource MonthButton}" />
+        </StackPanel>
+
+        <Separator Height="0.8"
+                   Background="#CACACA"
+                   Margin="30 10" />
+
+        <TextBlock Text="November"
+                   Foreground="Tomato"
+                   FontSize="24"
+                   TextAlignment="Center"
+                   FontWeight="SemiBold"
+                   Margin="0 15 0 20" />
+
+        <controls:CDCalendar></controls:CDCalendar>
+    </StackPanel>
 </UserControl>
