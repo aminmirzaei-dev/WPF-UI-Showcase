@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:CalendarDesktopUI.Views.Windows"
         xmlns:icons="http://schemas.fontawesome.io/icons/"
         xmlns:controls="clr-namespace:CalendarDesktopUI.Controls"
+        xmlns:layouts="clr-namespace:CalendarDesktopUI.Views.Layouts"
         FontFamily="Trebuchet MS"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
@@ -27,9 +28,32 @@
                     Background="#1a1a1a" />
 
             <Border CornerRadius="0 20 20 0"
-                    MouseDown="Border_MouseDown"
+                    
                     Grid.Column="1"
                     Background="Tomato" />
+        </Grid>
+
+        <!--Grid Controls-->
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1.2*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <layouts:DateSelection></layouts:DateSelection>
+
+            <StackPanel Grid.Column="1">
+               
+
+                <TextBlock Text="5 tasks- 2 dates left"
+                           Foreground="WhiteSmoke"
+                           FontSize="16"
+                           Margin="35 0 20 0" />
+
+                <!--Add Notes-->
+                <layouts:AddNotes></layouts:AddNotes>
+
+            </StackPanel>
         </Grid>
 
     </Grid>
