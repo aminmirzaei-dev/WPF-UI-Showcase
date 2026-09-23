@@ -43,7 +43,10 @@
             <layouts:DateSelection></layouts:DateSelection>
 
             <StackPanel Grid.Column="1">
-               
+
+                <!--Titles-->
+                <layouts:DateTitle></layouts:DateTitle>
+
 
                 <TextBlock Text="5 tasks- 2 dates left"
                            Foreground="WhiteSmoke"
