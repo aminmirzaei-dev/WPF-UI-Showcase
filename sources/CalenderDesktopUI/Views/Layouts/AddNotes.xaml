@@ -4,9 +4,134 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:CalendarDesktopUI.Views.Layouts"
-             mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
-            
-    </Grid>
+             xmlns:icons="http://schemas.fontawesome.io/icons/"
+             xmlns:controls="clr-namespace:CalendarDesktopUI.Controls">
+    <StackPanel>
+        <!--Titles-->
+        <StackPanel Margin="30 45 30 10"
+                    Orientation="Horizontal">
+            <TextBlock Text="16"
+                       FontSize="50"
+                       Foreground="#FFFFFF" />
+
+            <StackPanel Grid.Column="1"
+                        Margin="10 0 0 0"
+                        VerticalAlignment="Center">
+                <TextBlock Text="November"
+                           Foreground="#FFFFFF"
+                           FontSize="24" />
+                <TextBlock Text="Monday"
+                           Foreground="WhiteSmoke"
+                           FontSize="14" />
+            </StackPanel>
+
+            <Button Style="{StaticResource BigButton}"
+                    Margin="112 0 5 0">
+                <icons:ImageAwesome Icon="AngleLeft"
+                                 Style="{StaticResource BigAngle}" />
+            </Button>
+
+            <Button Style="{StaticResource BigButton}">
+                <icons:ImageAwesome Icon="AngleRight"
+                                 Style="{StaticResource BigAngle}" />
+            </Button>
+        </StackPanel>
+
+        <TextBlock Text="5 tasks- 2 dates left"
+                   Foreground="WhiteSmoke"
+                   FontSize="16"
+                   Margin="35 0 20 0" />
+
+        <!--Add Notes-->
+        <Border Background="Coral"
+                CornerRadius="10"
+                HorizontalAlignment="Center"
+                Width="355"
+                Margin="0 30 0 20"
+                Padding="17 15 5 15">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="auto" />
+                </Grid.ColumnDefinitions>
+
+                <StackPanel>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+
+                        <icons:ImageAwesome Icon="Pencil"
+                                         Width="15"
+                                         Height="15"
+                                         Foreground="White" />
+                        <TextBlock x:Name="lblNote"
+                                   Text="Add Note"
+                                   Style="{StaticResource TextHint}" />
+                        <TextBox Name="txtNote"
+                                 Style="{StaticResource LiteTextBox}" />
+                    </Grid>
+
+                    <Separator Margin="0 12 0 11"
+                               Background="#C14269"
+                               Height="0.8" />
+
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+
+                        <icons:ImageAwesome Icon="Bell"
+                                         Width="15"
+                                         Height="15"
+                                         Foreground="White" />
+                        <TextBlock x:Name="lblTime"
+                                   Text="_ _ : _ _  -  _ _ : _ _"
+                                   Style="{StaticResource TextHint}" />
+                        <TextBox Name="txtTime"
+                                 Style="{StaticResource LiteTextBox}" />
+                    </Grid>
+
+                </StackPanel>
+
+                <Button Style="{StaticResource YearButton}"
+                        Grid.Column="1">
+                    <icons:ImageAwesome Icon="PlusCircle"
+                                     Width="28"
+                                     Height="28"
+                                     Foreground="#f9f9f9" />
+                </Button>
+            </Grid>
+        </Border>
+
+        <!--Notes-->
+        <controls:TaskItem Title="Post on social networks"
+                 Time="09:45 - 10:30"
+                 Color="Orange"
+                 Icon="CheckCircle"
+                 IconBell="BellSlash" />
+        <controls:TaskItem Title="Review the app design"
+                 Time="11:30 - 12:00"
+                 Color="Orange"
+                 Icon="CheckCircle"
+                 IconBell="BellSlash" />
+        <controls:TaskItem Title="Build a demo of the app"
+                 Time="14:00 - 15:30"
+                 Color="#f1f1f1"
+                 Icon="CircleThin"
+                 IconBell="Bell" />
+        <controls:TaskItem Title="Dinner with John Doe"
+                 Time="20:15 - 21:45"
+                 Color="#f1f1f1"
+                 Icon="CircleThin"
+                 IconBell="Bell" />
+        <controls:TaskItem Title="Send email to Amin Mirzaei"
+                 Time="23:00 - 23:20"
+                 Color="#f1f1f1"
+                 Icon="CircleThin"
+                 IconBell="Bell" />
+
+    </StackPanel>
 </UserControl>

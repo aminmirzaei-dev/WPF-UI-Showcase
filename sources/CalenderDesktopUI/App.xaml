@@ -4,6 +4,14 @@
              xmlns:local="clr-namespace:CalendarDesktopUI"
              StartupUri="Views/Windows/Main.xaml">
     <Application.Resources>
-         
+        <ResourceDictionary>
+
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources/Styles/Buttons.xaml" />
+                <ResourceDictionary Source="Resources/Styles/TextBlocks.xaml" />
+                <ResourceDictionary Source="Resources/Styles/TextBoxs.xaml" />
+                <ResourceDictionary Source="Resources/Styles/IconImages.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>
