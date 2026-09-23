@@ -12,7 +12,6 @@
     <Folder Include="Resources\Images\" />
     <Folder Include="Resources\Palettes\" />
     <Folder Include="Resources\Themes\" />
-    <Folder Include="Views\Layouts\" />
   </ItemGroup>
 
   <ItemGroup>
