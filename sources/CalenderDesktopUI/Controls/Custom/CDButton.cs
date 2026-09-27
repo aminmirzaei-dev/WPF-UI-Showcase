@@ -47,15 +47,16 @@ namespace CalendarDesktopUI.Controls
         public static readonly DependencyProperty IconProperty =
             DependencyProperty.Register(
                 nameof(Icon),
-                typeof(IconChar),
+                typeof(FontAwesomeIcon),
                 typeof(CDButton),
-                new FrameworkPropertyMetadata(IconChar.None));
+                new FrameworkPropertyMetadata(FontAwesomeIcon.None));
 
-        public IconChar Icon
+        public FontAwesomeIcon Icon
         {
-            get => (IconChar)GetValue(IconProperty);
+            get => (FontAwesomeIcon)GetValue(IconProperty);
             set => SetValue(IconProperty, value);
         }
+
 
         #endregion
 
