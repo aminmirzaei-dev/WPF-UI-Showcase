@@ -3,6 +3,51 @@
                     xmlns:controls="clr-namespace:CalendarDesktopUI.Controls"
                     xmlns:icons="http://schemas.fontawesome.io/icons/">
 
+    <Style x:Key="SocialButtonStyle"
+           TargetType="Button">
+        <Setter Property="Width"
+                Value="150" />
+        <Setter Property="Height"
+                Value="48" />
+        <Setter Property="Margin"
+                Value="5,0" />
+        <Setter Property="Background"
+                Value="#F8F8F8" />
+        <Setter Property="BorderBrush"
+                Value="#EEEEEE" />
+        <Setter Property="BorderThickness"
+                Value="1" />
+        <Setter Property="Cursor"
+                Value="Hand" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}"
+                            CornerRadius="10">
+                        <ContentPresenter HorizontalAlignment="Center"
+                                          VerticalAlignment="Center" />
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver"
+                                 Value="True">
+                            <Setter Property="Background"
+                                    Value="#FFF3E8" />
+                            <Setter Property="BorderBrush"
+                                    Value="#FF7A00" />
+                        </Trigger>
+                        <Trigger Property="IsPressed"
+                                 Value="True">
+                            <Setter Property="Background"
+                                    Value="#FFE5D2" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
     <Style TargetType="{x:Type controls:CDButton}">
 
         <Setter Property="Foreground"
@@ -72,7 +117,7 @@
 
                         <Border x:Name="ButtonBorder"
                                 Background="{TemplateBinding Background}"
-                                CornerRadius="5"
+                                CornerRadius="20"
                                 SnapsToDevicePixels="True">
 
                             <Border.RenderTransform>
@@ -265,80 +310,48 @@
     </Style>
 
     <Style x:Key="CloseButtonStyle"
-           TargetType="{x:Type Button}">
-
+           TargetType="Button">
+        <Setter Property="Width"
+                Value="36" />
+        <Setter Property="Height"
+                Value="36" />
         <Setter Property="Background"
-                Value="Black" />
-
+                Value="Transparent" />
+        <Setter Property="BorderThickness"
+                Value="0" />
+        <Setter Property="Foreground"
+                Value="#777777" />
         <Setter Property="Cursor"
                 Value="Hand" />
 
-        <Setter Property="FontFamily"
-                Value="Segoe Fluent Icons" />
-
-        <Setter Property="Content"
-                Value="" />
-
-        <Setter Property="FontSize"
-                Value="10" />
-
-
-        <Setter Property="Foreground"
-                Value="White" />
-
-        <Setter Property="BorderThickness"
-                Value="0" />
-
-
-        <Setter Property="Template">
-
+        <Setter Property="Content">
             <Setter.Value>
-
-                <ControlTemplate TargetType="{x:Type Button}">
-
-                    <Border x:Name="CloseBorder"
-                            Background="{TemplateBinding Background}"
-                            CornerRadius="16">
-
+                <icons:ImageAwesome Icon="Close"
+                                    Width="15"
+                                    Height="15"
+                                    Foreground="#777777" />
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="{TemplateBinding Background}"
+                            CornerRadius="18">
                         <ContentPresenter HorizontalAlignment="Center"
                                           VerticalAlignment="Center" />
-
                     </Border>
-
-
                     <ControlTemplate.Triggers>
-
-                        <!-- Hover -->
-
                         <Trigger Property="IsMouseOver"
                                  Value="True">
-
-                            <Setter TargetName="CloseBorder"
-                                    Property="Background"
-                                    Value="#DC2626" />
-
+                            <Setter Property="Background"
+                                    Value="#FFF0E5" />
+                            <Setter Property="Foreground"
+                                    Value="#FF7A00" />
                         </Trigger>
-
-
-                        <!-- Press -->
-
-                        <Trigger Property="IsPressed"
-                                 Value="True">
-
-                            <Setter TargetName="CloseBorder"
-                                    Property="Background"
-                                    Value="#B91C1C" />
-
-                        </Trigger>
-
                     </ControlTemplate.Triggers>
-
                 </ControlTemplate>
-
             </Setter.Value>
-
         </Setter>
-
     </Style>
 
     <Style TargetType="{x:Type controls:MenuButtonItem}">

@@ -16,8 +16,21 @@
         Background="Transparent"
         ShowInTaskbar="False">
 
+    <Window.Resources>
+        <SolidColorBrush x:Key="OrangeBrush"
+                         Color="#FF7A00" />
+        <SolidColorBrush x:Key="OrangeDarkBrush"
+                         Color="#E85D04" />
+        <SolidColorBrush x:Key="OrangeLightBrush"
+                         Color="#FFF3E8" />
+        <SolidColorBrush x:Key="TextBrush"
+                         Color="#252525" />
+        <SolidColorBrush x:Key="SecondaryTextBrush"
+                         Color="#777777" />
+    </Window.Resources>
+
     <Border x:Name="MainBorder"
-            Background="#1D2C5B"
+            Background="White"
             CornerRadius="20"
             Margin="10"
             Opacity="0"
@@ -75,13 +88,13 @@
                 <Border Width="65"
                         Height="65"
                         CornerRadius="32.5"
-                        Background="#2B3B6B"
+                        Background="Gray"
                         HorizontalAlignment="Center"
                         Margin="0,0,0,12">
 
                     <icons:FontAwesome Icon="Close"
                                      FontSize="28"
-                                     Foreground="#A78BFA"
+                                     Foreground="{StaticResource OrangeBrush}"
                                      HorizontalAlignment="Center"
                                      VerticalAlignment="Center" />
 
@@ -93,7 +106,7 @@
                 <TextBlock Text="Do you want to exit the app?"
                            FontSize="19"
                            FontWeight="SemiBold"
-                           Foreground="#F5F3FF"
+                           Foreground="Black"
                            HorizontalAlignment="Center"
                            TextAlignment="Center" />
 
@@ -102,7 +115,7 @@
 
                 <TextBlock Text="Are you sure you want to exit the application?"
                            FontSize="13"
-                           Foreground="#A8A0B8"
+                           Foreground="{StaticResource SecondaryTextBrush}"
                            Margin="0,7,0,18"
                            HorizontalAlignment="Center"
                            TextAlignment="Center" />
@@ -121,8 +134,7 @@
                                        Height="40"
                                        Icon="Close"
                                        Margin="0,0,8,0"
-                                       Background="#182654"
-                                       Foreground="#E9E3F2"
+                                       Background="{StaticResource OrangeDarkBrush}"
                                        Click="NoButton_Click" />
 
 
