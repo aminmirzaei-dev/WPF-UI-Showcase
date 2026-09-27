@@ -103,7 +103,7 @@
 
                                     <!--Icon-->
 
-                                    <icons:IconBlock x:Name="IconElement"
+                                    <icons:FontAwesome x:Name="IconElement"
                                                      Icon="{TemplateBinding Icon}"
                                                      FontSize="{TemplateBinding FontSize}"
                                                      Foreground="{TemplateBinding Foreground}"

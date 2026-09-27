@@ -79,7 +79,7 @@
                         HorizontalAlignment="Center"
                         Margin="0,0,0,12">
 
-                    <icons:IconBlock Icon="RightFromBracket"
+                    <icons:FontAwesome Icon="Github"
                                      FontSize="28"
                                      Foreground="#A78BFA"
                                      HorizontalAlignment="Center"
@@ -119,7 +119,7 @@
                     <controls:CDButton Content="No"
                                        Width="120"
                                        Height="40"
-                                       Icon="Cancel"
+                                       Icon="Close"
                                        Margin="0,0,8,0"
                                        Background="#182654"
                                        Foreground="#E9E3F2"
