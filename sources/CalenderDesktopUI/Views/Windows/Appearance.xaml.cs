@@ -10,7 +10,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace CalendarDesktopUI.Views.Dialogs
+namespace CalendarDesktopUI.Views.Windows
 {
     /// <summary>
     /// Interaction logic for Appearance.xaml
