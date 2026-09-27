@@ -3,7 +3,7 @@ using System.Windows.Media;
 using FontAwesome.WPF;
 
 
-namespace CalendarDesktopUI.Controls.Custom
+namespace CalendarDesktopUI.Controls
 {
     internal class CDButton : System.Windows.Controls.Button
     {
