@@ -47,12 +47,6 @@
                 <!--Titles-->
                 <layouts:DateTitle></layouts:DateTitle>
 
-
-                <TextBlock Text="5 tasks- 2 dates left"
-                           Foreground="WhiteSmoke"
-                           FontSize="16"
-                           Margin="35 0 20 0" />
-
                 <!--Add Notes-->
                 <layouts:AddNotes></layouts:AddNotes>
 

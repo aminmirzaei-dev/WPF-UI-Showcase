@@ -7,35 +7,6 @@
              xmlns:icons="http://schemas.fontawesome.io/icons/"
              xmlns:controls="clr-namespace:CalendarDesktopUI.Controls">
     <StackPanel>
-        <!--Titles-->
-        <StackPanel Margin="30 45 30 10"
-                    Orientation="Horizontal">
-            <TextBlock Text="16"
-                       FontSize="50"
-                       Foreground="#FFFFFF" />
-
-            <StackPanel Grid.Column="1"
-                        Margin="10 0 0 0"
-                        VerticalAlignment="Center">
-                <TextBlock Text="November"
-                           Foreground="#FFFFFF"
-                           FontSize="24" />
-                <TextBlock Text="Monday"
-                           Foreground="WhiteSmoke"
-                           FontSize="14" />
-            </StackPanel>
-
-            <Button Style="{StaticResource BigButton}"
-                    Margin="112 0 5 0">
-                <icons:ImageAwesome Icon="AngleLeft"
-                                 Style="{StaticResource BigAngle}" />
-            </Button>
-
-            <Button Style="{StaticResource BigButton}">
-                <icons:ImageAwesome Icon="AngleRight"
-                                 Style="{StaticResource BigAngle}" />
-            </Button>
-        </StackPanel>
 
         <TextBlock Text="5 tasks- 2 dates left"
                    Foreground="WhiteSmoke"
