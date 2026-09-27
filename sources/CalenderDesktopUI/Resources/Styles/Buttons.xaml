@@ -345,6 +345,9 @@
 
         <Setter Property="Background"
                 Value="White" />
+        
+        <Setter Property="Cursor"
+                Value="Hand" />
 
         <Setter Property="Template">
             <Setter.Value>

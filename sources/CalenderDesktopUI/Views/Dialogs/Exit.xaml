@@ -79,7 +79,7 @@
                         HorizontalAlignment="Center"
                         Margin="0,0,0,12">
 
-                    <icons:FontAwesome Icon="Github"
+                    <icons:FontAwesome Icon="Close"
                                      FontSize="28"
                                      Foreground="#A78BFA"
                                      HorizontalAlignment="Center"
