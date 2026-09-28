@@ -133,7 +133,7 @@
                                          Width="20"
                                          Height="20"
                                          VerticalAlignment="Center"
-                                         Foreground="{StaticResource TextBrush}" />
+                                         Foreground="{StaticResource OrangeBrush}" />
                         <TextBlock Text="GitHub"
                                    FontSize="13"
                                    FontWeight="SemiBold"
