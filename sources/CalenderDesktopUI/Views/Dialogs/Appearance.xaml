@@ -7,7 +7,7 @@
               xmlns:controls="clr-namespace:CalendarDesktopUI.Controls"
               mc:Ignorable="d"
               Title="Appearance"
-              Height="600"
+              Height="605"
               Width="800"
               WindowStartupLocation="CenterOwner"
               ResizeMode="NoResize"
@@ -191,8 +191,9 @@
 
                         <RadioButton x:Name="LightThemeRadio"
                                      Content="Light"
-                                     Tag="#FFFFFF"
                                      GroupName="Theme"
+                                     Background="#FAFAFA"
+                                     Foreground="Black"
                                      Style="{StaticResource ThemeOptionStyle}"
                                      IsChecked="True" />
 
@@ -200,8 +201,9 @@
 
                         <RadioButton x:Name="DarkThemeRadio"
                                      Content="Dark"
-                                     Tag="#252525"
                                      GroupName="Theme"
+                                     Background="#1c1c1c"
+                                     Foreground="White"
                                      Style="{StaticResource ThemeOptionStyle}" />
 
                     </StackPanel>
