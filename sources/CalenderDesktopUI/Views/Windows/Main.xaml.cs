@@ -21,5 +21,29 @@ namespace CalendarDesktopUI.Views.Windows
         {
             InitializeComponent();
         }
+
+private void CloseButton_Click(
+    object sender,
+    RoutedEventArgs e)
+        {
+            DialogOverlay.Visibility = Visibility.Visible;
+
+            try
+            {
+                CalendarDesktopUI.Views.Dialogs.Exit exitDialog =
+                    new CalendarDesktopUI.Views.Dialogs.Exit();
+
+                exitDialog.Owner = Window.GetWindow(this);
+
+                exitDialog.ShowDialog();
+            }
+            finally
+            {
+                DialogOverlay.Visibility = Visibility.Collapsed;
+            }
+        }
+
+
+
     }
 }

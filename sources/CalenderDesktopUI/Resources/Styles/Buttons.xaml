@@ -592,7 +592,7 @@
                 <icons:ImageAwesome Icon="Close"
                                     Width="15"
                                     Height="15"
-                                    Foreground="Orange" />
+                                    Foreground="Tomato" />
             </Setter.Value>
         </Setter>
         <Setter Property="Template">
@@ -640,12 +640,12 @@
                                    RelativeSource={RelativeSource TemplatedParent}}"
                                                 Width="13"
                                                 Height="13"
-                                                Foreground="#666666"
+                                                Foreground="Black"
                                                 Margin="5,0,20,0" />
 
                             <TextBlock Text="{Binding Caption,
                                    RelativeSource={RelativeSource TemplatedParent}}"
-                                       Foreground="#666666"
+                                       Foreground="Black"
                                        FontSize="14" />
 
                         </StackPanel>

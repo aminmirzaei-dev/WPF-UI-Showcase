@@ -9,7 +9,7 @@
         Title="ExitApp"
         Width="450"
         Height="300"
-        WindowStartupLocation="CenterOwner"
+        WindowStartupLocation="CenterScreen"
         WindowStyle="None"
         ResizeMode="NoResize"
         AllowsTransparency="True"
@@ -34,6 +34,8 @@
             CornerRadius="20"
             Margin="10"
             Opacity="0"
+            BorderThickness="5"
+            BorderBrush="Tomato"
             RenderTransformOrigin="0.5,0.5">
 
 
