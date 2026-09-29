@@ -34,7 +34,7 @@
             CornerRadius="20"
             Margin="10"
             Opacity="0"
-            BorderThickness="5"
+            BorderThickness="2"
             BorderBrush="Tomato"
             RenderTransformOrigin="0.5,0.5">
 
