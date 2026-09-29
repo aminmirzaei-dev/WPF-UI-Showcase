@@ -44,6 +44,49 @@ private void CloseButton_Click(
         }
 
 
+        private void AppearanceButton_Click(
+    object sender,
+    RoutedEventArgs e)
+        {
+            DialogOverlay.Visibility = Visibility.Visible;
+
+            try
+            {
+                CalendarDesktopUI.Views.Dialogs.Appearance appearanceDialog =
+                    new CalendarDesktopUI.Views.Dialogs.Appearance();
+
+                appearanceDialog.Owner = Window.GetWindow(this);
+
+                appearanceDialog.ShowDialog();
+            }
+            finally
+            {
+                DialogOverlay.Visibility = Visibility.Collapsed;
+            }
+        }
+
+        private void AboutButton_Click(
+    object sender,
+    RoutedEventArgs e)
+        {
+            DialogOverlay.Visibility = Visibility.Visible;
+
+            try
+            {
+                CalendarDesktopUI.Views.Dialogs.About aboutDialog =
+                    new CalendarDesktopUI.Views.Dialogs.About();
+
+                aboutDialog.Owner = Window.GetWindow(this);
+
+                aboutDialog.ShowDialog();
+            }
+            finally
+            {
+                DialogOverlay.Visibility = Visibility.Collapsed;
+            }
+        }
+
+
 
     }
 }

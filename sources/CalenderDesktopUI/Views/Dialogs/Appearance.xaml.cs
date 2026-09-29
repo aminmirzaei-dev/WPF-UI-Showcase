@@ -1,19 +1,28 @@
-﻿using System.Diagnostics;
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
 using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Animation;
+using System.Windows.Media.Imaging;
+using System.Windows.Shapes;
 
-namespace CalendarDesktopUI.Views.Windows
+namespace CalendarDesktopUI.Views.Dialogs
 {
     /// <summary>
-    /// Interaction logic for About.xaml
+    /// Interaction logic for Appearance.xaml
     /// </summary>
-    public partial class About : Window
+    public partial class Appearance : Window
     {
-        public About() 
-        { 
-            InitializeComponent(); 
+        public Appearance()
+        {
+            InitializeComponent();
             this.Loaded += ExitApp_Loaded;
+
         }
 
 
@@ -115,9 +124,7 @@ namespace CalendarDesktopUI.Views.Windows
         }
 
         private void CloseButton_Click(object sender, RoutedEventArgs e) { CloseWithAnimation(false); }
-        private void GithubButton_Click(object sender, RoutedEventArgs e) { OpenUrl("https://github.com/YOUR_USERNAME"); }
-        private void InstagramButton_Click(object sender, RoutedEventArgs e) { OpenUrl("https://instagram.com/YOUR_USERNAME"); }
-        private void EmailButton_Click(object sender, RoutedEventArgs e) { OpenUrl("mailto:your-email@gmail.com"); }
-        private static void OpenUrl(string url) { Process.Start(new ProcessStartInfo { FileName = url, UseShellExecute = true }); }
+
+
     }
 }

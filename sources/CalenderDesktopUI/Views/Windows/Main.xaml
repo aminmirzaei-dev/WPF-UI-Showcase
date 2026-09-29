@@ -53,6 +53,7 @@
                             VerticalAlignment="Center"
                             Margin="0,10,15,0"
                             Content="User"
+                            Click="AboutButton_Click"
                             Style="{StaticResource TitleButtonStyle}">
                     </Button>
 
@@ -62,6 +63,7 @@
                             VerticalAlignment="Center"
                             Margin="0,10,15,0"
                             Content="PaintBrush"
+                            Click="AppearanceButton_Click"
                             Style="{StaticResource TitleButtonStyle}">
                     </Button>
                     
