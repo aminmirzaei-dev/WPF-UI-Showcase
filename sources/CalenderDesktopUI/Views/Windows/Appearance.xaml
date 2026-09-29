@@ -140,7 +140,7 @@
                 </StackPanel>
 
 
-                <!-- The ONLY event in this Window -->
+                <!-- The Only event in this Window -->
 
                 <Button Style="{StaticResource CloseButtonStyle}"
                         HorizontalAlignment="Right"

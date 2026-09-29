@@ -80,27 +80,27 @@
         <!--Notes-->
         <controls:TaskItem Title="Post on social networks"
                  Time="09:45 - 10:30"
-                 Color="Orange"
+                 Color="WhiteSmoke"
                  Icon="CheckCircle"
                  IconBell="BellSlash" />
         <controls:TaskItem Title="Review the app design"
                  Time="11:30 - 12:00"
-                 Color="Orange"
+                 Color="WhiteSmoke"
                  Icon="CheckCircle"
                  IconBell="BellSlash" />
         <controls:TaskItem Title="Build a demo of the app"
                  Time="14:00 - 15:30"
-                 Color="#f1f1f1"
+                 Color="White"
                  Icon="CircleThin"
                  IconBell="Bell" />
         <controls:TaskItem Title="Dinner with John Doe"
                  Time="20:15 - 21:45"
-                 Color="#f1f1f1"
+                 Color="White"
                  Icon="CircleThin"
                  IconBell="Bell" />
         <controls:TaskItem Title="Send email to Amin Mirzaei"
                  Time="23:00 - 23:20"
-                 Color="#f1f1f1"
+                 Color="White"
                  Icon="CircleThin"
                  IconBell="Bell" />
 
