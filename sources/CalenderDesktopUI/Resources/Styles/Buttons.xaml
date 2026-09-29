@@ -3,6 +3,269 @@
                     xmlns:controls="clr-namespace:CalendarDesktopUI.Controls"
                     xmlns:icons="http://schemas.fontawesome.io/icons/">
 
+
+    <Style x:Key="ColorOptionStyle"
+           TargetType="RadioButton">
+
+        <Setter Property="Width"
+                Value="62" />
+
+        <Setter Property="Height"
+                Value="62" />
+
+        <Setter Property="Margin"
+                Value="0,0,17,0" />
+
+        <Setter Property="Cursor"
+                Value="Hand" />
+
+        <Setter Property="Template">
+
+            <Setter.Value>
+
+                <ControlTemplate TargetType="RadioButton">
+
+                    <Grid>
+
+                        <!-- Outer selection ring -->
+
+                        <Ellipse x:Name="SelectionRing"
+                                 Width="62"
+                                 Height="62"
+                                 Fill="Transparent"
+                                 Stroke="{DynamicResource PrimaryBrush}"
+                                 StrokeThickness="2"
+                                 Visibility="Collapsed" />
+
+
+                        <!-- Color -->
+
+                        <Ellipse x:Name="ColorCircle"
+                                 Width="50"
+                                 Height="50"
+                                 Fill="{TemplateBinding Tag}"
+                                 HorizontalAlignment="Center"
+                                 VerticalAlignment="Center" />
+
+
+                        <!-- Check -->
+
+                        <TextBlock x:Name="CheckIcon"
+                                   Text="✓"
+                                   FontSize="19"
+                                   FontWeight="Bold"
+                                   Foreground="White"
+                                   HorizontalAlignment="Center"
+                                   VerticalAlignment="Center"
+                                   Visibility="Collapsed" />
+
+                    </Grid>
+
+
+                    <ControlTemplate.Triggers>
+
+                        <!-- Hover -->
+
+                        <Trigger Property="IsMouseOver"
+                                 Value="True">
+
+                            <Setter TargetName="ColorCircle"
+                                    Property="Opacity"
+                                    Value="0.78" />
+
+                        </Trigger>
+
+
+                        <!-- Selected -->
+
+                        <Trigger Property="IsChecked"
+                                 Value="True">
+
+                            <Setter TargetName="SelectionRing"
+                                    Property="Visibility"
+                                    Value="Visible" />
+
+                            <Setter TargetName="CheckIcon"
+                                    Property="Visibility"
+                                    Value="Visible" />
+
+                        </Trigger>
+
+                    </ControlTemplate.Triggers>
+
+                </ControlTemplate>
+
+            </Setter.Value>
+
+        </Setter>
+
+    </Style>
+    
+    
+
+    <Style x:Key="ThemeOptionStyle"
+           TargetType="RadioButton">
+
+        <Setter Property="Width"
+                Value="155" />
+
+        <Setter Property="Height"
+                Value="105" />
+
+        <Setter Property="Margin"
+                Value="0,0,15,0" />
+
+        <Setter Property="Cursor"
+                Value="Hand" />
+
+        <Setter Property="Template">
+
+            <Setter.Value>
+
+                <ControlTemplate TargetType="RadioButton">
+
+                    <Border x:Name="ThemeBorder"
+                            Background="#FAFAFA"
+                            BorderBrush="#EEEEEE"
+                            BorderThickness="1"
+                            CornerRadius="15"
+                            Padding="12">
+
+                        <Grid>
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="68" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+
+
+                            <!-- Theme Preview -->
+
+                            <Border Width="125"
+                                    Height="62"
+                                    HorizontalAlignment="Center"
+                                    VerticalAlignment="Top"
+                                    CornerRadius="9"
+                                    Background="{TemplateBinding Tag}">
+
+                                <Grid Margin="7">
+
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="9" />
+                                        <RowDefinition Height="*" />
+                                    </Grid.RowDefinitions>
+
+                                    <!-- Fake Header -->
+
+                                    <Border Grid.Row="0"
+                                            CornerRadius="3"
+                                            Background="#FF7A00"
+                                            Opacity="0.9" />
+
+                                    <!-- Fake Content -->
+
+                                    <Grid Grid.Row="1"
+                                          Margin="0,5,0,0">
+
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="25" />
+                                            <ColumnDefinition Width="*" />
+                                        </Grid.ColumnDefinitions>
+
+                                        <Border Grid.Column="0"
+                                                CornerRadius="2"
+                                                Background="#DADADA"
+                                                Opacity="0.7" />
+
+                                        <StackPanel Grid.Column="1"
+                                                    Margin="6,0,0,0">
+
+                                            <Border Height="5"
+                                                    Width="45"
+                                                    HorizontalAlignment="Left"
+                                                    CornerRadius="2"
+                                                    Background="#AAAAAA"
+                                                    Opacity="0.7" />
+
+                                            <Border Height="4"
+                                                    Width="32"
+                                                    HorizontalAlignment="Left"
+                                                    Margin="0,4,0,0"
+                                                    CornerRadius="2"
+                                                    Background="#CCCCCC"
+                                                    Opacity="0.7" />
+
+                                        </StackPanel>
+
+                                    </Grid>
+
+                                </Grid>
+
+                            </Border>
+
+
+                            <!-- Title -->
+
+                            <TextBlock Grid.Row="1"
+                                       Text="{TemplateBinding Content}"
+                                       HorizontalAlignment="Center"
+                                       VerticalAlignment="Center"
+                                       FontSize="13"
+                                       FontWeight="SemiBold"
+                                       Foreground="{DynamicResource TextBrush}" />
+
+                        </Grid>
+
+                    </Border>
+
+
+                    <ControlTemplate.Triggers>
+
+                        <!-- Hover -->
+
+                        <Trigger Property="IsMouseOver"
+                                 Value="True">
+
+                            <Setter TargetName="ThemeBorder"
+                                    Property="BorderBrush"
+                                    Value="{DynamicResource PrimaryBrush}" />
+
+                            <Setter TargetName="ThemeBorder"
+                                    Property="Background"
+                                    Value="{DynamicResource PrimaryLightBrush}" />
+
+                        </Trigger>
+
+
+                        <!-- Selected -->
+
+                        <Trigger Property="IsChecked"
+                                 Value="True">
+
+                            <Setter TargetName="ThemeBorder"
+                                    Property="BorderBrush"
+                                    Value="{DynamicResource PrimaryBrush}" />
+
+                            <Setter TargetName="ThemeBorder"
+                                    Property="BorderThickness"
+                                    Value="2" />
+
+                            <Setter TargetName="ThemeBorder"
+                                    Property="Background"
+                                    Value="{DynamicResource PrimaryLightBrush}" />
+
+                        </Trigger>
+
+                    </ControlTemplate.Triggers>
+
+                </ControlTemplate>
+
+            </Setter.Value>
+
+        </Setter>
+
+    </Style>
+
     <Style x:Key="SocialButtonStyle"
            TargetType="Button">
         <Setter Property="Width"
