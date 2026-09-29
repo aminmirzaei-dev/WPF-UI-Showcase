@@ -1,4 +1,4 @@
-﻿<Window x:Class="CalendarDesktopUI.Views.Dialogs.About"
+﻿<Window x:Class="CalendarDesktopUI.Views.Windows.About"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -60,12 +60,16 @@
             <!-- Header -->
             <Grid Grid.Row="0"
                   Margin="25,0,15,0">
-                <TextBlock Text="About"
-                           FontSize="21"
-                           FontWeight="SemiBold"
-                           Foreground="{StaticResource TextBrush}"
-                           VerticalAlignment="Center" />
-                <Button Style="{StaticResource CloseButtonStyle}"
+
+                    <icons:FontAwesome VerticalAlignment="Center" HorizontalAlignment="Left" Icon="UserCircleOutline" Foreground="{StaticResource OrangeBrush}" FontSize="24" />
+                    <TextBlock Text="About Developer"
+                               FontSize="21"
+                               Margin="30,0,0,0"
+                               FontWeight="SemiBold"
+                               Foreground="{StaticResource OrangeBrush}"
+                               VerticalAlignment="Center" />
+
+                    <Button Style="{StaticResource CloseButtonStyle}"
                         HorizontalAlignment="Right"
                         VerticalAlignment="Center"
                         Click="CloseButton_Click">
@@ -189,12 +193,20 @@
                                FontSize="12" />
 
                     <controls:CDButton Content="Close"
+                                       Margin="0,0,210,0"
                                        Padding="25,10"
                                        Width="100"
                                        Icon="Close"
-                                       Background="{StaticResource OrangeBrush}"
+                                       Background="DarkGray"
                                        HorizontalAlignment="Right"
                                        Click="CloseButton_Click" />
+
+                    <controls:CDButton Content="Support Developer"
+                                       Padding="25,10"
+                                       Width="200"
+                                       Icon="Heart"
+                                       Background="{StaticResource OrangeBrush}"
+                                       HorizontalAlignment="Right" />
                 </Grid>
             </Border>
         </Grid>
