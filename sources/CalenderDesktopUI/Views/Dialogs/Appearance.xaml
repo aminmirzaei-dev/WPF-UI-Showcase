@@ -58,7 +58,7 @@
     <!-- Main Card -->
 
     <Border x:Name="MainBorder"
-            Background="White"
+            Background="{DynamicResource WindowBackColor}"
             Margin="10"
             Opacity="0"
             BorderBrush="{DynamicResource PrimaryColor}"

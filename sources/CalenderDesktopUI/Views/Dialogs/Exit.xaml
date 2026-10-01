@@ -17,12 +17,12 @@
         ShowInTaskbar="False">
 
     <Border x:Name="MainBorder"
-            Background="White"
+            Background="{DynamicResource WindowBackColor}"
             CornerRadius="20"
             Margin="10"
             Opacity="0"
             BorderThickness="2"
-            BorderBrush="Tomato"
+            BorderBrush="{DynamicResource PrimaryColor}"
             RenderTransformOrigin="0.5,0.5">
 
 
