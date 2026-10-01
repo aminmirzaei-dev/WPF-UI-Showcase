@@ -25,11 +25,11 @@
             </Grid.ColumnDefinitions>
 
             <Border CornerRadius="20 0 0 20"
-                    Background="White" />
+                    Background="{DynamicResource WindowBackColor}" />
 
             <Border CornerRadius="0 20 20 0"
                     Grid.Column="1"
-                    Background="Tomato" />
+                    Background="{DynamicResource PrimaryColor}" />
         </Grid>
 
         <!--Grid Controls-->

@@ -12,6 +12,7 @@
                 <ResourceDictionary Source="Resources/Styles/TextBoxs.xaml" />
                 <ResourceDictionary Source="Resources/Styles/IconImages.xaml" />
                 <ResourceDictionary Source="/Resources/Styles/CDCalendarStyles.xaml" />
+                <ResourceDictionary Source="Resources/Themes/Light.xaml" />
                 <ResourceDictionary Source="Resources/Palettes/Orange.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>

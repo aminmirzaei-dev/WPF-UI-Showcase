@@ -23,7 +23,7 @@
                     Style="{StaticResource YearButton}" />
             <Button Content="2022"
                     Style="{StaticResource YearButton}"
-                    Foreground="Tomato"
+                    Foreground="{DynamicResource PrimaryColor}"
                     FontSize="24" />
             <Button Content="2023"
                     Style="{StaticResource YearButton}" />
@@ -61,7 +61,7 @@
                     Style="{StaticResource MonthButton}" />
             <Button Content="11"
                     Style="{StaticResource MonthButton}"
-                    Foreground="Tomato"
+                    Foreground="{DynamicResource PrimaryColor}"
                     FontWeight="SemiBold" />
             <Button Content="12"
                     Style="{StaticResource MonthButton}" />
@@ -72,7 +72,7 @@
                    Margin="30 10" />
 
         <TextBlock Text="November"
-                   Foreground="Tomato"
+                   Foreground="{DynamicResource PrimaryColor}"
                    FontSize="24"
                    TextAlignment="Center"
                    FontWeight="SemiBold"

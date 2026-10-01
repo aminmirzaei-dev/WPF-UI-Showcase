@@ -6,7 +6,7 @@
         <Setter Property="Background"
                 Value="Coral" />
         <Setter Property="Foreground"
-                Value="#EBA5BB" />
+                Value="White" />
         <Setter Property="FontSize"
                 Value="14" />
         <Setter Property="Grid.Column"

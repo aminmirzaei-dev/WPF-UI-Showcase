@@ -45,7 +45,7 @@
                     </Grid>
 
                     <Separator Margin="0 12 0 11"
-                               Background="#C14269"
+                               Background="{DynamicResource PrimaryDarkColor}"
                                Height="0.8" />
 
                     <Grid>

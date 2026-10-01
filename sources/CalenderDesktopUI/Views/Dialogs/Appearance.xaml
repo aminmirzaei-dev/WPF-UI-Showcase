@@ -17,29 +17,6 @@
 
     <Window.Resources>
 
-        <!-- Colors -->
-
-        <SolidColorBrush x:Key="OrangeBrush"
-                         Color="#FF7A00" />
-
-        <SolidColorBrush x:Key="OrangeDarkBrush"
-                         Color="#E85D04" />
-
-        <SolidColorBrush x:Key="OrangeLightBrush"
-                         Color="#FFF3E8" />
-
-        <SolidColorBrush x:Key="TextBrush"
-                         Color="#252525" />
-
-        <SolidColorBrush x:Key="SecondaryTextBrush"
-                         Color="#777777" />
-
-        <SolidColorBrush x:Key="BorderBrush"
-                         Color="#EEEEEE" />
-
-        <SolidColorBrush x:Key="SoftBackgroundBrush"
-                         Color="#FAFAFA" />
-
         <!-- Accent Colors -->
 
         <SolidColorBrush x:Key="RedBrush"
@@ -69,7 +46,6 @@
         <SolidColorBrush x:Key="TealBrush"
                          Color="#00897B" />
 
-
         <SolidColorBrush x:Key="BrownBrush"
                          Color="#6D4C41" />
 
@@ -85,7 +61,7 @@
             Background="White"
             Margin="10"
             Opacity="0"
-            BorderBrush="Tomato"
+            BorderBrush="{DynamicResource PrimaryColor}"
             BorderThickness="2"
             RenderTransformOrigin="0.5,0.5"
             CornerRadius="20">
@@ -128,7 +104,7 @@
                             VerticalAlignment="Center">
 
                     <icons:FontAwesome Icon="PaintBrush"
-                                       Foreground="{StaticResource OrangeBrush}"
+                                       Foreground="{DynamicResource PrimaryLightColor}"
                                        FontSize="23"
                                        VerticalAlignment="Center" />
 
@@ -136,7 +112,7 @@
                                FontSize="21"
                                Margin="12,0,0,0"
                                FontWeight="SemiBold"
-                               Foreground="{StaticResource OrangeBrush}"
+                               Foreground="{DynamicResource PrimaryLightColor}"
                                VerticalAlignment="Center" />
 
                 </StackPanel>
@@ -177,12 +153,12 @@
                     <TextBlock Text="Theme"
                                FontSize="18"
                                FontWeight="SemiBold"
-                               Foreground="{StaticResource TextBrush}" />
+                               Foreground="{DynamicResource TextColor}" />
 
                     <TextBlock Text="Choose the appearance of the application."
                                FontSize="13"
                                Margin="0,5,0,18"
-                               Foreground="{StaticResource SecondaryTextBrush}" />
+                               Foreground="{DynamicResource SecondaryTextColor}" />
 
 
                     <StackPanel Orientation="Horizontal">
@@ -215,7 +191,7 @@
 
                 <Border Grid.Row="1"
                         Height="1"
-                        Background="{StaticResource BorderBrush}"
+                        Background="WhiteSmoke"
                         Margin="0,25,0,22" />
 
 
@@ -226,12 +202,12 @@
                     <TextBlock Text="Accent Color"
                                FontSize="18"
                                FontWeight="SemiBold"
-                               Foreground="{StaticResource TextBrush}" />
+                               Foreground="{DynamicResource TextColor}" />
 
                     <TextBlock Text="Choose the primary color of the application."
                                FontSize="13"
                                Margin="0,5,0,20"
-                               Foreground="{StaticResource SecondaryTextBrush}" />
+                               Foreground="{DynamicResource SecondaryTextColor}" />
 
 
                     <StackPanel Orientation="Horizontal">
@@ -325,7 +301,7 @@
 
                     <TextBlock Text="Choose your preferred appearance."
                                VerticalAlignment="Center"
-                               Foreground="{StaticResource SecondaryTextBrush}"
+                               Foreground="{DynamicResource SecondaryTextColor}"
                                FontSize="12" />
 
 
@@ -335,15 +311,15 @@
                                        Icon="Close"
                                        Background="DarkGray"
                                        HorizontalAlignment="Right"
-                                       Margin="0,0,115,0"
+                                       Margin="0,0,150,0"
                                        Click="CloseButton_Click"/>
 
 
                     <controls:CDButton Content="Apply"
-                                       Width="100"
+                                       Width="140"
                                        Padding="20,10"
                                        Icon="Check"
-                                       Background="{StaticResource OrangeBrush}"
+                                       Background="{DynamicResource PrimaryLightColor}"
                                        HorizontalAlignment="Right" />
 
                 </Grid>

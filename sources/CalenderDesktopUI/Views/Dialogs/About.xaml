@@ -14,29 +14,14 @@
         WindowStyle="None"
         AllowsTransparency="True"
         Background="Transparent">
-    <Window.Resources>
-        <!-- ========================= Colors ========================== -->
-        <SolidColorBrush x:Key="OrangeBrush"
-                         Color="#FF7A00" />
-        <SolidColorBrush x:Key="OrangeDarkBrush"
-                         Color="#E85D04" />
-        <SolidColorBrush x:Key="OrangeLightBrush"
-                         Color="#FFF3E8" />
-        <SolidColorBrush x:Key="TextBrush"
-                         Color="#252525" />
-        <SolidColorBrush x:Key="SecondaryTextBrush"
-                         Color="#777777" />
-        <!-- ========================= Close Button ========================== -->
-        
-        
-    </Window.Resources>
-    <!-- ===================================== Main Card ====================================== -->
+    
+    <!-- Main Card -->
     <Border 
             x:Name="MainBorder"
             Background="White"
             Margin="10"
             Opacity="0"
-            BorderBrush="Tomato"
+            BorderBrush="{DynamicResource PrimaryColor}"
             BorderThickness="2"
             RenderTransformOrigin="0.5,0.5"
             CornerRadius="20">
@@ -63,12 +48,12 @@
             <Grid Grid.Row="0"
                   Margin="25,0,15,0">
 
-                    <icons:FontAwesome VerticalAlignment="Center" HorizontalAlignment="Left" Icon="User" Foreground="{StaticResource OrangeBrush}" FontSize="24" />
+                    <icons:FontAwesome VerticalAlignment="Center" HorizontalAlignment="Left" Icon="User" Foreground="{DynamicResource PrimaryLightColor}" FontSize="24" />
                     <TextBlock Text="About Developer"
                                FontSize="21"
                                Margin="30,0,0,0"
                                FontWeight="SemiBold"
-                               Foreground="{StaticResource OrangeBrush}"
+                               Foreground="{DynamicResource PrimaryLightColor}"
                                VerticalAlignment="Center" />
 
                     <Button Style="{StaticResource CloseButtonStyle}"
@@ -89,8 +74,7 @@
                       VerticalAlignment="Center">
                     <Border Width="170"
                             Height="170"
-                            CornerRadius="25"
-                            Background="{StaticResource OrangeLightBrush}">
+                            CornerRadius="25">
                         <!--<Image Source="/Assets/about.png"
                                Stretch="Uniform"
                                Margin="25" />-->
@@ -103,27 +87,27 @@
                     <TextBlock Text="Calendar Desktop"
                                FontSize="30"
                                FontWeight="Bold"
-                               Foreground="{StaticResource TextBrush}" />
+                               Foreground="{DynamicResource TextColor}" />
                     <TextBlock Text="Version 1.0.0"
                                FontSize="14"
                                Margin="0,6,0,18"
-                               Foreground="{StaticResource OrangeBrush}" />
+                               Foreground="{DynamicResource PrimaryLightColor}" />
                     <TextBlock Text="A simple and modern desktop calendar application."
                                FontSize="14"
                                TextWrapping="Wrap"
                                LineHeight="23"
-                               Foreground="{StaticResource SecondaryTextBrush}"
+                               Foreground="{DynamicResource SecondaryTextColor}"
                                MaxWidth="430" />
                     <Border Height="1"
                             Background="#EEEEEE"
                             Margin="0,20,0,15" />
                     <TextBlock Text="Developed by Your Name"
                                FontSize="13"
-                               Foreground="{StaticResource SecondaryTextBrush}" />
+                               Foreground="{DynamicResource SecondaryTextColor}" />
                     <TextBlock Text="© 2026 Your Company"
                                FontSize="13"
                                Margin="0,5,0,0"
-                               Foreground="{StaticResource SecondaryTextBrush}" />
+                               Foreground="{DynamicResource SecondaryTextColor}" />
                 </StackPanel>
             </Grid>
             <!-- Social Links -->
@@ -139,13 +123,13 @@
                                          Width="20"
                                          Height="20"
                                          VerticalAlignment="Center"
-                                         Foreground="{StaticResource OrangeBrush}" />
+                                         Foreground="{DynamicResource PrimaryLightColor}" />
                         <TextBlock Text="GitHub"
                                    FontSize="13"
                                    FontWeight="SemiBold"
                                    Margin="10,0,0,0"
                                    VerticalAlignment="Center"
-                                   Foreground="{StaticResource TextBrush}" />
+                                   Foreground="{DynamicResource TextColor}" />
                     </StackPanel>
                 </Button>
                 <!-- Instagram -->
@@ -156,13 +140,13 @@
                                          Width="20"
                                          Height="20"
                                          VerticalAlignment="Center"
-                                         Foreground="{StaticResource OrangeBrush}" />
+                                         Foreground="{DynamicResource PrimaryLightColor}" />
                         <TextBlock Text="Instagram"
                                    FontSize="13"
                                    FontWeight="SemiBold"
                                    Margin="10,0,0,0"
                                    VerticalAlignment="Center"
-                                   Foreground="{StaticResource TextBrush}" />
+                                   Foreground="{DynamicResource TextColor}" />
                     </StackPanel>
                 </Button>
                 <!-- Gmail / Email -->
@@ -173,13 +157,13 @@
                                          Width="20"
                                          Height="20"
                                          VerticalAlignment="Center"
-                                         Foreground="{StaticResource OrangeBrush}" />
+                                         Foreground="{DynamicResource PrimaryLightColor}" />
                         <TextBlock Text="Email"
                                    FontSize="13"
                                    FontWeight="SemiBold"
                                    Margin="10,0,0,0"
                                    VerticalAlignment="Center"
-                                   Foreground="{StaticResource TextBrush}" />
+                                   Foreground="{DynamicResource TextColor}" />
                     </StackPanel>
                 </Button>
             </StackPanel>
@@ -191,7 +175,7 @@
                 <Grid>
                     <TextBlock Text="Thank you for using our application."
                                VerticalAlignment="Center"
-                               Foreground="{StaticResource SecondaryTextBrush}"
+                               Foreground="{DynamicResource SecondaryTextColor}"
                                FontSize="12" />
 
                     <controls:CDButton Content="Close"
@@ -207,7 +191,7 @@
                                        Padding="25,10"
                                        Width="200"
                                        Icon="Heart"
-                                       Background="{StaticResource OrangeBrush}"
+                                       Background="{DynamicResource PrimaryLightColor}"
                                        HorizontalAlignment="Right" />
                 </Grid>
             </Border>

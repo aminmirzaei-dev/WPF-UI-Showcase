@@ -33,7 +33,7 @@
                                  Width="62"
                                  Height="62"
                                  Fill="Transparent"
-                                 Stroke="{DynamicResource PrimaryBrush}"
+                                 Stroke="{DynamicResource PrimaryColor}"
                                  StrokeThickness="2"
                                  Visibility="Collapsed" />
 
@@ -201,7 +201,7 @@
 
                                         <Border Grid.Row="0"
                                                 CornerRadius="3"
-                                                Background="#FF7A00"
+                                                Background="{DynamicResource PrimaryColor}"
                                                 Opacity="0.9" />
 
 
@@ -276,7 +276,7 @@
                                 VerticalAlignment="Top"
                                 Margin="0,8,8,0"
                                 CornerRadius="10"
-                                Background="{DynamicResource PrimaryBrush}"
+                                Background="{DynamicResource PrimaryColor}"
                                 Opacity="0"
                                 RenderTransformOrigin="0.5,0.5">
 
@@ -404,7 +404,7 @@
 
                             <Setter TargetName="ThemeBorder"
                                     Property="BorderBrush"
-                                    Value="{DynamicResource PrimaryBrush}" />
+                                    Value="{DynamicResource PrimaryColor}" />
 
                         </Trigger>
 
@@ -416,7 +416,7 @@
 
                             <Setter TargetName="ThemeBorder"
                                     Property="BorderBrush"
-                                    Value="{DynamicResource PrimaryBrush}" />
+                                    Value="{DynamicResource PrimaryColor}" />
 
                             <Setter TargetName="ThemeBorder"
                                     Property="BorderThickness"
@@ -569,7 +569,7 @@
                             <Setter Property="Background"
                                     Value="#FFF3E8" />
                             <Setter Property="BorderBrush"
-                                    Value="#FF7A00" />
+                                    Value="{DynamicResource PrimaryLightColor}" />
                         </Trigger>
                         <Trigger Property="IsPressed"
                                  Value="True">
@@ -855,7 +855,7 @@
         <Setter Property="BorderThickness"
                 Value="0" />
         <Setter Property="Foreground"
-                Value="Tomato" />
+                Value="{DynamicResource PrimaryColor}" />
         <Setter Property="Cursor"
                 Value="Hand" />
 
@@ -883,7 +883,7 @@
                                     Value="#FFF0E5" />
 
                             <Setter Property="Foreground"
-                                    Value="#FF7A00" />
+                                    Value="{DynamicResource PrimaryLightColor}" />
 
                         </Trigger>
 
