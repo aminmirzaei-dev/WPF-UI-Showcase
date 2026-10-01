@@ -1,4 +1,10 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-    
+
+    <SolidColorBrush x:Key="PrimaryColor">DodgerBlue</SolidColorBrush>
+    <SolidColorBrush x:Key="PrimaryLightColor"
+                     Color="#42A5F5" />
+    <SolidColorBrush x:Key="PrimaryDarkColor"
+                     Color="#1565C0" />
+
 </ResourceDictionary>

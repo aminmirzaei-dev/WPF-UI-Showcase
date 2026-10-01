@@ -1,8 +1,8 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-    <SolidColorBrush x:Key="PrimaryColor">Crimson</SolidColorBrush>
+    <SolidColorBrush x:Key="PrimaryColor">Gold</SolidColorBrush>
     <SolidColorBrush x:Key="PrimaryLightColor"
-                     Color="#EF5350" />
+                     Color="#FFD54F" />
     <SolidColorBrush x:Key="PrimaryDarkColor"
-                     Color="#C62828" />
+                     Color="#C79100" />
 </ResourceDictionary>
