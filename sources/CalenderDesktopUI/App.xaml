@@ -8,6 +8,8 @@
         <ResourceDictionary>
 
             <services:ThemeService x:Key="ThemeService" />
+            <services:PaletteService x:Key="PaletteService" />
+
 
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Resources/Styles/Buttons.xaml" />
