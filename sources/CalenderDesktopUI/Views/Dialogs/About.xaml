@@ -74,10 +74,11 @@
                       VerticalAlignment="Center">
                     <Border Width="170"
                             Height="170"
+                            Background="WhiteSmoke"
                             CornerRadius="25">
-                        <!--<Image Source="/Assets/about.png"
+                        <Image Source="/Resources/Images/Developer/AminDevProfile.png"
                                Stretch="Uniform"
-                               Margin="25" />-->
+                               Margin="10" />
                     </Border>
                 </Grid>
                 <!-- Application Information -->
