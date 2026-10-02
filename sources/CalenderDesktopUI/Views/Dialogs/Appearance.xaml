@@ -170,6 +170,7 @@
                                      GroupName="Theme"
                                      Background="#FAFAFA"
                                      Foreground="Black"
+                                     Checked="LightThemeRadio_Checked"
                                      Style="{StaticResource ThemeOptionStyle}"
                                      IsChecked="True" />
 
@@ -180,6 +181,7 @@
                                      GroupName="Theme"
                                      Background="#1c1c1c"
                                      Foreground="White"
+                                     Checked="DarkThemeRadio_Checked"
                                      Style="{StaticResource ThemeOptionStyle}" />
 
                     </StackPanel>
@@ -216,6 +218,7 @@
 
                         <RadioButton x:Name="RedColorRadio"
                                      GroupName="AccentColor"
+                                     Checked="RedColorRadio_Checked"
                                      Tag="{StaticResource RedBrush}"
                                      Style="{StaticResource ColorOptionStyle}" />
 
@@ -223,6 +226,7 @@
 
                         <RadioButton x:Name="BlueColorRadio"
                                      GroupName="AccentColor"
+                                     Checked="BlueColorRadio_Checked"
                                      Tag="{StaticResource BlueBrush}"
                                      Style="{StaticResource ColorOptionStyle}" />
 
@@ -230,6 +234,7 @@
 
                         <RadioButton x:Name="GreenColorRadio"
                                      GroupName="AccentColor"
+                                     Checked="GreenColorRadio_Checked"
                                      Tag="{StaticResource GreenBrush}"
                                      Style="{StaticResource ColorOptionStyle}" />
 
@@ -237,6 +242,7 @@
 
                         <RadioButton x:Name="OrangeColorRadio"
                                      GroupName="AccentColor"
+                                     Checked="OrangeColorRadio_Checked"
                                      Tag="{StaticResource Oranges}"
                                      Style="{StaticResource ColorOptionStyle}"
                                      IsChecked="True" />
@@ -245,6 +251,7 @@
 
                         <RadioButton x:Name="PurpleColorRadio"
                                      GroupName="AccentColor"
+                                     Checked="PurpleColorRadio_Checked"
                                      Tag="{StaticResource PurpleBrush}"
                                      Style="{StaticResource ColorOptionStyle}" />
 

@@ -23,31 +23,28 @@ namespace CalendarDesktopUI.Views.Windows
             InitializeComponent();
         }
 
-        private ThemeService Theme => (ThemeService)Application.Current.Resources["ThemeService"];
-        private PaletteService Palette => (PaletteService)Application.Current.Resources["PaletteService"];
-
+    
 
         private void CloseButton_Click(
     object sender,
     RoutedEventArgs e)
         {
-            //DialogOverlay.Visibility = Visibility.Visible;
+            DialogOverlay.Visibility = Visibility.Visible;
 
-            //try
-            //{
-            //    CalendarDesktopUI.Views.Dialogs.Exit exitDialog =
-            //        new CalendarDesktopUI.Views.Dialogs.Exit();
+            try
+            {
+                CalendarDesktopUI.Views.Dialogs.Exit exitDialog =
+                    new CalendarDesktopUI.Views.Dialogs.Exit();
 
-            //    exitDialog.Owner = Window.GetWindow(this);
+                exitDialog.Owner = Window.GetWindow(this);
 
-            //    exitDialog.ShowDialog();
-            //}
-            //finally
-            //{
-            //    DialogOverlay.Visibility = Visibility.Collapsed;
-            //}
+                exitDialog.ShowDialog();
+            }
+            finally
+            {
+                DialogOverlay.Visibility = Visibility.Collapsed;
+            }
 
-            this.Palette.ApplyPalette(PaletteOptions.Red);
         }
 
 

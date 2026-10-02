@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CalendarDesktopUI.Services;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -24,6 +25,10 @@ namespace CalendarDesktopUI.Views.Dialogs
             this.Loaded += ExitApp_Loaded;
 
         }
+
+        private ThemeService Theme => (ThemeService)Application.Current.Resources["ThemeService"];
+        private PaletteService Palette => (PaletteService)Application.Current.Resources["PaletteService"];
+
 
 
         private bool _isClosing = false;
@@ -125,6 +130,40 @@ namespace CalendarDesktopUI.Views.Dialogs
 
         private void CloseButton_Click(object sender, RoutedEventArgs e) { CloseWithAnimation(false); }
 
+        private void LightThemeRadio_Checked(object sender, RoutedEventArgs e)
+        {
+            this.Theme.ApplyTheme(ThemeOptions.Light);
+        }
+
+        private void DarkThemeRadio_Checked(object sender, RoutedEventArgs e)
+        {
+            this.Theme.ApplyTheme(ThemeOptions.Dark);
+        }
+
+        private void RedColorRadio_Checked(object sender, RoutedEventArgs e)
+        {
+            this.Palette.ApplyPalette(PaletteOptions.Red);
+        }
+
+        private void BlueColorRadio_Checked(object sender, RoutedEventArgs e)
+        {
+            this.Palette.ApplyPalette(PaletteOptions.Blue);
+        }
+
+        private void GreenColorRadio_Checked(object sender, RoutedEventArgs e)
+        {
+            this.Palette.ApplyPalette(PaletteOptions.Green);
+        }
+
+        private void OrangeColorRadio_Checked(object sender, RoutedEventArgs e)
+        {
+            this.Palette.ApplyPalette(PaletteOptions.Orange);
+        }
+
+        private void PurpleColorRadio_Checked(object sender, RoutedEventArgs e)
+        {
+            this.Palette.ApplyPalette(PaletteOptions.Purple);
+        }
 
     }
 }
