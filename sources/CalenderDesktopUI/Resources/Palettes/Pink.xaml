@@ -1,11 +1,13 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
     <SolidColorBrush x:Key="PrimaryColor"
-                     Color="Gold" />
+                     Color="#E91E63" />
 
     <SolidColorBrush x:Key="PrimaryLightColor"
-                     Color="#E6C65C" />
+                     Color="#F06292" />
 
     <SolidColorBrush x:Key="PrimaryDarkColor"
-                     Color="#A67C00" />
+                     Color="#AD1457" />
+
 </ResourceDictionary>

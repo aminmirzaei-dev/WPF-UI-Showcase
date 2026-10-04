@@ -8,7 +8,7 @@ namespace CalendarDesktopUI.Services
 {
     public enum PaletteOptions
     {
-        Red, Blue, Green, Yellow, Purple, Orange, Pink
+        Red, Blue, Green, Gold, Purple, Orange, Pink
     }
 
 

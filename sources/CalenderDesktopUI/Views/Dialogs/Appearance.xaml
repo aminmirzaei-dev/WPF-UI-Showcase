@@ -32,22 +32,13 @@
                          Color="#8E44AD" />
 
         <SolidColorBrush x:Key="Oranges"
-                         Color="#FB8C00" />
-
-        <SolidColorBrush x:Key="YellowBrush"
-                         Color="#FDD835" />
+                         Color="Tomato" />
 
         <SolidColorBrush x:Key="PinkBrush"
                          Color="Pink" />
 
-        <SolidColorBrush x:Key="CyanBrush"
-                         Color="#00ACC1" />
-
-        <SolidColorBrush x:Key="TealBrush"
-                         Color="#00897B" />
-
-        <SolidColorBrush x:Key="BrownBrush"
-                         Color="#6D4C41" />
+        <SolidColorBrush x:Key="GoldBrush"
+                         Color="Gold" />
 
 
 
@@ -254,39 +245,27 @@
                                      Tag="{StaticResource PurpleBrush}"
                                      Style="{StaticResource ColorOptionStyle}" />
 
+                        <!-- Pink -->
 
-
-                    </StackPanel>
-
-                    <StackPanel Orientation="Horizontal">
-
-                        <!-- Purple -->
-
-                        <RadioButton GroupName="AccentColor"
-                                     Tag="{StaticResource YellowBrush}"
-                                     Style="{StaticResource ColorOptionStyle}" />
-
-                        <!-- Purple -->
-
-                        <RadioButton GroupName="AccentColor"
+                        <RadioButton x:Name="PinkColorRadio"
+                                     GroupName="AccentColor"
+                                     Checked="PinkColorRadio_Checked"
                                      Tag="{StaticResource PinkBrush}"
                                      Style="{StaticResource ColorOptionStyle}" />
 
-                        <!-- Purple -->
+                        <!-- Gold -->
 
-                        <RadioButton GroupName="AccentColor"
-                                     Tag="{StaticResource CyanBrush}"
+                        <RadioButton x:Name="GoldColorRadio"
+                                     GroupName="AccentColor"
+                                     Checked="GoldColorRadio_Checked"
+                                     Tag="{StaticResource GoldBrush}"
                                      Style="{StaticResource ColorOptionStyle}" />
 
-                        <RadioButton GroupName="AccentColor"
-                                     Tag="{StaticResource TealBrush}"
-                                     Style="{StaticResource ColorOptionStyle}" />
 
-                        <RadioButton GroupName="AccentColor"
-                                     Tag="{StaticResource BrownBrush}"
-                                     Style="{StaticResource ColorOptionStyle}" />
 
                     </StackPanel>
+
+                    
 
                 </StackPanel>
 

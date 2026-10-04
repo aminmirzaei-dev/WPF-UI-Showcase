@@ -95,6 +95,12 @@ namespace CalendarDesktopUI.Views.Dialogs
                 case PaletteOptions.Purple:
                     PurpleColorRadio.IsChecked = true;
                     break;
+                case PaletteOptions.Gold:
+                    GoldColorRadio.IsChecked = true;
+                    break;
+                    case PaletteOptions.Pink:
+                    PinkColorRadio.IsChecked = true;
+                    break;
             }
         }
 
@@ -196,6 +202,16 @@ namespace CalendarDesktopUI.Views.Dialogs
             this.Palette.ApplyPalette(PaletteOptions.Purple);
         }
 
-        
+        private void PinkColorRadio_Checked(object sender, RoutedEventArgs e)
+        {
+            this.Palette.ApplyPalette(PaletteOptions.Pink);
+        }
+
+        private void GoldColorRadio_Checked(object sender, RoutedEventArgs e)
+        {
+            this.Palette.ApplyPalette(PaletteOptions.Gold);
+        }
+
+
     }
 }
