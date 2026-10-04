@@ -546,9 +546,9 @@
         <Setter Property="Margin"
                 Value="5,0" />
         <Setter Property="Background"
-                Value="#F8F8F8" />
+                Value="{DynamicResource PanelBackColor}" />
         <Setter Property="BorderBrush"
-                Value="#EEEEEE" />
+                Value="{DynamicResource PrimaryColor}" />
         <Setter Property="BorderThickness"
                 Value="1" />
         <Setter Property="Cursor"
@@ -915,7 +915,7 @@
                 <icons:ImageAwesome Icon="Close"
                                     Width="15"
                                     Height="15"
-                                    Foreground="Tomato" />
+                                    Foreground="{DynamicResource PrimaryColor}" />
             </Setter.Value>
         </Setter>
         <Setter Property="Template">

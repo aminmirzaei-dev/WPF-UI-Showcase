@@ -123,7 +123,7 @@
                                        Height="40"
                                        Icon="Close"
                                        Margin="0,0,8,0"
-                                       Background="{DynamicResource PrimaryDarkColor}"
+                                       Background="DarkGray"
                                        Click="NoButton_Click" />
 
 
@@ -133,7 +133,7 @@
                                        Width="120"
                                        Height="40"
                                        Icon="PowerOff"
-                                       Background="#EF4444"
+                                       Background="{DynamicResource PrimaryColor}"
                                        Foreground="White"
                                        Click="YesButton_Click" />
 

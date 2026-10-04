@@ -300,7 +300,7 @@
             <!-- Footer -->
 
             <Border Grid.Row="2"
-                    Background="#FAFAFA"
+                    Background="{DynamicResource PanelBackColor}"
                     CornerRadius="0,0,20,20"
                     Padding="30,15">
 
