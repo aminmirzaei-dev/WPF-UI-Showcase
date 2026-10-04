@@ -8,4 +8,17 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="MahApps.Metro.IconPacks.Core" Version="6.2.1" />
+    <PackageReference Include="MahApps.Metro.IconPacks.Material" Version="6.2.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controls\" />
+    <Folder Include="Resources\Images\Developer\" />
+    <Folder Include="Resources\Images\People\" />
+    <Folder Include="Resources\Styles\" />
+    <Folder Include="Views\Windows\" />
+  </ItemGroup>
+
 </Project>
