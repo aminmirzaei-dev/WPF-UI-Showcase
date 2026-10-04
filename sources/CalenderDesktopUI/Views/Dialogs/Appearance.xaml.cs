@@ -158,7 +158,7 @@ namespace CalendarDesktopUI.Views.Dialogs
             }
         }
 
-        private void CancelButton_Click(object sender, RoutedEventArgs e) { this.Theme.ApplyTheme(ThemeOptions.Light); this.Palette.ApplyPalette(PaletteOptions.Orange); CloseWithAnimation(false); }
+        private void CancelButton_Click(object sender, RoutedEventArgs e) { this.Theme.ApplyTheme(ThemeOptions.Light); this.Palette.ApplyPalette(PaletteOptions.Red); CloseWithAnimation(false); }
 
 
         private void AcceptButton_Click(object sender, RoutedEventArgs e)

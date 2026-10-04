@@ -104,10 +104,10 @@
                     <Border Height="1"
                             Background="#EEEEEE"
                             Margin="0,20,0,15" />
-                    <TextBlock Text="Developed by Your Name"
+                    <TextBlock Text="Developed by Amin Mirzaei"
                                FontSize="13"
                                Foreground="{DynamicResource SecondaryTextColor}" />
-                    <TextBlock Text="© 2026 Your Company"
+                    <TextBlock Text="© 2026 aminmirzaei-dev"
                                FontSize="13"
                                Margin="0,5,0,0"
                                Foreground="{DynamicResource SecondaryTextColor}" />
