@@ -18,7 +18,6 @@
     <Folder Include="Resources\Images\Developer\" />
     <Folder Include="Resources\Images\People\" />
     <Folder Include="Resources\Styles\" />
-    <Folder Include="Views\Windows\" />
   </ItemGroup>
 
 </Project>
