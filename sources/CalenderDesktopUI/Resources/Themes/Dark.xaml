@@ -7,5 +7,9 @@
                      Color="White" />
     <SolidColorBrush x:Key="SecondaryTextColor"
                      Color="DarkGray" />
+    <SolidColorBrush x:Key="HoverBackColor"
+                     Color="#262626" />
+    <SolidColorBrush x:Key="PressBackColor"
+                     Color="#0f0f0f" />
 
 </ResourceDictionary>

@@ -104,7 +104,7 @@
                             VerticalAlignment="Center">
 
                     <icons:FontAwesome Icon="PaintBrush"
-                                       Foreground="{DynamicResource PrimaryLightColor}"
+                                       Foreground="{DynamicResource PrimaryColor}"
                                        FontSize="23"
                                        VerticalAlignment="Center" />
 
@@ -112,7 +112,7 @@
                                FontSize="21"
                                Margin="12,0,0,0"
                                FontWeight="SemiBold"
-                               Foreground="{DynamicResource PrimaryLightColor}"
+                               Foreground="{DynamicResource PrimaryColor}"
                                VerticalAlignment="Center" />
 
                 </StackPanel>
@@ -316,7 +316,7 @@
                                        Width="100"
                                        Padding="20,10"
                                        Icon="Close"
-                                       Background="DarkGray"
+                                       Background="{DynamicResource SecondaryTextColor}"
                                        HorizontalAlignment="Right"
                                        Margin="0,0,150,0"
                                        Click="CloseButton_Click"/>
@@ -326,7 +326,7 @@
                                        Width="140"
                                        Padding="20,10"
                                        Icon="Check"
-                                       Background="{DynamicResource PrimaryLightColor}"
+                                       Background="{DynamicResource PrimaryColor}"
                                        HorizontalAlignment="Right" />
 
                 </Grid>

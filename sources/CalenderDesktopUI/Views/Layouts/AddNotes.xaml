@@ -14,7 +14,7 @@
                    Margin="35 0 20 0" />
 
         <!--Add Notes-->
-        <Border Background="Coral"
+        <Border Background="{DynamicResource PanelBackColor}"
                 CornerRadius="10"
                 HorizontalAlignment="Center"
                 Width="355"
@@ -36,7 +36,7 @@
                         <icons:ImageAwesome Icon="Pencil"
                                          Width="15"
                                          Height="15"
-                                         Foreground="White" />
+                                         Foreground="{DynamicResource PrimaryColor}" />
                         <TextBlock x:Name="lblNote"
                                    Text="Add Note"
                                    Style="{StaticResource TextHint}" />
@@ -45,7 +45,7 @@
                     </Grid>
 
                     <Separator Margin="0 12 0 11"
-                               Background="{DynamicResource PrimaryDarkColor}"
+                               Background="{DynamicResource PrimaryLightColor}"
                                Height="0.8" />
 
                     <Grid>
@@ -57,7 +57,7 @@
                         <icons:ImageAwesome Icon="Bell"
                                          Width="15"
                                          Height="15"
-                                         Foreground="White" />
+                                         Foreground="{DynamicResource PrimaryColor}" />
                         <TextBlock x:Name="lblTime"
                                    Text="_ _ : _ _  -  _ _ : _ _"
                                    Style="{StaticResource TextHint}" />
@@ -72,7 +72,7 @@
                     <icons:ImageAwesome Icon="PlusCircle"
                                      Width="28"
                                      Height="28"
-                                     Foreground="#f9f9f9" />
+                                     Foreground="{DynamicResource PrimaryColor}" />
                 </Button>
             </Grid>
         </Border>

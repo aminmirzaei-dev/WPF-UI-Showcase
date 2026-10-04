@@ -13,7 +13,7 @@
                         <DataTemplate x:Key="{x:Static CalendarItem.DayTitleTemplateResourceKey}">
                             <TextBlock FontWeight="SemiBold"
                                        FontFamily="Trebuchet MS"
-                                       Foreground="#FF333333"
+                                       Foreground="{DynamicResource PrimaryColor}"
                                        FontSize="18"
                                        HorizontalAlignment="Center"
                                        Margin="10"
@@ -247,7 +247,7 @@
                                         <ColorAnimation Duration="0"
                                                         Storyboard.TargetName="NormalText"
                                                         Storyboard.TargetProperty="(TextElement.Foreground).(SolidColorBrush.Color)"
-                                                        To="#BABABA" />
+                                                        To="Gray" />
                                     </Storyboard>
                                 </VisualState>
                             </VisualStateGroup>
@@ -298,12 +298,12 @@
                                 BorderThickness="{TemplateBinding BorderThickness}"
                                 BorderBrush="{TemplateBinding BorderBrush}" />
                         <Rectangle x:Name="HighlightBackground"
-                                   Fill="#c1c1c1"
+                                   Fill="{DynamicResource PrimaryLightColor}"
                                    Opacity="0"
                                    RadiusX="30"
                                    RadiusY="30" />
                         <ContentPresenter x:Name="NormalText"
-                                          TextElement.Foreground="#FF333333"
+                                          TextElement.Foreground="{DynamicResource TextColor}"
                                           HorizontalAlignment="Center"
                                           Margin="5 3"
                                           VerticalAlignment="Center" />

@@ -5,6 +5,10 @@
     <SolidColorBrush x:Key="PanelBackColor">WhiteSmoke</SolidColorBrush>
     <SolidColorBrush x:Key="TextColor" Color="#252525" />
     <SolidColorBrush x:Key="SecondaryTextColor" Color="#777777" />
+    <SolidColorBrush x:Key="HoverBackColor"
+                     Color="White" />
+    <SolidColorBrush x:Key="PressBackColor"
+                     Color="WhiteSmoke" />
 
 
 </ResourceDictionary>

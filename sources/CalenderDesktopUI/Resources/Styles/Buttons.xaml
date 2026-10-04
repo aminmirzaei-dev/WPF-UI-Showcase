@@ -567,14 +567,14 @@
                         <Trigger Property="IsMouseOver"
                                  Value="True">
                             <Setter Property="Background"
-                                    Value="#FFF3E8" />
+                                    Value="{DynamicResource HoverBackColor}" />
                             <Setter Property="BorderBrush"
                                     Value="{DynamicResource PrimaryLightColor}" />
                         </Trigger>
                         <Trigger Property="IsPressed"
                                  Value="True">
                             <Setter Property="Background"
-                                    Value="#FFE5D2" />
+                                    Value="{DynamicResource PressBackColor}" />
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
@@ -897,47 +897,60 @@
 
     <Style x:Key="CloseButtonStyle"
            TargetType="Button">
+
         <Setter Property="Width"
                 Value="36" />
+
         <Setter Property="Height"
                 Value="36" />
+
         <Setter Property="Background"
                 Value="Transparent" />
+
         <Setter Property="BorderThickness"
                 Value="0" />
+
         <Setter Property="Foreground"
-                Value="#777777" />
+                Value="{DynamicResource PrimaryColor}" />
+
         <Setter Property="Cursor"
                 Value="Hand" />
 
-        <Setter Property="Content">
-            <Setter.Value>
-                <icons:ImageAwesome Icon="Close"
-                                    Width="15"
-                                    Height="15"
-                                    Foreground="{DynamicResource PrimaryColor}" />
-            </Setter.Value>
-        </Setter>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="Button">
+
                     <Border Background="{TemplateBinding Background}"
                             CornerRadius="18">
-                        <ContentPresenter HorizontalAlignment="Center"
-                                          VerticalAlignment="Center" />
+
+                        <icons:ImageAwesome Icon="Close"
+                                            Width="15"
+                                            Height="15"
+                                            Foreground="{TemplateBinding Foreground}"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center" />
+
                     </Border>
+
                     <ControlTemplate.Triggers>
+
                         <Trigger Property="IsMouseOver"
                                  Value="True">
+
                             <Setter Property="Background"
-                                    Value="#FFF0E5" />
+                                    Value="{DynamicResource PrimaryColor}" />
+
                             <Setter Property="Foreground"
-                                    Value="#FF7A00" />
+                                    Value="White" />
+
                         </Trigger>
+
                     </ControlTemplate.Triggers>
+
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
+
     </Style>
 
     <Style TargetType="{x:Type controls:MenuButtonItem}">
@@ -1016,12 +1029,12 @@
             <Trigger Property="IsMouseOver"
                      Value="True">
                 <Setter Property="Foreground"
-                        Value="#C73F69" />
+                        Value="{DynamicResource PrimaryLightColor}" />
             </Trigger>
             <Trigger Property="IsMouseCaptured"
                      Value="True">
                 <Setter Property="Foreground"
-                        Value="#8a2b42" />
+                        Value="{DynamicResource PrimaryDarkColor}" />
             </Trigger>
         </Style.Triggers>
     </Style>
@@ -1037,7 +1050,7 @@
            TargetType="Button"
            BasedOn="{StaticResource YearButton}">
         <Setter Property="Foreground"
-                Value="Orange" />
+                Value="White" />
     </Style>
 
 </ResourceDictionary>

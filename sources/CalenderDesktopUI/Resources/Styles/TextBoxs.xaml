@@ -4,9 +4,9 @@
     <Style x:Key="LiteTextBox"
            TargetType="TextBox">
         <Setter Property="Background"
-                Value="Coral" />
+                Value="{DynamicResource PanelBackColor}" />
         <Setter Property="Foreground"
-                Value="White" />
+                Value="{DynamicResource PrimaryColor}" />
         <Setter Property="FontSize"
                 Value="14" />
         <Setter Property="Grid.Column"

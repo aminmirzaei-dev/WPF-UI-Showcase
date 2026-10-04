@@ -77,13 +77,13 @@
                 <Border Width="65"
                         Height="65"
                         CornerRadius="32.5"
-                        Background="Gray"
+                        Background="{DynamicResource PrimaryColor}"
                         HorizontalAlignment="Center"
                         Margin="0,0,0,12">
 
-                    <icons:FontAwesome Icon="Close"
+                    <icons:FontAwesome Icon="SignOut"
                                      FontSize="28"
-                                     Foreground="{DynamicResource PrimaryLightColor}"
+                                     Foreground="White"
                                      HorizontalAlignment="Center"
                                      VerticalAlignment="Center" />
 
@@ -95,7 +95,7 @@
                 <TextBlock Text="Do you want to exit the app?"
                            FontSize="19"
                            FontWeight="SemiBold"
-                           Foreground="Black"
+                           Foreground="{DynamicResource TextColor}"
                            HorizontalAlignment="Center"
                            TextAlignment="Center" />
 
@@ -123,7 +123,7 @@
                                        Height="40"
                                        Icon="Close"
                                        Margin="0,0,8,0"
-                                       Background="DarkGray"
+                                       Background="{DynamicResource SecondaryTextColor}"
                                        Click="NoButton_Click" />
 
 

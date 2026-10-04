@@ -48,12 +48,12 @@
             <Grid Grid.Row="0"
                   Margin="25,0,15,0">
 
-                    <icons:FontAwesome VerticalAlignment="Center" HorizontalAlignment="Left" Icon="User" Foreground="{DynamicResource PrimaryLightColor}" FontSize="24" />
+                    <icons:FontAwesome VerticalAlignment="Center" HorizontalAlignment="Left" Icon="User" Foreground="{DynamicResource PrimaryColor}" FontSize="24" />
                     <TextBlock Text="About Developer"
                                FontSize="21"
                                Margin="30,0,0,0"
                                FontWeight="SemiBold"
-                               Foreground="{DynamicResource PrimaryLightColor}"
+                               Foreground="{DynamicResource PrimaryColor}"
                                VerticalAlignment="Center" />
 
                     <Button Style="{StaticResource CloseButtonStyle}"
@@ -94,7 +94,7 @@
                     <TextBlock Text="Version 1.0.0"
                                FontSize="14"
                                Margin="0,6,0,18"
-                               Foreground="{DynamicResource PrimaryLightColor}" />
+                               Foreground="{DynamicResource PrimaryColor}" />
                     <TextBlock Text="A simple and modern desktop calendar application."
                                FontSize="14"
                                TextWrapping="Wrap"
@@ -186,7 +186,7 @@
                                        Padding="25,10"
                                        Width="100"
                                        Icon="Close"
-                                       Background="DarkGray"
+                                       Background="{DynamicResource SecondaryTextColor}"
                                        HorizontalAlignment="Right"
                                        Click="CloseButton_Click" />
 
@@ -194,7 +194,7 @@
                                        Padding="25,10"
                                        Width="200"
                                        Icon="Heart"
-                                       Background="{DynamicResource PrimaryLightColor}"
+                                       Background="{DynamicResource PrimaryColor}"
                                        HorizontalAlignment="Right" />
                 </Grid>
             </Border>
