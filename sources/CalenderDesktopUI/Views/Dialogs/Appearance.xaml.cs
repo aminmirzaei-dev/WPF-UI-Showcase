@@ -13,8 +13,7 @@ namespace CalendarDesktopUI.Views.Dialogs
         public Appearance()
         {
             InitializeComponent();
-            this.Loaded += ExitApp_Loaded;
-
+            this.Loaded += Appearance_Loaded;
         }
 
         private ThemeService Theme => (ThemeService)Application.Current.Resources["ThemeService"];
@@ -24,7 +23,7 @@ namespace CalendarDesktopUI.Views.Dialogs
 
         private bool _isClosing = false;
 
-        private void ExitApp_Loaded(object sender, RoutedEventArgs e)
+        private void Appearance_Loaded(object sender, RoutedEventArgs e)
         {
             var duration = new Duration(
                 TimeSpan.FromMilliseconds(250));
@@ -62,6 +61,40 @@ namespace CalendarDesktopUI.Views.Dialogs
                 transform.BeginAnimation(
                     TranslateTransform.YProperty,
                     slide);
+            }
+
+            // -------
+
+
+            switch(Theme.CurrentTheme)
+            {
+                case ThemeOptions.Light:
+                    LightThemeRadio.IsChecked = true;
+                    break;
+                case ThemeOptions.Dark:
+                    DarkThemeRadio.IsChecked = true;
+                    break;
+            }
+
+            //-------
+
+            switch(Palette.CurrentPalette)
+            {
+                case PaletteOptions.Red:
+                    RedColorRadio.IsChecked = true;
+                    break;
+                case PaletteOptions.Blue:
+                    BlueColorRadio.IsChecked = true;
+                    break;
+                case PaletteOptions.Green:
+                    GreenColorRadio.IsChecked = true;
+                    break;
+                case PaletteOptions.Orange:
+                    OrangeColorRadio.IsChecked = true;
+                    break;
+                case PaletteOptions.Purple:
+                    PurpleColorRadio.IsChecked = true;
+                    break;
             }
         }
 
@@ -119,7 +152,14 @@ namespace CalendarDesktopUI.Views.Dialogs
             }
         }
 
-        private void CloseButton_Click(object sender, RoutedEventArgs e) { CloseWithAnimation(false); }
+        private void CancelButton_Click(object sender, RoutedEventArgs e) { this.Theme.ApplyTheme(ThemeOptions.Light); this.Palette.ApplyPalette(PaletteOptions.Orange); CloseWithAnimation(false); }
+
+
+        private void AcceptButton_Click(object sender, RoutedEventArgs e)
+        {
+            CloseWithAnimation(false);
+        }
+
 
         private void LightThemeRadio_Checked(object sender, RoutedEventArgs e)
         {
@@ -156,5 +196,6 @@ namespace CalendarDesktopUI.Views.Dialogs
             this.Palette.ApplyPalette(PaletteOptions.Purple);
         }
 
+        
     }
 }

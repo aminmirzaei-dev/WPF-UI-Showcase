@@ -13,13 +13,13 @@ namespace CalendarDesktopUI.Views.Dialogs
         public About() 
         { 
             InitializeComponent(); 
-            this.Loaded += ExitApp_Loaded;
+            this.Loaded += About_Loaded;
         }
 
 
         private bool _isClosing = false;
 
-        private void ExitApp_Loaded(object sender, RoutedEventArgs e)
+        private void About_Loaded(object sender, RoutedEventArgs e)
         {
             var duration = new Duration(
                 TimeSpan.FromMilliseconds(250));

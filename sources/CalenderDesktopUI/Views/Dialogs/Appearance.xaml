@@ -123,7 +123,7 @@
                 <Button Style="{StaticResource CloseButtonStyle}"
                         HorizontalAlignment="Right"
                         VerticalAlignment="Center"
-                        Click="CloseButton_Click" />
+                        Click="AcceptButton_Click" />
 
             </Grid>
 
@@ -172,7 +172,7 @@
                                      Foreground="Black"
                                      Checked="LightThemeRadio_Checked"
                                      Style="{StaticResource ThemeOptionStyle}"
-                                     IsChecked="True" />
+                                      />
 
                         <!-- Dark -->
 
@@ -244,8 +244,7 @@
                                      GroupName="AccentColor"
                                      Checked="OrangeColorRadio_Checked"
                                      Tag="{StaticResource Oranges}"
-                                     Style="{StaticResource ColorOptionStyle}"
-                                     IsChecked="True" />
+                                     Style="{StaticResource ColorOptionStyle}" />
 
                         <!-- Purple -->
 
@@ -319,13 +318,14 @@
                                        Background="{DynamicResource SecondaryTextColor}"
                                        HorizontalAlignment="Right"
                                        Margin="0,0,150,0"
-                                       Click="CloseButton_Click"/>
+                                       Click="CancelButton_Click"/>
 
 
-                    <controls:CDButton Content="Apply"
+                    <controls:CDButton Content="Accept"
                                        Width="140"
                                        Padding="20,10"
                                        Icon="Check"
+                                       Click="AcceptButton_Click"
                                        Background="{DynamicResource PrimaryColor}"
                                        HorizontalAlignment="Right" />
 

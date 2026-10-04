@@ -18,7 +18,7 @@
                 <ResourceDictionary Source="Resources/Styles/IconImages.xaml" />
                 <ResourceDictionary Source="/Resources/Styles/CDCalendarStyles.xaml" />
                 <ResourceDictionary Source="Resources/Themes/Light.xaml" />
-                <ResourceDictionary Source="Resources/Palettes/Orange.xaml" />
+                <ResourceDictionary Source="Resources/Palettes/Red.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>
