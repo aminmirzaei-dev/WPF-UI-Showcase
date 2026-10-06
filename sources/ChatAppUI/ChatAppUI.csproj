@@ -17,6 +17,7 @@
     <Folder Include="Controls\" />
     <Folder Include="Resources\Images\Developer\" />
     <Folder Include="Resources\Images\People\" />
+    <Folder Include="Resources\Colors\" />
   </ItemGroup>
 
 </Project>
