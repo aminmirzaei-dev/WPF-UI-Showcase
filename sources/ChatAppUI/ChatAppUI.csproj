@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controls\" />
+    <Folder Include="Controls\Composite\" />
     <Folder Include="Resources\Images\Developer\" />
     <Folder Include="Resources\Images\People\" />
     <Folder Include="Resources\Colors\" />
