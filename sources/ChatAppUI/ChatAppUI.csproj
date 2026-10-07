@@ -14,9 +14,14 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Resources\Images\Developer\" />
-    <Folder Include="Resources\Images\People\" />
     <Folder Include="Resources\Colors\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\Images\People\Ana.png" />
+    <Resource Include="Resources\Images\People\daei.png" />
+    <Resource Include="Resources\Images\People\jadi.png" />
+    <Resource Include="Resources\Images\People\maryam.png" />
   </ItemGroup>
 
 </Project>
