@@ -2,6 +2,35 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:icon="http://metro.mahapps.com/winfx/xaml/iconpacks">
 
+    <Style x:Key="textTitle"
+           TargetType="TextBlock">
+        <Setter Property="Foreground"
+                Value="#23232E" />
+        <Setter Property="FontSize"
+                Value="20" />
+        <Setter Property="FontWeight"
+                Value="SemiBold" />
+    </Style>
+
+    <Style x:Key="timeText"
+           TargetType="TextBlock">
+        <Setter Property="Foreground"
+                Value="#979797" />
+        <Setter Property="FontSize"
+                Value="11" />
+        <Setter Property="Margin"
+                Value="47 3 0 0" />
+    </Style>
+
+    <Style x:Key="timeTextRight"
+           TargetType="TextBlock"
+           BasedOn="{StaticResource timeText}">
+        <Setter Property="Margin"
+                Value="0 3 7 0" />
+        <Setter Property="HorizontalAlignment"
+                Value="Right" />
+    </Style>
+
     <Style x:Key="menuButtonIcon"
            TargetType="icon:PackIconMaterial">
         <Setter Property="Foreground"
