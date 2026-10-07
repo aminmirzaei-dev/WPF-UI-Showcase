@@ -11,13 +11,22 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace ChatAppUI.Controls.Composite
+namespace ChatAppUI.Controls
 {
     /// <summary>
     /// Interaction logic for MyMessageChat.xaml
     /// </summary>
     public partial class MyMessageChat : UserControl
     {
+        public static readonly DependencyProperty MessageProperty = DependencyProperty.Register("Message", typeof(string), typeof(MyMessageChat));
+
+        public string Message
+        {
+            get { return (string)GetValue(MessageProperty); }
+            set { SetValue(MessageProperty, value); }
+        }
+
+
         public MyMessageChat()
         {
             InitializeComponent();
