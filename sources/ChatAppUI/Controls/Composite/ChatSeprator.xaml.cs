@@ -11,13 +11,23 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace ChatAppUI.Controls.Composite
+namespace ChatAppUI.Controls
 {
     /// <summary>
     /// Interaction logic for ChatSeprator.xaml
     /// </summary>
     public partial class ChatSeprator : UserControl
     {
+
+        public static readonly DependencyProperty TitleProperty = DependencyProperty.Register("Title", typeof(string), typeof(ChatSeprator));
+
+        public string Title
+        {
+            get { return (string)GetValue(TitleProperty); }
+            set { SetValue(TitleProperty, value); }
+        }
+
+
         public ChatSeprator()
         {
             InitializeComponent();
