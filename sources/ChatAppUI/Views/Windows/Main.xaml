@@ -256,32 +256,32 @@
                     <controls:GroupItem Title="Friends"
                              Message="Okay, Cool!"
                              Color="#73AFFF"
-                             TagName="PH"
+                             TagName="F"
                              MessageCount="2" />
 
                     <controls:GroupItem Title="University"
                              IsActive="True"
                              Message="Suwun bos!"
                              Color="#B387EC"
-                             TagName="MS"
+                             TagName="U"
                              Visible="Collapsed" />
 
                     <controls:GroupItem Title="Tech Loves"
                              Message="Thanks! im going to forward ..."
                              Color="#FFAD2C"
-                             TagName="OG"
+                             TagName="TL"
                              MessageCount="6" />
 
                     <controls:GroupItem Title="C# Community"
                              Message="Thank you"
                              Color="#FF7195"
-                             TagName="SM"
+                             TagName="CC"
                              MessageCount="1" />
 
                     <controls:GroupItem Title="Iran Tourism"
                              Message="Grateful thoughts"
                              Color="#5AC795"
-                             TagName="BM"
+                             TagName="IT"
                              Visible="Collapsed" />
 
                     <Button Content="Show All"
