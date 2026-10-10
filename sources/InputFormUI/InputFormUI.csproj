@@ -9,7 +9,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Controls\" />
+    <Folder Include="Controls\Composite\" />
+    <Folder Include="Controls\Custom\" />
+    <Folder Include="Views\Layouts\" />
   </ItemGroup>
 
 </Project>
