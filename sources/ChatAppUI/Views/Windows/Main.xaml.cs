@@ -53,5 +53,10 @@ namespace ChatAppUI.Views.Windows
         {
             InitializeComponent();
         }
+
+        private void ExitApp_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+                Application.Current.Shutdown();
+        }
     }
 }

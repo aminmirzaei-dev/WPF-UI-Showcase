@@ -157,7 +157,9 @@
 
                     <controls:MenuButton Title="Settings"
                                    Icon="CogOutline" />
-                    <controls:MenuButton Title="Logout"
+                    <controls:MenuButton Title="Exit App"
+                                         MouseDown="ExitApp_MouseDown"
+                                         
                                    Icon="Logout" />
                 </StackPanel>
 
