@@ -146,7 +146,7 @@
                 <Setter Property="Background"
                         Value="#F8F7FC" />
                 <Setter Property="Foreground"
-                        Value="#6F53F3" />
+                        Value="ForestGreen" />
                 <Setter Property="Tag"
                         Value="Visible" />
             </Trigger>
@@ -162,7 +162,7 @@
                 <Setter Property="Background"
                         Value="#F8F7FC" />
                 <Setter Property="Foreground"
-                        Value="Crimson" />
+                        Value="Green" />
                 <Setter Property="Tag"
                         Value="Visible" />
             </DataTrigger>
