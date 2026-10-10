@@ -6,10 +6,15 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
+    <ApplicationIcon>ChatAppIcon.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
     <None Remove="Resources\Images\Developer\AminMirzaeiProfile.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="ChatAppIcon.ico" />
   </ItemGroup>
 
   <ItemGroup>
