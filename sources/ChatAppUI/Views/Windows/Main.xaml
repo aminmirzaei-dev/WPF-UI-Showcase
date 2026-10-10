@@ -4,9 +4,486 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ChatAppUI.Views.Windows"
+        xmlns:controls="clr-namespace:ChatAppUI.Controls"
+        xmlns:icon="http://metro.mahapps.com/winfx/xaml/iconpacks"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Background="Transparent"
+        ResizeMode="NoResize"
         mc:Ignorable="d"
-        Title="Main" Height="450" Width="800">
+        Title="Main" Height="830" Width="1250">
+    <Window.Resources>
+        <BooleanToVisibilityConverter x:Key="BoolToVisConverter" />
+    </Window.Resources>
+
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="55" />
+            <ColumnDefinition Width="220" />
+            <ColumnDefinition Width="350" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <!--Background-->
+        <Border CornerRadius="0 20 20 0"
+                Background="#F8F7FC"
+                Grid.Column="2"
+                Grid.ColumnSpan="2"
+                MouseDown="Border_MouseDown"
+                MouseLeftButtonDown="Border_MouseLeftButtonDown"
+                Margin="-25 0 0 0"
+                Grid.RowSpan="2" />
+
+        <!--Left Menu 1-->
+        <Border CornerRadius="20"
+                Background="Green"
+                Panel.ZIndex="2"
+                Grid.RowSpan="2">
+
+            <Grid>
+                <!--App Title-->
+                <TextBlock Text="Chat App"
+                           Foreground="#ffffff"
+                           FontSize="16"
+                           VerticalAlignment="Top"
+                           Margin="0 30 0 0"
+                           HorizontalAlignment="Center"
+                           FontWeight="SemiBold">
+
+                    <TextBlock.LayoutTransform>
+                        <RotateTransform Angle="90" />
+                    </TextBlock.LayoutTransform>
+                </TextBlock>
+
+                <!--Account Buttons-->
+                <StackPanel Margin="0 170 0 0">
+
+                    <controls:AccountMenu Title="A"
+                                    IsActive="True"
+                                    GradientColor1="#D1ABFF"
+                                    GradientColor2="#B07CFF" />
+
+                    <controls:AccountMenu Title="B"
+                                    GradientColor1="#FBA0C8"
+                                    GradientColor2="#FE7094" />
+
+                    <controls:AccountMenu Title="C"
+                                    GradientColor1="#E5DB6F"
+                                    GradientColor2="#E2C649" />
+
+                    <!--Add Button-->
+                    <Button Style="{StaticResource leftSideButton}">
+                        <Border CornerRadius="3"
+                                Background="Transparent"
+                                Width="25"
+                                Height="25"
+                                BorderThickness="0.8"
+                                BorderBrush="White"
+                                Margin="-3 0 0 0">
+
+                            <icon:PackIconMaterial Kind="Plus"
+                                                   Width="10"
+                                                   Height="10"
+                                                   VerticalAlignment="Center"
+                                                   HorizontalAlignment="Center" />
+                        </Border>
+                    </Button>
+                </StackPanel>
+
+            </Grid>
+        </Border>
+
+        <!--Left Menu 2-->
+        <Border CornerRadius="0 20 20 0"
+                Background="ForestGreen"
+                Grid.Column="1"
+                Margin="-25 0 0 0"
+                Panel.ZIndex="1"
+                Grid.RowSpan="2">
+
+            <Grid>
+
+                <StackPanel Orientation="Horizontal"
+                            VerticalAlignment="Top"
+                            Margin="35,50,0,0">
+
+                    <Ellipse Width="45"
+                             Height="45"
+                             Margin="0,0,8,0">
+                        <Ellipse.Fill>
+                            <ImageBrush ImageSource="/Resources/Images/Developer/AminMirzaeiProfile.png"
+                                        Stretch="UniformToFill" />
+                        </Ellipse.Fill>
+                    </Ellipse>
+
+                    <TextBlock FontSize="13"
+                               Foreground="White"
+                               VerticalAlignment="Center"
+                               Text="Created By Amin Mirzaei" />
+                </StackPanel>
+
+                <!--Menu Buttons-->
+                <StackPanel Margin="25 160 0 0">
+
+                    <controls:MenuButton Title="Dashboard"
+                                   Icon="HomeOutline" />
+
+                    <controls:MenuButton Title="Shipment"
+                                   Icon="ChartTimelineVariantShimmer" />
+
+                    <controls:MenuButton Title="Users"
+                                   Icon="AccountMultipleOutline" />
+
+                    <controls:MenuButton Title="Messages"
+                                   IsActive="True"
+                                   Icon="MessageOutline" />
+
+                    <controls:MenuButton Title="Revenue"
+                                   Icon="CurrencyUsd" />
+
+                    <controls:MenuButton Title="Maps"
+                                   Icon="MapMarkerOutline" />
+                </StackPanel>
+
+                <!--Bottom Menu buttons-->
+                <StackPanel VerticalAlignment="Bottom"
+                            Margin="25 0 0 40">
+
+                    <controls:MenuButton Title="Settings"
+                                   Icon="CogOutline" />
+                    <controls:MenuButton Title="Logout"
+                                   Icon="Logout" />
+                </StackPanel>
+
+            </Grid>
+        </Border>
+
+        <!--Top Section-->
+        <Grid Grid.Column="2"
+              Grid.ColumnSpan="2"
+              Margin="40 30">
+
+            <!--Search Textbox-->
+            <Grid Width="500"
+                  HorizontalAlignment="Left">
+
+                <ComboBox Style="{DynamicResource ComboBoxStyle1}"
+                          HorizontalAlignment="Left"
+                          Margin="3 0 0 0"
+                          Panel.ZIndex="2">
+                    <ComboBoxItem Content="All Category"
+                                  IsSelected="True" />
+                    <ComboBoxItem Content="Books" />
+                    <ComboBoxItem Content="Cars" />
+                    <ComboBoxItem Content="Plants" />
+                </ComboBox>
+
+                <Rectangle Width="1"
+                           Fill="#E9E9E9"
+                           Panel.ZIndex="2"
+                           HorizontalAlignment="Left"
+                           Margin="130 19 0 19" />
+
+                <TextBlock Margin="150 0 20 0"
+                           VerticalAlignment="Center"
+                           Foreground="#868686"
+                           IsHitTestVisible="False"
+                           Panel.ZIndex="1"
+                           Text="Search here ..."
+                           Visibility="{Binding ElementName=textBoxSearch, Path=Text.IsEmpty, Converter={StaticResource BoolToVisConverter}}" />
+
+                <TextBox Name="textBoxSearch"
+                         Style="{StaticResource searchTextbox}" />
+
+                <Button Style="{StaticResource textBoxButton}"
+                        HorizontalAlignment="Right"
+                        Margin="0 0 7 0">
+                    <icon:PackIconMaterial Kind="Magnify"
+                                           Width="15"
+                                           Foreground="#c7c7c7" />
+                </Button>
+            </Grid>
+
+            <!--Top Menu-->
+            <StackPanel Orientation="Horizontal"
+                        HorizontalAlignment="Right">
+
+                <Button Style="{StaticResource textBoxButton}">
+                    <icon:PackIconMaterial Kind="BellOutline"
+                                           Foreground="#88878E" />
+                </Button>
+
+                <Button Style="{StaticResource textBoxButton}"
+                        Background="#e9e9e9">
+                    <icon:PackIconMaterial Kind="AccountArrowLeftOutline"
+                                           Foreground="#88878E" />
+                </Button>
+
+                <Button Style="{StaticResource textBoxButton}">
+                    <icon:PackIconMaterial Kind="DotsVertical"
+                                           Foreground="#88878E" />
+                </Button>
+
+            </StackPanel>
+        </Grid>
+
+        <!--Chat Items Section-->
+        <Border Grid.Column="2"
+                Grid.Row="1">
+            <Grid>
+                <!--Seprator-->
+                <StackPanel Orientation="Horizontal"
+                            Margin="30 0 0 30">
+                    <Rectangle VerticalAlignment="Stretch"
+                               Width="0.8"
+                               Stroke="#dadada" />
+                </StackPanel>
+
+                <!--Groups Items-->
+                <StackPanel Margin="30 0 15 0">
+                    <TextBlock Text="Groups"
+                               Style="{StaticResource textTitle}"
+                               Margin="25 0 0 5" />
+
+                    <controls:GroupItem Title="Friends"
+                             Message="Okay, Cool!"
+                             Color="#73AFFF"
+                             TagName="PH"
+                             MessageCount="2" />
+
+                    <controls:GroupItem Title="University"
+                             IsActive="True"
+                             Message="Suwun bos!"
+                             Color="#B387EC"
+                             TagName="MS"
+                             Visible="Collapsed" />
+
+                    <controls:GroupItem Title="Tech Loves"
+                             Message="Thanks! im going to forward ..."
+                             Color="#FFAD2C"
+                             TagName="OG"
+                             MessageCount="6" />
+
+                    <controls:GroupItem Title="C# Community"
+                             Message="Thank you"
+                             Color="#FF7195"
+                             TagName="SM"
+                             MessageCount="1" />
+
+                    <controls:GroupItem Title="Iran Tourism"
+                             Message="Grateful thoughts"
+                             Color="#5AC795"
+                             TagName="BM"
+                             Visible="Collapsed" />
+
+                    <Button Content="Show All"
+                            Style="{StaticResource showButton}" />
+
+                    <TextBlock Text="Persons"
+                               Style="{StaticResource textTitle}"
+                               Margin="25 15 0 5" />
+
+                    <!--Person Items-->
+                    <controls:GroupItem Title="Amin Mirzaei"
+                             Image="/Resources/Images/Developer/AminMirzaeiProfile.png"
+                             Message="Okay, Nice work"
+                             Color="#73AFFF"
+                             MessageCount="2" />
+
+                    <controls:GroupItem Title="Maryam Mirzakhani"
+                             Image="/Resources/Images/People/maryam.png"
+                             Message="Plz share those recap to me"
+                             Visible="Collapsed" />
+
+                    <controls:GroupItem Title="Ali Daei"
+                             Image="/Resources/Images/People/daei.png"
+                             Message="You can check it now"
+                             Visible="Collapsed" />
+
+                    <controls:GroupItem Title="Jadi Mirmirani"
+                             Image="/Resources/Images/People/jadi.png"
+                             Message="OMG !!!"
+                             Color="#5AC795"
+                             TagName="BM"
+                             MessageCount="3" />
+
+                    <Button Content="Show All"
+                            Style="{StaticResource showButton}" />
+                </StackPanel>
+            </Grid>
+        </Border>
+
+        <!--Chat Section-->
+        <Border CornerRadius="15"
+                ClipToBounds="True"
+                Background="#ffffff"
+                Grid.Column="3"
+                Margin="0 0 30 30"
+                Grid.Row="1">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="auto" />
+                </Grid.RowDefinitions>
+
+                <!--Top Chat MenuBar-->
+                <Grid Background="#ffffff">
+                    <Grid.Effect>
+                        <DropShadowEffect ShadowDepth="1"
+                                          Direction="-90"
+                                          BlurRadius="20"
+                                          Opacity="0.1" />
+                    </Grid.Effect>
+
+                    <TextBlock Text="Moonlab Std"
+                               FontSize="16"
+                               Margin="20 15"
+                               HorizontalAlignment="Left" />
+
+                    <StackPanel Orientation="Horizontal"
+                                Margin="0 0 10 0"
+                                HorizontalAlignment="Right">
+
+                        <controls:ImageLogo Image="/Resources/Images/People/Ana.png"
+                                      Margin="0 0 -15 0" />
+                        <controls:ImageLogo Image="/Resources/Images/People/daei.png"
+                                      Margin="0 0 -15 0" />
+                        <controls:ImageLogo Image="/Resources/Images/People/jadi.png" />
+
+                        <TextBlock Text="and 3 others"
+                                   VerticalAlignment="Center"
+                                   Margin="7 0 7 0"
+                                   Foreground="#8B8A8F"
+                                   FontSize="11" />
+
+                        <Button Style="{StaticResource textBoxButton}">
+                            <icon:PackIconMaterial Kind="DotsVertical"
+                                                   Width="14"
+                                                   Height="14"
+                                                   Foreground="#88878E" />
+                        </Button>
+
+                    </StackPanel>
+                </Grid>
+
+                <!--Chats-->
+                <StackPanel Grid.Row="1"
+                            Margin="20 10 20 20">
+                    <!--Messages-->
+                    <controls:ChatSeprator Title="Yesterday" />
+
+                    <controls:PersonItem Username="Ana de Armas"
+                                 Source="/Resources/Images/People/Ana.png" />
+                    <controls:MessageChat Color="#FF82A3"
+                                    Message="Hello my friends" />
+                    <TextBlock Text="3:10 PM"
+                               Style="{StaticResource timeText}" />
+
+                    <controls:MyMessageChat Message="Hi Ana, Are you ok?" />
+                    <controls:MyMessageChat Message="Guys we have a plan to choose best way" />
+                    <TextBlock Text="4:15 PM"
+                               Style="{StaticResource timeTextRight}" />
+
+                    <controls:PersonItem Username="Ali Daei"
+                                 Source="/Resources/Images/People/daei.png" />
+                    <controls:MessageChat Color="#C490FF"
+                                    Message="Can you share your opinion?" />
+                    <TextBlock Text="6:39 PM"
+                               Style="{StaticResource timeText}" />
+
+                    <controls:ChatSeprator Title="Today"
+                                     Margin="0 5 0 0" />
+
+                    <controls:PersonItem Username="Jadi Mirmirani"
+                                 Source="/Resources/Images/People/jadi.png" />
+                    <controls:MessageChat Color="#68CFA3"
+                                    Message="Yes, just dont talk about it with others." />
+                    <controls:MessageChat Color="#68CFA3"
+                                    Message="Our plan have new tactics ..." />
+                    <TextBlock Text="3:25 PM"
+                               Style="{StaticResource timeText}" />
+
+                    <controls:MyMessageChat Message="I'm waiting for Ana for comeback to the chat" />
+                    <TextBlock Text="3:26 PM"
+                               Style="{StaticResource timeTextRight}" />
+                </StackPanel>
+
+                <!--Message Bottom Section-->
+                <Grid Grid.Row="2"
+                      Margin="10 0 10 0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="auto" />
+                    </Grid.ColumnDefinitions>
+
+                    <!--Message Textbox-->
+                    <Grid>
+                        <TextBlock Margin="15 0 120 0"
+                                   VerticalAlignment="Center"
+                                   Foreground="#868686"
+                                   IsHitTestVisible="False"
+                                   Panel.ZIndex="1"
+                                   Text="Type yout message ..."
+                                   Visibility="{Binding ElementName=textBoxMessage, Path=Text.IsEmpty, Converter={StaticResource BoolToVisConverter}}" />
+                        <TextBox Name="textBoxMessage"
+                                 Style="{StaticResource messageTextbox}" />
+
+                        <!--Buttons-->
+                        <StackPanel Orientation="Horizontal"
+                                    Margin="0 0 8 0"
+                                    HorizontalAlignment="Right"
+                                    VerticalAlignment="Center">
+
+                            <Button Style="{StaticResource textBoxButton}"
+                                    Margin="0 0 1 0">
+                                <icon:PackIconMaterial Kind="BookmarkMultipleOutline"
+                                                       Width="12"
+                                                       Foreground="#a6a6a6" />
+                            </Button>
+
+                            <Button Style="{StaticResource textBoxButton}">
+                                <icon:PackIconMaterial Kind="Paperclip"
+                                                       Width="12"
+                                                       Foreground="#a6a6a6" />
+                            </Button>
+
+                            <Button Style="{StaticResource textBoxButton}">
+                                <icon:PackIconMaterial Kind="MicrophoneOutline"
+                                                       Width="12"
+                                                       Foreground="#a6a6a6" />
+                            </Button>
+
+                        </StackPanel>
+                    </Grid>
+
+                    <!--Send Button-->
+                    <Button Grid.Column="1"
+                            Margin="5 0 0 0"
+                            Style="{StaticResource textBoxButton}">
+                        <icon:PackIconMaterial Kind="Send"
+                                               Margin="3 0 0 2"
+                                               Width="16"
+                                               Foreground="Crimson">
+                            <icon:PackIconMaterial.LayoutTransform>
+                                <RotateTransform Angle="-45" />
+                            </icon:PackIconMaterial.LayoutTransform>
+                        </icon:PackIconMaterial>
+                    </Button>
+
+                </Grid>
+
+            </Grid>
+        </Border>
+
+
+
+
     </Grid>
 </Window>

@@ -1,9 +1,9 @@
-﻿<UserControl x:Class="ChatAppUI.Controls.Composite.AccountMenu"
+﻿<UserControl x:Class="ChatAppUI.Controls.AccountMenu"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:ChatAppUI.Controls.Composite"
+             xmlns:local="clr-namespace:ChatAppUI.Controls"
              mc:Ignorable="d" 
              Name="accountMenu">
     <Button Style="{StaticResource leftSideButton}">

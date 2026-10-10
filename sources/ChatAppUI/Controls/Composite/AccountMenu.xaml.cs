@@ -11,7 +11,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace ChatAppUI.Controls.Composite
+namespace ChatAppUI.Controls
 {
     /// <summary>
     /// Interaction logic for AccountMenu.xaml

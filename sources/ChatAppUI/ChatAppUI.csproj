@@ -9,11 +9,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Resources\Images\Developer\AminMirzaeiProfile.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="MahApps.Metro.IconPacks.Core" Version="6.2.1" />
     <PackageReference Include="MahApps.Metro.IconPacks.Material" Version="6.2.1" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Resources\Images\Developer\AminMirzaeiProfile.png" />
     <Resource Include="Resources\Images\People\Ana.png" />
     <Resource Include="Resources\Images\People\daei.png" />
     <Resource Include="Resources\Images\People\jadi.png" />
