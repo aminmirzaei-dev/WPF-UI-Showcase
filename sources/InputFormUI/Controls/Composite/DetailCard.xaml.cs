@@ -18,6 +18,46 @@ namespace InputFormUI.Controls
     /// </summary>
     public partial class DetailCard : UserControl
     {
+
+        public static readonly DependencyProperty TitleProperty = DependencyProperty.Register("Title", typeof(string), typeof(DetailCard));
+        public static readonly DependencyProperty TimeProperty = DependencyProperty.Register("Time", typeof(string), typeof(DetailCard));
+        public static readonly DependencyProperty NumberProperty = DependencyProperty.Register("Number", typeof(string), typeof(DetailCard));
+        public static readonly DependencyProperty ImageProperty = DependencyProperty.Register("Image", typeof(ImageSource), typeof(DetailCard));
+        public static readonly DependencyProperty IsActiveProperty = DependencyProperty.Register("IsActive", typeof(bool), typeof(DetailCard));
+
+        public string Title
+        {
+            get { return (string)GetValue(TitleProperty); }
+            set { SetValue(TitleProperty, value); }
+        }
+
+        public string Time
+        {
+            get { return (string)GetValue(TimeProperty); }
+            set { SetValue(TimeProperty, value); }
+        }
+
+        public string Number
+        {
+            get { return (string)GetValue(NumberProperty); }
+            set { SetValue(NumberProperty, value); }
+        }
+
+        public ImageSource Image
+        {
+            get { return (ImageSource)GetValue(ImageProperty); }
+            set { SetValue(ImageProperty, value); }
+        }
+
+        public bool IsActive
+        {
+            get { return (bool)GetValue(IsActiveProperty); }
+            set { SetValue(IsActiveProperty, value); }
+        }
+
+
+
+
         public DetailCard()
         {
             InitializeComponent();
