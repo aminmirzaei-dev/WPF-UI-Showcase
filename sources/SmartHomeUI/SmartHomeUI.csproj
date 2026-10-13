@@ -11,6 +11,9 @@
   <ItemGroup>
     <Folder Include="Controls\Custom\" />
     <Folder Include="Controls\Composite\" />
+    <Folder Include="Views\Layouts\" />
+    <Folder Include="Views\Pages\" />
+    <Folder Include="Views\Windows\" />
   </ItemGroup>
 
 </Project>
