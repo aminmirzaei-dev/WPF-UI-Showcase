@@ -5,8 +5,8 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:InputFormUI.Controls"
              Name="detailCard"
-             Foreground="#ffffff">
-    <Border  Background="#ff405c"
+             Foreground="Tomato">
+    <Border  Background="White"
              CornerRadius="7"
              Margin="30 4"
              BorderThickness="1">
@@ -55,10 +55,9 @@
             <StackPanel Grid.Column="1"
                         VerticalAlignment="Center">
                 <TextBlock Text="{Binding ElementName=detailCard,Path=Title}"
-                           FontSize="14" />
+                           FontSize="15"/>
                 <TextBlock Text="{Binding ElementName=detailCard,Path=Time}"
-                           FontSize="11"
-                           FontWeight="Light"
+                           FontSize="12"
                            Margin="0 3 0 0" />
             </StackPanel>
 
@@ -66,9 +65,11 @@
                     CornerRadius="50"
                     Width="25"
                     Height="25"
-                    Background="DarkRed">
+                    Background="Tomato">
                 <TextBlock Text="{Binding ElementName=detailCard,Path=Number}"
                            HorizontalAlignment="Center"
+                           Foreground="White"
+                           FontWeight="SemiBold"
                            VerticalAlignment="Center"
                            FontSize="10" />
             </Border>
