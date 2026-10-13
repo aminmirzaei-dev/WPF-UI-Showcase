@@ -37,24 +37,23 @@
             <TextBlock Text="Designed and built by Amin Mirzaei"
                        HorizontalAlignment="Left"
                        VerticalAlignment="Center"
-                       Margin="55 0 0 2"
-                       FontSize="16"
+                       Margin="55 5 0 2"
+                       FontSize="14"
                        FontWeight="SemiBold"
                        Foreground="Tomato" />
-            <icons:PackIconMaterial Kind="Message"
-                                    HorizontalAlignment="Left"
-                                    VerticalAlignment="Center"
-                                    Margin="33 0 0 4"
-                                    Width="14"
-                                    Height="14"
-                                    Foreground="#FF9D00" />
-            <icons:PackIconMaterial Kind="Message"
-                                    HorizontalAlignment="Left"
-                                    VerticalAlignment="Center"
-                                    Margin="30 4 0 0"
-                                    Width="14"
-                                    Height="14"
-                                    Foreground="#4880FF" />
+
+            <Grid Width="54"
+                  Height="54" HorizontalAlignment="Left" Margin="5,5,0,0">
+
+                <Grid.Clip>
+                    <EllipseGeometry Center="20,20"
+                                     RadiusX="20"
+                                     RadiusY="20" />
+                </Grid.Clip>
+                <Image
+                       Stretch="UniformToFill"
+                       Source="/Resources/Images/Developer/DevOrange.png" />
+            </Grid>
 
             <layouts:Title Grid.Column="1"></layouts:Title>
 
