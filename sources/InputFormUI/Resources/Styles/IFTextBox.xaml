@@ -11,25 +11,19 @@
                 Value="40" />
 
         <Setter Property="Background"
-                Value="#26396C" />
+                Value="White" />
 
         <Setter Property="Foreground"
-                Value="#E5E9F7" />
+                Value="Black" />
 
         <Setter Property="BorderBrush"
                 Value="Transparent" />
-
-        <Setter Property="BorderThickness"
-                Value="0" />
 
         <Setter Property="FontSize"
                 Value="13" />
 
         <Setter Property="Padding"
                 Value="0" />
-
-        <Setter Property="SelectionBrush"
-                Value="#5362C4" />
 
         <Setter Property="SelectionTextBrush"
                 Value="#FFFFFF" />
@@ -51,8 +45,8 @@
 
                         <Border x:Name="MainBorder"
                                 Background="{TemplateBinding Background}"
-                                BorderBrush="{TemplateBinding BorderBrush}"
-                                BorderThickness="{TemplateBinding BorderThickness}"
+                                BorderBrush="Gray"
+                                BorderThickness="1"
                                 CornerRadius="{TemplateBinding CornerRadius}">
 
                             <Border.RenderTransform>
@@ -68,8 +62,8 @@
 
                         <Border x:Name="FocusBorder"
                                 Background="Transparent"
-                                BorderBrush="#6575D8"
-                                BorderThickness="1"
+                                BorderBrush="Tomato"    
+                                BorderThickness="2"
                                 CornerRadius="{TemplateBinding CornerRadius}"
                                 Opacity="0">
 

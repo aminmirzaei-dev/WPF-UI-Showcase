@@ -17,6 +17,24 @@ namespace InputFormUI.Views.Windows
     /// </summary>
     public partial class Main : Window
     {
+        private void Grid_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.ChangedButton == MouseButton.Left)
+            {
+                this.DragMove();
+            }
+        }
+
+        private void Grid_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.ClickCount == 2)
+            {
+                this.WindowState = WindowState.Normal;
+            }
+        }
+
+
+
         public Main()
         {
             InitializeComponent();

@@ -4,9 +4,68 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:InputFormUI.Views.Windows"
-        mc:Ignorable="d"
-        Title="Main" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        xmlns:layouts="clr-namespace:InputFormUI.Views.Layouts"
+        xmlns:icons="http://metro.mahapps.com/winfx/xaml/iconpacks"
+        Width="1150"
+        Height="790"
+        WindowStyle="None"
+        WindowStartupLocation="CenterScreen"
+        AllowsTransparency="True"
+        Background="Transparent">
+
+    <WindowChrome.WindowChrome>
+        <WindowChrome CaptionHeight="0"
+                      ResizeBorderThickness="5" />
+    </WindowChrome.WindowChrome>
+
+    <Border CornerRadius="5"
+            Background="#ffffff"
+            MouseDown="Grid_MouseDown"
+            MouseLeftButtonDown="Grid_MouseLeftButtonDown">
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="45" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="400" />
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Text="Designed and built by Amin Mirzaei"
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Center"
+                       Margin="55 0 0 2"
+                       FontSize="16"
+                       FontWeight="SemiBold"
+                       Foreground="Tomato" />
+            <icons:PackIconMaterial Kind="Message"
+                                    HorizontalAlignment="Left"
+                                    VerticalAlignment="Center"
+                                    Margin="33 0 0 4"
+                                    Width="14"
+                                    Height="14"
+                                    Foreground="#FF9D00" />
+            <icons:PackIconMaterial Kind="Message"
+                                    HorizontalAlignment="Left"
+                                    VerticalAlignment="Center"
+                                    Margin="30 4 0 0"
+                                    Width="14"
+                                    Height="14"
+                                    Foreground="#4880FF" />
+
+            <layouts:Title Grid.Column="1"></layouts:Title>
+
+            <!--Right Section-->
+            <layouts:RightSection Grid.Row="1"
+                                  Grid.Column="1" />
+
+            <!--Left Section-->
+            <layouts:Contents Grid.Row="1" />
+
+
+        </Grid>
+    </Border>
 </Window>
