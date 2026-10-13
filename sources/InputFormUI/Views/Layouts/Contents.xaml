@@ -109,32 +109,60 @@
                                Margin="-20 20 -20 20"
                                Background="#E1E6EB" />
 
-                    <!--Inputs-->
+                    
+                    <!-- Inputs -->
+
+                    <!-- Left Column -->
                     <controls:IFTextBox Grid.Column="0"
                                         Grid.Row="2"
+                                        Margin="0 10 10 10"
+                                        Icon="Account"
                                         Placeholder="Enter your legal name" />
+
                     <controls:IFTextBox Grid.Column="0"
                                         Grid.Row="3"
+                                        Margin="0 10 10 10"
+                                        Icon="Email"
                                         Placeholder="Enter your email" />
+
                     <controls:IFTextBox Grid.Column="0"
                                         Grid.Row="4"
+                                        Margin="0 10 10 10"
+                                        Icon="Phone"
                                         Placeholder="Enter your phone" />
+
                     <controls:IFTextBox Grid.Column="0"
                                         Grid.Row="5"
+                                        Margin="0 10 10 10"
+                                        Icon="MapMarker"
                                         Placeholder="Enter your address" />
+
+                    <!-- Right Column -->
                     <controls:IFTextBox Grid.Column="1"
                                         Grid.Row="2"
+                                        Margin="10 10 0 10"
+                                        Icon="Domain"
                                         Placeholder="Enter your business name" />
+
                     <controls:IFTextBox Grid.Column="1"
                                         Grid.Row="3"
-                                        Icon="SearchWeb"
-                                        Placeholder="Enter your email" />
+                                        Margin="10 10 0 10"
+                                        Icon="Web"
+                                        Placeholder="Enter your website" />
+
                     <controls:IFTextBox Grid.Column="1"
                                         Grid.Row="4"
+                                        Margin="10 10 0 10"
+                                        Icon="CurrencyUsd"
                                         Placeholder="Enter your currency" />
+
                     <controls:IFTextBox Grid.Column="1"
                                         Grid.Row="5"
+                                        Margin="10 10 0 10"
+                                        Icon="MapMarker"
                                         Placeholder="Enter your address" />
+                    
+
 
                     <!--Form Bottom Background-->
                     <Border Grid.Row="6"
