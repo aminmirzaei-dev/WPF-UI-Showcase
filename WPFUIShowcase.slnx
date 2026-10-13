@@ -13,5 +13,4 @@
   <Project Path="sources/SocialMediaManagementUI/SocialMediaManagementUI.csproj" />
   <Project Path="sources/TVSettingsUI/TVSettingsUI.csproj" />
   <Project Path="sources/WalletPaymentUI/WalletPaymentUI.csproj" />
-  <Project Path="sources/WeatherUI/WeatherUI.csproj" />
 </Solution>
