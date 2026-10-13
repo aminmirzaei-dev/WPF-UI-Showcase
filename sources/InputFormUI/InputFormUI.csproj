@@ -27,6 +27,7 @@
     <Resource Include="Resources\Icons\Vector3.png" />
     <Resource Include="Resources\Icons\Vector4.png" />
     <Resource Include="Resources\Icons\Vector5.png" />
+    <Resource Include="Resources\Images\Developer\DevOrange.png" />
   </ItemGroup>
 
 </Project>
