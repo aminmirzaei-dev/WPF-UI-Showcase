@@ -18,6 +18,16 @@ namespace SmartHomeUI.Controls.Composite
     /// </summary>
     public partial class AddButton : UserControl
     {
+
+        public static readonly DependencyProperty CaptionProperty = DependencyProperty.Register("Caption", typeof(string), typeof(AddButton));
+
+        public string Caption
+        {
+            get { return (string)GetValue(CaptionProperty); }
+            set { SetValue(CaptionProperty, value); }
+        }
+
+
         public AddButton()
         {
             InitializeComponent();
