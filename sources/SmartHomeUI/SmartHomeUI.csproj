@@ -9,11 +9,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Controls\Custom\" />
     <Folder Include="Resources\Images\" />
     <Folder Include="Resources\Languages\" />
     <Folder Include="Resources\Palettes\" />
-    <Folder Include="Resources\Themes\" />
     <Folder Include="Views\Layouts\" />
     <Folder Include="Views\Pages\" />
   </ItemGroup>
