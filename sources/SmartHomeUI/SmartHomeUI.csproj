@@ -9,11 +9,32 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Resources\Images\" />
-    <Folder Include="Resources\Languages\" />
-    <Folder Include="Resources\Palettes\" />
+    <Folder Include="Resources\Images\Developer\" />
     <Folder Include="Views\Layouts\" />
     <Folder Include="Views\Pages\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\Images\Countries\China.png" />
+    <Resource Include="Resources\Images\Countries\Germany.png" />
+    <Resource Include="Resources\Images\Countries\Iran.png" />
+    <Resource Include="Resources\Images\Countries\Spain.png" />
+    <Resource Include="Resources\Images\Countries\USA.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Resources\Languages\Localization.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Localization.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Resources\Languages\Localization.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Localization.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
 
 </Project>
