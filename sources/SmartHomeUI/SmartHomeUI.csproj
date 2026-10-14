@@ -9,6 +9,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Resources\Images\Home\Decoration1.jpg" />
+    <None Remove="Resources\Images\Home\Decoration2.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Resources\Images\Developer\" />
     <Folder Include="Views\Layouts\" />
     <Folder Include="Views\Pages\" />
@@ -20,6 +25,8 @@
     <Resource Include="Resources\Images\Countries\Iran.png" />
     <Resource Include="Resources\Images\Countries\Spain.png" />
     <Resource Include="Resources\Images\Countries\USA.png" />
+    <Resource Include="Resources\Images\Home\Decoration1.jpg" />
+    <Resource Include="Resources\Images\Home\Decoration2.jpg" />
   </ItemGroup>
 
   <ItemGroup>
