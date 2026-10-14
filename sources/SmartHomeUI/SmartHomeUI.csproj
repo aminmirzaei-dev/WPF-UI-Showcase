@@ -10,12 +10,10 @@
 
   <ItemGroup>
     <Folder Include="Controls\Custom\" />
-    <Folder Include="Controls\Composite\" />
     <Folder Include="Resources\Images\" />
     <Folder Include="Resources\Languages\" />
     <Folder Include="Resources\Palettes\" />
     <Folder Include="Resources\Themes\" />
-    <Folder Include="Resources\Styles\" />
     <Folder Include="Views\Layouts\" />
     <Folder Include="Views\Pages\" />
   </ItemGroup>
