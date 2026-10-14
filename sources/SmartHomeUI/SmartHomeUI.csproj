@@ -20,6 +20,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="MahApps.Metro.IconPacks.Core" Version="6.2.1" />
+    <PackageReference Include="MahApps.Metro.IconPacks.Material" Version="6.2.1" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Resource Include="Resources\Images\Countries\China.png" />
     <Resource Include="Resources\Images\Countries\Germany.png" />
     <Resource Include="Resources\Images\Countries\Iran.png" />
