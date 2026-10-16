@@ -11,7 +11,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace SmartHomeUI.Controls.Composite
+namespace SmartHomeUI.Controls
 {
     /// <summary>
     /// Interaction logic for AddButton.xaml

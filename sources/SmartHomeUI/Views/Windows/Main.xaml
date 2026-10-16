@@ -5,8 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SmartHomeUI.Views.Windows"
         mc:Ignorable="d"
-        Title="Main" Height="450" Width="800">
-    <Grid>
+        Height="720"
+        Width="1080"
+        WindowStartupLocation="CenterScreen"
+        Background="Transparent"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Name="mainWindow">
+    <Border Background="#ffffff"
+            Padding="30"
+            CornerRadius="25"
+            MouseDown="Border_MouseDown"
+            MouseLeftButtonDown="Border_MouseLeftButtonDown">
         
-    </Grid>
+        
+        
+    </Border>
 </Window>
