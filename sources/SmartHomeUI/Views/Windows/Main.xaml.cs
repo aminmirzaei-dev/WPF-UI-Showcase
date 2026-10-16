@@ -17,6 +17,38 @@ namespace SmartHomeUI.Views.Windows
     /// </summary>
     public partial class Main : Window
     {
+        private bool isMaximize = false;
+
+        private void Border_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.ChangedButton == MouseButton.Left)
+            {
+                this.DragMove();
+            }
+        }
+
+        private void Border_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.ClickCount == 2)
+            {
+                if (isMaximize)
+                {
+                    this.WindowState = WindowState.Normal;
+                    this.Width = 1080;
+                    this.Height = 720;
+
+                    isMaximize = false;
+                }
+                else
+                {
+                    this.WindowState = WindowState.Maximized;
+
+                    isMaximize = true;
+                }
+            }
+        }
+
+
         public Main()
         {
             InitializeComponent();
