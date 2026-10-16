@@ -7,7 +7,7 @@
              xmlns:controls="clr-namespace:SmartHomeUI.Controls"
              mc:Ignorable="d">
     <Border CornerRadius="10"
-            Background="#3253F1">
+            Background="DodgerBlue">
 
         <Border.Effect>
             <DropShadowEffect ShadowDepth="1"
@@ -21,39 +21,11 @@
                 <!-- Home -->
                 <controls:SHMenuItem Margin="15,40,15,20"
                                      Background="White"
-                                     Foreground="#3253F1"
+                                     Foreground="DodgerBlue"
                                      Icon="Home"
                                      ToolTip="Home"
                                      GroupName="MainMenu"
                                      IsChecked="True">
-
-                    <controls:SHMenuItem.Triggers>
-                        <EventTrigger RoutedEvent="RadioButton.Checked">
-                            <BeginStoryboard>
-                                <Storyboard>
-                                    <DoubleAnimation Storyboard.TargetName="page1"
-                                                     Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.Y)"
-                                                     To="0"
-                                                     Duration="0:0:0.5" />
-
-                                    <DoubleAnimation Storyboard.TargetName="page2"
-                                                     Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.Y)"
-                                                     To="{Binding ActualHeight, ElementName=mainWindow}"
-                                                     Duration="0:0:0.3" />
-
-                                    <DoubleAnimation Storyboard.TargetName="page1"
-                                                     Storyboard.TargetProperty="Opacity"
-                                                     To="1"
-                                                     Duration="0:0:0.5" />
-
-                                    <DoubleAnimation Storyboard.TargetName="page2"
-                                                     Storyboard.TargetProperty="Opacity"
-                                                     To="0"
-                                                     Duration="0:0:0.5" />
-                                </Storyboard>
-                            </BeginStoryboard>
-                        </EventTrigger>
-                    </controls:SHMenuItem.Triggers>
 
                 </controls:SHMenuItem>
 
@@ -61,34 +33,6 @@
                 <controls:SHMenuItem Icon="Bed"
                                      ToolTip="Rooms"
                                      GroupName="MainMenu">
-
-                    <controls:SHMenuItem.Triggers>
-                        <EventTrigger RoutedEvent="RadioButton.Checked">
-                            <BeginStoryboard>
-                                <Storyboard>
-                                    <DoubleAnimation Storyboard.TargetName="page1"
-                                                     Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.Y)"
-                                                     To="{Binding ActualHeight, ElementName=mainWindow}"
-                                                     Duration="0:0:0.3" />
-
-                                    <DoubleAnimation Storyboard.TargetName="page2"
-                                                     Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.Y)"
-                                                     To="0"
-                                                     Duration="0:0:0.5" />
-
-                                    <DoubleAnimation Storyboard.TargetName="page1"
-                                                     Storyboard.TargetProperty="Opacity"
-                                                     To="0"
-                                                     Duration="0:0:0.5" />
-
-                                    <DoubleAnimation Storyboard.TargetName="page2"
-                                                     Storyboard.TargetProperty="Opacity"
-                                                     To="1"
-                                                     Duration="0:0:0.5" />
-                                </Storyboard>
-                            </BeginStoryboard>
-                        </EventTrigger>
-                    </controls:SHMenuItem.Triggers>
 
                 </controls:SHMenuItem>
 
