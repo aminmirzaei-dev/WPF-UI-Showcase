@@ -15,7 +15,6 @@
 
   <ItemGroup>
     <Folder Include="Resources\Images\Developer\" />
-    <Folder Include="Views\Layouts\" />
     <Folder Include="Views\Pages\" />
   </ItemGroup>
 

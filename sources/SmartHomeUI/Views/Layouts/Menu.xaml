@@ -1,0 +1,144 @@
+﻿<UserControl x:Class="SmartHomeUI.Views.Layouts.Menu"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:SmartHomeUI.Views.Layouts"
+             xmlns:controls="clr-namespace:SmartHomeUI.Controls"
+             mc:Ignorable="d">
+    <Border CornerRadius="10"
+            Background="#3253F1">
+
+        <Border.Effect>
+            <DropShadowEffect ShadowDepth="1"
+                              BlurRadius="20"
+                              Opacity="0.4" />
+        </Border.Effect>
+
+        <Grid>
+            <StackPanel>
+
+                <!-- Home -->
+                <controls:SHMenuItem Margin="15,40,15,20"
+                                     Background="White"
+                                     Foreground="#3253F1"
+                                     Icon="Home"
+                                     ToolTip="Home"
+                                     GroupName="MainMenu"
+                                     IsChecked="True">
+
+                    <controls:SHMenuItem.Triggers>
+                        <EventTrigger RoutedEvent="RadioButton.Checked">
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <DoubleAnimation Storyboard.TargetName="page1"
+                                                     Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.Y)"
+                                                     To="0"
+                                                     Duration="0:0:0.5" />
+
+                                    <DoubleAnimation Storyboard.TargetName="page2"
+                                                     Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.Y)"
+                                                     To="{Binding ActualHeight, ElementName=mainWindow}"
+                                                     Duration="0:0:0.3" />
+
+                                    <DoubleAnimation Storyboard.TargetName="page1"
+                                                     Storyboard.TargetProperty="Opacity"
+                                                     To="1"
+                                                     Duration="0:0:0.5" />
+
+                                    <DoubleAnimation Storyboard.TargetName="page2"
+                                                     Storyboard.TargetProperty="Opacity"
+                                                     To="0"
+                                                     Duration="0:0:0.5" />
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger>
+                    </controls:SHMenuItem.Triggers>
+
+                </controls:SHMenuItem>
+
+                <!-- Bedroom -->
+                <controls:SHMenuItem Icon="Bed"
+                                     ToolTip="Rooms"
+                                     GroupName="MainMenu">
+
+                    <controls:SHMenuItem.Triggers>
+                        <EventTrigger RoutedEvent="RadioButton.Checked">
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <DoubleAnimation Storyboard.TargetName="page1"
+                                                     Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.Y)"
+                                                     To="{Binding ActualHeight, ElementName=mainWindow}"
+                                                     Duration="0:0:0.3" />
+
+                                    <DoubleAnimation Storyboard.TargetName="page2"
+                                                     Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.Y)"
+                                                     To="0"
+                                                     Duration="0:0:0.5" />
+
+                                    <DoubleAnimation Storyboard.TargetName="page1"
+                                                     Storyboard.TargetProperty="Opacity"
+                                                     To="0"
+                                                     Duration="0:0:0.5" />
+
+                                    <DoubleAnimation Storyboard.TargetName="page2"
+                                                     Storyboard.TargetProperty="Opacity"
+                                                     To="1"
+                                                     Duration="0:0:0.5" />
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger>
+                    </controls:SHMenuItem.Triggers>
+
+                </controls:SHMenuItem>
+
+                <!-- Users -->
+                <controls:SHMenuItem Icon="AccountGroup"
+                                     ToolTip="Users"
+                                     GroupName="MainMenu" />
+
+                <!-- Security -->
+                <controls:SHMenuItem Icon="Shield"
+                                     ToolTip="Security"
+                                     GroupName="MainMenu" />
+
+                <!-- Location -->
+                <controls:SHMenuItem Icon="MapMarker"
+                                     ToolTip="Map"
+                                     GroupName="MainMenu" />
+
+                <!-- Reports -->
+                <controls:SHMenuItem Icon="ChartBar"
+                                     ToolTip="‌Chart"
+                                     GroupName="MainMenu" />
+
+                <!-- Settings -->
+                <controls:SHMenuItem Icon="Cog"
+                                     ToolTip="Settings"
+                                     GroupName="MainMenu" />
+
+            </StackPanel>
+
+            <!-- Profile -->
+            <!--<Ellipse x:Name="btnProfile"
+                     Margin="20,539,20,0"
+                     VerticalAlignment="Top"
+                     Height="40">
+                <Ellipse.Fill>
+                    <ImageBrush ImageSource="/Images/AminMirzaeiProfile.png" />
+                </Ellipse.Fill>
+            </Ellipse>-->
+
+            <!-- Exit -->
+            <controls:SHMenuItem x:Name="btnExit"
+                                 Icon="Logout"
+                                 ToolTip="Exit"
+                                 Margin="15,0,15,25"
+                                 VerticalAlignment="Bottom"
+                                 GroupName="MainMenu"
+                                 Click="btnExit_Click" />
+
+        </Grid>
+    </Border>
+    
+</UserControl>
