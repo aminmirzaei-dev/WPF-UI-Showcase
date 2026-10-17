@@ -23,7 +23,6 @@
                                      Background="White"
                                      Foreground="DodgerBlue"
                                      Icon="Home"
-                                     ToolTip="Home"
                                      GroupName="MainMenu"
                                      IsChecked="True">
 
@@ -31,34 +30,28 @@
 
                 <!-- Bedroom -->
                 <controls:SHMenuItem Icon="Bed"
-                                     ToolTip="Rooms"
                                      GroupName="MainMenu">
 
                 </controls:SHMenuItem>
 
                 <!-- Users -->
                 <controls:SHMenuItem Icon="AccountGroup"
-                                     ToolTip="Users"
                                      GroupName="MainMenu" />
 
                 <!-- Security -->
                 <controls:SHMenuItem Icon="Shield"
-                                     ToolTip="Security"
                                      GroupName="MainMenu" />
 
                 <!-- Location -->
                 <controls:SHMenuItem Icon="MapMarker"
-                                     ToolTip="Map"
                                      GroupName="MainMenu" />
 
                 <!-- Reports -->
                 <controls:SHMenuItem Icon="ChartBar"
-                                     ToolTip="‌Chart"
                                      GroupName="MainMenu" />
 
                 <!-- Settings -->
                 <controls:SHMenuItem Icon="Cog"
-                                     ToolTip="Settings"
                                      GroupName="MainMenu" />
 
             </StackPanel>
@@ -76,7 +69,6 @@
             <!-- Exit -->
             <controls:SHMenuItem x:Name="btnExit"
                                  Icon="Logout"
-                                 ToolTip="Exit"
                                  Margin="15,0,15,25"
                                  VerticalAlignment="Bottom"
                                  GroupName="MainMenu"
