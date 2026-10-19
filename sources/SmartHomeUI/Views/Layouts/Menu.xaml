@@ -7,7 +7,7 @@
              xmlns:controls="clr-namespace:SmartHomeUI.Controls"
              mc:Ignorable="d">
     <Border CornerRadius="10"
-            Background="DodgerBlue">
+            Background="#3253F1">
 
         <Border.Effect>
             <DropShadowEffect ShadowDepth="1"
@@ -56,15 +56,14 @@
 
             </StackPanel>
 
-            <!-- Profile -->
-            <!--<Ellipse x:Name="btnProfile"
+            <Ellipse x:Name="btnProfile"
                      Margin="20,539,20,0"
                      VerticalAlignment="Top"
                      Height="40">
                 <Ellipse.Fill>
-                    <ImageBrush ImageSource="/Images/AminMirzaeiProfile.png" />
+                    <ImageBrush ImageSource="/Resources/Images/Developer/AminMirzaei.png" />
                 </Ellipse.Fill>
-            </Ellipse>-->
+            </Ellipse>
 
             <!-- Exit -->
             <controls:SHMenuItem x:Name="btnExit"

@@ -109,30 +109,30 @@
                                              Grid.Column="0"
                                              Margin="0,0,8,8"
                                              Title="Refridgerator"
-                                             Icon="Microphone" />
+                                             Icon="Fridge" />
 
                         <controls:ToggleCard Grid.Row="0"
                                              Grid.Column="1"
                                              Margin="8,0,0,8"
                                              Title="Temprature"
-                                             Icon="Microphone"
+                                             Icon="Thermometer"
                                              IsChecked="True" />
 
                         <controls:ToggleCard Grid.Row="1"
                                              Grid.Column="0"
                                              Margin="0,8,8,0"
                                              Title="Air Conditioner"
-                                             Icon="Microphone" />
+                                             Icon="AirConditioner" />
 
                         <controls:ToggleCard Grid.Row="1"
                                              Grid.Column="1"
                                              Margin="8,8,0,0"
                                              Title="Lights"
-                                             Icon="Microphone" />
+                                             Icon="Lightbulb" />
                     </Grid>
 
                     <!-- Add Button -->
-                    <controls:AddButton Caption="Add New Room"
+                    <controls:AddButton Caption="Add New Device"
                                         Margin="0,50,0,0"
                                         HorizontalAlignment="Center" />
 
