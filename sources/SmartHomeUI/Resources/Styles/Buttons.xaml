@@ -185,73 +185,7 @@
         </Setter>
     </Style>
 
-    <Style x:Key="SHToggleButton"
-           TargetType="ToggleButton">
-        <Setter Property="Cursor"
-                Value="Hand" />
-        <Setter Property="HorizontalAlignment"
-                Value="Right" />
-        <Setter Property="VerticalAlignment"
-                Value="Center" />
-        <Setter Property="Margin"
-                Value="0 0 10 0" />
-        <Setter Property="Template">
-            <Setter.Value>
-                <ControlTemplate TargetType="ToggleButton">
-                    <Grid>
-                        <Border x:Name="Border"
-                                Background="{DynamicResource ToggleButtonOffBackColor}"
-                                CornerRadius="13"
-                                Width="50"
-                                Height="26"
-                                VerticalAlignment="Center"
-                                HorizontalAlignment="Center"
-                                BorderThickness="1"
-                                BorderBrush="{DynamicResource ToggleButtonBorderColor}" />
-
-                        <Ellipse x:Name="Ellipse"
-                                 Fill="{DynamicResource ToggleButtonCircleColor}"
-                                 Height="24"
-                                 Width="24"
-                                 Margin="1 0 0 0"
-                                 HorizontalAlignment="Left"
-                                 VerticalAlignment="Center" />
-                    </Grid>
-
-                    <ControlTemplate.Triggers>
-                        <Trigger Property="IsChecked"
-                                 Value="True">
-                            <Setter TargetName="Border"
-                                    Property="Background"
-                                    Value="{DynamicResource ToggleButtonOnBackColor}" />
-
-                            <Trigger.EnterActions>
-                                <BeginStoryboard>
-                                    <Storyboard>
-                                        <ThicknessAnimation Storyboard.TargetName="Ellipse"
-                                                            Storyboard.TargetProperty="Margin"
-                                                            To="25 0 0 0"
-                                                            Duration="0:0:0.2" />
-                                    </Storyboard>
-                                </BeginStoryboard>
-                            </Trigger.EnterActions>
-                            <Trigger.ExitActions>
-                                <BeginStoryboard>
-                                    <Storyboard>
-                                        <ThicknessAnimation Storyboard.TargetName="Ellipse"
-                                                            Storyboard.TargetProperty="Margin"
-                                                            To="1 0 0 0"
-                                                            Duration="0:0:0.2" />
-                                    </Storyboard>
-                                </BeginStoryboard>
-                            </Trigger.ExitActions>
-                        </Trigger>
-                    </ControlTemplate.Triggers>
-                </ControlTemplate>
-            </Setter.Value>
-        </Setter>
-    </Style>
-
+    
     <Style x:Key="addButton"
            TargetType="Button">
         <Setter Property="Background"
