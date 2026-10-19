@@ -52,6 +52,7 @@
 
                 <!-- Settings -->
                 <controls:SHMenuItem Icon="Cog"
+                                     Checked="SettingsItem_Checked"
                                      GroupName="MainMenu" />
 
             </StackPanel>

@@ -7,6 +7,7 @@ using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
+using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
@@ -83,17 +84,86 @@ namespace SmartHomeUI.Controls
             if (RootBorder == null)
                 return;
 
-            RootBorder.BorderBrush = IsSelected
-                ? new SolidColorBrush(Color.FromRgb(40, 100, 255))
-                : new SolidColorBrush(Color.FromRgb(229, 236, 246));
+            var duration = TimeSpan.FromMilliseconds(220);
 
-            RootBorder.Background = IsSelected
-                ? new SolidColorBrush(Color.FromRgb(237, 243, 255))
-                : Brushes.White;
+            var background = IsSelected
+                ? Color.FromRgb(237, 243, 255)
+                : Colors.White;
 
-            SelectedIndicator.Visibility = IsSelected
-                ? Visibility.Visible
-                : Visibility.Collapsed;
+            var border = IsSelected
+                ? Color.FromRgb(40, 100, 255)
+                : Color.FromRgb(229, 236, 246);
+
+            AnimateColor(RootBorder, Border.BackgroundProperty,
+                background, duration);
+
+            AnimateColor(RootBorder, Border.BorderBrushProperty,
+                border, duration);
+
+            SelectedIndicator.BeginAnimation(
+                UIElement.OpacityProperty,
+                new DoubleAnimation
+                {
+                    To = IsSelected ? 1 : 0,
+                    Duration = duration,
+                    EasingFunction = new CubicEase
+                    {
+                        EasingMode = EasingMode.EaseOut
+                    }
+                });
+
+            CheckScale.BeginAnimation(
+                ScaleTransform.ScaleXProperty,
+                new DoubleAnimation
+                {
+                    To = IsSelected ? 1 : 0.5,
+                    Duration = duration,
+                    EasingFunction = new BackEase
+                    {
+                        EasingMode = EasingMode.EaseOut,
+                        Amplitude = 0.25
+                    }
+                });
+
+            CheckScale.BeginAnimation(
+                ScaleTransform.ScaleYProperty,
+                new DoubleAnimation
+                {
+                    To = IsSelected ? 1 : 0.5,
+                    Duration = duration,
+                    EasingFunction = new BackEase
+                    {
+                        EasingMode = EasingMode.EaseOut,
+                        Amplitude = 0.25
+                    }
+                });
+        }
+
+        private static void AnimateColor(
+            Border target,
+            DependencyProperty property,
+            Color color,
+            TimeSpan duration)
+        {
+            var currentBrush = target.GetValue(property) as SolidColorBrush;
+
+            var startColor = currentBrush?.Color ?? color;
+
+            var brush = new SolidColorBrush(startColor);
+
+            target.SetValue(property, brush);
+
+            brush.BeginAnimation(
+                SolidColorBrush.ColorProperty,
+                new ColorAnimation
+                {
+                    To = color,
+                    Duration = duration,
+                    EasingFunction = new CubicEase
+                    {
+                        EasingMode = EasingMode.EaseOut
+                    }
+                });
         }
     }
 }
