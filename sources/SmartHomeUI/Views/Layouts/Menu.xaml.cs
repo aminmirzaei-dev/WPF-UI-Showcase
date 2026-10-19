@@ -18,7 +18,7 @@ namespace SmartHomeUI.Views.Layouts
 
     public enum AppPages
     {
-        Home,Room,Settings
+        Home,Room
     }
 
 
@@ -29,7 +29,6 @@ namespace SmartHomeUI.Views.Layouts
     {
         private Views.Pages.Home homePage = new Views.Pages.Home();
         private Views.Pages.Room roomPage = new Views.Pages.Room();
-        private Views.Pages.Settings settingsPage = new Views.Pages.Settings();
 
 
 
@@ -81,9 +80,6 @@ namespace SmartHomeUI.Views.Layouts
                     this.ContentPage.Content = roomPage;
                     break;
 
-                case AppPages.Settings:
-                    this.ContentPage.Content = settingsPage;
-                    break;
             }
         }
 
@@ -100,11 +96,6 @@ namespace SmartHomeUI.Views.Layouts
         private void RoomItem_Checked(object sender, RoutedEventArgs e)
         {
             this.ExecutePage(AppPages.Room);
-        }
-
-        private void SettingsItem_Checked(object sender, RoutedEventArgs e)
-        {
-            this.ExecutePage(AppPages.Settings);
         }
     }
 }
