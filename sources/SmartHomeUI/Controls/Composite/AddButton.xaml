@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:SmartHomeUI.Controls"
              xmlns:icons="http://metro.mahapps.com/winfx/xaml/iconpacks"
-             Name="addButton">
+             Name="addButton" Cursor="Hand">
     
     <Button Style="{StaticResource addButton}"
             Width="300"
@@ -15,7 +15,7 @@
             <TextBlock Text="{Binding ElementName=addButton,Path=Caption}"
                        VerticalAlignment="Center" />
             <Border Margin="20 0 0 0"
-                    Width="37"
+                    Width="40"
                     Padding="10"
                     Background="#3253F1"
                     CornerRadius="50">

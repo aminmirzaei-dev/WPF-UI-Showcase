@@ -20,11 +20,9 @@
 
                 <!-- Home -->
                 <controls:SHMenuItem Margin="15,40,15,20"
-                                     Background="White"
-                                     Foreground="DodgerBlue"
                                      Icon="Home"
-                                     GroupName="MainMenu"
-                                     IsChecked="True">
+                                     IsChecked="True"
+                                     GroupName="MainMenu">
 
                 </controls:SHMenuItem>
 

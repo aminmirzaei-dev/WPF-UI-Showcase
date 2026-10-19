@@ -38,7 +38,7 @@ namespace SmartHomeUI.Views.Layouts
             InitializeComponent();
 
             this.CurrentPage = AppPages.Home;
-        }
+            }
 
         public ContentPresenter ContentPage { get; set; } = new ContentPresenter();
 

@@ -14,7 +14,7 @@
 
         <Border CornerRadius="25">
             <Border.Background>
-                <ImageBrush ImageSource="/Resources/Images/Home/Decoration2.jpg"
+                <ImageBrush ImageSource="/Resources/Images/Home/Decoration1.jpg"
                             Stretch="Fill"
                             Opacity="0.6" />
             </Border.Background>
