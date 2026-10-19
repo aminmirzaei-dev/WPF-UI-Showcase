@@ -1,16 +1,51 @@
-﻿<UserControl x:Class="SmartHomeUI.Views.Pages.Home"
-             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:SmartHomeUI.Views.Pages"
-             xmlns:controls="clr-namespace:SmartHomeUI.Controls">
-    
+﻿ <UserControl x:Class="SmartHomeUI.Views.Pages.Home"
+                   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                   xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                   xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                   xmlns:local="clr-namespace:SmartHomeUI.Views.Pages"
+                   xmlns:controls="clr-namespace:SmartHomeUI.Controls">
+
     <Border x:Name="homePage"
-            Style="{StaticResource borderPage}">
+            Style="{StaticResource borderPage}"
+            Opacity="0">
+
         <Border.RenderTransform>
-            <TranslateTransform Y="0" />
+            <TranslateTransform x:Name="PageTransform"
+                                Y="45" />
         </Border.RenderTransform>
+
+        <Border.Triggers>
+            <EventTrigger RoutedEvent="Loaded">
+                <BeginStoryboard>
+                    <Storyboard>
+
+                        <!-- Fade In -->
+                        <DoubleAnimation Storyboard.TargetName="homePage"
+                                         Storyboard.TargetProperty="Opacity"
+                                         From="0"
+                                         To="1"
+                                         Duration="0:0:0.65">
+                            <DoubleAnimation.EasingFunction>
+                                <CubicEase EasingMode="EaseOut" />
+                            </DoubleAnimation.EasingFunction>
+                        </DoubleAnimation>
+
+                        <!-- Slide Up -->
+                        <DoubleAnimation Storyboard.TargetName="PageTransform"
+                                         Storyboard.TargetProperty="Y"
+                                         From="45"
+                                         To="0"
+                                         Duration="0:0:0.75">
+                            <DoubleAnimation.EasingFunction>
+                                <CubicEase EasingMode="EaseOut" />
+                            </DoubleAnimation.EasingFunction>
+                        </DoubleAnimation>
+
+                    </Storyboard>
+                </BeginStoryboard>
+            </EventTrigger>
+        </Border.Triggers>
 
         <Border CornerRadius="25">
             <Border.Background>
@@ -22,36 +57,42 @@
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="auto" />
+                    <ColumnDefinition Width="Auto" />
                 </Grid.ColumnDefinitions>
 
-                <!--Titles-->
+                <!-- Titles -->
                 <StackPanel VerticalAlignment="Center"
-                            Margin="60 0 0 0">
+                            Margin="60,0,0,0">
+
                     <TextBlock Text="Controlling"
-                               Foreground="#ffffff"
+                               Foreground="#FFFFFF"
                                FontSize="22" />
+
                     <TextBlock Text="Lounge and Kitchen"
-                               Foreground="#ffffff"
-                               Margin="0 10 0 10"
+                               Foreground="#FFFFFF"
+                               Margin="0,10,0,10"
                                FontSize="36"
                                FontWeight="Bold"
                                TextWrapping="Wrap" />
-                    <TextBlock Foreground="#ffffff"
+
+                    <TextBlock Foreground="#FFFFFF"
                                FontSize="32">
-                    <Run>32</Run><Run FontWeight="Thin"
-                                      FontSize="26">°c</Run>
+                        <Run>32</Run>
+                        <Run FontWeight="Thin"
+                             FontSize="26">°c</Run>
                     </TextBlock>
+
                     <TextBlock Text="Celcious"
-                               Foreground="#ffffff"
+                               Foreground="#FFFFFF"
                                FontSize="12"
-                               Margin="15 0 0 0" />
+                               Margin="15,0,0,0" />
                 </StackPanel>
 
-                <!--Panels-->
+                <!-- Panels -->
                 <StackPanel Grid.Column="1"
                             VerticalAlignment="Center"
-                            Margin="0 0 50 0">
+                            Margin="0,0,50,0">
+
                     <Grid>
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="*" />
@@ -63,39 +104,40 @@
                             <RowDefinition Height="*" />
                         </Grid.RowDefinitions>
 
-                        <!--Cards-->
+                        <!-- Cards -->
                         <controls:ToggleCard Grid.Row="0"
-                                 Grid.Column="0"
-                                 Margin="0 0 8 8"
-                                 Title="Refridgerator"
-                                 Icon="Microphone"/>
+                                             Grid.Column="0"
+                                             Margin="0,0,8,8"
+                                             Title="Refridgerator"
+                                             Icon="Microphone" />
+
                         <controls:ToggleCard Grid.Row="0"
-                                 Grid.Column="1"
-                                 Margin="8 0 0 8"
-                                 Title="Temprature"
-                                 Icon="Microphone"
-                                 IsChecked="True" />
+                                             Grid.Column="1"
+                                             Margin="8,0,0,8"
+                                             Title="Temprature"
+                                             Icon="Microphone"
+                                             IsChecked="True" />
+
                         <controls:ToggleCard Grid.Row="1"
-                                 Grid.Column="0"
-                                 Margin="0 8 8 0"
-                                 Title="Air Conditioner"
-                                 Icon="Microphone" />
+                                             Grid.Column="0"
+                                             Margin="0,8,8,0"
+                                             Title="Air Conditioner"
+                                             Icon="Microphone" />
+
                         <controls:ToggleCard Grid.Row="1"
                                              Grid.Column="1"
-                                             Margin="8 8 0 0"
+                                             Margin="8,8,0,0"
                                              Title="Lights"
                                              Icon="Microphone" />
                     </Grid>
 
-                    <!--Add Button-->
+                    <!-- Add Button -->
                     <controls:AddButton Caption="Add New Room"
-                                  Grid.Column="1"
-                                  Margin="0 50 0 0"
-                                  HorizontalAlignment="Center" />
+                                        Margin="0,50,0,0"
+                                        HorizontalAlignment="Center" />
 
                 </StackPanel>
             </Grid>
-
         </Border>
     </Border>
 </UserControl>

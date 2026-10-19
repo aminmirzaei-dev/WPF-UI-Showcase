@@ -27,7 +27,7 @@
             </Grid.ColumnDefinitions>
             
             <!--Menu-->
-            <layouts:Menu />
+            <layouts:Menu ContentPage="{x:Reference container}" />
             
             <!--Pages Layout-->
             <ContentPresenter x:Name="container"

@@ -6,10 +6,43 @@
              xmlns:local="clr-namespace:SmartHomeUI.Views.Pages"
              xmlns:controls="clr-namespace:SmartHomeUI.Controls">
     <Border x:Name="roomPage"
-            Style="{StaticResource borderPage}">
+            Style="{StaticResource borderPage}" Opacity="0">
         <Border.RenderTransform>
-            <TranslateTransform Y="{Binding ElementName=mainWindow,Path=ActualHeight}" />
+            <TranslateTransform x:Name="PageTransform"
+                                Y="45" />
         </Border.RenderTransform>
+
+        <Border.Triggers>
+            <EventTrigger RoutedEvent="Loaded">
+                <BeginStoryboard>
+                    <Storyboard>
+
+                        <!-- Fade In -->
+                        <DoubleAnimation Storyboard.TargetName="roomPage"
+                                         Storyboard.TargetProperty="Opacity"
+                                         From="0"
+                                         To="1"
+                                         Duration="0:0:0.65">
+                            <DoubleAnimation.EasingFunction>
+                                <CubicEase EasingMode="EaseOut" />
+                            </DoubleAnimation.EasingFunction>
+                        </DoubleAnimation>
+
+                        <!-- Slide Up -->
+                        <DoubleAnimation Storyboard.TargetName="PageTransform"
+                                         Storyboard.TargetProperty="Y"
+                                         From="45"
+                                         To="0"
+                                         Duration="0:0:0.75">
+                            <DoubleAnimation.EasingFunction>
+                                <CubicEase EasingMode="EaseOut" />
+                            </DoubleAnimation.EasingFunction>
+                        </DoubleAnimation>
+
+                    </Storyboard>
+                </BeginStoryboard>
+            </EventTrigger>
+        </Border.Triggers>
 
         <Border CornerRadius="25">
             <Border.Background>

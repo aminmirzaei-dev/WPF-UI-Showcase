@@ -22,12 +22,14 @@
                 <controls:SHMenuItem Margin="15,40,15,20"
                                      Icon="Home"
                                      IsChecked="True"
+                                     Checked="HomeItem_Checked"
                                      GroupName="MainMenu">
 
                 </controls:SHMenuItem>
 
                 <!-- Bedroom -->
                 <controls:SHMenuItem Icon="Bed"
+                                     Checked="RoomItem_Checked"
                                      GroupName="MainMenu">
 
                 </controls:SHMenuItem>

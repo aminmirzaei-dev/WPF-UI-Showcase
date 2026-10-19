@@ -87,7 +87,14 @@ namespace SmartHomeUI.Views.Layouts
             Application.Current.Shutdown();
         }
 
+        private void HomeItem_Checked(object sender, RoutedEventArgs e)
+        {
+            this.ExecutePage(AppPages.Home);
+        }
 
-
+        private void RoomItem_Checked(object sender, RoutedEventArgs e)
+        {
+            this.ExecutePage(AppPages.Room);
+        }
     }
 }
