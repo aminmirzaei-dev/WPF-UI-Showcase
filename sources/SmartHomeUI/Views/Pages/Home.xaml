@@ -122,6 +122,7 @@
                                              Grid.Column="0"
                                              Margin="0,8,8,0"
                                              Title="Air Conditioner"
+                                             IsChecked="True"
                                              Icon="AirConditioner" />
 
                         <controls:ToggleCard Grid.Row="1"

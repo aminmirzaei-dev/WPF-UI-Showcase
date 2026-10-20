@@ -1,4 +1,4 @@
-﻿using SmartHomeUI.Views.Dialogs;
+﻿
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
