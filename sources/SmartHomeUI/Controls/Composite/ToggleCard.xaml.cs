@@ -21,17 +21,10 @@ namespace SmartHomeUI.Controls
     public partial class ToggleCard : ToggleButton
     {
         public static readonly DependencyProperty TitleProperty = DependencyProperty.Register("Title", typeof(string), typeof(ToggleCard));
-        public static readonly DependencyProperty IsHorizontalProperty = DependencyProperty.Register("IsHorizontal", typeof(bool), typeof(ToggleCard));
         public string Title
         {
             get { return (string)GetValue(TitleProperty); }
             set { SetValue(TitleProperty, value); }
-        }
-
-        public bool IsHorizontal
-        {
-            get { return (bool)GetValue(IsHorizontalProperty); }
-            set { SetValue(IsHorizontalProperty, value); }
         }
 
         public static readonly DependencyProperty IconProperty =

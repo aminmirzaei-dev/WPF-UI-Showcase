@@ -147,7 +147,7 @@
                                     Value="White" />
                             <Setter TargetName="MenuIcon"
                                     Property="Foreground"
-                                    Value="DodgerBlue" />
+                                    Value="#3253F1" />
                         </Trigger>
 
                         <Trigger Property="IsEnabled"

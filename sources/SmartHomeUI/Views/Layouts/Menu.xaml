@@ -57,9 +57,12 @@
             </StackPanel>
 
             <Ellipse x:Name="btnProfile"
-                     Margin="20,539,20,0"
+                     Margin="15,505,20,0"
+                     ToolTip="Made and designed by Amin Mirzaei (Github : aminmirzaei-dev)"
                      VerticalAlignment="Top"
-                     Height="40">
+                     Height="55"
+                     Width="55"
+                     Stretch="UniformToFill">
                 <Ellipse.Fill>
                     <ImageBrush ImageSource="/Resources/Images/Developer/AminMirzaei.png" />
                 </Ellipse.Fill>
