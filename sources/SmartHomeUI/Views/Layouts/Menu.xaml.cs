@@ -79,7 +79,7 @@ namespace SmartHomeUI.Views.Layouts
                 case AppPages.Room:
                     this.ContentPage.Content = roomPage;
                     break;
-
+                    
             }
         }
 

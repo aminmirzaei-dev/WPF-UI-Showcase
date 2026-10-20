@@ -6,11 +6,16 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
+    <ApplicationIcon>SmartHomeIcon.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
     <None Remove="Resources\Images\Home\Decoration1.jpg" />
     <None Remove="Resources\Images\Home\Decoration2.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="SmartHomeIcon.ico" />
   </ItemGroup>
 
   <ItemGroup>
