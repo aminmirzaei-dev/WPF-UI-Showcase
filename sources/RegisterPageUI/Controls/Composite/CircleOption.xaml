@@ -9,7 +9,7 @@
              Name="circleOption"
              >
     <StackPanel Orientation="Horizontal">
-        <Button Style="{StaticResource button}">
+        <Button Style="{StaticResource OptionButton}">
             <icons:ImageAwesome Icon="{Binding Path=Icon,ElementName=circleOption}"
                              Width="15"
                              Height="15"
