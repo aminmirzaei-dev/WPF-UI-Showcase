@@ -4,9 +4,26 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:RegisterPageUI.Controls"
+             xmlns:icons="http://schemas.fontawesome.io/icons/"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
-            
-    </Grid>
+             Name="circleOption"
+             >
+    <StackPanel Orientation="Horizontal">
+        <Button Style="{StaticResource button}">
+            <icons:ImageAwesome Icon="{Binding Path=Icon,ElementName=circleOption}"
+                             Width="15"
+                             Height="15"
+                             Foreground="White" />
+        </Button>
+
+        <TextBlock Text="{Binding Path=Text,ElementName=circleOption}"
+                   Foreground="#363636"
+                   VerticalAlignment="Center"
+                   Margin="10 0 20 0"
+                   FontWeight="SemiBold" />
+
+
+
+
+    </StackPanel>
 </UserControl>

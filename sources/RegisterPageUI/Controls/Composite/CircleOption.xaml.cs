@@ -18,6 +18,23 @@ namespace RegisterPageUI.Controls
     /// </summary>
     public partial class CircleOption : UserControl
     {
+        public static readonly DependencyProperty TextProperty = DependencyProperty.Register("Text", typeof(string), typeof(CircleOption));
+        public static readonly DependencyProperty IconProperty = DependencyProperty.Register("Icon", typeof(FontAwesome.WPF.FontAwesomeIcon), typeof(CircleOption));
+
+        public string Text
+        {
+            get { return (string)GetValue(TextProperty); }
+            set { SetValue(TextProperty, value); }
+        }
+
+        public FontAwesome.WPF.FontAwesomeIcon Icon
+        {
+            get { return (FontAwesome.WPF.FontAwesomeIcon)GetValue(IconProperty); }
+            set { SetValue(IconProperty, value); }
+        }
+
+
+
         public CircleOption()
         {
             InitializeComponent();
