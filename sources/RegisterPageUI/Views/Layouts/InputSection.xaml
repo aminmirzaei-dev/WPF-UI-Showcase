@@ -16,15 +16,21 @@
 
             <Button Width="30"
                     Margin="0,4,5,0"
-                    Content="User"
+                    Content="Close"
+                    VerticalAlignment="Top"
+                    HorizontalAlignment="Right"
+                    Click="CloseButton_Click"
                     Style="{StaticResource TitleButtonStyle}">
             </Button>
 
             
 
             <Button Width="30"
-                    Margin="0 7 40 0"
-                    Content="Close"
+                    Margin="0 4 40 0"
+                    Content="WindowMinimize"
+                    VerticalAlignment="Top"
+                    HorizontalAlignment="Right"
+                    Click="MinimizeButton_Click"
                     Style="{StaticResource TitleButtonStyle}">
             </Button>
 
@@ -82,7 +88,7 @@
                               Hint="11/1/2007" />
                 <controls:LiteTextBox Grid.Column="1"
                               Grid.Row="4"
-                              Hint="aminmirzaei.og@email.com" />
+                              Hint="aminmirzaeidev@email.com" />
                 <controls:LiteTextBox Grid.Column="1"
                               Grid.Row="5"
                               Hint="+91 9765 43210" />

@@ -22,5 +22,15 @@ namespace RegisterPageUI.Views.Layouts
         {
             InitializeComponent();
         }
+
+        private void CloseButton_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
+
+        private void MinimizeButton_Click(object sender, RoutedEventArgs e)
+        {
+            Window.GetWindow(this).WindowState = WindowState.Minimized;
+        }
     }
 }
