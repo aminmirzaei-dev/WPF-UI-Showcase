@@ -18,6 +18,17 @@ namespace RegisterPageUI.Controls
     /// </summary>
     public partial class LiteTextBox : UserControl
     {
+        public static readonly DependencyProperty HintProperty = DependencyProperty.Register("Hint", typeof(string), typeof(LiteTextBox));
+
+
+        public string Hint
+        {
+            get { return (string)GetValue(HintProperty); }
+            set { SetValue(HintProperty, value); }
+        }
+
+
+
         public LiteTextBox()
         {
             InitializeComponent();
