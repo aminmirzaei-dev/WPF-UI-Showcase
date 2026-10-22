@@ -7,6 +7,8 @@
              mc:Ignorable="d" 
              Name="liteTextBox">
     <UserControl.Resources>
+        <BooleanToVisibilityConverter x:Key="BoolToVisibilityConverter" />
+
     </UserControl.Resources>
 
     <Grid>
@@ -16,7 +18,7 @@
                    IsHitTestVisible="False"
                    Panel.ZIndex="1"
                    Text="{Binding Path=Hint,ElementName=liteTextBox}"
-                   Visibility="{Binding ElementName=textBox, Path=Text.IsEmpty, Converter={StaticResource MyBoolToVisibilityConverter}}" />
+                   Visibility="{Binding ElementName=textBox, Path=Text.IsEmpty, Converter={StaticResource BoolToVisibilityConverter}}" />
         <TextBox Name="textBox" />
     </Grid>
 </UserControl>
