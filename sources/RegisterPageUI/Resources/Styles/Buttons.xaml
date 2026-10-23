@@ -39,10 +39,10 @@
                                  Value="True">
 
                             <Setter Property="Background"
-                                    Value="#FFF0E5" />
+                                    Value="Brown" />
 
                             <Setter Property="Foreground"
-                                    Value="Red" />
+                                    Value="White" />
 
                         </Trigger>
 
@@ -80,12 +80,12 @@
             <Trigger Property="IsMouseOver"
                      Value="True">
                 <Setter Property="Background"
-                        Value="#363636" />
+                        Value="Brown" />
             </Trigger>
             <Trigger Property="IsMouseCaptured"
                      Value="True">
                 <Setter Property="Background"
-                        Value="#161616" />
+                        Value="Chocolate" />
             </Trigger>
         </Style.Triggers>
     </Style>
@@ -93,7 +93,7 @@
     <Style x:Key="NextButton"
            TargetType="Button">
         <Setter Property="Background"
-                Value="#363636" />
+                Value="WhiteSmoke" />
         <Setter Property="BorderThickness"
                 Value="0" />
         <Setter Property="Width"
@@ -118,7 +118,7 @@
             <Trigger Property="IsMouseOver"
                      Value="True">
                 <Setter Property="Background"
-                        Value="#000000" />
+                        Value="White" />
             </Trigger>
         </Style.Triggers>
     </Style>
@@ -171,7 +171,7 @@
             <Trigger Property="IsMouseOver"
                      Value="True">
                 <Setter Property="Background"
-                        Value="Tomato" />
+                        Value="Chocolate" />
                 <Setter Property="Foreground"
                         Value="#ffffff" />
             </Trigger>
