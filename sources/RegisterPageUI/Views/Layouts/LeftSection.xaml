@@ -7,7 +7,7 @@
              xmlns:icons="http://schemas.fontawesome.io/icons/"
              mc:Ignorable="d">
     
-    <Border Background="Brown"
+    <Border Background="Chocolate"
             Padding="30"
             CornerRadius="25 0 0 25">
         <StackPanel VerticalAlignment="Center">
