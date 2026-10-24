@@ -6,10 +6,15 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
+    <ApplicationIcon>RegisterPageIcon.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
     <None Remove="Resources\Images\UserIcon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="RegisterPageIcon.ico" />
   </ItemGroup>
 
   <ItemGroup>
